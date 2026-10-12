@@ -1,0 +1,98 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in English.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Target category
+SARCASM
+
+[7] Definition
+Sarcasm is present when the text uses words whose surface sentiment, evaluation, or emotional stance is clearly inappropriate for the described situation, so that the likely intended meaning is the opposite or sharply different from the literal wording.
+
+Sarcasm often appears as fake happiness, fake praise, fake calmness, fake gratitude, fake pride, fake excitement, fake relief, or fake approval toward an obviously bad, embarrassing, unfair, disgusting, stressful, immoral, or unwanted situation.
+
+The sarcastic target may be a person, oneself, an event, a circumstance, bad luck, society, or the situation in general.
+
+[8] Decision procedure
+Step 1: Identify whether the text contains an explicit positive, calm, approving, grateful, proud, excited, or neutralizing expression.
+Step 2: Identify whether the situation described is clearly negative, unwanted, embarrassing, disgusting, unfair, stressful, harmful, immoral, or disappointing.
+Step 3: If the positive/neutral expression is clearly mismatched with the negative situation, treat this as sarcasm.
+Step 4: Output YES even if the sarcasm is subtle, self-directed, situational, or expressed as deadpan understatement.
+Step 5: Output NO only if the wording and the likely intended sentiment genuinely align.
+
+[9] YES rules
+Output YES if the text contains any of the following:
+- Positive emotion toward an obviously negative event.
+- Praise for a person, object, action, or outcome that is clearly bad or annoying.
+- Claims of calmness, relief, gratitude, pride, excitement, or enjoyment in a situation where the normal reaction would be negative.
+- Self-praise paired with evidence of failure, foolishness, embarrassment, guilt, or bad judgment.
+- Denial of a predictable negative emotion, such as "not jealous," "not nervous," "no regrets," or "not upset," when the surrounding situation strongly implies that emotion.
+- Moral or trait contradiction, such as claiming to be considerate, reliable, faithful, responsible, or generous while describing behavior that proves the opposite.
+- Positive sensory/evaluative words applied to disgusting or unpleasant things, such as bad smells, vomit, messes, or embarrassment.
+
+[10] NO rules
+Output NO if the text contains:
+- Direct literal praise with no negative mismatch.
+- Direct literal criticism with no fake positive, fake neutral, or inverted evaluation.
+- Anger, sadness, frustration, swearing, or insults where the wording directly matches the negative intent.
+- Ordinary humor, exaggeration, or absurdity without an opposite-sentiment mismatch.
+- A genuinely positive reaction to a plausibly positive event.
+
+[11] Important bias rule
+When a text explicitly says the speaker is happy, proud, excited, grateful, relieved, calm, delighted, pleased, impressed, having fun, or enjoying something, and the event is clearly bad or unwanted, default to Label: YES.
+
+[12] Examples
+Example 1
+Text: "I was overjoyed when my dog destroyed my new couch."
+Reason: The speaker claims joy about an obviously unwanted event, creating sarcastic inversion.
+Label: YES
+
+Example 2
+Text: "I feel so peaceful that I can't get my money situation under control."
+Reason: The claimed calmness sharply mismatches the stressful financial problem.
+Label: YES
+
+Example 3
+Text: "I'm an absolute genius for sending that email after drinking all night."
+Reason: The self-praise contradicts the foolish action, indicating self-deprecating sarcasm.
+Label: YES
+
+Example 4
+Text: "There's this girl I like, and I saw her eating lunch with another guy, but I'm not jealous at all."
+Reason: The denial of jealousy conflicts with the situation that strongly implies jealousy.
+Label: YES
+
+Example 5
+Text: "I am angry that my roommate left dirty dishes everywhere."
+Reason: This is direct criticism with no inverted sentiment.
+Label: NO
+
+[13] Input text
+"{input}"

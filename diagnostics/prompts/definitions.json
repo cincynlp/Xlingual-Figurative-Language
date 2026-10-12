@@ -1,0 +1,29 @@
+{
+  "quality": {
+    "LANGUAGE_NAMES": {
+      "bn": "Bengali",
+      "de": "German",
+      "en": "English",
+      "es": "Spanish",
+      "it": "Italian",
+      "zh": "Chinese"
+    },
+    "CATEGORY_DESCRIPTIONS": {
+      "idiom": "an established idiomatic or conventionalized expression used appropriately",
+      "irony": "ironic language where the intended meaning contrasts with the literal surface",
+      "metaphor": "a non-literal cross-domain mapping without explicit like/as comparison markers",
+      "sarcasm": "sarcastic language with critical or mocking intent, often through ironic praise or contrast",
+      "simile": "an explicit comparison using markers such as like/as or their target-language equivalents"
+    }
+  },
+  "meaning_matched": {
+    "LANGUAGE_NAMES": {
+      "en": "English",
+      "zh": "Chinese"
+    },
+    "CATEGORY_DESCRIPTIONS": {
+      "metaphor": "a metaphor: a non-literal cross-domain mapping without explicit like/as comparison markers",
+      "simile": "a simile: an explicit comparison using markers such as like/as or their target-language equivalents"
+    }
+  }
+}

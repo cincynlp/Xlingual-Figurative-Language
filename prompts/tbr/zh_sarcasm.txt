@@ -1,0 +1,83 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Chinese.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] 目标类别
+讽刺（sarcasm）
+
+[7] 核心定义与易混淆概念
+讽刺（Sarcasm）是指文本的“字面表达”为正面或者中性描述,但说话者的“真实意图”之间为截然相反负面态度，即“反话正说”。这种结构通常被用来挖苦或嘲弄。
+
+核心辨析：讽刺 (Sarcasm) ≠ 嘲讽 (Mockery)
+所有的讽刺都可以用来嘲讽，但并不是所有的嘲讽都是讽刺。
+- 讽刺必须具备“表里不一”的对立结构。
+- 直接的辱骂、调侃、使用侮辱性外号、或者对别人的灾难感到开心（幸灾乐祸），都属于嘲讽，但因为它们的“字面态度”和“真实态度”是一致的，所以它们【绝对不是】讽刺。
+
+[8] 判定步骤
+步骤 1：找出文本评论的对象或事件。
+步骤 2：判断评论的【字面态度】（Literal Attitude）是什么。
+步骤 3：判断评论者的【真实情绪与立场】（Genuine Emotion）。注意：如果评论者本来就敌视该对象，他们对该对象的失败叫好是发自内心的，真实情绪就是“开心”。
+步骤 4：对比字面态度与真实情绪。如果二者截然相反（说A但实际意思是-A），输出 YES。
+步骤 5：如果二者一致（无论有多恶毒、多夸张、多好笑），输出 NO。
+
+[9] YES 规则（必须满足“反话正说”结构）
+- 表面上是在夸奖、赞同、祝贺、惋惜或中性描述，但结合上下文，其实际意图是表达截然相反的负面态度。
+- 经典结构：表面极度肯定 + 实际荒谬或灾难性的事实。（例如：“你真是个天才，把所有文件都删了。”）
+
+[10] NO 规则（避开常见陷阱）
+满足以下任一情况，必须输出 NO：
+1. 幸灾乐祸陷阱（Schadenfreude）：如果评论者对负面事件（如对手破产、仇人倒霉）表达“太棒了”“干得漂亮”“普天同庆”，这是发自内心的喜悦。字面态度（开心）= 真实情绪（开心）。没有反话结构，输出 NO。
+2. 绰号与阴阳怪气陷阱（Name-calling / Memes）：如果评论只是使用带有贬义的专属名词、网络黑梗、夸张比喻来攻击对象（如“吸血鬼公司”“又在割韭菜”），字面态度（负面）= 真实态度（负面）。输出 NO。
+3. 纯粹的情绪宣泄：直接的愤怒、抱怨、反问（“这么简单都不会？”）或调侃。
+
+[11] 示例
+示例 1
+文本：新闻：“由于技术故障，该公司新品发布会推迟。” 评论：“这公司的办事效率真是宇宙第一高啊。”
+Reason: “宇宙第一高”字面是极度赞扬，但结合“推迟”的事实，真实态度是批评其效率低下。字面与真实截然相反，是标准的反话正说。
+Label: YES
+
+示例 2（幸灾乐祸陷阱）
+文本：新闻：“臭名昭著的黑客组织服务器被摧毁。” 评论：“哈哈哈哈，今天是个好日子，太棒了！”
+Reason: 字面态度是喜悦和赞美，评论者的真实情绪也是喜悦和赞美（对敌人的倒霉感到开心）。字面与真实一致，属于幸灾乐祸，没有反话结构。
+Label: NO
+
+示例 3（绰号陷阱）
+文本：新闻：“某品牌手机因为侵权被罚款。” 评论：“抄袭大厂这回终于翻车了，活该。”
+Reason: “抄袭大厂”是直接的负面标签，“活该”是直接的负面情绪宣泄。字面态度极度负面，真实态度也极度负面，两者一致，属于直接嘲讽。
+Label: NO
+
+示例 4
+文本：新闻：“客服热线等待时间超过两小时。” 评论：“这服务真是太贴心了，怕我话费花不完。”
+Reason: “太贴心了”字面是赞美，但后半句指出了荒谬性。真实态度是抱怨服务差。存在反话正说。
+Label: YES
+
+[13] 输入文本
+"{input}"

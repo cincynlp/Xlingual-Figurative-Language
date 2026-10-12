@@ -1,0 +1,6 @@
+model,cell_n,unsteered_tbr_pct,omean_tbr_pct,crosscat_tbr_pct,omean_gain_pp,crosscat_gain_pp,omean_minus_crosscat_pp
+qwen3_8b,8,14.875,30.5,25.25,15.625,10.375,5.25
+qwen3_32b,8,16.0,28.625,23.625,12.625,7.625,5.0
+llama3_1_8b,8,13.25,16.5,16.875,3.25,3.625,-0.375
+ministral3_8b,8,20.125,25.5,25.375,5.375,5.25,0.125
+all_models,32,16.0625,25.28125,22.78125,9.21875,6.71875,2.5

@@ -1,0 +1,849 @@
+comparison_id,experiment,model,source_lang,target_lang,category,condition_a,condition_b,matched_n,tbr_a_pct,tbr_b_pct,delta_pp,discordant_b_only,discordant_a_only,mcnemar_p_exact,bh_family,mcnemar_q_bh,result
+cmp_0c30855fb097275be422,geometry,llama,bn,bn,idiom,unsteered,omean,500,0.4,1.6,1.2,8,2,0.109375,descriptive_only,,descriptive_comparison
+cmp_313ce3f59cedf3afa151,geometry,llama,bn,bn,idiom,monolingual,omean,500,1.8,1.6,-0.2,8,9,1,descriptive_only,,descriptive_comparison
+cmp_06350355397ba787617a,geometry,llama,bn,bn,idiom,unsteered,residual,500,0.4,0.4,0,2,2,1,descriptive_only,,descriptive_comparison
+cmp_534f19d077bcd4af31ab,geometry,llama,bn,bn,idiom,monolingual,residual,500,1.8,0.4,-1.4,2,9,0.0654296875,descriptive_only,,descriptive_comparison
+cmp_772cfd7d4beb8514106c,geometry,llama,bn,bn,irony,unsteered,omean,500,3.2,3,-0.2,14,15,1,descriptive_only,,descriptive_comparison
+cmp_4f044734937e4417c8a5,geometry,llama,bn,bn,irony,monolingual,omean,500,2.4,3,0.6,14,11,0.690037965775,descriptive_only,,descriptive_comparison
+cmp_2ac9e2529f636a14488c,geometry,llama,bn,bn,irony,unsteered,residual,500,3.2,1.2,-2,6,16,0.0524787902832,descriptive_only,,descriptive_comparison
+cmp_4ef524bea7e5018d3046,geometry,llama,bn,bn,irony,monolingual,residual,500,2.4,1.2,-1.2,6,12,0.237884521484,descriptive_only,,descriptive_comparison
+cmp_2de713e0ca5e0b370ecf,geometry,llama,bn,bn,metaphor,unsteered,omean,500,2,2.8,0.8,14,10,0.541256189346,descriptive_only,,descriptive_comparison
+cmp_ae1f387de3eec979c80d,geometry,llama,bn,bn,metaphor,monolingual,omean,500,4.8,2.8,-2,12,22,0.121449484956,descriptive_only,,descriptive_comparison
+cmp_010d9671d7862485f85e,geometry,llama,bn,bn,metaphor,unsteered,residual,500,2,5.6,3.6,25,7,0.00210240157321,descriptive_only,,descriptive_comparison
+cmp_a4e2982d9e15c9928350,geometry,llama,bn,bn,metaphor,monolingual,residual,500,4.8,5.6,0.8,27,23,0.671811033765,descriptive_only,,descriptive_comparison
+cmp_b0c71859ab35fdeac190,geometry,llama,bn,bn,sarcasm,unsteered,omean,500,1.6,1.2,-0.4,6,8,0.79052734375,descriptive_only,,descriptive_comparison
+cmp_ed0ba764916d644471e8,geometry,llama,bn,bn,sarcasm,monolingual,omean,500,2.8,1.2,-1.6,6,14,0.11531829834,descriptive_only,,descriptive_comparison
+cmp_d1db859603318174f4c0,geometry,llama,bn,bn,sarcasm,unsteered,residual,500,1.6,2.2,0.6,10,7,0.629058837891,descriptive_only,,descriptive_comparison
+cmp_85e05b1019d3d8532045,geometry,llama,bn,bn,sarcasm,monolingual,residual,500,2.8,2.2,-0.6,11,14,0.690037965775,descriptive_only,,descriptive_comparison
+cmp_44e8860b3f6ae5492a34,geometry,llama,de,de,idiom,unsteered,omean,500,9,19.6,10.6,88,35,1.93512478097e-06,descriptive_only,,descriptive_comparison
+cmp_57ec2c06bd05fa9c4077,geometry,llama,de,de,idiom,monolingual,omean,500,18.4,19.6,1.2,75,69,0.677069794367,descriptive_only,,descriptive_comparison
+cmp_c3e0082d47edb7785d90,geometry,llama,de,de,idiom,unsteered,residual,500,9,13.8,4.8,60,36,0.0184333529315,descriptive_only,,descriptive_comparison
+cmp_75788c0156435070bfc9,geometry,llama,de,de,idiom,monolingual,residual,500,18.4,13.8,-4.6,54,77,0.0541708003872,descriptive_only,,descriptive_comparison
+cmp_651f3bda5b4114bb7318,geometry,llama,de,de,irony,unsteered,omean,500,1.6,3.2,1.6,15,7,0.133800506592,descriptive_only,,descriptive_comparison
+cmp_0c29cf7ae282cddae608,geometry,llama,de,de,irony,monolingual,omean,500,3.8,3.2,-0.6,13,16,0.711071103811,descriptive_only,,descriptive_comparison
+cmp_f008e5691420079b8a3b,geometry,llama,de,de,irony,unsteered,residual,500,1.6,2.6,1,10,5,0.3017578125,descriptive_only,,descriptive_comparison
+cmp_0e363bce81761696e051,geometry,llama,de,de,irony,monolingual,residual,500,3.8,2.6,-1.2,11,17,0.344928450882,descriptive_only,,descriptive_comparison
+cmp_a4c0c8b4fef912e90b7e,geometry,llama,de,de,metaphor,unsteered,omean,500,16.4,32.4,16,131,51,2.65103976783e-09,descriptive_only,,descriptive_comparison
+cmp_b9579e4c0b2c08bc641c,geometry,llama,de,de,metaphor,monolingual,omean,500,26.2,32.4,6.2,112,81,0.0305497496101,descriptive_only,,descriptive_comparison
+cmp_fa58707aad6146893918,geometry,llama,de,de,metaphor,unsteered,residual,500,16.4,20,3.6,76,58,0.141661749813,descriptive_only,,descriptive_comparison
+cmp_52fbfcc35dd8278c48b5,geometry,llama,de,de,metaphor,monolingual,residual,500,26.2,20,-6.2,65,96,0.0177874228893,descriptive_only,,descriptive_comparison
+cmp_1959d59ffca306476b5f,geometry,llama,en,en,idiom,unsteered,omean,500,11.2,21.4,10.2,91,40,9.79572915082e-06,descriptive_only,,descriptive_comparison
+cmp_6175670e24013321e67f,geometry,llama,en,en,idiom,monolingual,omean,500,17.6,21.4,3.8,83,64,0.137377766249,descriptive_only,,descriptive_comparison
+cmp_13947e616439d30c8d6d,geometry,llama,en,en,idiom,unsteered,residual,500,11.2,11,-0.2,48,49,1,descriptive_only,,descriptive_comparison
+cmp_04dadb4612e94f377a0e,geometry,llama,en,en,idiom,monolingual,residual,500,17.6,11,-6.6,43,76,0.00318318444822,descriptive_only,,descriptive_comparison
+cmp_fa85e873ee33b077ee84,geometry,llama,en,en,irony,unsteered,omean,500,2.2,3,0.8,14,10,0.541256189346,descriptive_only,,descriptive_comparison
+cmp_45a765085ac4c587640b,geometry,llama,en,en,irony,monolingual,omean,500,3.6,3,-0.6,15,18,0.728332480881,descriptive_only,,descriptive_comparison
+cmp_6d92cbad38dc884f67cc,geometry,llama,en,en,irony,unsteered,residual,500,2.2,2,-0.2,10,11,1,descriptive_only,,descriptive_comparison
+cmp_091f7849b1f4f47cfd39,geometry,llama,en,en,irony,monolingual,residual,500,3.6,2,-1.6,8,16,0.151589632034,descriptive_only,,descriptive_comparison
+cmp_3b62d7e8ac8451f4db3b,geometry,llama,en,en,metaphor,unsteered,omean,500,57,69,12,131,71,2.91611743888e-05,descriptive_only,,descriptive_comparison
+cmp_e7c453f215f16083b077,geometry,llama,en,en,metaphor,monolingual,omean,500,66.8,69,2.2,89,78,0.43912892878,descriptive_only,,descriptive_comparison
+cmp_53d6bf839dd543b4db61,geometry,llama,en,en,metaphor,unsteered,residual,500,57,45.6,-11.4,76,133,9.78701224674e-05,descriptive_only,,descriptive_comparison
+cmp_b6c7e0a49907d19860cb,geometry,llama,en,en,metaphor,monolingual,residual,500,66.8,45.6,-21.2,65,171,3.54980548501e-12,descriptive_only,,descriptive_comparison
+cmp_94cbdf2eda03bf39205b,geometry,llama,en,en,sarcasm,unsteered,omean,500,2,3.6,1.6,17,9,0.168637543917,descriptive_only,,descriptive_comparison
+cmp_8ea09780b2df0a7f885b,geometry,llama,en,en,sarcasm,monolingual,omean,500,4.6,3.6,-1,17,22,0.522397380497,descriptive_only,,descriptive_comparison
+cmp_7fbca085539074f7916e,geometry,llama,en,en,sarcasm,unsteered,residual,500,2,4.6,2.6,22,9,0.0294493734837,descriptive_only,,descriptive_comparison
+cmp_77b586e0056fcd343b94,geometry,llama,en,en,sarcasm,monolingual,residual,500,4.6,4.6,0,20,20,1,descriptive_only,,descriptive_comparison
+cmp_97dc3dddd2be0f15cdf5,geometry,llama,es,es,idiom,unsteered,omean,500,3.8,10.8,7,52,17,2.93043217455e-05,descriptive_only,,descriptive_comparison
+cmp_181ebbefc474c93462bf,geometry,llama,es,es,idiom,monolingual,omean,500,9.6,10.8,1.2,45,39,0.585646794721,descriptive_only,,descriptive_comparison
+cmp_0c4419fe159fb39ba2cb,geometry,llama,es,es,idiom,unsteered,residual,500,3.8,4.6,0.8,22,18,0.635828002629,descriptive_only,,descriptive_comparison
+cmp_309514c80c043ed541f3,geometry,llama,es,es,idiom,monolingual,residual,500,9.6,4.6,-5,21,46,0.00306531766961,descriptive_only,,descriptive_comparison
+cmp_6c4290ad73fb1892c387,geometry,llama,es,es,irony,unsteered,omean,500,0.4,1.2,0.8,6,2,0.2890625,descriptive_only,,descriptive_comparison
+cmp_a4e8ab57ccc99eccdc85,geometry,llama,es,es,irony,monolingual,omean,500,1.2,1.2,0,4,4,1,descriptive_only,,descriptive_comparison
+cmp_efc67c44d2c98ce759b9,geometry,llama,es,es,irony,unsteered,residual,500,0.4,0.6,0.2,3,2,1,descriptive_only,,descriptive_comparison
+cmp_b04b504574c43253037a,geometry,llama,es,es,irony,monolingual,residual,500,1.2,0.6,-0.6,2,5,0.453125,descriptive_only,,descriptive_comparison
+cmp_10ec18a2fd65ff197d7f,geometry,llama,es,es,metaphor,unsteered,omean,500,29,39.6,10.6,124,71,0.000180525438138,descriptive_only,,descriptive_comparison
+cmp_d12bf5b7af739532d71c,geometry,llama,es,es,metaphor,monolingual,omean,500,36,39.6,3.6,109,91,0.22924659726,descriptive_only,,descriptive_comparison
+cmp_8c22c4920b6e2ea14542,geometry,llama,es,es,metaphor,unsteered,residual,500,29,21.4,-7.6,63,101,0.00372924938095,descriptive_only,,descriptive_comparison
+cmp_bc77a8cc7e65aface75d,geometry,llama,es,es,metaphor,monolingual,residual,500,36,21.4,-14.6,53,126,4.868315839e-08,descriptive_only,,descriptive_comparison
+cmp_4f6e5229369bcfedcd65,geometry,llama,it,it,idiom,unsteered,omean,500,3.6,8.4,4.8,40,16,0.00184155478849,descriptive_only,,descriptive_comparison
+cmp_afae7ead10bfc09c6446,geometry,llama,it,it,idiom,monolingual,omean,500,7,8.4,1.4,41,34,0.488682970903,descriptive_only,,descriptive_comparison
+cmp_578e583bb1baf1671d2e,geometry,llama,it,it,idiom,unsteered,residual,500,3.6,4.6,1,23,18,0.532709255236,descriptive_only,,descriptive_comparison
+cmp_c910d447ac3d9c73b485,geometry,llama,it,it,idiom,monolingual,residual,500,7,4.6,-2.4,19,31,0.118920452559,descriptive_only,,descriptive_comparison
+cmp_1a27d4872f9b7fbb5cbc,geometry,llama,it,it,irony,unsteered,omean,500,1.4,3.2,1.8,15,6,0.0783538818359,descriptive_only,,descriptive_comparison
+cmp_137bb3ebf520f8b8b8d0,geometry,llama,it,it,irony,monolingual,omean,500,5,3.2,-1.8,13,22,0.175465248991,descriptive_only,,descriptive_comparison
+cmp_cf8da84b12dc3bc6d1a3,geometry,llama,it,it,irony,unsteered,residual,500,1.4,3.2,1.8,16,7,0.0931396484375,descriptive_only,,descriptive_comparison
+cmp_efcdfadf73db9543aae5,geometry,llama,it,it,irony,monolingual,residual,500,5,3.2,-1.8,9,18,0.122078120708,descriptive_only,,descriptive_comparison
+cmp_85931a22aa13eab610a8,geometry,llama,it,it,metaphor,unsteered,omean,500,41.8,49.6,7.8,120,81,0.0072038286221,descriptive_only,,descriptive_comparison
+cmp_3eae849595b468153c6a,geometry,llama,it,it,metaphor,monolingual,omean,500,55.8,49.6,-6.2,91,122,0.0395733228625,descriptive_only,,descriptive_comparison
+cmp_b0fd90355b13a612d9a7,geometry,llama,it,it,metaphor,unsteered,residual,500,41.8,51.8,10,135,85,0.000912470463993,descriptive_only,,descriptive_comparison
+cmp_2990dd0a114a27a93671,geometry,llama,it,it,metaphor,monolingual,residual,500,55.8,51.8,-4,88,108,0.174582164266,descriptive_only,,descriptive_comparison
+cmp_f38902dfff2794fa281b,geometry,llama,it,it,sarcasm,unsteered,omean,500,0.2,1.6,1.4,8,1,0.0390625,descriptive_only,,descriptive_comparison
+cmp_695f1a0b0ef058348844,geometry,llama,it,it,sarcasm,monolingual,omean,500,0.4,1.6,1.2,8,2,0.109375,descriptive_only,,descriptive_comparison
+cmp_8ccb933a0a6eb3557a89,geometry,llama,it,it,sarcasm,unsteered,residual,500,0.2,1,0.8,5,1,0.21875,descriptive_only,,descriptive_comparison
+cmp_87e6a631df5c7991d68f,geometry,llama,it,it,sarcasm,monolingual,residual,500,0.4,1,0.6,5,2,0.453125,descriptive_only,,descriptive_comparison
+cmp_63d02f4f17f0c080aeef,geometry,llama,zh,zh,idiom,unsteered,omean,500,3.8,7.2,3.4,33,16,0.0212941141414,descriptive_only,,descriptive_comparison
+cmp_0e89d7400f2c159f1c90,geometry,llama,zh,zh,idiom,monolingual,omean,500,7,7.2,0.2,33,32,1,descriptive_only,,descriptive_comparison
+cmp_9f2fe5bb24e263f1c102,geometry,llama,zh,zh,idiom,unsteered,residual,500,3.8,4.8,1,22,17,0.522397380497,descriptive_only,,descriptive_comparison
+cmp_3de090176840d57387f9,geometry,llama,zh,zh,idiom,monolingual,residual,500,7,4.8,-2.2,21,32,0.168977822288,descriptive_only,,descriptive_comparison
+cmp_a9dc6eb891c88c28c109,geometry,llama,zh,zh,irony,unsteered,omean,500,1,1,0,5,5,1,descriptive_only,,descriptive_comparison
+cmp_dcc8bc08f16b8e8ef30d,geometry,llama,zh,zh,irony,monolingual,omean,500,0.6,1,0.4,5,3,0.7265625,descriptive_only,,descriptive_comparison
+cmp_cb50f8f6b6591b973a5d,geometry,llama,zh,zh,irony,unsteered,residual,500,1,0.4,-0.6,2,5,0.453125,descriptive_only,,descriptive_comparison
+cmp_8c63c6104a37ba1440fd,geometry,llama,zh,zh,irony,monolingual,residual,500,0.6,0.4,-0.2,2,3,1,descriptive_only,,descriptive_comparison
+cmp_800098e4a62fc2ad7909,geometry,llama,zh,zh,metaphor,unsteered,omean,500,26,35.2,9.2,111,65,0.000651335908804,descriptive_only,,descriptive_comparison
+cmp_4315404a7be43077d437,geometry,llama,zh,zh,metaphor,monolingual,omean,500,31.6,35.2,3.6,102,84,0.212468293515,descriptive_only,,descriptive_comparison
+cmp_a0cb35f29f7aae729e56,geometry,llama,zh,zh,metaphor,unsteered,residual,500,26,26,0,80,80,1,descriptive_only,,descriptive_comparison
+cmp_9e8096afb1a00d152274,geometry,llama,zh,zh,metaphor,monolingual,residual,500,31.6,26,-5.6,79,107,0.0474411274864,descriptive_only,,descriptive_comparison
+cmp_5d85c9719241c77157ad,geometry,llama,zh,zh,sarcasm,unsteered,omean,500,0.2,0.8,0.6,4,1,0.375,descriptive_only,,descriptive_comparison
+cmp_ff615c6d21d65fbafcff,geometry,llama,zh,zh,sarcasm,monolingual,omean,500,1.4,0.8,-0.6,3,6,0.5078125,descriptive_only,,descriptive_comparison
+cmp_6896630ab3a60df5654e,geometry,llama,zh,zh,sarcasm,unsteered,residual,499,0.2,0.60120240481,0.400801603206,3,1,0.625,descriptive_only,,descriptive_comparison
+cmp_6f00069dc4d53a01c670,geometry,llama,zh,zh,sarcasm,monolingual,residual,499,1.4,0.60120240481,-0.801603206413,3,7,0.34375,descriptive_only,,descriptive_comparison
+cmp_cd43f965a8d730b1b176,geometry,mistral,bn,bn,idiom,unsteered,omean,500,4.4,7.8,3.4,38,21,0.0363431799571,descriptive_only,,descriptive_comparison
+cmp_cda126522f15cb7057c5,geometry,mistral,bn,bn,idiom,monolingual,omean,500,10.4,7.8,-2.6,34,47,0.182076746941,descriptive_only,,descriptive_comparison
+cmp_708271bffdabb086d207,geometry,mistral,bn,bn,idiom,unsteered,residual,500,4.4,7,2.6,29,16,0.0724542601625,descriptive_only,,descriptive_comparison
+cmp_54d466a9d7c90c58a908,geometry,mistral,bn,bn,idiom,monolingual,residual,500,10.4,7,-3.4,29,46,0.0639499164671,descriptive_only,,descriptive_comparison
+cmp_7eb16ab1220f5da20deb,geometry,mistral,bn,bn,irony,unsteered,omean,500,9.8,10,0.2,36,35,1,descriptive_only,,descriptive_comparison
+cmp_ff5b64bfe832c258a6f9,geometry,mistral,bn,bn,irony,monolingual,omean,500,11,10,-1,37,42,0.652964375516,descriptive_only,,descriptive_comparison
+cmp_3daa18e6f6b34da85977,geometry,mistral,bn,bn,irony,unsteered,residual,500,9.8,10.4,0.6,45,42,0.830373009686,descriptive_only,,descriptive_comparison
+cmp_8d6cd91822d391b17955,geometry,mistral,bn,bn,irony,monolingual,residual,500,11,10.4,-0.6,41,44,0.828423274165,descriptive_only,,descriptive_comparison
+cmp_d36a1da28b87a6d69de7,geometry,mistral,bn,bn,metaphor,unsteered,omean,500,12.4,33.2,20.8,145,41,8.03897888973e-15,descriptive_only,,descriptive_comparison
+cmp_9dc2914e0d0c5bb8894b,geometry,mistral,bn,bn,metaphor,monolingual,omean,500,50.6,33.2,-17.4,68,155,5.46889877742e-09,descriptive_only,,descriptive_comparison
+cmp_2cdf4651233dff9bfff1,geometry,mistral,bn,bn,metaphor,unsteered,residual,500,12.4,42.4,30,179,29,1.41397218212e-27,descriptive_only,,descriptive_comparison
+cmp_74a66e5568652d938219,geometry,mistral,bn,bn,metaphor,monolingual,residual,500,50.6,42.4,-8.2,94,135,0.00807077219601,descriptive_only,,descriptive_comparison
+cmp_c7a5d05f2767af0dbc01,geometry,mistral,bn,bn,sarcasm,unsteered,omean,500,6.8,6.4,-0.4,28,30,0.89568321389,descriptive_only,,descriptive_comparison
+cmp_0487f6f8259d1a612a0c,geometry,mistral,bn,bn,sarcasm,monolingual,omean,500,10.2,6.4,-3.8,20,39,0.0183370877791,descriptive_only,,descriptive_comparison
+cmp_280bff8aec0cc7b154b0,geometry,mistral,bn,bn,sarcasm,unsteered,residual,499,6.8,8.81763527054,2.00400801603,40,30,0.281978921794,descriptive_only,,descriptive_comparison
+cmp_8eb07e92b222037afd1f,geometry,mistral,bn,bn,sarcasm,monolingual,residual,499,10.2,8.81763527054,-1.40280561122,35,42,0.494382273695,descriptive_only,,descriptive_comparison
+cmp_84c9765e444f0b495ca9,geometry,mistral,de,de,idiom,unsteered,omean,500,24.2,42.8,18.6,156,63,2.75291320424e-10,descriptive_only,,descriptive_comparison
+cmp_9af5ed713ec62339ad9c,geometry,mistral,de,de,idiom,monolingual,omean,500,31.8,42.8,11,135,80,0.000214647783664,descriptive_only,,descriptive_comparison
+cmp_27f6cb0612711434e0da,geometry,mistral,de,de,idiom,unsteered,residual,500,24.2,20.6,-3.6,60,78,0.147591864169,descriptive_only,,descriptive_comparison
+cmp_eb60976c603a6d68433b,geometry,mistral,de,de,idiom,monolingual,residual,500,31.8,20.6,-11.2,69,125,7.05953142438e-05,descriptive_only,,descriptive_comparison
+cmp_d19b80c3345f1bf5970c,geometry,mistral,de,de,irony,unsteered,omean,500,7.8,9,1.2,40,34,0.561380744299,descriptive_only,,descriptive_comparison
+cmp_c5ae1b6317fa275a9bff,geometry,mistral,de,de,irony,monolingual,omean,500,10.4,9,-1.4,37,44,0.505236440767,descriptive_only,,descriptive_comparison
+cmp_22b02c0f5462e7208d93,geometry,mistral,de,de,irony,unsteered,residual,500,7.8,7.4,-0.4,32,34,0.902158500097,descriptive_only,,descriptive_comparison
+cmp_43eb56443bc9236e701f,geometry,mistral,de,de,irony,monolingual,residual,500,10.4,7.4,-3,31,46,0.110015598985,descriptive_only,,descriptive_comparison
+cmp_ae91e707ef8b80a0b16a,geometry,mistral,de,de,metaphor,unsteered,omean,499,41.2,61.5230460922,20.4408817635,175,73,7.73529640232e-11,descriptive_only,,descriptive_comparison
+cmp_d3cc5c918a2f6a53d15d,geometry,mistral,de,de,metaphor,monolingual,omean,499,55.4,61.5230460922,6.2124248497,132,101,0.0491386436017,descriptive_only,,descriptive_comparison
+cmp_49ce3c6d04c88b7ac61b,geometry,mistral,de,de,metaphor,unsteered,residual,500,41.2,51,9.8,127,78,0.000760731789879,descriptive_only,,descriptive_comparison
+cmp_2d4a1b8d51bfd8ae4497,geometry,mistral,de,de,metaphor,monolingual,residual,500,55.4,51,-4.4,90,112,0.139334094927,descriptive_only,,descriptive_comparison
+cmp_01461a86a9f19396917c,geometry,mistral,en,en,idiom,unsteered,omean,500,9.2,15,5.8,64,35,0.00464065408843,descriptive_only,,descriptive_comparison
+cmp_f61597f31099b19e8b67,geometry,mistral,en,en,idiom,monolingual,omean,500,9.8,15,5.2,66,40,0.014779410517,descriptive_only,,descriptive_comparison
+cmp_e6c1f85b900be29366fb,geometry,mistral,en,en,idiom,unsteered,residual,500,9.2,10.2,1,46,41,0.668284996719,descriptive_only,,descriptive_comparison
+cmp_6a631b375ad759c9b00c,geometry,mistral,en,en,idiom,monolingual,residual,500,9.8,10.2,0.4,43,41,0.913202362225,descriptive_only,,descriptive_comparison
+cmp_19074954b4ea75546313,geometry,mistral,en,en,irony,unsteered,omean,500,3.8,3,-0.8,11,15,0.557197093964,descriptive_only,,descriptive_comparison
+cmp_44efaf695745bf9a1b34,geometry,mistral,en,en,irony,monolingual,omean,500,5.2,3,-2.2,13,24,0.0988717495929,descriptive_only,,descriptive_comparison
+cmp_3509dce1ad034b90bab1,geometry,mistral,en,en,irony,unsteered,residual,500,3.8,2.6,-1.2,11,17,0.344928450882,descriptive_only,,descriptive_comparison
+cmp_ec9f304a0aa4d6d9f25d,geometry,mistral,en,en,irony,monolingual,residual,500,5.2,2.6,-2.6,11,24,0.0409595915116,descriptive_only,,descriptive_comparison
+cmp_1a3589644ad98d0436e1,geometry,mistral,en,en,metaphor,unsteered,omean,500,60.8,73.6,12.8,130,66,5.67143856497e-06,descriptive_only,,descriptive_comparison
+cmp_37a05f00fad487786a73,geometry,mistral,en,en,metaphor,monolingual,omean,500,68.8,73.6,4.8,99,75,0.0809265929636,descriptive_only,,descriptive_comparison
+cmp_f632fc9e65c375ce22f0,geometry,mistral,en,en,metaphor,unsteered,residual,500,60.8,57.8,-3,90,105,0.316073126119,descriptive_only,,descriptive_comparison
+cmp_e12fcbed519953254765,geometry,mistral,en,en,metaphor,monolingual,residual,500,68.8,57.8,-11,79,134,0.00020014896302,descriptive_only,,descriptive_comparison
+cmp_f12a679dd98700eed3da,geometry,mistral,en,en,sarcasm,unsteered,omean,500,5.2,1.4,-3.8,7,26,0.00131872715428,descriptive_only,,descriptive_comparison
+cmp_7eca48fd7a88deb433b5,geometry,mistral,en,en,sarcasm,monolingual,omean,500,3,1.4,-1.6,5,13,0.0962524414062,descriptive_only,,descriptive_comparison
+cmp_b3bedd7f08ce14e36376,geometry,mistral,en,en,sarcasm,unsteered,residual,500,5.2,3,-2.2,11,22,0.0801433124579,descriptive_only,,descriptive_comparison
+cmp_c6a3eaf2362b692c6661,geometry,mistral,en,en,sarcasm,monolingual,residual,500,3,3,0,13,13,1,descriptive_only,,descriptive_comparison
+cmp_72804a236df19136eef5,geometry,mistral,es,es,idiom,unsteered,omean,500,8,11.6,3.6,49,31,0.0566644263451,descriptive_only,,descriptive_comparison
+cmp_75498d37e81ecf1230a3,geometry,mistral,es,es,idiom,monolingual,omean,500,7.2,11.6,4.4,50,28,0.0168530898946,descriptive_only,,descriptive_comparison
+cmp_b1350824c2d44ac040c5,geometry,mistral,es,es,idiom,unsteered,residual,500,8,5.2,-2.8,21,35,0.0814268146095,descriptive_only,,descriptive_comparison
+cmp_1a7ecd0d4d94ad100a96,geometry,mistral,es,es,idiom,monolingual,residual,500,7.2,5.2,-2,22,32,0.220328494177,descriptive_only,,descriptive_comparison
+cmp_4ec1253c6873ba55b774,geometry,mistral,es,es,irony,unsteered,omean,500,5,12.4,7.4,56,19,2.2429642159e-05,descriptive_only,,descriptive_comparison
+cmp_560db628f33a501e9719,geometry,mistral,es,es,irony,monolingual,omean,500,10,12.4,2.4,56,44,0.271253024074,descriptive_only,,descriptive_comparison
+cmp_10206692e1094e4049fd,geometry,mistral,es,es,irony,unsteered,residual,500,5,5.6,0.6,26,23,0.775449654682,descriptive_only,,descriptive_comparison
+cmp_48081a72fb1ca81ab457,geometry,mistral,es,es,irony,monolingual,residual,500,10,5.6,-4.4,21,43,0.0081469022287,descriptive_only,,descriptive_comparison
+cmp_b5af3e2548a664a57452,geometry,mistral,es,es,metaphor,unsteered,omean,500,38.6,52.8,14.2,135,64,5.34208749217e-07,descriptive_only,,descriptive_comparison
+cmp_6b9692272bee0434776f,geometry,mistral,es,es,metaphor,monolingual,omean,500,45,52.8,7.8,121,82,0.00749853445321,descriptive_only,,descriptive_comparison
+cmp_1a73f6f236fde823c862,geometry,mistral,es,es,metaphor,unsteered,residual,500,38.6,35.2,-3.4,79,96,0.226374998793,descriptive_only,,descriptive_comparison
+cmp_242179920272910c5df2,geometry,mistral,es,es,metaphor,monolingual,residual,500,45,35.2,-9.8,66,115,0.000333756388625,descriptive_only,,descriptive_comparison
+cmp_b8231db38e9f16e1be45,geometry,mistral,it,it,idiom,unsteered,omean,500,3,5,2,23,13,0.132498163963,descriptive_only,,descriptive_comparison
+cmp_05f2312d67974d0c80ef,geometry,mistral,it,it,idiom,monolingual,omean,500,6.8,5,-1.8,21,30,0.262437535711,descriptive_only,,descriptive_comparison
+cmp_ab8d770a4772b748638b,geometry,mistral,it,it,idiom,unsteered,residual,500,3,2.4,-0.6,11,14,0.690037965775,descriptive_only,,descriptive_comparison
+cmp_594c15730ce8c5be1df0,geometry,mistral,it,it,idiom,monolingual,residual,500,6.8,2.4,-4.4,11,33,0.00126003381627,descriptive_only,,descriptive_comparison
+cmp_5ef90e836bf31a21a67c,geometry,mistral,it,it,irony,unsteered,omean,500,11,27.2,16.2,126,45,4.48774813074e-10,descriptive_only,,descriptive_comparison
+cmp_9997db47ee1b17b217b8,geometry,mistral,it,it,irony,monolingual,omean,500,21.8,27.2,5.4,97,70,0.043902385358,descriptive_only,,descriptive_comparison
+cmp_d951fa67650f23c409b4,geometry,mistral,it,it,irony,unsteered,residual,500,11,14.4,3.4,57,40,0.103769382873,descriptive_only,,descriptive_comparison
+cmp_df67ca1505ab523fb24e,geometry,mistral,it,it,irony,monolingual,residual,500,21.8,14.4,-7.4,48,85,0.00169431970761,descriptive_only,,descriptive_comparison
+cmp_aba37d744aaa11ba1dfd,geometry,mistral,it,it,metaphor,unsteered,omean,500,72.2,84.8,12.6,102,39,1.10422033338e-07,descriptive_only,,descriptive_comparison
+cmp_8649144eb5c11f3c4e76,geometry,mistral,it,it,metaphor,monolingual,omean,500,90.2,84.8,-5.4,30,57,0.00501359890015,descriptive_only,,descriptive_comparison
+cmp_d6559bf3d773e3b150fc,geometry,mistral,it,it,metaphor,unsteered,residual,500,72.2,90.4,18.2,111,20,1.76186158891e-16,descriptive_only,,descriptive_comparison
+cmp_681e514145c1088bf6a3,geometry,mistral,it,it,metaphor,monolingual,residual,500,90.2,90.4,0.2,36,35,1,descriptive_only,,descriptive_comparison
+cmp_0f63f0fb5f508529cf41,geometry,mistral,it,it,sarcasm,unsteered,omean,500,1.2,7.8,6.6,37,4,1.02583726402e-07,descriptive_only,,descriptive_comparison
+cmp_ef3381365d714a6464b0,geometry,mistral,it,it,sarcasm,monolingual,omean,500,4.8,7.8,3,37,22,0.0674446119008,descriptive_only,,descriptive_comparison
+cmp_670617ed568770ff4b3b,geometry,mistral,it,it,sarcasm,unsteered,residual,500,1.2,2.6,1.4,12,5,0.143463134766,descriptive_only,,descriptive_comparison
+cmp_087114bf1b6e7df93a79,geometry,mistral,it,it,sarcasm,monolingual,residual,500,4.8,2.6,-2.2,12,23,0.0895310789347,descriptive_only,,descriptive_comparison
+cmp_f09a40b7a534b6c04ac0,geometry,mistral,zh,zh,idiom,unsteered,omean,500,17.4,19.6,2.2,76,65,0.399786720173,descriptive_only,,descriptive_comparison
+cmp_45af89dd88eaa7c1aa20,geometry,mistral,zh,zh,idiom,monolingual,omean,500,22.4,19.6,-2.8,69,83,0.291654451334,descriptive_only,,descriptive_comparison
+cmp_000137e2e62094560f08,geometry,mistral,zh,zh,idiom,unsteered,residual,500,17.4,16.2,-1.2,67,73,0.672756503615,descriptive_only,,descriptive_comparison
+cmp_2e368f0bd53161e4f3f9,geometry,mistral,zh,zh,idiom,monolingual,residual,500,22.4,16.2,-6.2,58,89,0.0130776973345,descriptive_only,,descriptive_comparison
+cmp_defeaddd0228afe1b411,geometry,mistral,zh,zh,irony,unsteered,omean,500,6.2,5,-1.2,21,27,0.470879013622,descriptive_only,,descriptive_comparison
+cmp_0ea6b1754bea5226b46b,geometry,mistral,zh,zh,irony,monolingual,omean,500,11,5,-6,17,47,0.000226882382883,descriptive_only,,descriptive_comparison
+cmp_0d706c3710c2f80eab08,geometry,mistral,zh,zh,irony,unsteered,residual,500,6.2,8.6,2.4,36,24,0.155001904003,descriptive_only,,descriptive_comparison
+cmp_7981f82afa6ff717d3ba,geometry,mistral,zh,zh,irony,monolingual,residual,500,11,8.6,-2.4,28,40,0.181810054536,descriptive_only,,descriptive_comparison
+cmp_00474704b1071a539a93,geometry,mistral,zh,zh,metaphor,unsteered,omean,500,65.4,75.2,9.8,127,78,0.000760731789879,descriptive_only,,descriptive_comparison
+cmp_8205111369a6edaa526c,geometry,mistral,zh,zh,metaphor,monolingual,omean,500,78.4,75.2,-3.2,74,90,0.241389551656,descriptive_only,,descriptive_comparison
+cmp_eb434a442abd2c9493d6,geometry,mistral,zh,zh,metaphor,unsteered,residual,500,65.4,74,8.6,119,76,0.0025428237257,descriptive_only,,descriptive_comparison
+cmp_b2f8e5d4b6a734c6a6f9,geometry,mistral,zh,zh,metaphor,monolingual,residual,500,78.4,74,-4.4,70,92,0.0986608829931,descriptive_only,,descriptive_comparison
+cmp_05d2381fa9ebe0083fb0,geometry,mistral,zh,zh,sarcasm,unsteered,omean,500,1.2,3.6,2.4,18,6,0.0226558446884,descriptive_only,,descriptive_comparison
+cmp_e795cedc0d50a8f2bd47,geometry,mistral,zh,zh,sarcasm,monolingual,omean,500,7,3.6,-3.4,15,32,0.018623836615,descriptive_only,,descriptive_comparison
+cmp_f7d30dfa4f2bcfbe7fbb,geometry,mistral,zh,zh,sarcasm,unsteered,residual,500,1.2,5,3.8,24,5,0.000546112656593,descriptive_only,,descriptive_comparison
+cmp_bb5fcd3cba7b0d2f5dca,geometry,mistral,zh,zh,sarcasm,monolingual,residual,500,7,5,-2,24,34,0.237047114763,descriptive_only,,descriptive_comparison
+cmp_664cd0c99add8ba313b9,geometry,qwen,bn,bn,idiom,unsteered,omean,500,0.8,0.2,-0.6,1,4,0.375,descriptive_only,,descriptive_comparison
+cmp_d067ee1ae3cf259617a0,geometry,qwen,bn,bn,idiom,monolingual,omean,500,3,0.2,-2.8,1,15,0.000518798828125,descriptive_only,,descriptive_comparison
+cmp_20f84657fb15dcdaee27,geometry,qwen,bn,bn,idiom,unsteered,residual,500,0.8,0.8,0,4,4,1,descriptive_only,,descriptive_comparison
+cmp_67cd751581b95cc0a7a1,geometry,qwen,bn,bn,idiom,monolingual,residual,500,3,0.8,-2.2,4,15,0.0192108154297,descriptive_only,,descriptive_comparison
+cmp_f6d23576e46fa3ae4014,geometry,qwen,bn,bn,irony,unsteered,omean,500,0.6,0.6,0,3,3,1,descriptive_only,,descriptive_comparison
+cmp_21f319a2937dd506e769,geometry,qwen,bn,bn,irony,monolingual,omean,500,5.8,0.6,-5.2,1,27,2.16066837311e-07,descriptive_only,,descriptive_comparison
+cmp_6f723a0dbaededf3111f,geometry,qwen,bn,bn,irony,unsteered,residual,500,0.6,3,2.4,14,2,0.00418090820312,descriptive_only,,descriptive_comparison
+cmp_49429b7812851d72361d,geometry,qwen,bn,bn,irony,monolingual,residual,500,5.8,3,-2.8,14,28,0.0435585219238,descriptive_only,,descriptive_comparison
+cmp_47cc3c601413449c451f,geometry,qwen,bn,bn,metaphor,unsteered,omean,500,3.2,0,-3.2,0,16,3.0517578125e-05,descriptive_only,,descriptive_comparison
+cmp_d336e3cd07f1adccfc31,geometry,qwen,bn,bn,metaphor,monolingual,omean,500,2.8,0,-2.8,0,14,0.0001220703125,descriptive_only,,descriptive_comparison
+cmp_fd81c321ab4c0e65d4ae,geometry,qwen,bn,bn,metaphor,unsteered,residual,500,3.2,2,-1.2,10,16,0.326939582825,descriptive_only,,descriptive_comparison
+cmp_c5d59b876349c80816f2,geometry,qwen,bn,bn,metaphor,monolingual,residual,500,2.8,2,-0.8,10,14,0.541256189346,descriptive_only,,descriptive_comparison
+cmp_48640b9a2dc459dec26b,geometry,qwen,bn,bn,sarcasm,unsteered,omean,500,0,0,0,0,0,1,descriptive_only,,descriptive_comparison
+cmp_beb847626e89a36ea567,geometry,qwen,bn,bn,sarcasm,monolingual,omean,500,0,0,0,0,0,1,descriptive_only,,descriptive_comparison
+cmp_853965c731885fc780d8,geometry,qwen,bn,bn,sarcasm,unsteered,residual,500,0,0,0,0,0,1,descriptive_only,,descriptive_comparison
+cmp_d0c0efe91b7ecac854af,geometry,qwen,bn,bn,sarcasm,monolingual,residual,500,0,0,0,0,0,1,descriptive_only,,descriptive_comparison
+cmp_9f9d1097dcf913782ba0,geometry,qwen,de,de,idiom,unsteered,omean,500,6.2,17.4,11.2,76,20,7.31936798952e-09,descriptive_only,,descriptive_comparison
+cmp_db0325ae443bb7bec83f,geometry,qwen,de,de,idiom,monolingual,omean,500,26.6,17.4,-9.2,55,101,0.000287108516978,descriptive_only,,descriptive_comparison
+cmp_0db76cf358329f933857,geometry,qwen,de,de,idiom,unsteered,residual,500,6.2,18.6,12.4,83,21,6.6760437705e-10,descriptive_only,,descriptive_comparison
+cmp_bc72d0793f3ddee95ddb,geometry,qwen,de,de,idiom,monolingual,residual,500,26.6,18.6,-8,59,99,0.00182636132543,descriptive_only,,descriptive_comparison
+cmp_9952e169956b7bbfddb1,geometry,qwen,de,de,irony,unsteered,omean,500,1,4.4,3.4,22,5,0.00151371955872,descriptive_only,,descriptive_comparison
+cmp_139c4bbcaf1735bb2425,geometry,qwen,de,de,irony,monolingual,omean,500,2.8,4.4,1.6,20,12,0.215327149723,descriptive_only,,descriptive_comparison
+cmp_5f6ab82a0aec16268e6b,geometry,qwen,de,de,irony,unsteered,residual,500,1,0.8,-0.2,4,5,1,descriptive_only,,descriptive_comparison
+cmp_5f1eada0d5656c1304c5,geometry,qwen,de,de,irony,monolingual,residual,500,2.8,0.8,-2,4,14,0.0308837890625,descriptive_only,,descriptive_comparison
+cmp_086cdf7c5d397cdf61fa,geometry,qwen,de,de,metaphor,unsteered,omean,500,16.2,61.2,45,248,23,7.80587547938e-49,descriptive_only,,descriptive_comparison
+cmp_9ecd779e40c59e26fbf9,geometry,qwen,de,de,metaphor,monolingual,omean,500,31.2,61.2,30,189,39,8.25268463568e-25,descriptive_only,,descriptive_comparison
+cmp_d2841d1f44d687da5055,geometry,qwen,de,de,metaphor,unsteered,residual,500,16.2,14.8,-1.4,47,54,0.550708913598,descriptive_only,,descriptive_comparison
+cmp_b59d7592a297d6eda003,geometry,qwen,de,de,metaphor,monolingual,residual,500,31.2,14.8,-16.4,36,118,2.2121803985e-11,descriptive_only,,descriptive_comparison
+cmp_6371bcc8b3acff5aa4e1,geometry,qwen,en,en,idiom,unsteered,omean,500,5.2,24.6,19.4,110,13,2.61246511941e-20,descriptive_only,,descriptive_comparison
+cmp_bdf1c64136788c1b00a5,geometry,qwen,en,en,idiom,monolingual,omean,500,19.4,24.6,5.2,91,65,0.044980164189,descriptive_only,,descriptive_comparison
+cmp_19c525a2c524293ada9b,geometry,qwen,en,en,idiom,unsteered,residual,500,5.2,5.6,0.4,22,20,0.877614328752,descriptive_only,,descriptive_comparison
+cmp_23c841e271946f56f0ed,geometry,qwen,en,en,idiom,monolingual,residual,500,19.4,5.6,-13.8,20,89,1.41766303456e-11,descriptive_only,,descriptive_comparison
+cmp_f89647f0ffa60f2102ff,geometry,qwen,en,en,irony,unsteered,omean,500,0.2,3.6,3.4,17,0,1.52587890625e-05,descriptive_only,,descriptive_comparison
+cmp_fa8f7c984a1b7ffe455c,geometry,qwen,en,en,irony,monolingual,omean,500,2.8,3.6,0.8,12,8,0.503444671631,descriptive_only,,descriptive_comparison
+cmp_a07909b2b858015d221b,geometry,qwen,en,en,irony,unsteered,residual,500,0.2,0.2,0,1,1,1,descriptive_only,,descriptive_comparison
+cmp_bc2b8a15ad4342246d6d,geometry,qwen,en,en,irony,monolingual,residual,500,2.8,0.2,-2.6,1,14,0.0009765625,descriptive_only,,descriptive_comparison
+cmp_989a8af008a0ed03e2d3,geometry,qwen,en,en,metaphor,unsteered,omean,500,35.2,89,53.8,278,9,2.66538021583e-70,descriptive_only,,descriptive_comparison
+cmp_a5149254fa51eadb87b7,geometry,qwen,en,en,metaphor,monolingual,omean,500,64.8,89,24.2,143,22,6.30897480622e-23,descriptive_only,,descriptive_comparison
+cmp_007e2026a3dca86c16c2,geometry,qwen,en,en,metaphor,unsteered,residual,500,35.2,27.6,-7.6,69,107,0.00514085808924,descriptive_only,,descriptive_comparison
+cmp_91be7610bb5ba7383277,geometry,qwen,en,en,metaphor,monolingual,residual,500,64.8,27.6,-37.2,32,218,3.35196337875e-35,descriptive_only,,descriptive_comparison
+cmp_81badeeaf2e2c811350f,geometry,qwen,en,en,sarcasm,unsteered,omean,500,0.4,2,1.6,9,1,0.021484375,descriptive_only,,descriptive_comparison
+cmp_767271edd4dff5d06992,geometry,qwen,en,en,sarcasm,monolingual,omean,500,0.4,2,1.6,10,2,0.03857421875,descriptive_only,,descriptive_comparison
+cmp_7f0d43af52314e3f9a8c,geometry,qwen,en,en,sarcasm,unsteered,residual,500,0.4,0.8,0.4,3,1,0.625,descriptive_only,,descriptive_comparison
+cmp_5cff7b92615823f828f9,geometry,qwen,en,en,sarcasm,monolingual,residual,500,0.4,0.8,0.4,4,2,0.6875,descriptive_only,,descriptive_comparison
+cmp_2b8ddc734b78114dec68,geometry,qwen,es,es,idiom,unsteered,omean,500,0.4,7,6.6,34,1,2.09547579288e-09,descriptive_only,,descriptive_comparison
+cmp_d0b337cb038da6bc2ca4,geometry,qwen,es,es,idiom,monolingual,omean,500,7,7,0,31,31,1,descriptive_only,,descriptive_comparison
+cmp_21da384a128f9db7a441,geometry,qwen,es,es,idiom,unsteered,residual,500,0.4,3,2.6,13,0,0.000244140625,descriptive_only,,descriptive_comparison
+cmp_e7d43063d29f16bd0f02,geometry,qwen,es,es,idiom,monolingual,residual,500,7,3,-4,12,32,0.00365776682793,descriptive_only,,descriptive_comparison
+cmp_1207618727e2fc5c56be,geometry,qwen,es,es,irony,unsteered,omean,500,0,1.6,1.6,8,0,0.0078125,descriptive_only,,descriptive_comparison
+cmp_f3f3891f21055c59af84,geometry,qwen,es,es,irony,monolingual,omean,500,0.8,1.6,0.8,8,4,0.3876953125,descriptive_only,,descriptive_comparison
+cmp_bd48bcb859b91afda925,geometry,qwen,es,es,irony,unsteered,residual,500,0,0.4,0.4,2,0,0.5,descriptive_only,,descriptive_comparison
+cmp_40569a391aee37cddd4f,geometry,qwen,es,es,irony,monolingual,residual,500,0.8,0.4,-0.4,2,4,0.6875,descriptive_only,,descriptive_comparison
+cmp_7fa032320326a4d5f86b,geometry,qwen,es,es,metaphor,unsteered,omean,500,15.8,62.4,46.6,249,16,6.41762781198e-55,descriptive_only,,descriptive_comparison
+cmp_9042d82164898fedcff5,geometry,qwen,es,es,metaphor,monolingual,omean,500,30.8,62.4,31.6,194,36,2.22699166574e-27,descriptive_only,,descriptive_comparison
+cmp_e537ec8531020e6217a0,geometry,qwen,es,es,metaphor,unsteered,residual,500,15.8,7,-8.8,25,69,6.33926470738e-06,descriptive_only,,descriptive_comparison
+cmp_cfd9c1c470a94d54aeb9,geometry,qwen,es,es,metaphor,monolingual,residual,500,30.8,7,-23.8,16,135,1.21550613097e-24,descriptive_only,,descriptive_comparison
+cmp_b506e9e2069e3b41bbd3,geometry,qwen,it,it,idiom,unsteered,omean,500,0.8,4.6,3.8,23,4,0.000310748815536,descriptive_only,,descriptive_comparison
+cmp_06fd4ee134d8d4707289,geometry,qwen,it,it,idiom,monolingual,omean,500,3.6,4.6,1,22,17,0.522397380497,descriptive_only,,descriptive_comparison
+cmp_5d48e40d2bc916d87d8b,geometry,qwen,it,it,idiom,unsteered,residual,500,0.8,1.4,0.6,6,3,0.5078125,descriptive_only,,descriptive_comparison
+cmp_a0b1154a26a97efef89b,geometry,qwen,it,it,idiom,monolingual,residual,500,3.6,1.4,-2.2,5,16,0.0266036987305,descriptive_only,,descriptive_comparison
+cmp_a053672fc2e1798ed30c,geometry,qwen,it,it,irony,unsteered,omean,500,1,5,4,23,3,8.79764556885e-05,descriptive_only,,descriptive_comparison
+cmp_39c617d4507c0bf516dd,geometry,qwen,it,it,irony,monolingual,omean,500,4,5,1,23,18,0.532709255236,descriptive_only,,descriptive_comparison
+cmp_e5a59291154a30bd4508,geometry,qwen,it,it,irony,unsteered,residual,500,1,0.2,-0.8,1,5,0.21875,descriptive_only,,descriptive_comparison
+cmp_39c0464f5742f9c1b7fe,geometry,qwen,it,it,irony,monolingual,residual,500,4,0.2,-3.8,0,19,3.81469726562e-06,descriptive_only,,descriptive_comparison
+cmp_a10d559e10f0cb8aa9f2,geometry,qwen,it,it,metaphor,unsteered,omean,500,28.2,56,27.8,181,42,9.40949323501e-22,descriptive_only,,descriptive_comparison
+cmp_402dbd8d6cb06bd59842,geometry,qwen,it,it,metaphor,monolingual,omean,500,84,56,-28,28,168,1.57185372528e-25,descriptive_only,,descriptive_comparison
+cmp_8927fb314c4ab009d465,geometry,qwen,it,it,metaphor,unsteered,residual,500,28.2,76.2,48,265,25,8.94980683919e-52,descriptive_only,,descriptive_comparison
+cmp_d2e06cb211840bf32f6f,geometry,qwen,it,it,metaphor,monolingual,residual,500,84,76.2,-7.8,39,78,0.000396177818792,descriptive_only,,descriptive_comparison
+cmp_bcd258ae4d013c66fbf2,geometry,qwen,it,it,sarcasm,unsteered,omean,500,0.4,1,0.6,4,1,0.375,descriptive_only,,descriptive_comparison
+cmp_df16f7a6515385e6535e,geometry,qwen,it,it,sarcasm,monolingual,omean,500,1,1,0,5,5,1,descriptive_only,,descriptive_comparison
+cmp_9cfc5f1199f99c7fc6bc,geometry,qwen,it,it,sarcasm,unsteered,residual,500,0.4,0.2,-0.2,0,1,1,descriptive_only,,descriptive_comparison
+cmp_1bae057087210c710873,geometry,qwen,it,it,sarcasm,monolingual,residual,500,1,0.2,-0.8,1,5,0.21875,descriptive_only,,descriptive_comparison
+cmp_05d976af5b831dc961c1,geometry,qwen,zh,zh,idiom,unsteered,omean,500,6,19.4,13.4,84,17,7.85196723436e-12,descriptive_only,,descriptive_comparison
+cmp_02becb80fc964fa16b5c,geometry,qwen,zh,zh,idiom,monolingual,omean,500,12.8,19.4,6.6,72,39,0.00223834571791,descriptive_only,,descriptive_comparison
+cmp_bcd6fd521a09dfacfd49,geometry,qwen,zh,zh,idiom,unsteered,residual,500,6,11,5,43,18,0.00186810103098,descriptive_only,,descriptive_comparison
+cmp_6e43120499047e398ef8,geometry,qwen,zh,zh,idiom,monolingual,residual,500,12.8,11,-1.8,37,46,0.379999396412,descriptive_only,,descriptive_comparison
+cmp_868254f90af994a7bddb,geometry,qwen,zh,zh,irony,unsteered,omean,500,0.2,2.4,2.2,12,1,0.00341796875,descriptive_only,,descriptive_comparison
+cmp_d6372954042e094cf2a1,geometry,qwen,zh,zh,irony,monolingual,omean,500,5.8,2.4,-3.4,9,26,0.00598812056705,descriptive_only,,descriptive_comparison
+cmp_666f3c6e0e047de1451a,geometry,qwen,zh,zh,irony,unsteered,residual,500,0.2,1.4,1.2,7,1,0.0703125,descriptive_only,,descriptive_comparison
+cmp_d0e4db639104aad139c1,geometry,qwen,zh,zh,irony,monolingual,residual,500,5.8,1.4,-4.4,7,29,0.000312551157549,descriptive_only,,descriptive_comparison
+cmp_080a030f31a53c5bdf99,geometry,qwen,zh,zh,metaphor,unsteered,omean,500,52.4,92,39.6,210,12,6.95278394083e-48,descriptive_only,,descriptive_comparison
+cmp_5bb921c40b39b70bcc82,geometry,qwen,zh,zh,metaphor,monolingual,omean,500,89.6,92,2.4,38,26,0.16864291144,descriptive_only,,descriptive_comparison
+cmp_be0bd982ec4f49d5bd88,geometry,qwen,zh,zh,metaphor,unsteered,residual,500,52.4,82.8,30.4,185,33,7.63071900889e-27,descriptive_only,,descriptive_comparison
+cmp_6c091ea99621598ebe03,geometry,qwen,zh,zh,metaphor,monolingual,residual,500,89.6,82.8,-6.8,36,70,0.0012402397144,descriptive_only,,descriptive_comparison
+cmp_67b9d3501d5302354513,geometry,qwen,zh,zh,sarcasm,unsteered,omean,500,0,1,1,5,0,0.0625,descriptive_only,,descriptive_comparison
+cmp_957ca907ae34d3bf7416,geometry,qwen,zh,zh,sarcasm,monolingual,omean,500,3.8,1,-2.8,4,18,0.00434350967407,descriptive_only,,descriptive_comparison
+cmp_af21dcc1b5e840c6f61c,geometry,qwen,zh,zh,sarcasm,unsteered,residual,500,0,1.4,1.4,7,0,0.015625,descriptive_only,,descriptive_comparison
+cmp_33a52574e9a861f394e3,geometry,qwen,zh,zh,sarcasm,monolingual,residual,500,3.8,1.4,-2.4,5,17,0.0169005393982,descriptive_only,,descriptive_comparison
+cmp_c8ff7df2487d5fe24577,geometry,qwenxl,bn,bn,idiom,unsteered,omean,500,0.6,1,0.4,5,3,0.7265625,descriptive_only,,descriptive_comparison
+cmp_7917779b7a78948b51f4,geometry,qwenxl,bn,bn,idiom,monolingual,omean,500,2.6,1,-1.6,5,13,0.0962524414062,descriptive_only,,descriptive_comparison
+cmp_347cf78e1f5e61f2574c,geometry,qwenxl,bn,bn,idiom,unsteered,residual,500,0.6,0.8,0.2,4,3,1,descriptive_only,,descriptive_comparison
+cmp_963a0f95ca3ef74e0806,geometry,qwenxl,bn,bn,idiom,monolingual,residual,500,2.6,0.8,-1.8,4,13,0.0490417480469,descriptive_only,,descriptive_comparison
+cmp_47c5b5b31b471ff0b43c,geometry,qwenxl,bn,bn,irony,unsteered,omean,500,1.6,5.6,4,25,5,0.000324914231896,descriptive_only,,descriptive_comparison
+cmp_e4ddb22ab9c6cd01a6ad,geometry,qwenxl,bn,bn,irony,monolingual,omean,500,24.4,5.6,-18.8,18,112,8.92102342933e-18,descriptive_only,,descriptive_comparison
+cmp_4e7101ad183c1f5f9516,geometry,qwenxl,bn,bn,irony,unsteered,residual,500,1.6,2.2,0.6,11,8,0.647605895996,descriptive_only,,descriptive_comparison
+cmp_75c0e324f4d2c40ab04c,geometry,qwenxl,bn,bn,irony,monolingual,residual,500,24.4,2.2,-22.2,7,118,3.98143732417e-27,descriptive_only,,descriptive_comparison
+cmp_c11afa4ba50bdbee7392,geometry,qwenxl,bn,bn,metaphor,unsteered,omean,500,1.2,4.4,3.2,22,6,0.00371916592121,descriptive_only,,descriptive_comparison
+cmp_c9a3b1ec2e1cedb77269,geometry,qwenxl,bn,bn,metaphor,monolingual,omean,500,8.8,4.4,-4.4,15,37,0.00318525344778,descriptive_only,,descriptive_comparison
+cmp_96c39c6b0ad3db96b6cf,geometry,qwenxl,bn,bn,metaphor,unsteered,residual,500,1.2,9.6,8.4,47,5,1.28482291473e-09,descriptive_only,,descriptive_comparison
+cmp_31c3af1af576c77bb0fd,geometry,qwenxl,bn,bn,metaphor,monolingual,residual,500,8.8,9.6,0.8,44,40,0.743644186105,descriptive_only,,descriptive_comparison
+cmp_fdc1f2aa19c72c76a0bb,geometry,qwenxl,bn,bn,sarcasm,unsteered,omean,500,0.2,2.4,2.2,12,1,0.00341796875,descriptive_only,,descriptive_comparison
+cmp_a51db09a899f9a3d47c9,geometry,qwenxl,bn,bn,sarcasm,monolingual,omean,500,0,2.4,2.4,12,0,0.00048828125,descriptive_only,,descriptive_comparison
+cmp_9506e5802c7da123c321,geometry,qwenxl,bn,bn,sarcasm,unsteered,residual,500,0.2,0.2,0,1,1,1,descriptive_only,,descriptive_comparison
+cmp_83d190da5303f5752d9d,geometry,qwenxl,bn,bn,sarcasm,monolingual,residual,500,0,0.2,0.2,1,0,1,descriptive_only,,descriptive_comparison
+cmp_5c71f8872bfdf9614c13,geometry,qwenxl,de,de,idiom,unsteered,omean,500,5.6,25.2,19.6,117,19,2.06893425547e-18,descriptive_only,,descriptive_comparison
+cmp_22929cd6e1bc57634b66,geometry,qwenxl,de,de,idiom,monolingual,omean,500,29.4,25.2,-4.2,81,102,0.139076177276,descriptive_only,,descriptive_comparison
+cmp_dbf65c105ef7397f460c,geometry,qwenxl,de,de,idiom,unsteered,residual,500,5.6,19.6,14,86,16,9.13466159541e-13,descriptive_only,,descriptive_comparison
+cmp_c6216d296e8f92e247e6,geometry,qwenxl,de,de,idiom,monolingual,residual,500,29.4,19.6,-9.8,56,105,0.00013904177586,descriptive_only,,descriptive_comparison
+cmp_13f90fe7d11044faeb2b,geometry,qwenxl,de,de,irony,unsteered,omean,500,1,29.6,28.6,145,2,1.21957807947e-40,descriptive_only,,descriptive_comparison
+cmp_bf2a615065d11bfbdbe6,geometry,qwenxl,de,de,irony,monolingual,omean,500,30.4,29.6,-0.8,78,82,0.81261556519,descriptive_only,,descriptive_comparison
+cmp_f3a3d43b6f89b109b20a,geometry,qwenxl,de,de,irony,unsteered,residual,500,1,3.8,2.8,17,3,0.00257682800293,descriptive_only,,descriptive_comparison
+cmp_4e3c75d152816bf36429,geometry,qwenxl,de,de,irony,monolingual,residual,500,30.4,3.8,-26.6,10,143,2.69857746588e-31,descriptive_only,,descriptive_comparison
+cmp_ea33b3b33a982f8aca77,geometry,qwenxl,de,de,metaphor,unsteered,omean,500,20.2,49.4,29.2,179,33,1.81417475058e-25,descriptive_only,,descriptive_comparison
+cmp_1c3069063599c53ce2fd,geometry,qwenxl,de,de,metaphor,monolingual,omean,500,25.2,49.4,24.2,162,41,3.27365524513e-18,descriptive_only,,descriptive_comparison
+cmp_0330e7a831aa9a1c6fa1,geometry,qwenxl,de,de,metaphor,unsteered,residual,500,20.2,15.4,-4.8,51,75,0.0400357593563,descriptive_only,,descriptive_comparison
+cmp_bee464bd9c9d64492a64,geometry,qwenxl,de,de,metaphor,monolingual,residual,500,25.2,15.4,-9.8,46,95,4.49180334642e-05,descriptive_only,,descriptive_comparison
+cmp_8983b6eeaaea0fef42d1,geometry,qwenxl,en,en,idiom,unsteered,omean,500,5,13.6,8.6,60,17,8.90984796833e-07,descriptive_only,,descriptive_comparison
+cmp_8c9712f98e1256679cce,geometry,qwenxl,en,en,idiom,monolingual,omean,500,17.8,13.6,-4.2,42,63,0.05044215664,descriptive_only,,descriptive_comparison
+cmp_2da85748a5c4d647c570,geometry,qwenxl,en,en,idiom,unsteered,residual,500,5,7.6,2.6,34,21,0.104789482427,descriptive_only,,descriptive_comparison
+cmp_1156b8489f35440b5a2d,geometry,qwenxl,en,en,idiom,monolingual,residual,500,17.8,7.6,-10.2,27,78,6.48971715083e-07,descriptive_only,,descriptive_comparison
+cmp_862e24ecd4bcf94e8957,geometry,qwenxl,en,en,irony,unsteered,omean,500,0.6,31.4,30.8,157,3,9.3438280541e-43,descriptive_only,,descriptive_comparison
+cmp_f944a1da91f604d56716,geometry,qwenxl,en,en,irony,monolingual,omean,500,11,31.4,20.4,134,32,4.79456700334e-16,descriptive_only,,descriptive_comparison
+cmp_3f5681e427d9c2ac8129,geometry,qwenxl,en,en,irony,unsteered,residual,500,0.6,0.2,-0.4,1,3,0.625,descriptive_only,,descriptive_comparison
+cmp_00a36526592ce7cf06c8,geometry,qwenxl,en,en,irony,monolingual,residual,500,11,0.2,-10.8,0,54,1.11022302463e-16,descriptive_only,,descriptive_comparison
+cmp_b5a2d8603dc5ea9a8f57,geometry,qwenxl,en,en,metaphor,unsteered,omean,500,40.8,78,37.2,216,30,6.54041667179e-36,descriptive_only,,descriptive_comparison
+cmp_84c13a68efb5a8e7a184,geometry,qwenxl,en,en,metaphor,monolingual,omean,500,65.8,78,12.2,108,47,1.05933419085e-06,descriptive_only,,descriptive_comparison
+cmp_1091fd1a2d9b4f239cbb,geometry,qwenxl,en,en,metaphor,unsteered,residual,500,40.8,39,-1.8,90,99,0.5607400079,descriptive_only,,descriptive_comparison
+cmp_1ec2a12a861938c8af18,geometry,qwenxl,en,en,metaphor,monolingual,residual,500,65.8,39,-26.8,31,165,2.78364980221e-23,descriptive_only,,descriptive_comparison
+cmp_6ae67ad1305f6bdc8235,geometry,qwenxl,en,en,sarcasm,unsteered,omean,500,0.2,3,2.8,15,1,0.000518798828125,descriptive_only,,descriptive_comparison
+cmp_29996b957da249b9260f,geometry,qwenxl,en,en,sarcasm,monolingual,omean,500,7.8,3,-4.8,12,36,0.000717269673394,descriptive_only,,descriptive_comparison
+cmp_f4b9ffa5d6bf90cea56c,geometry,qwenxl,en,en,sarcasm,unsteered,residual,500,0.2,2.6,2.4,13,1,0.0018310546875,descriptive_only,,descriptive_comparison
+cmp_72a8ac1c71fa8f8e28ea,geometry,qwenxl,en,en,sarcasm,monolingual,residual,500,7.8,2.6,-5.2,8,34,6.87711149112e-05,descriptive_only,,descriptive_comparison
+cmp_3a420dea175242ae7f8b,geometry,qwenxl,es,es,idiom,unsteered,omean,500,1.8,7,5.2,33,7,4.22770226578e-05,descriptive_only,,descriptive_comparison
+cmp_0c90fe0055abdcfd67dc,geometry,qwenxl,es,es,idiom,monolingual,omean,500,7.4,7,-0.4,28,30,0.89568321389,descriptive_only,,descriptive_comparison
+cmp_182cc830e0517c0bef48,geometry,qwenxl,es,es,idiom,unsteered,residual,500,1.8,6,4.2,27,6,0.000324063468724,descriptive_only,,descriptive_comparison
+cmp_086d29738267681a60d2,geometry,qwenxl,es,es,idiom,monolingual,residual,500,7.4,6,-1.4,20,27,0.381693397663,descriptive_only,,descriptive_comparison
+cmp_fedea9922df2e6b8af30,geometry,qwenxl,es,es,irony,unsteered,omean,500,0.4,24.2,23.8,119,0,3.00926553811e-36,descriptive_only,,descriptive_comparison
+cmp_31cff3124998e6508d95,geometry,qwenxl,es,es,irony,monolingual,omean,500,12.8,24.2,11.4,91,34,3.47380088285e-07,descriptive_only,,descriptive_comparison
+cmp_07f3c93ab70894f9449a,geometry,qwenxl,es,es,irony,unsteered,residual,500,0.4,0,-0.4,0,2,0.5,descriptive_only,,descriptive_comparison
+cmp_6914a3783d2806d35856,geometry,qwenxl,es,es,irony,monolingual,residual,500,12.8,0,-12.8,0,64,1.08420217249e-19,descriptive_only,,descriptive_comparison
+cmp_46479658cae1c5095eba,geometry,qwenxl,es,es,metaphor,unsteered,omean,500,15.6,42.8,27.2,170,34,5.99635596775e-23,descriptive_only,,descriptive_comparison
+cmp_7d00c55bcb339d4f7abe,geometry,qwenxl,es,es,metaphor,monolingual,omean,500,25.2,42.8,17.6,129,41,8.45854149369e-12,descriptive_only,,descriptive_comparison
+cmp_ef71ecf5558db28de6d6,geometry,qwenxl,es,es,metaphor,unsteered,residual,500,15.6,8.2,-7.4,34,71,0.000390700015522,descriptive_only,,descriptive_comparison
+cmp_8d8be18db37e3006854e,geometry,qwenxl,es,es,metaphor,monolingual,residual,500,25.2,8.2,-17,13,98,2.65828418601e-17,descriptive_only,,descriptive_comparison
+cmp_0f730e4a2d6888f31f79,geometry,qwenxl,it,it,idiom,unsteered,omean,500,2,8.6,6.6,39,6,5.41776898899e-07,descriptive_only,,descriptive_comparison
+cmp_95d0dd92ee9e36816a2b,geometry,qwenxl,it,it,idiom,monolingual,omean,500,6.6,8.6,2,39,29,0.274990396171,descriptive_only,,descriptive_comparison
+cmp_c6ddf4da713837a22faf,geometry,qwenxl,it,it,idiom,unsteered,residual,500,2,3.8,1.8,18,9,0.122078120708,descriptive_only,,descriptive_comparison
+cmp_7d911571ac8082678521,geometry,qwenxl,it,it,idiom,monolingual,residual,500,6.6,3.8,-2.8,14,28,0.0435585219238,descriptive_only,,descriptive_comparison
+cmp_9926fb05b0da8ac60e88,geometry,qwenxl,it,it,irony,unsteered,omean,500,0.8,26.6,25.8,129,0,2.93873587706e-39,descriptive_only,,descriptive_comparison
+cmp_0ed4e87fee0eafd0fea0,geometry,qwenxl,it,it,irony,monolingual,omean,500,17.8,26.6,8.8,89,45,0.000180137603542,descriptive_only,,descriptive_comparison
+cmp_99045b4fd609dc0822be,geometry,qwenxl,it,it,irony,unsteered,residual,500,0.8,0.8,0,2,2,1,descriptive_only,,descriptive_comparison
+cmp_b0360c3b976610711ab9,geometry,qwenxl,it,it,irony,monolingual,residual,500,17.8,0.8,-17,0,85,5.16987882846e-26,descriptive_only,,descriptive_comparison
+cmp_a5a275c8fc3d7db1784f,geometry,qwenxl,it,it,metaphor,unsteered,omean,500,30.2,54.2,24,165,45,2.7094481352e-17,descriptive_only,,descriptive_comparison
+cmp_8e5a85a45af814c136d1,geometry,qwenxl,it,it,metaphor,monolingual,omean,500,74.8,54.2,-20.6,42,145,1.80643761089e-14,descriptive_only,,descriptive_comparison
+cmp_d0de0f4a12a8293d84c0,geometry,qwenxl,it,it,metaphor,unsteered,residual,500,30.2,67.2,37,209,24,5.0650959488e-38,descriptive_only,,descriptive_comparison
+cmp_7d0e3c00d106a324959e,geometry,qwenxl,it,it,metaphor,monolingual,residual,500,74.8,67.2,-7.6,56,94,0.00240551621561,descriptive_only,,descriptive_comparison
+cmp_9a1278248db8d9a4d545,geometry,qwenxl,it,it,sarcasm,unsteered,omean,500,0.4,3.4,3,16,1,0.000274658203125,descriptive_only,,descriptive_comparison
+cmp_419008685cae032931ff,geometry,qwenxl,it,it,sarcasm,monolingual,omean,500,10.2,3.4,-6.8,12,46,8.21966396333e-06,descriptive_only,,descriptive_comparison
+cmp_3cb4695157c9b7a70969,geometry,qwenxl,it,it,sarcasm,unsteered,residual,500,0.4,0.4,0,1,1,1,descriptive_only,,descriptive_comparison
+cmp_7e037120492fbc44a855,geometry,qwenxl,it,it,sarcasm,monolingual,residual,500,10.2,0.4,-9.8,1,50,4.61852778244e-14,descriptive_only,,descriptive_comparison
+cmp_230b3a4b1e307581f90b,geometry,qwenxl,zh,zh,idiom,unsteered,omean,500,6.8,14.4,7.6,62,24,5.08365420184e-05,descriptive_only,,descriptive_comparison
+cmp_da4c82da6c1c41c5589f,geometry,qwenxl,zh,zh,idiom,monolingual,omean,500,18,14.4,-3.6,39,57,0.0821930685569,descriptive_only,,descriptive_comparison
+cmp_1e5e37cc5f8db14213f0,geometry,qwenxl,zh,zh,idiom,unsteered,residual,500,6.8,10.4,3.6,44,26,0.0413914286739,descriptive_only,,descriptive_comparison
+cmp_3d7aca31e675e8759540,geometry,qwenxl,zh,zh,idiom,monolingual,residual,500,18,10.4,-7.6,29,67,0.000132222198427,descriptive_only,,descriptive_comparison
+cmp_76b16d0e8c70d82de5c2,geometry,qwenxl,zh,zh,irony,unsteered,omean,500,1.2,8,6.8,38,4,5.65314621781e-08,descriptive_only,,descriptive_comparison
+cmp_95fca7db105833945f5b,geometry,qwenxl,zh,zh,irony,monolingual,omean,500,3,8,5,35,10,0.000247087784601,descriptive_only,,descriptive_comparison
+cmp_8d0d16b355a08bcc40e8,geometry,qwenxl,zh,zh,irony,unsteered,residual,500,1.2,0.4,-0.8,2,6,0.2890625,descriptive_only,,descriptive_comparison
+cmp_b30890a1e087309145db,geometry,qwenxl,zh,zh,irony,monolingual,residual,500,3,0.4,-2.6,2,15,0.00234985351562,descriptive_only,,descriptive_comparison
+cmp_d966e8cde3d1d988fa3c,geometry,qwenxl,zh,zh,metaphor,unsteered,omean,500,49.8,76.4,26.6,165,32,8.63147888238e-23,descriptive_only,,descriptive_comparison
+cmp_b52892159f79b157ee1b,geometry,qwenxl,zh,zh,metaphor,monolingual,omean,500,85.4,76.4,-9,38,83,5.26733093707e-05,descriptive_only,,descriptive_comparison
+cmp_8519449d9717d43e2537,geometry,qwenxl,zh,zh,metaphor,unsteered,residual,500,49.8,82.2,32.4,193,31,8.76023094966e-30,descriptive_only,,descriptive_comparison
+cmp_23b47ba4440ba3ebee9e,geometry,qwenxl,zh,zh,metaphor,monolingual,residual,500,85.4,82.2,-3.2,39,55,0.121371112972,descriptive_only,,descriptive_comparison
+cmp_0c03bda878e540b67e60,geometry,qwenxl,zh,zh,sarcasm,unsteered,omean,500,0.6,1.8,1.2,8,2,0.109375,descriptive_only,,descriptive_comparison
+cmp_7ac1f3b788d7034f869b,geometry,qwenxl,zh,zh,sarcasm,monolingual,omean,500,2.6,1.8,-0.8,8,12,0.503444671631,descriptive_only,,descriptive_comparison
+cmp_ed1983810e1913c9ba0b,geometry,qwenxl,zh,zh,sarcasm,unsteered,residual,500,0.6,1.6,1,8,3,0.2265625,descriptive_only,,descriptive_comparison
+cmp_8369b8b8d340413abe8c,geometry,qwenxl,zh,zh,sarcasm,monolingual,residual,500,2.6,1.6,-1,8,13,0.383310317993,descriptive_only,,descriptive_comparison
+cmp_58ad4c50818ae0046eb8,monolingual,llama,bn,bn,idiom,unsteered,monolingual,500,0.4,1.8,1.4,9,2,0.0654296875,monolingual_within_llama_22_cells,0.0959635416667,not_significant
+cmp_78976d67c768ffeb977b,monolingual,llama,bn,bn,irony,unsteered,monolingual,500,3.2,2.4,-0.8,11,15,0.557197093964,monolingual_within_llama_22_cells,0.61291680336,not_significant
+cmp_e87ea13d0322fe10a52b,monolingual,llama,bn,bn,metaphor,unsteered,monolingual,500,2,4.8,2.8,22,8,0.0161248017102,monolingual_within_llama_22_cells,0.0354745637625,significant_gain
+cmp_372c544acf832a99219a,monolingual,llama,bn,bn,sarcasm,unsteered,monolingual,500,1.6,2.8,1.2,14,8,0.28627872467,monolingual_within_llama_22_cells,0.334703947368,not_significant
+cmp_a6d9b3b5cabba4e9ff34,monolingual,llama,de,de,idiom,unsteered,monolingual,500,9,18.4,9.4,82,35,1.65041334794e-05,monolingual_within_llama_22_cells,0.000181545468274,significant_gain
+cmp_1c96780ab99f10c5a5ca,monolingual,llama,de,de,irony,unsteered,monolingual,500,1.6,3.8,2.2,16,5,0.0266036987305,monolingual_within_llama_22_cells,0.0487734476725,significant_gain
+cmp_4375f704b943e84539f6,monolingual,llama,de,de,metaphor,unsteered,monolingual,500,16.4,26.2,9.8,104,55,0.000125825360264,monolingual_within_llama_22_cells,0.000922719308604,significant_gain
+cmp_6b18d8c3de89df6b6bfe,monolingual,llama,en,en,idiom,unsteered,monolingual,500,11.2,17.6,6.4,78,46,0.00516122490199,monolingual_within_llama_22_cells,0.0162209925491,significant_gain
+cmp_76d5ec151452a144c224,monolingual,llama,en,en,irony,unsteered,monolingual,500,2.2,3.6,1.4,16,9,0.229522943497,monolingual_within_llama_22_cells,0.297029691584,not_significant
+cmp_9ce02aec6879f2f97aa3,monolingual,llama,en,en,metaphor,unsteered,monolingual,500,57,66.8,9.8,117,68,0.000388619434068,monolingual_within_llama_22_cells,0.0017099255099,significant_gain
+cmp_09a626ea385bdc268497,monolingual,llama,en,en,sarcasm,unsteered,monolingual,500,2,4.6,2.6,23,10,0.0350820333697,monolingual_within_llama_22_cells,0.0580278352925,not_significant
+cmp_55b30717031478ef718e,monolingual,llama,es,es,idiom,unsteered,monolingual,500,3.8,9.6,5.8,45,16,0.000264278661827,monolingual_within_llama_22_cells,0.00145353264005,significant_gain
+cmp_3ee942bfe9866e7cd294,monolingual,llama,es,es,irony,unsteered,monolingual,500,0.4,1.2,0.8,6,2,0.2890625,monolingual_within_llama_22_cells,0.334703947368,not_significant
+cmp_e2b34143d6e2895e0965,monolingual,llama,es,es,metaphor,unsteered,monolingual,500,29,36,7,108,73,0.0112915494379,monolingual_within_llama_22_cells,0.0310517609542,significant_gain
+cmp_3d12ec0b1a9672fef81e,monolingual,llama,it,it,idiom,unsteered,monolingual,500,3.6,7,3.4,31,14,0.0160943600313,monolingual_within_llama_22_cells,0.0354745637625,significant_gain
+cmp_6b567b5570d4953576f8,monolingual,llama,it,it,irony,unsteered,monolingual,500,1.4,5,3.6,23,5,0.000912234187126,monolingual_within_llama_22_cells,0.00334485868613,significant_gain
+cmp_6e3e40877acb805a0d18,monolingual,llama,it,it,metaphor,unsteered,monolingual,500,41.8,55.8,14,138,68,1.22031856618e-06,monolingual_within_llama_22_cells,2.6847008456e-05,significant_gain
+cmp_efddb606e01640c39390,monolingual,llama,it,it,sarcasm,unsteered,monolingual,500,0.2,0.4,0.2,2,1,1,monolingual_within_llama_22_cells,1,not_significant
+cmp_7eab3fc99e59e17a1e79,monolingual,llama,zh,zh,idiom,unsteered,monolingual,500,3.8,7,3.2,31,15,0.0258960817932,monolingual_within_llama_22_cells,0.0487734476725,significant_gain
+cmp_0acbf6ca7270f2e38726,monolingual,llama,zh,zh,irony,unsteered,monolingual,500,1,0.6,-0.4,3,5,0.7265625,monolingual_within_llama_22_cells,0.761160714286,not_significant
+cmp_6f4e9edd99531b348bf9,monolingual,llama,zh,zh,metaphor,unsteered,monolingual,500,26,31.6,5.6,98,70,0.0369268042771,monolingual_within_llama_22_cells,0.0580278352925,not_significant
+cmp_8838a50bc87b981cffa0,monolingual,llama,zh,zh,sarcasm,unsteered,monolingual,500,0.2,1.4,1.2,7,1,0.0703125,monolingual_within_llama_22_cells,0.0966796875,not_significant
+cmp_afe582f0b6d2da8f1a2f,monolingual,mistral,bn,bn,idiom,unsteered,monolingual,500,4.4,10.4,6,48,18,0.000287118449662,monolingual_within_mistral_22_cells,0.000902372270365,significant_gain
+cmp_fed61985a80528fd6412,monolingual,mistral,bn,bn,irony,unsteered,monolingual,500,9.8,11,1.2,44,38,0.581114454177,monolingual_within_mistral_22_cells,0.639225899594,not_significant
+cmp_338289c3f2aff4c902c9,monolingual,mistral,bn,bn,metaphor,unsteered,monolingual,500,12.4,50.6,38.2,215,24,1.49873300511e-39,monolingual_within_mistral_22_cells,3.29721261125e-38,significant_gain
+cmp_5cae5beb0678543f51b7,monolingual,mistral,bn,bn,sarcasm,unsteered,monolingual,500,6.8,10.2,3.4,43,26,0.0532893638165,monolingual_within_mistral_22_cells,0.0732728752477,not_significant
+cmp_2189f1057f9e63a3087e,monolingual,mistral,de,de,idiom,unsteered,monolingual,500,24.2,31.8,7.6,114,76,0.00710962345011,monolingual_within_mistral_22_cells,0.0130343096585,significant_gain
+cmp_0fac932ccd6b8fbee754,monolingual,mistral,de,de,irony,unsteered,monolingual,500,7.8,10.4,2.6,45,32,0.171060973554,monolingual_within_mistral_22_cells,0.209074523233,not_significant
+cmp_47d151560f35829c21f3,monolingual,mistral,de,de,metaphor,unsteered,monolingual,500,41.2,55.4,14.2,147,76,2.29365916934e-06,monolingual_within_mistral_22_cells,1.26151254313e-05,significant_gain
+cmp_f57fe542b6a4300c50a9,monolingual,mistral,en,en,idiom,unsteered,monolingual,500,9.2,9.8,0.6,41,38,0.822144242452,monolingual_within_mistral_22_cells,0.822144242452,not_significant
+cmp_af6d4251734922c09abc,monolingual,mistral,en,en,irony,unsteered,monolingual,500,3.8,5.2,1.4,22,15,0.324008600088,monolingual_within_mistral_22_cells,0.375167852733,not_significant
+cmp_758cfd1ee3cc0c44e98f,monolingual,mistral,en,en,metaphor,unsteered,monolingual,500,60.8,68.8,8,116,76,0.00475523748555,monolingual_within_mistral_22_cells,0.0104615224682,significant_gain
+cmp_4ff79c8196df4e18fa6f,monolingual,mistral,en,en,sarcasm,unsteered,monolingual,500,5.2,3,-2.2,12,23,0.0895310789347,monolingual_within_mistral_22_cells,0.11586374921,not_significant
+cmp_148ab5b712d9759ac66c,monolingual,mistral,es,es,idiom,unsteered,monolingual,500,8,7.2,-0.8,30,34,0.707980754135,monolingual_within_mistral_22_cells,0.741694123379,not_significant
+cmp_8ad2ae28c95208a3506a,monolingual,mistral,es,es,irony,unsteered,monolingual,500,5,10,5,45,20,0.00262637681068,monolingual_within_mistral_22_cells,0.00642003220389,significant_gain
+cmp_145dc87ef37a595be51f,monolingual,mistral,es,es,metaphor,unsteered,monolingual,500,38.6,45,6.4,109,77,0.0227676033539,monolingual_within_mistral_22_cells,0.0357776624132,significant_gain
+cmp_a7b276011bb012a4a24b,monolingual,mistral,it,it,idiom,unsteered,monolingual,500,3,6.8,3.8,33,14,0.00794272650948,monolingual_within_mistral_22_cells,0.0134415371699,significant_gain
+cmp_31ff61d78120007f60ca,monolingual,mistral,it,it,irony,unsteered,monolingual,500,11,21.8,10.8,91,37,2.00612994503e-06,monolingual_within_mistral_22_cells,1.26151254313e-05,significant_gain
+cmp_02868675581275e52c75,monolingual,mistral,it,it,metaphor,unsteered,monolingual,500,72.2,90.2,18,112,22,1.02093839104e-15,monolingual_within_mistral_22_cells,1.12303223014e-14,significant_gain
+cmp_5476a9d938db7a2ba7e7,monolingual,mistral,it,it,sarcasm,unsteered,monolingual,500,1.2,4.8,3.6,24,6,0.00143090635538,monolingual_within_mistral_22_cells,0.0039349924773,significant_gain
+cmp_caccb012ecd120bdcd6a,monolingual,mistral,zh,zh,idiom,unsteered,monolingual,500,17.4,22.4,5,83,58,0.0428796152274,monolingual_within_mistral_22_cells,0.0628901023335,not_significant
+cmp_53cf91db051d819caed1,monolingual,mistral,zh,zh,irony,unsteered,monolingual,500,6.2,11,4.8,47,23,0.00558266735102,monolingual_within_mistral_22_cells,0.011165334702,significant_gain
+cmp_907d93d5191cf7b70d20,monolingual,mistral,zh,zh,metaphor,unsteered,monolingual,500,65.4,78.4,13,131,66,4.23453488928e-06,monolingual_within_mistral_22_cells,1.78698604335e-05,significant_gain
+cmp_6c3ddfcf765488ae2375,monolingual,mistral,zh,zh,sarcasm,unsteered,monolingual,500,1.2,7,5.8,35,6,4.87359830004e-06,monolingual_within_mistral_22_cells,1.78698604335e-05,significant_gain
+cmp_40271d962d2548cd288f,monolingual,qwen,bn,bn,idiom,unsteered,monolingual,500,0.8,3,2.2,15,4,0.0192108154297,monolingual_within_qwen_22_cells,0.0264148712158,significant_gain
+cmp_288cbb9600d7bb1a6ac5,monolingual,qwen,bn,bn,irony,unsteered,monolingual,500,0.6,5.8,5.2,29,3,2.55601480603e-06,monolingual_within_qwen_22_cells,5.62323257327e-06,significant_gain
+cmp_db2fe60158370a9a32ae,monolingual,qwen,bn,bn,metaphor,unsteered,monolingual,500,3.2,2.8,-0.4,14,16,0.855535551906,monolingual_within_qwen_22_cells,0.941089107096,not_significant
+cmp_3bbfe6e6bb20f05e1b22,monolingual,qwen,bn,bn,sarcasm,unsteered,monolingual,500,0,0,0,0,0,1,monolingual_within_qwen_22_cells,1,not_significant
+cmp_ca9dc09ded7214174867,monolingual,qwen,de,de,idiom,unsteered,monolingual,500,6.2,26.6,20.4,121,19,2.31912080204e-19,monolingual_within_qwen_22_cells,1.27551644112e-18,significant_gain
+cmp_eab9e41f47d9cd2e6420,monolingual,qwen,de,de,irony,unsteered,monolingual,500,1,2.8,1.8,13,4,0.0490417480469,monolingual_within_qwen_22_cells,0.0634657915901,not_significant
+cmp_9a8c0e01676ce1af187a,monolingual,qwen,de,de,metaphor,unsteered,monolingual,500,16.2,31.2,15,113,38,7.70634855694e-10,monolingual_within_qwen_22_cells,2.82566113755e-09,significant_gain
+cmp_cbaafa528a6008c4c70f,monolingual,qwen,en,en,idiom,unsteered,monolingual,500,5.2,19.4,14.2,89,18,1.78098907833e-12,monolingual_within_qwen_22_cells,7.83635194464e-12,significant_gain
+cmp_5b913b16dd9a04a11747,monolingual,qwen,en,en,irony,unsteered,monolingual,500,0.2,2.8,2.6,13,0,0.000244140625,monolingual_within_qwen_22_cells,0.000413161057692,significant_gain
+cmp_e45d68ca1d0a8ed421a1,monolingual,qwen,en,en,metaphor,unsteered,monolingual,500,35.2,64.8,29.6,195,47,1.31416729637e-22,monolingual_within_qwen_22_cells,9.63722684007e-22,significant_gain
+cmp_267701e8d1d7782b4dd8,monolingual,qwen,en,en,sarcasm,unsteered,monolingual,500,0.4,0.4,0,2,2,1,monolingual_within_qwen_22_cells,1,not_significant
+cmp_21bb8ad71b6cb626d434,monolingual,qwen,es,es,idiom,unsteered,monolingual,500,0.4,7,6.6,34,1,2.09547579288e-09,monolingual_within_qwen_22_cells,6.1171806651e-09,significant_gain
+cmp_e89e7146e4f5a3f762f1,monolingual,qwen,es,es,irony,unsteered,monolingual,500,0,0.8,0.8,4,0,0.125,monolingual_within_qwen_22_cells,0.152777777778,not_significant
+cmp_4b8b01c6a65cec4477bd,monolingual,qwen,es,es,metaphor,unsteered,monolingual,500,15.8,30.8,15,117,42,2.22442933276e-09,monolingual_within_qwen_22_cells,6.1171806651e-09,significant_gain
+cmp_6a48b65fcd294e1ed1ea,monolingual,qwen,it,it,idiom,unsteered,monolingual,500,0.8,3.6,2.8,17,3,0.00257682800293,monolingual_within_qwen_22_cells,0.00381256739298,significant_gain
+cmp_dc17202b2fbefd929f71,monolingual,qwen,it,it,irony,unsteered,monolingual,500,1,4,3,19,4,0.00259947776794,monolingual_within_qwen_22_cells,0.00381256739298,significant_gain
+cmp_719b901c609196f58ad0,monolingual,qwen,it,it,metaphor,unsteered,monolingual,500,28.2,84,55.8,296,17,6.09842261614e-67,monolingual_within_qwen_22_cells,1.34165297555e-65,significant_gain
+cmp_86293a90134a946c9d8f,monolingual,qwen,it,it,sarcasm,unsteered,monolingual,500,0.4,1,0.6,5,2,0.453125,monolingual_within_qwen_22_cells,0.524671052632,not_significant
+cmp_7e6d5af1a0ceeebacbc3,monolingual,qwen,zh,zh,idiom,unsteered,monolingual,500,6,12.8,6.8,51,17,4.45344877149e-05,monolingual_within_qwen_22_cells,8.16465608107e-05,significant_gain
+cmp_23f125508229ad017da1,monolingual,qwen,zh,zh,irony,unsteered,monolingual,500,0.2,5.8,5.6,28,0,7.45058059692e-09,monolingual_within_qwen_22_cells,1.8212530348e-08,significant_gain
+cmp_754ca3ac9e10c69fb00c,monolingual,qwen,zh,zh,metaphor,unsteered,monolingual,500,52.4,89.6,37.2,209,23,1.03791709352e-38,monolingual_within_qwen_22_cells,1.14170880287e-37,significant_gain
+cmp_63b7baa992423e367de7,monolingual,qwen,zh,zh,sarcasm,unsteered,monolingual,500,0,3.8,3.8,19,0,3.81469726562e-06,monolingual_within_qwen_22_cells,7.62939453125e-06,significant_gain
+cmp_07dea355e3fd20071121,monolingual,qwenxl,bn,bn,idiom,unsteered,monolingual,500,0.6,2.6,2,13,3,0.0212707519531,monolingual_within_qwenxl_22_cells,0.0246292917352,significant_gain
+cmp_ca06642a25eebda35204,monolingual,qwenxl,bn,bn,irony,unsteered,monolingual,500,1.6,24.4,22.8,120,6,1.21774680219e-28,monolingual_within_qwenxl_22_cells,6.69760741205e-28,significant_gain
+cmp_d64bba58e86afb1dd25f,monolingual,qwenxl,bn,bn,metaphor,unsteered,monolingual,500,1.2,8.8,7.6,43,5,1.36804843009e-08,monolingual_within_qwenxl_22_cells,2.14979039015e-08,significant_gain
+cmp_f2a421522192037726de,monolingual,qwenxl,bn,bn,sarcasm,unsteered,monolingual,500,0.2,0,-0.2,0,1,1,monolingual_within_qwenxl_22_cells,1,not_significant
+cmp_86b69a910705d1ed5460,monolingual,qwenxl,de,de,idiom,unsteered,monolingual,500,5.6,29.4,23.8,132,13,5.73849786787e-26,monolingual_within_qwenxl_22_cells,2.52493906186e-25,significant_gain
+cmp_99176af4ef0284766406,monolingual,qwenxl,de,de,irony,unsteered,monolingual,500,1,30.4,29.4,148,1,4.20389539297e-43,monolingual_within_qwenxl_22_cells,4.62428493227e-42,significant_gain
+cmp_11ba28dc41f23dfa0710,monolingual,qwenxl,de,de,metaphor,unsteered,monolingual,500,20.2,25.2,5,86,61,0.0473913557751,monolingual_within_qwenxl_22_cells,0.0521304913526,not_significant
+cmp_7fea95bf4c86db8a282f,monolingual,qwenxl,en,en,idiom,unsteered,monolingual,500,5,17.8,12.8,82,18,6.14780661505e-11,monolingual_within_qwenxl_22_cells,1.22956132301e-10,significant_gain
+cmp_53109c04731684cabf8d,monolingual,qwenxl,en,en,irony,unsteered,monolingual,500,0.6,11,10.4,55,3,2.25985896662e-13,monolingual_within_qwenxl_22_cells,4.97168972657e-13,significant_gain
+cmp_649185c9b632cafd2e82,monolingual,qwenxl,en,en,metaphor,unsteered,monolingual,500,40.8,65.8,25,179,54,7.7503216026e-17,monolingual_within_qwenxl_22_cells,2.13133844072e-16,significant_gain
+cmp_b85af8092ae0a9a144ac,monolingual,qwenxl,en,en,sarcasm,unsteered,monolingual,500,0.2,7.8,7.6,39,1,7.45785655454e-11,monolingual_within_qwenxl_22_cells,1.36727370167e-10,significant_gain
+cmp_2d6b45f6fc7f074dec44,monolingual,qwenxl,es,es,idiom,unsteered,monolingual,500,1.8,7.4,5.6,35,7,1.50972009578e-05,monolingual_within_qwenxl_22_cells,2.21425614048e-05,significant_gain
+cmp_ab0d59b7fd1206242e1a,monolingual,qwenxl,es,es,irony,unsteered,monolingual,500,0.4,12.8,12.4,64,2,5.99563801384e-17,monolingual_within_qwenxl_22_cells,1.88434337578e-16,significant_gain
+cmp_7e6cc0e6b02e24df056b,monolingual,qwenxl,es,es,metaphor,unsteered,monolingual,500,15.6,25.2,9.6,90,42,3.57357465363e-05,monolingual_within_qwenxl_22_cells,4.91366514874e-05,significant_gain
+cmp_a3b4639775cb24c87e29,monolingual,qwenxl,it,it,idiom,unsteered,monolingual,500,2,6.6,4.6,32,9,0.000430857042374,monolingual_within_qwenxl_22_cells,0.000557579701896,significant_gain
+cmp_a1511ee11ebb0310360a,monolingual,qwenxl,it,it,irony,unsteered,monolingual,500,0.8,17.8,17,87,2,1.29440841167e-23,monolingual_within_qwenxl_22_cells,4.74616417614e-23,significant_gain
+cmp_e35316a2fff9951f6c86,monolingual,qwenxl,it,it,metaphor,unsteered,monolingual,500,30.2,74.8,44.6,243,20,7.21580885873e-50,monolingual_within_qwenxl_22_cells,1.58747794892e-48,significant_gain
+cmp_f8b8080c09dadb933ff2,monolingual,qwenxl,it,it,sarcasm,unsteered,monolingual,500,0.4,10.2,9.8,50,1,4.61852778244e-14,monolingual_within_qwenxl_22_cells,1.12897345793e-13,significant_gain
+cmp_67b85c49692a8e5de380,monolingual,qwenxl,zh,zh,idiom,unsteered,monolingual,500,6.8,18,11.2,74,18,3.10144955652e-09,monolingual_within_qwenxl_22_cells,5.24860694181e-09,significant_gain
+cmp_79b0c2f9b4d9e245855b,monolingual,qwenxl,zh,zh,irony,unsteered,monolingual,500,1.2,3,1.8,14,5,0.0635681152344,monolingual_within_qwenxl_22_cells,0.0665951683408,not_significant
+cmp_b17c01a822df3ca953fe,monolingual,qwenxl,zh,zh,metaphor,unsteered,monolingual,500,49.8,85.4,35.6,196,18,5.54296465512e-39,monolingual_within_qwenxl_22_cells,4.06484074709e-38,significant_gain
+cmp_7aa612849462e6151f67,monolingual,qwenxl,zh,zh,sarcasm,unsteered,monolingual,500,0.6,2.6,2,12,2,0.012939453125,monolingual_within_qwenxl_22_cells,0.0158148871528,significant_gain
+cmp_dfc1c35f8e3e99d6073b,primary_crosslingual,llama,de,bn,idiom,unsteered,crosslingual,500,0.4,1,0.6,5,2,0.453125,primary_crosslingual_all_408_routes,0.54375,not significant
+cmp_837b1a95348abaa8522b,primary_crosslingual,llama,en,bn,idiom,unsteered,crosslingual,500,0.4,0.8,0.4,4,2,0.6875,primary_crosslingual_all_408_routes,0.768493150685,not significant
+cmp_8205a3164b2e9e48c9d2,primary_crosslingual,llama,es,bn,idiom,unsteered,crosslingual,500,0.4,1,0.6,5,2,0.453125,primary_crosslingual_all_408_routes,0.54375,not significant
+cmp_9cbd69ed6e6af9880b18,primary_crosslingual,llama,it,bn,idiom,unsteered,crosslingual,500,0.4,1,0.6,5,2,0.453125,primary_crosslingual_all_408_routes,0.54375,not significant
+cmp_6727a9fa490fbf64809f,primary_crosslingual,llama,zh,bn,idiom,unsteered,crosslingual,500,0.4,0.8,0.4,4,2,0.6875,primary_crosslingual_all_408_routes,0.768493150685,not significant
+cmp_ea28ba7186d328911cd5,primary_crosslingual,llama,de,bn,irony,unsteered,crosslingual,500,3.2,3.8,0.6,17,14,0.720100131817,primary_crosslingual_all_408_routes,0.794056361571,not significant
+cmp_68a91f07e36aa54e1e1d,primary_crosslingual,llama,en,bn,irony,unsteered,crosslingual,500,3.2,5.2,2,26,16,0.164149401783,primary_crosslingual_all_408_routes,0.234992827816,not significant
+cmp_0331ba4bda1cf8ee7681,primary_crosslingual,llama,es,bn,irony,unsteered,crosslingual,500,3.2,2,-1.2,9,15,0.307456254959,primary_crosslingual_all_408_routes,0.394472176174,not significant
+cmp_f89f9afe3701694bb92e,primary_crosslingual,llama,it,bn,irony,unsteered,crosslingual,500,3.2,2.4,-0.8,11,15,0.557197093964,primary_crosslingual_all_408_routes,0.644012505204,not significant
+cmp_7da1def072e6dbee02f8,primary_crosslingual,llama,zh,bn,irony,unsteered,crosslingual,500,3.2,2.4,-0.8,11,15,0.557197093964,primary_crosslingual_all_408_routes,0.644012505204,not significant
+cmp_e05cd682341d3b26321b,primary_crosslingual,llama,de,bn,metaphor,unsteered,crosslingual,500,2,2.4,0.4,10,8,0.814529418945,primary_crosslingual_all_408_routes,0.890959793377,not significant
+cmp_b40149c490be72c6c416,primary_crosslingual,llama,en,bn,metaphor,unsteered,crosslingual,500,2,3,1,13,8,0.383310317993,primary_crosslingual_all_408_routes,0.476800639455,not significant
+cmp_570a09348ba0812786cb,primary_crosslingual,llama,es,bn,metaphor,unsteered,crosslingual,500,2,2,0,10,10,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_2215ad8d02ee3642b11b,primary_crosslingual,llama,it,bn,metaphor,unsteered,crosslingual,500,2,3,1,15,10,0.424356222153,primary_crosslingual_all_408_routes,0.518375265384,not significant
+cmp_69877bcf369eadd50c1d,primary_crosslingual,llama,zh,bn,metaphor,unsteered,crosslingual,500,2,2.6,0.6,13,10,0.677639484406,primary_crosslingual_all_408_routes,0.765864015616,not significant
+cmp_cb091e2d707225a06808,primary_crosslingual,llama,en,bn,sarcasm,unsteered,crosslingual,500,1.6,1.6,0,7,7,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_8ef8956c4ab55dbe7d00,primary_crosslingual,llama,it,bn,sarcasm,unsteered,crosslingual,500,1.6,0.8,-0.8,4,8,0.3876953125,primary_crosslingual_all_408_routes,0.480789323708,not significant
+cmp_73ce551baf18a517f0d4,primary_crosslingual,llama,zh,bn,sarcasm,unsteered,crosslingual,500,1.6,1,-0.6,5,8,0.5810546875,primary_crosslingual_all_408_routes,0.665927844101,not significant
+cmp_f680d2e30ecb6259183f,primary_crosslingual,llama,bn,de,idiom,unsteered,crosslingual,500,9,13.6,4.6,61,38,0.0265251068484,primary_crosslingual_all_408_routes,0.0454155191717,significant gain
+cmp_d43f709c6f0e4dd3be5b,primary_crosslingual,llama,en,de,idiom,unsteered,crosslingual,500,9,20,11,91,36,1.14022940325e-06,primary_crosslingual_all_408_routes,3.78222436201e-06,significant gain
+cmp_9dea484123963ddddc77,primary_crosslingual,llama,es,de,idiom,unsteered,crosslingual,500,9,17.8,8.8,82,38,7.29150242871e-05,primary_crosslingual_all_408_routes,0.000187102703831,significant gain
+cmp_73998346ad4a934ff94a,primary_crosslingual,llama,it,de,idiom,unsteered,crosslingual,500,9,20.6,11.6,88,30,8.55353870716e-08,primary_crosslingual_all_408_routes,3.20169155277e-07,significant gain
+cmp_fa0ce1ee14d592180560,primary_crosslingual,llama,zh,de,idiom,unsteered,crosslingual,500,9,19.4,10.4,81,29,7.29356796534e-07,primary_crosslingual_all_408_routes,2.45931878501e-06,significant gain
+cmp_cd6aa6def677780335d9,primary_crosslingual,llama,bn,de,irony,unsteered,crosslingual,500,1.6,2,0.4,7,5,0.7744140625,primary_crosslingual_all_408_routes,0.849357358871,not significant
+cmp_e39f7f464a878c56a04c,primary_crosslingual,llama,en,de,irony,unsteered,crosslingual,500,1.6,3.4,1.8,17,8,0.107752144337,primary_crosslingual_all_408_routes,0.162871000367,not significant
+cmp_857c0e6a07627b577474,primary_crosslingual,llama,es,de,irony,unsteered,crosslingual,500,1.6,2.8,1.2,13,7,0.263175964355,primary_crosslingual_all_408_routes,0.341961125659,not significant
+cmp_d0be6a550f494fa3b93c,primary_crosslingual,llama,it,de,irony,unsteered,crosslingual,500,1.6,3.2,1.6,15,7,0.133800506592,primary_crosslingual_all_408_routes,0.194272621671,not significant
+cmp_f128a263a6f7ac074766,primary_crosslingual,llama,zh,de,irony,unsteered,crosslingual,500,1.6,2.4,0.8,11,7,0.480682373047,primary_crosslingual_all_408_routes,0.571773784849,not significant
+cmp_85d378330dead6e5a885,primary_crosslingual,llama,bn,de,metaphor,unsteered,crosslingual,500,16.4,25.4,9,97,52,0.000283869241538,primary_crosslingual_all_408_routes,0.000681286179691,significant gain
+cmp_80b9c54c6fa4d778c0c6,primary_crosslingual,llama,en,de,metaphor,unsteered,crosslingual,500,16.4,26.8,10.4,103,51,3.37573363056e-05,primary_crosslingual_all_408_routes,9.18199547511e-05,significant gain
+cmp_06dc3f73f410a990c26a,primary_crosslingual,llama,es,de,metaphor,unsteered,crosslingual,500,16.4,29.2,12.8,113,49,5.35518069635e-07,primary_crosslingual_all_408_routes,1.83606195303e-06,significant gain
+cmp_5ca88d92c08fbdbeff06,primary_crosslingual,llama,it,de,metaphor,unsteered,crosslingual,500,16.4,27.6,11.2,103,47,5.59761967002e-06,primary_crosslingual_all_408_routes,1.69172505583e-05,significant gain
+cmp_73766ed4feffbba340d7,primary_crosslingual,llama,zh,de,metaphor,unsteered,crosslingual,500,16.4,24.4,8,89,49,0.000836005802436,primary_crosslingual_all_408_routes,0.00191623801907,significant gain
+cmp_906092b85877ff0d77f2,primary_crosslingual,llama,bn,en,idiom,unsteered,crosslingual,500,11.2,12.6,1.4,54,47,0.550708913598,primary_crosslingual_all_408_routes,0.640140275636,not significant
+cmp_74cbc493733caa7dcb4c,primary_crosslingual,llama,de,en,idiom,unsteered,crosslingual,500,11.2,24.2,13,104,39,5.17675168314e-08,primary_crosslingual_all_408_routes,2.03087950646e-07,significant gain
+cmp_bba6cfa9f8a9025d9a11,primary_crosslingual,llama,es,en,idiom,unsteered,crosslingual,500,11.2,18.8,7.6,82,44,0.000905277463079,primary_crosslingual_all_408_routes,0.0020450085074,significant gain
+cmp_8209684a3084e9e01bd5,primary_crosslingual,llama,it,en,idiom,unsteered,crosslingual,500,11.2,16.2,5,69,44,0.023534002126,primary_crosslingual_all_408_routes,0.0412097547958,significant gain
+cmp_ce8daf8f64079c7b5073,primary_crosslingual,llama,zh,en,idiom,unsteered,crosslingual,500,11.2,11.8,0.6,47,44,0.834081039305,primary_crosslingual_all_408_routes,0.900277947186,not significant
+cmp_525eb8b6eb56f308e3a1,primary_crosslingual,llama,bn,en,irony,unsteered,crosslingual,500,2.2,3.2,1,15,10,0.424356222153,primary_crosslingual_all_408_routes,0.518375265384,not significant
+cmp_011ad1ea937c112a83f3,primary_crosslingual,llama,de,en,irony,unsteered,crosslingual,500,2.2,2.6,0.4,12,10,0.831811904907,primary_crosslingual_all_408_routes,0.900210231305,not significant
+cmp_0f5048a9bc5e1f460271,primary_crosslingual,llama,es,en,irony,unsteered,crosslingual,500,2.2,3.6,1.4,16,9,0.229522943497,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_dde436c0bf49749c02d5,primary_crosslingual,llama,it,en,irony,unsteered,crosslingual,500,2.2,2.6,0.4,11,9,0.823802947998,primary_crosslingual_all_408_routes,0.893913837189,not significant
+cmp_090f42f993731dc8d766,primary_crosslingual,llama,zh,en,irony,unsteered,crosslingual,500,2.2,3.6,1.4,16,9,0.229522943497,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_8e6564a8333878ea47e5,primary_crosslingual,llama,bn,en,metaphor,unsteered,crosslingual,500,57,73,16,129,49,1.70993168747e-09,primary_crosslingual_all_408_routes,8.40544733116e-09,significant gain
+cmp_f88213fb9580eea65c5e,primary_crosslingual,llama,de,en,metaphor,unsteered,crosslingual,500,57,60.8,3.8,111,92,0.206352382303,primary_crosslingual_all_408_routes,0.286366571359,not significant
+cmp_9a86547fe876ebd5f2bb,primary_crosslingual,llama,es,en,metaphor,unsteered,crosslingual,500,57,63.2,6.2,118,87,0.0358877313034,primary_crosslingual_all_408_routes,0.0607559932439,not significant
+cmp_47459ec2a6f3ae9d45c0,primary_crosslingual,llama,it,en,metaphor,unsteered,crosslingual,500,57,70,13,124,59,1.75946097694e-06,primary_crosslingual_all_408_routes,5.74288062874e-06,significant gain
+cmp_5752d3ba40114cc42a08,primary_crosslingual,llama,zh,en,metaphor,unsteered,crosslingual,500,57,66.4,9.4,116,69,0.000678179095546,primary_crosslingual_all_408_routes,0.00157214244877,significant gain
+cmp_b6b3623c45aabf22d74c,primary_crosslingual,llama,bn,en,sarcasm,unsteered,crosslingual,500,2,2.2,0.2,11,10,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_3b7b45180aa2beaf3e6d,primary_crosslingual,llama,it,en,sarcasm,unsteered,crosslingual,500,2,1.8,-0.2,8,9,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_b921f6ed2232b7e7ab1c,primary_crosslingual,llama,zh,en,sarcasm,unsteered,crosslingual,500,2,3.4,1.4,16,9,0.229522943497,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_c34529dcf97905b3d0c0,primary_crosslingual,llama,bn,es,idiom,unsteered,crosslingual,500,3.8,8.2,4.4,38,16,0.00383826588033,primary_crosslingual_all_408_routes,0.00783006239586,significant gain
+cmp_18ed62b4511d3214791f,primary_crosslingual,llama,de,es,idiom,unsteered,crosslingual,500,3.8,10.6,6.8,51,17,4.45344877149e-05,primary_crosslingual_all_408_routes,0.000118758633906,significant gain
+cmp_b18da49aab09e45d2a07,primary_crosslingual,llama,en,es,idiom,unsteered,crosslingual,500,3.8,9,5.2,42,16,0.000861782240542,primary_crosslingual_all_408_routes,0.00196428577733,significant gain
+cmp_59e736d2e2dedb7d9fa4,primary_crosslingual,llama,it,es,idiom,unsteered,crosslingual,500,3.8,10,6.2,44,13,4.7104376094e-05,primary_crosslingual_all_408_routes,0.000124796009392,significant gain
+cmp_a9241eb1ab63cf5e8415,primary_crosslingual,llama,zh,es,idiom,unsteered,crosslingual,500,3.8,5,1.2,22,16,0.417692190837,primary_crosslingual_all_408_routes,0.516419435943,not significant
+cmp_31c88221159af482378e,primary_crosslingual,llama,bn,es,irony,unsteered,crosslingual,500,0.4,1.4,1,6,1,0.125,primary_crosslingual_all_408_routes,0.182795698925,not significant
+cmp_e1b0d6e34c923378b166,primary_crosslingual,llama,de,es,irony,unsteered,crosslingual,500,0.4,1.8,1.4,9,2,0.0654296875,primary_crosslingual_all_408_routes,0.103470203488,not significant
+cmp_1600d8e998ff8e9505fb,primary_crosslingual,llama,en,es,irony,unsteered,crosslingual,500,0.4,3,2.6,14,1,0.0009765625,primary_crosslingual_all_408_routes,0.00217725409836,significant gain
+cmp_d6d282d585acee0bd87d,primary_crosslingual,llama,it,es,irony,unsteered,crosslingual,500,0.4,0.8,0.4,4,2,0.6875,primary_crosslingual_all_408_routes,0.768493150685,not significant
+cmp_5f144f77abbaf9f6d60b,primary_crosslingual,llama,zh,es,irony,unsteered,crosslingual,500,0.4,1.8,1.4,8,1,0.0390625,primary_crosslingual_all_408_routes,0.0650510204082,not significant
+cmp_1551e135f32d5f794a9a,primary_crosslingual,llama,bn,es,metaphor,unsteered,crosslingual,500,29,33.8,4.8,98,74,0.0791732577543,primary_crosslingual_all_408_routes,0.123292706732,not significant
+cmp_1f602349cce7696f5b30,primary_crosslingual,llama,de,es,metaphor,unsteered,crosslingual,500,29,31,2,93,83,0.497629370223,primary_crosslingual_all_408_routes,0.587896253602,not significant
+cmp_ce34cddaf961f976200c,primary_crosslingual,llama,en,es,metaphor,unsteered,crosslingual,500,29,36.2,7.2,114,78,0.0113454913029,primary_crosslingual_all_408_routes,0.0210520423009,significant gain
+cmp_f5c1c077279e3193d15e,primary_crosslingual,llama,it,es,metaphor,unsteered,crosslingual,500,29,44.4,15.4,138,61,4.91586977403e-08,primary_crosslingual_all_408_routes,1.96374344043e-07,significant gain
+cmp_79e49a949569b9cd3a21,primary_crosslingual,llama,zh,es,metaphor,unsteered,crosslingual,500,29,34.4,5.4,95,68,0.0413724229994,primary_crosslingual_all_408_routes,0.0686176771697,not significant
+cmp_c2351b9a96aa4ba7af73,primary_crosslingual,llama,bn,it,idiom,unsteered,crosslingual,500,3.6,4.6,1,22,17,0.522397380497,primary_crosslingual_all_408_routes,0.610710977773,not significant
+cmp_20ae932eb15e55353ac1,primary_crosslingual,llama,de,it,idiom,unsteered,crosslingual,500,3.6,8,4.4,38,16,0.00383826588033,primary_crosslingual_all_408_routes,0.00783006239586,significant gain
+cmp_fc0aae3944d869d7880f,primary_crosslingual,llama,en,it,idiom,unsteered,crosslingual,500,3.6,7.6,4,37,17,0.00907334033959,primary_crosslingual_all_408_routes,0.0173799195237,significant gain
+cmp_705637930aca89e70275,primary_crosslingual,llama,es,it,idiom,unsteered,crosslingual,500,3.6,6.8,3.2,29,13,0.0195204727825,primary_crosslingual_all_408_routes,0.0344777181612,significant gain
+cmp_eb09b5024a7070253a48,primary_crosslingual,llama,zh,it,idiom,unsteered,crosslingual,500,3.6,5,1.4,25,18,0.360377652936,primary_crosslingual_all_408_routes,0.453808896289,not significant
+cmp_d0ab34b5cb8e06d1ef7c,primary_crosslingual,llama,bn,it,irony,unsteered,crosslingual,500,1.4,2.4,1,11,6,0.332305908203,primary_crosslingual_all_408_routes,0.423690032959,not significant
+cmp_0a18fed91ea4fd31a29a,primary_crosslingual,llama,de,it,irony,unsteered,crosslingual,500,1.4,3.8,2.4,17,5,0.0169005393982,primary_crosslingual_all_408_routes,0.030243070502,significant gain
+cmp_e95d31212b3a27918df2,primary_crosslingual,llama,en,it,irony,unsteered,crosslingual,500,1.4,3.2,1.8,16,7,0.0931396484375,primary_crosslingual_all_408_routes,0.142860814145,not significant
+cmp_dbccf2326619a1fc352b,primary_crosslingual,llama,es,it,irony,unsteered,crosslingual,500,1.4,4.4,3,22,7,0.0081300586462,primary_crosslingual_all_408_routes,0.0157206821216,significant gain
+cmp_70515ec4d4f2261ef40e,primary_crosslingual,llama,zh,it,irony,unsteered,crosslingual,500,1.4,3.6,2.2,17,6,0.0346896648407,primary_crosslingual_all_408_routes,0.0589724302292,not significant
+cmp_130711c2ce578ef78aa9,primary_crosslingual,llama,bn,it,metaphor,unsteered,crosslingual,500,41.8,53.2,11.4,128,71,6.46943663741e-05,primary_crosslingual_all_408_routes,0.000168122939367,significant gain
+cmp_000177d124708562d318,primary_crosslingual,llama,de,it,metaphor,unsteered,crosslingual,500,41.8,42.2,0.4,99,97,0.943080892565,primary_crosslingual_all_408_routes,1,not significant
+cmp_4d2f6a851daeead0cfe5,primary_crosslingual,llama,en,it,metaphor,unsteered,crosslingual,500,41.8,44,2.2,103,92,0.474013884414,primary_crosslingual_all_408_routes,0.565490248073,not significant
+cmp_d6479489c5deafa47ab5,primary_crosslingual,llama,es,it,metaphor,unsteered,crosslingual,500,41.8,47,5.2,109,83,0.0709195590442,primary_crosslingual_all_408_routes,0.111289154192,not significant
+cmp_899f574992ef287adaa8,primary_crosslingual,llama,zh,it,metaphor,unsteered,crosslingual,500,41.8,50.6,8.8,118,74,0.00183886079625,primary_crosslingual_all_408_routes,0.00394871160458,significant gain
+cmp_597f5b0f86264b9a6389,primary_crosslingual,llama,bn,it,sarcasm,unsteered,crosslingual,500,0.2,1,0.8,5,1,0.21875,primary_crosslingual_all_408_routes,0.300505050505,not significant
+cmp_a83693d761f6cb9e10b0,primary_crosslingual,llama,en,it,sarcasm,unsteered,crosslingual,500,0.2,1.2,1,6,1,0.125,primary_crosslingual_all_408_routes,0.182795698925,not significant
+cmp_fdb30afce882999b751d,primary_crosslingual,llama,zh,it,sarcasm,unsteered,crosslingual,500,0.2,1.2,1,6,1,0.125,primary_crosslingual_all_408_routes,0.182795698925,not significant
+cmp_2616f22760c852858483,primary_crosslingual,llama,bn,zh,idiom,unsteered,crosslingual,500,3.8,6.4,2.6,29,16,0.0724542601625,primary_crosslingual_all_408_routes,0.113261831978,not significant
+cmp_785546aaba77ceb2f90a,primary_crosslingual,llama,de,zh,idiom,unsteered,crosslingual,500,3.8,5.4,1.6,25,17,0.279956238529,primary_crosslingual_all_408_routes,0.362609985142,not significant
+cmp_7a5a1510dd56d0418d48,primary_crosslingual,llama,en,zh,idiom,unsteered,crosslingual,500,3.8,8,4.2,37,16,0.00548634487676,primary_crosslingual_all_408_routes,0.0110813302461,significant gain
+cmp_3e733ff008d1708a79ab,primary_crosslingual,llama,es,zh,idiom,unsteered,crosslingual,500,3.8,7.6,3.8,32,13,0.00660882284228,primary_crosslingual_all_408_routes,0.0130260856022,significant gain
+cmp_7bc9d0b96a6fd83c49f8,primary_crosslingual,llama,it,zh,idiom,unsteered,crosslingual,500,3.8,7,3.2,31,15,0.0258960817932,primary_crosslingual_all_408_routes,0.0447694973375,significant gain
+cmp_3dccfbbf26331ec4d546,primary_crosslingual,llama,bn,zh,irony,unsteered,crosslingual,500,1,1,0,5,5,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_dce05d581c0a94d6b77a,primary_crosslingual,llama,de,zh,irony,unsteered,crosslingual,500,1,1,0,5,5,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_6f63e38ee4b7fdc8d839,primary_crosslingual,llama,en,zh,irony,unsteered,crosslingual,500,1,2.6,1.6,13,5,0.0962524414062,primary_crosslingual_all_408_routes,0.147082382374,not significant
+cmp_5ac800231897954a3e07,primary_crosslingual,llama,es,zh,irony,unsteered,crosslingual,500,1,1.8,0.8,9,5,0.423950195312,primary_crosslingual_all_408_routes,0.518375265384,not significant
+cmp_a64c7615d2da3fa3e11e,primary_crosslingual,llama,it,zh,irony,unsteered,crosslingual,500,1,1.2,0.2,5,4,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_06628519e526c4ee2390,primary_crosslingual,llama,bn,zh,metaphor,unsteered,crosslingual,500,26,37.6,11.6,131,73,5.92330472772e-05,primary_crosslingual_all_408_routes,0.000154917200571,significant gain
+cmp_7c7ca19c8a5c45ddeb79,primary_crosslingual,llama,de,zh,metaphor,unsteered,crosslingual,500,26,32.8,6.8,102,68,0.011155842726,primary_crosslingual_all_408_routes,0.0210520423009,significant gain
+cmp_a641c1dff1a7f500c8b0,primary_crosslingual,llama,en,zh,metaphor,unsteered,crosslingual,500,26,27.2,1.2,82,76,0.690924976702,primary_crosslingual_all_408_routes,0.770211449439,not significant
+cmp_aa73bb0f76d24aa2c96d,primary_crosslingual,llama,es,zh,metaphor,unsteered,crosslingual,500,26,26,0,90,90,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_3eca45526efc8e7e9a1d,primary_crosslingual,llama,it,zh,metaphor,unsteered,crosslingual,500,26,34,8,104,64,0.00251798985169,primary_crosslingual_all_408_routes,0.00524152989535,significant gain
+cmp_e1a8a5417559e102026b,primary_crosslingual,llama,bn,zh,sarcasm,unsteered,crosslingual,500,0.2,0.4,0.2,2,1,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_112a61a8c435ead24efd,primary_crosslingual,llama,en,zh,sarcasm,unsteered,crosslingual,500,0.2,1.6,1.4,8,1,0.0390625,primary_crosslingual_all_408_routes,0.0650510204082,not significant
+cmp_7524594fd0827812d670,primary_crosslingual,llama,it,zh,sarcasm,unsteered,crosslingual,500,0.2,0.8,0.6,4,1,0.375,primary_crosslingual_all_408_routes,0.467889908257,not significant
+cmp_20ed6ee5a881a790d30b,primary_crosslingual,mistral,de,bn,idiom,unsteered,crosslingual,500,4.4,12,7.6,58,20,1.95190907436e-05,primary_crosslingual_all_408_routes,5.45465001603e-05,significant gain
+cmp_c03b0f2a0b26ebeaf81a,primary_crosslingual,mistral,en,bn,idiom,unsteered,crosslingual,500,4.4,7,2.6,32,19,0.0919145498159,primary_crosslingual_all_408_routes,0.142049758806,not significant
+cmp_1ca90e4830dc1a2e1f5f,primary_crosslingual,mistral,es,bn,idiom,unsteered,crosslingual,500,4.4,6.8,2.4,31,19,0.118920452559,primary_crosslingual_all_408_routes,0.177727269759,not significant
+cmp_4eae06cd4511cb3af4af,primary_crosslingual,mistral,it,bn,idiom,unsteered,crosslingual,500,4.4,8,3.6,38,20,0.0247460358424,primary_crosslingual_all_408_routes,0.0429633303137,significant gain
+cmp_16d8b824a51cf7299263,primary_crosslingual,mistral,zh,bn,idiom,unsteered,crosslingual,500,4.4,6.6,2.2,32,21,0.168977822288,primary_crosslingual_all_408_routes,0.239385248241,not significant
+cmp_1b3d56f59ca8acbbf222,primary_crosslingual,mistral,de,bn,irony,unsteered,crosslingual,500,9.8,12.8,3,53,38,0.141793374545,primary_crosslingual_all_408_routes,0.204422956941,not significant
+cmp_3a1049afdd11cfa120d5,primary_crosslingual,mistral,en,bn,irony,unsteered,crosslingual,500,9.8,10.4,0.6,40,37,0.819892903749,primary_crosslingual_all_408_routes,0.892043479279,not significant
+cmp_dd69adcb9dfaae052541,primary_crosslingual,mistral,es,bn,irony,unsteered,crosslingual,500,9.8,8.8,-1,34,39,0.639972931754,primary_crosslingual_all_408_routes,0.725302655988,not significant
+cmp_e87aeabdcf8746f5746f,primary_crosslingual,mistral,it,bn,irony,unsteered,crosslingual,500,9.8,9.2,-0.6,36,39,0.817553850551,primary_crosslingual_all_408_routes,0.891876927874,not significant
+cmp_fdfc00dc60776c1199ce,primary_crosslingual,mistral,zh,bn,irony,unsteered,crosslingual,500,9.8,12.6,2.8,45,31,0.135385105299,primary_crosslingual_all_408_routes,0.195876322561,not significant
+cmp_fbb008e4b45365a33ff5,primary_crosslingual,mistral,de,bn,metaphor,unsteered,crosslingual,499,12.4248496994,27.8557114228,15.4308617234,120,43,1.30435899487e-09,primary_crosslingual_all_408_routes,6.48998134031e-09,significant gain
+cmp_411a69a57de3277c7fb1,primary_crosslingual,mistral,en,bn,metaphor,unsteered,crosslingual,500,12.4,24.4,12,97,37,2.193282501e-07,primary_crosslingual_all_408_routes,7.9191084992e-07,significant gain
+cmp_575f6fcfea92e9c6c138,primary_crosslingual,mistral,es,bn,metaphor,unsteered,crosslingual,500,12.4,25.4,13,106,41,8.08924594039e-08,primary_crosslingual_all_408_routes,3.05593735526e-07,significant gain
+cmp_6ff71965089c6dde99f9,primary_crosslingual,mistral,it,bn,metaphor,unsteered,crosslingual,500,12.4,26.2,13.8,106,37,6.63532235689e-09,primary_crosslingual_all_408_routes,3.04181069844e-08,significant gain
+cmp_51610a7539e0afef9538,primary_crosslingual,mistral,zh,bn,metaphor,unsteered,crosslingual,500,12.4,25.2,12.8,103,39,7.57012563255e-08,primary_crosslingual_all_408_routes,2.91378420574e-07,significant gain
+cmp_683bdae76fa19689bf5b,primary_crosslingual,mistral,en,bn,sarcasm,unsteered,crosslingual,499,6.81362725451,11.0220440882,4.20841683367,47,26,0.0186177514332,primary_crosslingual_all_408_routes,0.0331704916364,significant gain
+cmp_f1f3643e01d65de9e4af,primary_crosslingual,mistral,it,bn,sarcasm,unsteered,crosslingual,500,6.8,7.6,0.8,32,28,0.69888342762,primary_crosslingual_all_408_routes,0.774849017579,not significant
+cmp_05cd35ce429d0f4333e8,primary_crosslingual,mistral,zh,bn,sarcasm,unsteered,crosslingual,500,6.8,7.6,0.8,35,31,0.712230882637,primary_crosslingual_all_408_routes,0.787507317388,not significant
+cmp_5bc0cd2b77edea46fa55,primary_crosslingual,mistral,bn,de,idiom,unsteered,crosslingual,500,24.2,36.4,12.2,118,57,4.65521661933e-06,primary_crosslingual_all_408_routes,1.42806645164e-05,significant gain
+cmp_5cd4fb10331d0014d286,primary_crosslingual,mistral,en,de,idiom,unsteered,crosslingual,500,24.2,34.4,10.2,123,72,0.000319315663481,primary_crosslingual_all_408_routes,0.000753068154336,significant gain
+cmp_c86a02ff225b94633a89,primary_crosslingual,mistral,es,de,idiom,unsteered,crosslingual,500,24.2,36.6,12.4,128,66,1.00994478513e-05,primary_crosslingual_all_408_routes,2.94326765951e-05,significant gain
+cmp_9151eb1b74ecfb623193,primary_crosslingual,mistral,it,de,idiom,unsteered,crosslingual,500,24.2,34.6,10.4,127,75,0.000310540566077,primary_crosslingual_all_408_routes,0.000736631110229,significant gain
+cmp_d4e16c452fbe001dc6bf,primary_crosslingual,mistral,zh,de,idiom,unsteered,crosslingual,500,24.2,36.6,12.4,131,69,1.38574515724e-05,primary_crosslingual_all_408_routes,3.98157763488e-05,significant gain
+cmp_e071820b2842be0330fd,primary_crosslingual,mistral,bn,de,irony,unsteered,crosslingual,500,7.8,9.8,2,45,35,0.314306579864,primary_crosslingual_all_408_routes,0.401997130359,not significant
+cmp_65da8110a35c77815a26,primary_crosslingual,mistral,en,de,irony,unsteered,crosslingual,500,7.8,10.2,2.4,43,31,0.200678203129,primary_crosslingual_all_408_routes,0.279442685586,not significant
+cmp_62b94eaf4a829ee6db00,primary_crosslingual,mistral,es,de,irony,unsteered,crosslingual,500,7.8,7.8,0,34,34,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_296175b4576e71ba512b,primary_crosslingual,mistral,it,de,irony,unsteered,crosslingual,500,7.8,9.8,2,41,31,0.288784280414,primary_crosslingual_all_408_routes,0.372860716484,not significant
+cmp_2a9cf877c4d7cf620e12,primary_crosslingual,mistral,zh,de,irony,unsteered,crosslingual,500,7.8,14,6.2,63,32,0.00192434777753,primary_crosslingual_all_408_routes,0.00408923902724,significant gain
+cmp_2c1980b49869ffb6cce2,primary_crosslingual,mistral,bn,de,metaphor,unsteered,crosslingual,500,41.2,76.2,35,216,41,6.99219262709e-30,primary_crosslingual_all_408_routes,1.05659799698e-28,significant gain
+cmp_35130a9f1f51ec162754,primary_crosslingual,mistral,en,de,metaphor,unsteered,crosslingual,500,41.2,54.6,13.4,142,75,6.35139645589e-06,primary_crosslingual_all_408_routes,1.90541893677e-05,significant gain
+cmp_c222dd2f3c6e95e19e4d,primary_crosslingual,mistral,es,de,metaphor,unsteered,crosslingual,500,41.2,52.6,11.4,137,80,0.000132560042587,primary_crosslingual_all_408_routes,0.000331806732365,significant gain
+cmp_c78e37a4821943581b1a,primary_crosslingual,mistral,it,de,metaphor,unsteered,crosslingual,500,41.2,60.8,19.6,155,57,1.1590525688e-11,primary_crosslingual_all_408_routes,6.39045200097e-11,significant gain
+cmp_0b25501390b49cdb5599,primary_crosslingual,mistral,zh,de,metaphor,unsteered,crosslingual,500,41.2,65.4,24.2,179,58,1.51008949848e-15,primary_crosslingual_all_408_routes,1.18483945266e-14,significant gain
+cmp_f3818e1e6472a42436d7,primary_crosslingual,mistral,bn,en,idiom,unsteered,crosslingual,500,9.2,9.6,0.4,39,37,0.908776925275,primary_crosslingual_all_408_routes,0.978313945943,not significant
+cmp_0812b7abfb783d80a47f,primary_crosslingual,mistral,de,en,idiom,unsteered,crosslingual,500,9.2,12.4,3.2,52,36,0.109295429777,primary_crosslingual_all_408_routes,0.164548100919,not significant
+cmp_52fd723352fa12cdf189,primary_crosslingual,mistral,es,en,idiom,unsteered,crosslingual,500,9.2,13.2,4,57,37,0.0494500652532,primary_crosslingual_all_408_routes,0.0813533331585,not significant
+cmp_03180ee2dff28a3f9c91,primary_crosslingual,mistral,it,en,idiom,unsteered,crosslingual,500,9.2,11.6,2.4,48,36,0.229864406969,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_710289dda8877bed716f,primary_crosslingual,mistral,zh,en,idiom,unsteered,crosslingual,500,9.2,12,2.8,52,38,0.170242395046,primary_crosslingual_all_408_routes,0.240342204771,not significant
+cmp_1b543a3765afa58b22f9,primary_crosslingual,mistral,bn,en,irony,unsteered,crosslingual,500,3.8,1.6,-2.2,7,18,0.0432852506638,primary_crosslingual_all_408_routes,0.0714995233636,not significant
+cmp_213a6d4243878328c9e4,primary_crosslingual,mistral,de,en,irony,unsteered,crosslingual,500,3.8,2.2,-1.6,9,17,0.168637543917,primary_crosslingual_all_408_routes,0.239385248241,not significant
+cmp_6adcff1b02a8d55b7bef,primary_crosslingual,mistral,es,en,irony,unsteered,crosslingual,500,3.8,2,-1.8,7,16,0.0931396484375,primary_crosslingual_all_408_routes,0.142860814145,not significant
+cmp_d7701ea1a3c7673bf32e,primary_crosslingual,mistral,it,en,irony,unsteered,crosslingual,500,3.8,3.6,-0.2,12,13,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_7203090a928200f5efe3,primary_crosslingual,mistral,zh,en,irony,unsteered,crosslingual,500,3.8,3,-0.8,12,16,0.57158818841,primary_crosslingual_all_408_routes,0.658779606981,not significant
+cmp_1273030c8b20aa83061f,primary_crosslingual,mistral,bn,en,metaphor,unsteered,crosslingual,500,60.8,81,20.2,148,47,2.26802554115e-13,primary_crosslingual_all_408_routes,1.46881654094e-12,significant gain
+cmp_464c77e6b1863c1a5952,primary_crosslingual,mistral,de,en,metaphor,unsteered,crosslingual,500,60.8,68.2,7.4,112,75,0.00829969247198,primary_crosslingual_all_408_routes,0.0159729930593,significant gain
+cmp_5c75d1d61d38e955b149,primary_crosslingual,mistral,es,en,metaphor,unsteered,crosslingual,500,60.8,69.6,8.8,121,77,0.00216374338612,primary_crosslingual_all_408_routes,0.00457413109606,significant gain
+cmp_a95d7935d9925d931676,primary_crosslingual,mistral,it,en,metaphor,unsteered,crosslingual,500,60.8,76.8,16,132,52,3.27512862486e-09,primary_crosslingual_all_408_routes,1.55378195226e-08,significant gain
+cmp_d3bca2244566a89f3414,primary_crosslingual,mistral,zh,en,metaphor,unsteered,crosslingual,500,60.8,71.8,11,121,66,7.02732420805e-05,primary_crosslingual_all_408_routes,0.000181465080816,significant gain
+cmp_6e4ac9dd2aee7e80005f,primary_crosslingual,mistral,bn,en,sarcasm,unsteered,crosslingual,500,5.2,2.4,-2.8,10,24,0.0243065101095,primary_crosslingual_all_408_routes,0.0423805817293,significant loss
+cmp_abd88bd42ea10bd12d5b,primary_crosslingual,mistral,it,en,sarcasm,unsteered,crosslingual,500,5.2,2.8,-2.4,10,22,0.0501024597324,primary_crosslingual_all_408_routes,0.0820019055447,not significant
+cmp_e34ccd28137545fb7673,primary_crosslingual,mistral,zh,en,sarcasm,unsteered,crosslingual,500,5.2,2,-3.2,10,26,0.0113309841836,primary_crosslingual_all_408_routes,0.0210520423009,significant loss
+cmp_b15982ca82734e91b484,primary_crosslingual,mistral,bn,es,idiom,unsteered,crosslingual,500,8,6.8,-1.2,26,32,0.511842308438,primary_crosslingual_all_408_routes,0.600090982307,not significant
+cmp_e91f7ff837d3c6663059,primary_crosslingual,mistral,de,es,idiom,unsteered,crosslingual,500,8,10.2,2.2,43,32,0.248045741893,primary_crosslingual_all_408_routes,0.327974276527,not significant
+cmp_6c87c726d622a8a4d5e0,primary_crosslingual,mistral,en,es,idiom,unsteered,crosslingual,500,8,8,0,35,35,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_385c4f4648d6c2c6d012,primary_crosslingual,mistral,it,es,idiom,unsteered,crosslingual,500,8,5.8,-2.2,24,35,0.192526457761,primary_crosslingual_all_408_routes,0.269009571119,not significant
+cmp_039567729e86c52edc92,primary_crosslingual,mistral,zh,es,idiom,unsteered,crosslingual,500,8,9.8,1.8,44,35,0.368187633831,primary_crosslingual_all_408_routes,0.462217091086,not significant
+cmp_fb075d729b9c8f974a99,primary_crosslingual,mistral,bn,es,irony,unsteered,crosslingual,500,5,10.4,5.4,47,20,0.00130716868576,primary_crosslingual_all_408_routes,0.00284787441822,significant gain
+cmp_fecf76aacce186ddd631,primary_crosslingual,mistral,de,es,irony,unsteered,crosslingual,500,5,14.2,9.2,62,16,1.51297813775e-07,primary_crosslingual_all_408_routes,5.51156321611e-07,significant gain
+cmp_f9a4faf9d262b03762dd,primary_crosslingual,mistral,en,es,irony,unsteered,crosslingual,500,5,12,7,53,18,3.88475827936e-05,primary_crosslingual_all_408_routes,0.000104965654171,significant gain
+cmp_60b794dd62301b8a4190,primary_crosslingual,mistral,it,es,irony,unsteered,crosslingual,500,5,11,6,48,18,0.000287118449662,primary_crosslingual_all_408_routes,0.000685054546561,significant gain
+cmp_b398e30f420be2ad9899,primary_crosslingual,mistral,zh,es,irony,unsteered,crosslingual,500,5,12.2,7.2,54,18,2.56872033792e-05,primary_crosslingual_all_408_routes,7.08133714779e-05,significant gain
+cmp_d04d1de2657a2d5bdecc,primary_crosslingual,mistral,bn,es,metaphor,unsteered,crosslingual,500,38.6,68.2,29.6,185,37,7.30079107567e-25,primary_crosslingual_all_408_routes,8.51063645393e-24,significant gain
+cmp_1a17521e1d7fe20a17c3,primary_crosslingual,mistral,de,es,metaphor,unsteered,crosslingual,500,38.6,48,9.4,122,75,0.000997823615694,primary_crosslingual_all_408_routes,0.00221256540871,significant gain
+cmp_dfaa4765ac436e3839d3,primary_crosslingual,mistral,en,es,metaphor,unsteered,crosslingual,500,38.6,44.2,5.6,114,86,0.0559657404943,primary_crosslingual_all_408_routes,0.0906111988955,not significant
+cmp_070f4a9b4b3bfc69c83a,primary_crosslingual,mistral,it,es,metaphor,unsteered,crosslingual,500,38.6,55.6,17,151,66,7.67911144267e-09,primary_crosslingual_all_408_routes,3.4429422732e-08,significant gain
+cmp_5bcc5437dfb92ef17e16,primary_crosslingual,mistral,zh,es,metaphor,unsteered,crosslingual,500,38.6,46.4,7.8,119,80,0.00691528082328,primary_crosslingual_all_408_routes,0.0135645893072,significant gain
+cmp_bafd5aa9bdcbc6c8ab09,primary_crosslingual,mistral,bn,it,idiom,unsteered,crosslingual,500,3,6.6,3.6,32,14,0.0113515914368,primary_crosslingual_all_408_routes,0.0210520423009,significant gain
+cmp_6fe62315d0252b060d2f,primary_crosslingual,mistral,de,it,idiom,unsteered,crosslingual,500,3,5,2,24,14,0.143306654296,primary_crosslingual_all_408_routes,0.205877165326,not significant
+cmp_9c721a17777d49488dea,primary_crosslingual,mistral,en,it,idiom,unsteered,crosslingual,500,3,4.6,1.6,22,14,0.242984954035,primary_crosslingual_all_408_routes,0.323979938713,not significant
+cmp_aa81ca07c0d478336cf4,primary_crosslingual,mistral,es,it,idiom,unsteered,crosslingual,500,3,8,5,39,14,0.000802330886895,primary_crosslingual_all_408_routes,0.00184944068844,significant gain
+cmp_63495df0f50cc1a2d6d5,primary_crosslingual,mistral,zh,it,idiom,unsteered,crosslingual,500,3,7,4,35,15,0.00660044796681,primary_crosslingual_all_408_routes,0.0130260856022,significant gain
+cmp_3f80f651e35ccb89c7b2,primary_crosslingual,mistral,bn,it,irony,unsteered,crosslingual,500,11,23.6,12.6,98,35,4.29205843147e-08,primary_crosslingual_all_408_routes,1.7338216238e-07,significant gain
+cmp_d114811f5028326b72d8,primary_crosslingual,mistral,de,it,irony,unsteered,crosslingual,500,11,24.6,13.6,109,41,2.6138463983e-08,primary_crosslingual_all_408_routes,1.09943229949e-07,significant gain
+cmp_b8d1ca2a5f136e497e39,primary_crosslingual,mistral,en,it,irony,unsteered,crosslingual,500,11,21.8,10.8,99,45,7.95253867813e-06,primary_crosslingual_all_408_routes,2.36834728517e-05,significant gain
+cmp_927f1c8246a1ffa83f84,primary_crosslingual,mistral,es,it,irony,unsteered,crosslingual,500,11,21.4,10.4,90,38,4.92284755944e-06,primary_crosslingual_all_408_routes,1.49889686884e-05,significant gain
+cmp_155f4ef3392d89615226,primary_crosslingual,mistral,zh,it,irony,unsteered,crosslingual,500,11,30.2,19.2,135,39,1.36415332764e-13,primary_crosslingual_all_408_routes,9.12417307667e-13,significant gain
+cmp_0bbf9dffbba7cdcb8a9e,primary_crosslingual,mistral,bn,it,metaphor,unsteered,crosslingual,500,72.2,91.4,19.2,124,28,1.2847051542e-15,primary_crosslingual_all_408_routes,1.04831940583e-14,significant gain
+cmp_3de69c2066c5a98ee0ca,primary_crosslingual,mistral,de,it,metaphor,unsteered,crosslingual,500,72.2,84.6,12.4,93,31,2.2005721799e-08,primary_crosslingual_all_408_routes,9.45087841474e-08,significant gain
+cmp_40e025ae9d18e0b2643c,primary_crosslingual,mistral,en,it,metaphor,unsteered,crosslingual,500,72.2,79.2,7,84,49,0.00304932738528,primary_crosslingual_all_408_routes,0.00631535823957,significant gain
+cmp_794f3f7498fe0d2a7129,primary_crosslingual,mistral,es,it,metaphor,unsteered,crosslingual,498,72.0883534137,80.7228915663,8.63453815261,92,49,0.000368175586284,primary_crosslingual_all_408_routes,0.000863308271287,significant gain
+cmp_3420c33b3bb9d0f99ddb,primary_crosslingual,mistral,zh,it,metaphor,unsteered,crosslingual,500,72.2,87.8,15.6,107,29,1.05314385109e-11,primary_crosslingual_all_408_routes,5.88606426362e-11,significant gain
+cmp_ab83407b025135d308e3,primary_crosslingual,mistral,bn,it,sarcasm,unsteered,crosslingual,500,1.2,5,3.8,24,5,0.000546112656593,primary_crosslingual_all_408_routes,0.0012732226508,significant gain
+cmp_4016bf44654dbc2b9eb0,primary_crosslingual,mistral,en,it,sarcasm,unsteered,crosslingual,500,1.2,4,2.8,20,6,0.00935530662537,primary_crosslingual_all_408_routes,0.0178362855287,significant gain
+cmp_8e73e414cf8f4fd6fa82,primary_crosslingual,mistral,zh,it,sarcasm,unsteered,crosslingual,500,1.2,7.2,6,36,6,2.82887776848e-06,primary_crosslingual_all_408_routes,9.08804826409e-06,significant gain
+cmp_0f78fd988e88bb626a90,primary_crosslingual,mistral,bn,zh,idiom,unsteered,crosslingual,500,17.4,20.4,3,75,60,0.228103478066,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_02da12aba40998d3819e,primary_crosslingual,mistral,de,zh,idiom,unsteered,crosslingual,500,17.4,15.8,-1.6,59,67,0.533052750268,primary_crosslingual_all_408_routes,0.621387206026,not significant
+cmp_ee9204e8dd5881bf898e,primary_crosslingual,mistral,en,zh,idiom,unsteered,crosslingual,500,17.4,13.8,-3.6,47,65,0.107782279655,primary_crosslingual_all_408_routes,0.162871000367,not significant
+cmp_583dcbe42dad5aafac0d,primary_crosslingual,mistral,es,zh,idiom,unsteered,crosslingual,500,17.4,21.8,4.4,88,66,0.0902767273291,primary_crosslingual_all_408_routes,0.140049067492,not significant
+cmp_6adfa498f930f71f90e1,primary_crosslingual,mistral,it,zh,idiom,unsteered,crosslingual,500,17.4,16,-1.4,62,69,0.60029461771,primary_crosslingual_all_408_routes,0.686050991669,not significant
+cmp_ce43d145a386f113288b,primary_crosslingual,mistral,bn,zh,irony,unsteered,crosslingual,500,6.2,7,0.8,32,28,0.69888342762,primary_crosslingual_all_408_routes,0.774849017579,not significant
+cmp_f6a731f186f347f3da3f,primary_crosslingual,mistral,de,zh,irony,unsteered,crosslingual,500,6.2,6,-0.2,25,26,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_5fb0977825e3e36cca9d,primary_crosslingual,mistral,en,zh,irony,unsteered,crosslingual,500,6.2,8.6,2.4,39,27,0.175285794443,primary_crosslingual_all_408_routes,0.246608979768,not significant
+cmp_da2d7385a6a139d0faab,primary_crosslingual,mistral,es,zh,irony,unsteered,crosslingual,500,6.2,7.6,1.4,34,27,0.442626004946,primary_crosslingual_all_408_routes,0.539078835875,not significant
+cmp_885bc6d5e304d535cc4b,primary_crosslingual,mistral,it,zh,irony,unsteered,crosslingual,500,6.2,8.2,2,36,26,0.252854394188,primary_crosslingual_all_408_routes,0.330655746246,not significant
+cmp_3a37911b92b1f2c84d33,primary_crosslingual,mistral,bn,zh,metaphor,unsteered,crosslingual,500,65.4,82.4,17,132,47,1.54526384072e-10,primary_crosslingual_all_408_routes,8.08291855147e-10,significant gain
+cmp_15b7b6020c7ba85b0c9e,primary_crosslingual,mistral,de,zh,metaphor,unsteered,crosslingual,500,65.4,71.2,5.8,117,88,0.0502462656524,primary_crosslingual_all_408_routes,0.0820019055447,not significant
+cmp_6854c73f0010d327803a,primary_crosslingual,mistral,en,zh,metaphor,unsteered,crosslingual,500,65.4,72.4,7,116,81,0.0152058735594,primary_crosslingual_all_408_routes,0.0278206117141,significant gain
+cmp_cc528f4859ee98156a42,primary_crosslingual,mistral,es,zh,metaphor,unsteered,crosslingual,500,65.4,72.2,6.8,117,83,0.0193969445403,primary_crosslingual_all_408_routes,0.0344084929237,significant gain
+cmp_4bb3e3f64bc81192f8fb,primary_crosslingual,mistral,it,zh,metaphor,unsteered,crosslingual,500,65.4,72.6,7.2,114,78,0.0113454913029,primary_crosslingual_all_408_routes,0.0210520423009,significant gain
+cmp_e0722e81f8278ea46753,primary_crosslingual,mistral,bn,zh,sarcasm,unsteered,crosslingual,500,1.2,3.4,2.2,16,5,0.0266036987305,primary_crosslingual_all_408_routes,0.0454155191717,significant gain
+cmp_6049f43777c910d19e28,primary_crosslingual,mistral,en,zh,sarcasm,unsteered,crosslingual,500,1.2,3.6,2.4,17,5,0.0169005393982,primary_crosslingual_all_408_routes,0.030243070502,significant gain
+cmp_c7bd9bcbe5d53496fa08,primary_crosslingual,mistral,it,zh,sarcasm,unsteered,crosslingual,500,1.2,2.4,1.2,12,6,0.237884521484,primary_crosslingual_all_408_routes,0.318219294314,not significant
+cmp_b295f31e59e9ac630cfe,primary_crosslingual,qwen,de,bn,idiom,unsteered,crosslingual,500,0.8,0.6,-0.2,3,4,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_b7dac427fa3c031d2ce0,primary_crosslingual,qwen,en,bn,idiom,unsteered,crosslingual,500,0.8,0.6,-0.2,3,4,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_f4d0a449b95841652720,primary_crosslingual,qwen,es,bn,idiom,unsteered,crosslingual,500,0.8,0.8,0,4,4,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_9e9eb370a20fe6d9783d,primary_crosslingual,qwen,it,bn,idiom,unsteered,crosslingual,500,0.8,0.4,-0.4,2,4,0.6875,primary_crosslingual_all_408_routes,0.768493150685,not significant
+cmp_26b042cbf7924e46e7aa,primary_crosslingual,qwen,zh,bn,idiom,unsteered,crosslingual,500,0.8,1.2,0.4,6,4,0.75390625,primary_crosslingual_all_408_routes,0.829093665768,not significant
+cmp_646d45b7f85ecd722a3c,primary_crosslingual,qwen,de,bn,irony,unsteered,crosslingual,500,0.6,0.8,0.2,3,2,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_4f9e854598d6bd4eda7f,primary_crosslingual,qwen,en,bn,irony,unsteered,crosslingual,500,0.6,0,-0.6,0,3,0.25,primary_crosslingual_all_408_routes,0.327974276527,not significant
+cmp_60045dfe1de58b9c1692,primary_crosslingual,qwen,es,bn,irony,unsteered,crosslingual,500,0.6,0,-0.6,0,3,0.25,primary_crosslingual_all_408_routes,0.327974276527,not significant
+cmp_efd4adebd60f2e2ccd83,primary_crosslingual,qwen,it,bn,irony,unsteered,crosslingual,500,0.6,0.2,-0.4,1,3,0.625,primary_crosslingual_all_408_routes,0.710306406685,not significant
+cmp_d8fe60860c19c697301b,primary_crosslingual,qwen,zh,bn,irony,unsteered,crosslingual,500,0.6,2.8,2.2,14,3,0.0127258300781,primary_crosslingual_all_408_routes,0.0233880120355,significant gain
+cmp_bb2f72e49d5d267048d1,primary_crosslingual,qwen,de,bn,metaphor,unsteered,crosslingual,500,3.2,0.8,-2.4,3,15,0.00753784179688,primary_crosslingual_all_408_routes,0.0146449497768,significant loss
+cmp_1efb389631d36486aba2,primary_crosslingual,qwen,en,bn,metaphor,unsteered,crosslingual,500,3.2,0.2,-3,1,16,0.000274658203125,primary_crosslingual_all_408_routes,0.000663080159024,significant loss
+cmp_6f1b069791ccd2e59189,primary_crosslingual,qwen,es,bn,metaphor,unsteered,crosslingual,500,3.2,0.2,-3,1,16,0.000274658203125,primary_crosslingual_all_408_routes,0.000663080159024,significant loss
+cmp_218af71b9c5ccd6dea03,primary_crosslingual,qwen,it,bn,metaphor,unsteered,crosslingual,500,3.2,3.2,0,15,15,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_b75b5097f897c4cf84f7,primary_crosslingual,qwen,zh,bn,metaphor,unsteered,crosslingual,500,3.2,0.4,-2.8,2,16,0.00131225585938,primary_crosslingual_all_408_routes,0.00284787441822,significant loss
+cmp_63752b1c7f46c14d8aaf,primary_crosslingual,qwen,en,bn,sarcasm,unsteered,crosslingual,500,0,0,0,0,0,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_b5cf9931aeca76578a61,primary_crosslingual,qwen,it,bn,sarcasm,unsteered,crosslingual,500,0,0,0,0,0,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_042f4ce9fb8e00fb2b05,primary_crosslingual,qwen,zh,bn,sarcasm,unsteered,crosslingual,500,0,0.2,0.2,1,0,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_c3591e2831b8f7f0df50,primary_crosslingual,qwen,bn,de,idiom,unsteered,crosslingual,500,6.2,18,11.8,79,20,1.79241502854e-09,primary_crosslingual_all_408_routes,8.603592137e-09,significant gain
+cmp_9ce819ffd39cb6607c27,primary_crosslingual,qwen,en,de,idiom,unsteered,crosslingual,500,6.2,16,9.8,72,23,4.75748238524e-07,primary_crosslingual_all_408_routes,1.64872508938e-06,significant gain
+cmp_14e0ea2c4bc3cd81fdd5,primary_crosslingual,qwen,es,de,idiom,unsteered,crosslingual,500,6.2,24.6,18.4,107,15,2.68442861342e-18,primary_crosslingual_all_408_routes,2.54708575413e-17,significant gain
+cmp_9086096199fd802cbd4f,primary_crosslingual,qwen,it,de,idiom,unsteered,crosslingual,500,6.2,18,11.8,79,20,1.79241502854e-09,primary_crosslingual_all_408_routes,8.603592137e-09,significant gain
+cmp_5aac9dd701610057cbbf,primary_crosslingual,qwen,zh,de,idiom,unsteered,crosslingual,500,6.2,11.6,5.4,51,24,0.00244422849921,primary_crosslingual_all_408_routes,0.00511407809067,significant gain
+cmp_62b8a61f5f7f31efd5ce,primary_crosslingual,qwen,bn,de,irony,unsteered,crosslingual,500,1,10.8,9.8,52,3,1.5418777366e-12,primary_crosslingual_all_408_routes,9.11719009467e-12,significant gain
+cmp_e8ac615d9e0023e240d9,primary_crosslingual,qwen,en,de,irony,unsteered,crosslingual,500,1,3.2,2.2,16,5,0.0266036987305,primary_crosslingual_all_408_routes,0.0454155191717,significant gain
+cmp_04f01d7eec8796a0999c,primary_crosslingual,qwen,es,de,irony,unsteered,crosslingual,500,1,2.8,1.8,14,5,0.0635681152344,primary_crosslingual_all_408_routes,0.101311683655,not significant
+cmp_587397f33f6a0f77575d,primary_crosslingual,qwen,it,de,irony,unsteered,crosslingual,500,1,1.6,0.6,8,5,0.5810546875,primary_crosslingual_all_408_routes,0.665927844101,not significant
+cmp_690c502bf475c736e256,primary_crosslingual,qwen,zh,de,irony,unsteered,crosslingual,500,1,7.6,6.6,36,3,3.60887497663e-08,primary_crosslingual_all_408_routes,1.48729392976e-07,significant gain
+cmp_14f4dead25e518f41a9c,primary_crosslingual,qwen,bn,de,metaphor,unsteered,crosslingual,500,16.2,73.4,57.2,301,15,2.69051247692e-70,primary_crosslingual_all_408_routes,2.74432272646e-68,significant gain
+cmp_3a462c5ce129626b5128,primary_crosslingual,qwen,en,de,metaphor,unsteered,crosslingual,500,16.2,47.2,31,187,32,7.8596168759e-28,primary_crosslingual_all_408_routes,1.06890789512e-26,significant gain
+cmp_d2e9c16dcf164f2380bd,primary_crosslingual,qwen,es,de,metaphor,unsteered,crosslingual,500,16.2,39.2,23,151,36,5.95024371727e-18,primary_crosslingual_all_408_routes,5.51749871965e-17,significant gain
+cmp_61e037fb32a97b62eb60,primary_crosslingual,qwen,it,de,metaphor,unsteered,crosslingual,500,16.2,66.4,50.2,268,17,3.20363888232e-59,primary_crosslingual_all_408_routes,1.45231629332e-57,significant gain
+cmp_2934282771f16425cf31,primary_crosslingual,qwen,zh,de,metaphor,unsteered,crosslingual,500,16.2,67,50.8,266,12,1.50737901352e-63,primary_crosslingual_all_408_routes,8.78586625024e-62,significant gain
+cmp_8bb3210d1676082034fb,primary_crosslingual,qwen,bn,en,idiom,unsteered,crosslingual,500,5.2,12.8,7.6,58,20,1.95190907436e-05,primary_crosslingual_all_408_routes,5.45465001603e-05,significant gain
+cmp_652675e8222ae476c374,primary_crosslingual,qwen,de,en,idiom,unsteered,crosslingual,500,5.2,30.2,25,136,11,1.44040675483e-28,primary_crosslingual_all_408_routes,2.09887841419e-27,significant gain
+cmp_5c94dd6aed11c769bc88,primary_crosslingual,qwen,es,en,idiom,unsteered,crosslingual,500,5.2,22.8,17.6,108,20,8.58862295587e-16,primary_crosslingual_all_408_routes,7.15134319591e-15,significant gain
+cmp_f893140e89a24f78bf70,primary_crosslingual,qwen,it,en,idiom,unsteered,crosslingual,500,5.2,21.6,16.4,98,16,1.47741636648e-15,primary_crosslingual_all_408_routes,1.18193309318e-14,significant gain
+cmp_53da0f86b60baa513247,primary_crosslingual,qwen,zh,en,idiom,unsteered,crosslingual,500,5.2,9.4,4.2,42,21,0.0111414074153,primary_crosslingual_all_408_routes,0.0210520423009,significant gain
+cmp_9731e6bd2644f1e43658,primary_crosslingual,qwen,bn,en,irony,unsteered,crosslingual,500,0.2,9.8,9.6,48,0,7.1054273576e-15,primary_crosslingual_all_408_routes,5.27093520346e-14,significant gain
+cmp_c4d0657c595bfb4373e9,primary_crosslingual,qwen,de,en,irony,unsteered,crosslingual,500,0.2,3.6,3.4,17,0,1.52587890625e-05,primary_crosslingual_all_408_routes,4.32332356771e-05,significant gain
+cmp_71c42c8719e9c6858953,primary_crosslingual,qwen,es,en,irony,unsteered,crosslingual,500,0.2,2.2,2,11,1,0.00634765625,primary_crosslingual_all_408_routes,0.0126953125,significant gain
+cmp_5348fe991c68aff91021,primary_crosslingual,qwen,it,en,irony,unsteered,crosslingual,500,0.2,1.2,1,6,1,0.125,primary_crosslingual_all_408_routes,0.182795698925,not significant
+cmp_b1499885e97e76c263e9,primary_crosslingual,qwen,zh,en,irony,unsteered,crosslingual,500,0.2,7.4,7.2,36,0,2.91038304567e-11,primary_crosslingual_all_408_routes,1.54212504238e-10,significant gain
+cmp_192ca7c268d303ced36b,primary_crosslingual,qwen,bn,en,metaphor,unsteered,crosslingual,500,35.2,91.8,56.6,295,12,9.40800223224e-72,primary_crosslingual_all_408_routes,1.91923245538e-69,significant gain
+cmp_0b88ff4c97fdc9b90966,primary_crosslingual,qwen,de,en,metaphor,unsteered,crosslingual,500,35.2,55,19.8,149,50,1.26295723053e-12,primary_crosslingual_all_408_routes,7.57774338318e-12,significant gain
+cmp_26bf53226dea04d257a7,primary_crosslingual,qwen,es,en,metaphor,unsteered,crosslingual,500,35.2,66.4,31.2,195,39,3.87094160622e-26,primary_crosslingual_all_408_routes,4.78589144041e-25,significant gain
+cmp_a4af5f48fdccc7f411c3,primary_crosslingual,qwen,it,en,metaphor,unsteered,crosslingual,500,35.2,89.8,54.6,284,11,9.98041165812e-70,primary_crosslingual_all_408_routes,8.14401591302e-68,significant gain
+cmp_9743a845d81d5b472b90,primary_crosslingual,qwen,zh,en,metaphor,unsteered,crosslingual,500,35.2,85.4,50.2,262,11,1.76324804658e-63,primary_crosslingual_all_408_routes,8.99256503757e-62,significant gain
+cmp_c862d53cc21197b76684,primary_crosslingual,qwen,bn,en,sarcasm,unsteered,crosslingual,500,0.4,0.6,0.2,3,2,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_c821c8a44fbf254c9cec,primary_crosslingual,qwen,it,en,sarcasm,unsteered,crosslingual,500,0.4,1,0.6,5,2,0.453125,primary_crosslingual_all_408_routes,0.54375,not significant
+cmp_e9e6af9ad964213337c5,primary_crosslingual,qwen,zh,en,sarcasm,unsteered,crosslingual,500,0.4,4.8,4.4,23,1,2.98023223877e-06,primary_crosslingual_all_408_routes,9.49949026108e-06,significant gain
+cmp_a78e508c5ca38fcc0dea,primary_crosslingual,qwen,bn,es,idiom,unsteered,crosslingual,500,0.4,3.8,3.4,18,1,7.62939453125e-05,primary_crosslingual_all_408_routes,0.000194549560547,significant gain
+cmp_32eddeff17b54fa0eac5,primary_crosslingual,qwen,de,es,idiom,unsteered,crosslingual,500,0.4,5.2,4.8,24,0,1.19209289551e-07,primary_crosslingual_all_408_routes,4.42158092152e-07,significant gain
+cmp_6462728d124f652ac8c4,primary_crosslingual,qwen,en,es,idiom,unsteered,crosslingual,500,0.4,4.8,4.4,22,0,4.76837158203e-07,primary_crosslingual_all_408_routes,1.64872508938e-06,significant gain
+cmp_bc1f22a3806d9a6597e0,primary_crosslingual,qwen,it,es,idiom,unsteered,crosslingual,500,0.4,4.6,4.2,21,0,9.53674316406e-07,primary_crosslingual_all_408_routes,3.18933705815e-06,significant gain
+cmp_d7427f7834eaf7a18a22,primary_crosslingual,qwen,zh,es,idiom,unsteered,crosslingual,500,0.4,3.2,2.8,14,0,0.0001220703125,primary_crosslingual_all_408_routes,0.000307436342593,significant gain
+cmp_0f3867d63d2065b2afd5,primary_crosslingual,qwen,bn,es,irony,unsteered,crosslingual,500,0,6.6,6.6,33,0,2.32830643654e-10,primary_crosslingual_all_408_routes,1.20246712166e-09,significant gain
+cmp_659a6c6d4be2a185a845,primary_crosslingual,qwen,de,es,irony,unsteered,crosslingual,500,0,0.4,0.4,2,0,0.5,primary_crosslingual_all_408_routes,0.587896253602,not significant
+cmp_663f351aa85396b4bee2,primary_crosslingual,qwen,en,es,irony,unsteered,crosslingual,500,0,2.6,2.6,13,0,0.000244140625,primary_crosslingual_all_408_routes,0.000596463323353,significant gain
+cmp_4646811319e290a530be,primary_crosslingual,qwen,it,es,irony,unsteered,crosslingual,500,0,2.6,2.6,13,0,0.000244140625,primary_crosslingual_all_408_routes,0.000596463323353,significant gain
+cmp_a2d2a51e422760cdf0f8,primary_crosslingual,qwen,zh,es,irony,unsteered,crosslingual,500,0,5.6,5.6,28,0,7.45058059692e-09,primary_crosslingual_all_408_routes,3.37759653727e-08,significant gain
+cmp_f30ba8328e1318df342b,primary_crosslingual,qwen,bn,es,metaphor,unsteered,crosslingual,500,15.8,75,59.2,309,13,1.22791016135e-74,primary_crosslingual_all_408_routes,5.0098734583e-72,significant gain
+cmp_6de48bd72d31c471571f,primary_crosslingual,qwen,de,es,metaphor,unsteered,crosslingual,500,15.8,22.6,6.8,83,49,0.00390512170803,primary_crosslingual_all_408_routes,0.00792681421331,significant gain
+cmp_e92e4359f524418a70f5,primary_crosslingual,qwen,en,es,metaphor,unsteered,crosslingual,500,15.8,29.2,13.4,114,47,1.31785940423e-07,primary_crosslingual_all_408_routes,4.8440237561e-07,significant gain
+cmp_dcb968825c85572d4be0,primary_crosslingual,qwen,it,es,metaphor,unsteered,crosslingual,500,15.8,69.8,54,279,9,1.37551764726e-70,primary_crosslingual_all_408_routes,1.87070400027e-68,significant gain
+cmp_59865c743a2c8ca36c45,primary_crosslingual,qwen,zh,es,metaphor,unsteered,crosslingual,500,15.8,54.8,39,214,19,5.86331629102e-43,primary_crosslingual_all_408_routes,1.40719590984e-41,significant gain
+cmp_795d74308dcce91ebbe5,primary_crosslingual,qwen,bn,it,idiom,unsteered,crosslingual,500,0.8,2.8,2,13,3,0.0212707519531,primary_crosslingual_all_408_routes,0.0374071844693,significant gain
+cmp_1416fcea82bcf33bce36,primary_crosslingual,qwen,de,it,idiom,unsteered,crosslingual,500,0.8,5,4.2,25,4,0.000103715807199,primary_crosslingual_all_408_routes,0.00026283260458,significant gain
+cmp_a1c4fc3eaa10e38d2954,primary_crosslingual,qwen,en,it,idiom,unsteered,crosslingual,500,0.8,2.2,1.4,11,4,0.118469238281,primary_crosslingual_all_408_routes,0.177703857422,not significant
+cmp_451ead5fc0ec6f23afbc,primary_crosslingual,qwen,es,it,idiom,unsteered,crosslingual,500,0.8,5.4,4.6,26,3,1.52364373207e-05,primary_crosslingual_all_408_routes,4.32332356771e-05,significant gain
+cmp_7049dda3c9c2ead74821,primary_crosslingual,qwen,zh,it,idiom,unsteered,crosslingual,500,0.8,3.2,2.4,16,4,0.0118179321289,primary_crosslingual_all_408_routes,0.0218177208534,significant gain
+cmp_890ce5a688a95f7fb919,primary_crosslingual,qwen,bn,it,irony,unsteered,crosslingual,500,1,8.2,7.2,39,3,5.63159119338e-09,primary_crosslingual_all_408_routes,2.61101046238e-08,significant gain
+cmp_6aebac10040d4dc7b289,primary_crosslingual,qwen,de,it,irony,unsteered,crosslingual,500,1,9.2,8.2,45,4,8.22545587198e-10,primary_crosslingual_all_408_routes,4.19498249471e-09,significant gain
+cmp_d3a1c8dd3049b98f311b,primary_crosslingual,qwen,en,it,irony,unsteered,crosslingual,500,1,5.4,4.4,24,2,1.04904174805e-05,primary_crosslingual_all_408_routes,3.03552505818e-05,significant gain
+cmp_e4843665f5c761a74246,primary_crosslingual,qwen,es,it,irony,unsteered,crosslingual,500,1,5.8,4.8,27,3,8.43033194542e-06,primary_crosslingual_all_408_routes,2.47451470053e-05,significant gain
+cmp_9831da2afe544a1328c8,primary_crosslingual,qwen,zh,it,irony,unsteered,crosslingual,500,1,6.4,5.4,31,4,3.46545130014e-06,primary_crosslingual_all_408_routes,1.07931613012e-05,significant gain
+cmp_3c5020d70565b8f21aba,primary_crosslingual,qwen,bn,it,metaphor,unsteered,crosslingual,500,28.2,85,56.8,307,23,1.46973024722e-64,primary_crosslingual_all_408_routes,9.9941656811e-63,significant gain
+cmp_f99a870b5fac15ffa792,primary_crosslingual,qwen,de,it,metaphor,unsteered,crosslingual,500,28.2,36.4,8.2,107,66,0.00226217057632,primary_crosslingual_all_408_routes,0.00475755461413,significant gain
+cmp_b713ca8cebfae2c2a686,primary_crosslingual,qwen,en,it,metaphor,unsteered,crosslingual,500,28.2,42.2,14,127,57,2.64412085821e-07,primary_crosslingual_all_408_routes,9.38088095782e-07,significant gain
+cmp_a13ce443d8ae026932af,primary_crosslingual,qwen,es,it,metaphor,unsteered,crosslingual,500,28.2,39.2,11,116,61,4.32298922922e-05,primary_crosslingual_all_408_routes,0.000116038131942,significant gain
+cmp_61f5ce3269f9eac60e30,primary_crosslingual,qwen,zh,it,metaphor,unsteered,crosslingual,500,28.2,70.8,42.6,250,37,5.29306905419e-40,primary_crosslingual_all_408_routes,1.07978608706e-38,significant gain
+cmp_2e266a630c24e4d72477,primary_crosslingual,qwen,bn,it,sarcasm,unsteered,crosslingual,500,0.4,0,-0.4,0,2,0.5,primary_crosslingual_all_408_routes,0.587896253602,not significant
+cmp_98e33fb9b28e5d5383e1,primary_crosslingual,qwen,en,it,sarcasm,unsteered,crosslingual,500,0.4,0.2,-0.2,1,2,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_5c9a585c48fefe0dc1a4,primary_crosslingual,qwen,zh,it,sarcasm,unsteered,crosslingual,500,0.4,0.8,0.4,3,1,0.625,primary_crosslingual_all_408_routes,0.710306406685,not significant
+cmp_fab1d8b4bbab6b667dda,primary_crosslingual,qwen,bn,zh,idiom,unsteered,crosslingual,500,6,13.6,7.6,55,17,8.14003082672e-06,primary_crosslingual_all_408_routes,2.40661780964e-05,significant gain
+cmp_3c1379919e00c20b0bcd,primary_crosslingual,qwen,de,zh,idiom,unsteered,crosslingual,500,6,18.6,12.6,78,15,1.93930979953e-11,primary_crosslingual_all_408_routes,1.04110315554e-10,significant gain
+cmp_1d6bbac2a6bc8282f08c,primary_crosslingual,qwen,en,zh,idiom,unsteered,crosslingual,500,6,14.2,8.2,60,19,4.19404240892e-06,primary_crosslingual_all_408_routes,1.29634038094e-05,significant gain
+cmp_4ed24636bde3de051e46,primary_crosslingual,qwen,es,zh,idiom,unsteered,crosslingual,500,6,15.4,9.4,68,21,5.98667082804e-07,primary_crosslingual_all_408_routes,2.03546808153e-06,significant gain
+cmp_c72e6602620797d7acba,primary_crosslingual,qwen,it,zh,idiom,unsteered,crosslingual,500,6,16.6,10.6,70,17,8.35091635811e-09,primary_crosslingual_all_408_routes,3.70344986316e-08,significant gain
+cmp_051f44c94f5b80085c6e,primary_crosslingual,qwen,bn,zh,irony,unsteered,crosslingual,500,0.2,5.6,5.4,27,0,1.49011611938e-08,primary_crosslingual_all_408_routes,6.4677380501e-08,significant gain
+cmp_6a9dea9c83e042d0c90c,primary_crosslingual,qwen,de,zh,irony,unsteered,crosslingual,500,0.2,2.6,2.4,13,1,0.0018310546875,primary_crosslingual_all_408_routes,0.00394871160458,significant gain
+cmp_fe9fcc32e3933e658d83,primary_crosslingual,qwen,en,zh,irony,unsteered,crosslingual,500,0.2,0.6,0.4,2,0,0.5,primary_crosslingual_all_408_routes,0.587896253602,not significant
+cmp_609cfd8f52444e29dac5,primary_crosslingual,qwen,es,zh,irony,unsteered,crosslingual,500,0.2,1.4,1.2,7,1,0.0703125,primary_crosslingual_all_408_routes,0.110762548263,not significant
+cmp_45353587d3db3d3c9181,primary_crosslingual,qwen,it,zh,irony,unsteered,crosslingual,500,0.2,2.8,2.6,13,0,0.000244140625,primary_crosslingual_all_408_routes,0.000596463323353,significant gain
+cmp_ac6d71a66a5a54615086,primary_crosslingual,qwen,bn,zh,metaphor,unsteered,crosslingual,500,52.4,90.8,38.4,209,17,3.20279590662e-43,primary_crosslingual_all_408_routes,8.16712956188e-42,significant gain
+cmp_073477e1e5132def0664,primary_crosslingual,qwen,de,zh,metaphor,unsteered,crosslingual,500,52.4,60,7.6,112,74,0.00651220325016,primary_crosslingual_all_408_routes,0.0129608728101,significant gain
+cmp_73bf09fcb431be63d440,primary_crosslingual,qwen,en,zh,metaphor,unsteered,crosslingual,500,52.4,72.2,19.8,151,52,2.19445539745e-12,primary_crosslingual_all_408_routes,1.26103915797e-11,significant gain
+cmp_9dd31cefedbe5064129c,primary_crosslingual,qwen,es,zh,metaphor,unsteered,crosslingual,500,52.4,72.8,20.4,151,49,2.744285636e-13,primary_crosslingual_all_408_routes,1.74948209295e-12,significant gain
+cmp_cd950f305a98e6aca202,primary_crosslingual,qwen,it,zh,metaphor,unsteered,crosslingual,500,52.4,91.6,39.2,208,12,2.4893553762e-47,primary_crosslingual_all_408_routes,6.77104662326e-46,significant gain
+cmp_29f769111c55b5dca57a,primary_crosslingual,qwen,bn,zh,sarcasm,unsteered,crosslingual,500,0,0.6,0.6,3,0,0.25,primary_crosslingual_all_408_routes,0.327974276527,not significant
+cmp_dd92cff628cd96d39ce6,primary_crosslingual,qwen,en,zh,sarcasm,unsteered,crosslingual,500,0,0.8,0.8,4,0,0.125,primary_crosslingual_all_408_routes,0.182795698925,not significant
+cmp_79872daae6b0a53e063e,primary_crosslingual,qwen,it,zh,sarcasm,unsteered,crosslingual,500,0,0.6,0.6,3,0,0.25,primary_crosslingual_all_408_routes,0.327974276527,not significant
+cmp_982a1af7c81779e9bef7,primary_crosslingual,qwenxl,de,bn,idiom,unsteered,crosslingual,500,0.6,1.4,0.8,7,3,0.34375,primary_crosslingual_all_408_routes,0.434210526316,not significant
+cmp_593cb236e104aa0e5012,primary_crosslingual,qwenxl,en,bn,idiom,unsteered,crosslingual,500,0.6,1.6,1,8,3,0.2265625,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_8b1cd1855d13d237d548,primary_crosslingual,qwenxl,es,bn,idiom,unsteered,crosslingual,500,0.6,1.4,0.8,7,3,0.34375,primary_crosslingual_all_408_routes,0.434210526316,not significant
+cmp_847353c051f794441dc2,primary_crosslingual,qwenxl,it,bn,idiom,unsteered,crosslingual,500,0.6,2.2,1.6,11,3,0.057373046875,primary_crosslingual_all_408_routes,0.092522541996,not significant
+cmp_22564876f0f73acc35f0,primary_crosslingual,qwenxl,zh,bn,idiom,unsteered,crosslingual,500,0.6,1.4,0.8,7,3,0.34375,primary_crosslingual_all_408_routes,0.434210526316,not significant
+cmp_8d491e1ccbe99450d175,primary_crosslingual,qwenxl,de,bn,irony,unsteered,crosslingual,500,1.6,3,1.4,14,7,0.189247131348,primary_crosslingual_all_408_routes,0.265336184158,not significant
+cmp_5e06087a1256635c0ffa,primary_crosslingual,qwenxl,en,bn,irony,unsteered,crosslingual,500,1.6,3.2,1.6,15,7,0.133800506592,primary_crosslingual_all_408_routes,0.194272621671,not significant
+cmp_ab118467788b3d0ec4e1,primary_crosslingual,qwenxl,es,bn,irony,unsteered,crosslingual,500,1.6,3.6,2,16,6,0.0524787902832,primary_crosslingual_all_408_routes,0.0853041690659,not significant
+cmp_26c5d187d98eb6198138,primary_crosslingual,qwenxl,it,bn,irony,unsteered,crosslingual,500,1.6,1.8,0.2,9,8,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_408b5fd1045245e7bd2d,primary_crosslingual,qwenxl,zh,bn,irony,unsteered,crosslingual,500,1.6,1.4,-0.2,5,6,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_23f54735561e537bfbfb,primary_crosslingual,qwenxl,de,bn,metaphor,unsteered,crosslingual,500,1.2,2.2,1,10,5,0.3017578125,primary_crosslingual_all_408_routes,0.388382294953,not significant
+cmp_4646b8ad0957c9a43860,primary_crosslingual,qwenxl,en,bn,metaphor,unsteered,crosslingual,500,1.2,2,0.8,9,5,0.423950195312,primary_crosslingual_all_408_routes,0.518375265384,not significant
+cmp_cb2797a2f770406b2342,primary_crosslingual,qwenxl,es,bn,metaphor,unsteered,crosslingual,500,1.2,2,0.8,10,6,0.454498291016,primary_crosslingual_all_408_routes,0.543798541743,not significant
+cmp_2cfc3eafb47b3ceaed7e,primary_crosslingual,qwenxl,it,bn,metaphor,unsteered,crosslingual,500,1.2,12.6,11.4,62,5,1.41953397821e-13,primary_crosslingual_all_408_routes,9.341449405e-13,significant gain
+cmp_714402eba7f37698d4cf,primary_crosslingual,qwenxl,zh,bn,metaphor,unsteered,crosslingual,500,1.2,4.8,3.6,23,5,0.000912234187126,primary_crosslingual_all_408_routes,0.0020450085074,significant gain
+cmp_ef6966f6a3075ec4c245,primary_crosslingual,qwenxl,en,bn,sarcasm,unsteered,crosslingual,500,0.2,1,0.8,5,1,0.21875,primary_crosslingual_all_408_routes,0.300505050505,not significant
+cmp_326770b44af6154a7add,primary_crosslingual,qwenxl,it,bn,sarcasm,unsteered,crosslingual,500,0.2,2.4,2.2,12,1,0.00341796875,primary_crosslingual_all_408_routes,0.00704308712121,significant gain
+cmp_3f343a39eb548664064b,primary_crosslingual,qwenxl,zh,bn,sarcasm,unsteered,crosslingual,500,0.2,0.8,0.6,4,1,0.375,primary_crosslingual_all_408_routes,0.467889908257,not significant
+cmp_0ae4d543df8a9792f811,primary_crosslingual,qwenxl,bn,de,idiom,unsteered,crosslingual,500,5.6,11.2,5.6,49,21,0.00109324497297,primary_crosslingual_all_408_routes,0.00241104837282,significant gain
+cmp_bcd927506d4712f70a44,primary_crosslingual,qwenxl,en,de,idiom,unsteered,crosslingual,500,5.6,27.4,21.8,126,17,9.44542053177e-22,primary_crosslingual_all_408_routes,9.88136301785e-21,significant gain
+cmp_ce53490fe1deda50f122,primary_crosslingual,qwenxl,es,de,idiom,unsteered,crosslingual,500,5.6,31.6,26,146,16,1.91831757484e-27,primary_crosslingual_all_408_routes,2.52475345334e-26,significant gain
+cmp_bf35592a0709a15fcbef,primary_crosslingual,qwenxl,it,de,idiom,unsteered,crosslingual,500,5.6,20.8,15.2,97,21,7.27171357014e-13,primary_crosslingual_all_408_routes,4.4281479651e-12,significant gain
+cmp_ae26941a6319a50b8ddd,primary_crosslingual,qwenxl,zh,de,idiom,unsteered,crosslingual,500,5.6,20.6,15,90,15,3.27649229421e-14,primary_crosslingual_all_408_routes,2.30484285524e-13,significant gain
+cmp_7512961fa66b16e49d3a,primary_crosslingual,qwenxl,bn,de,irony,unsteered,crosslingual,500,1,27.6,26.6,136,3,1.28489338562e-36,primary_crosslingual_all_408_routes,2.18431875555e-35,significant gain
+cmp_b8d18eb0c2be85b2df87,primary_crosslingual,qwenxl,en,de,irony,unsteered,crosslingual,500,1,15.4,14.4,74,2,7.74770448942e-20,primary_crosslingual_all_408_routes,7.70991080898e-19,significant gain
+cmp_ff1032bfacb6851799e0,primary_crosslingual,qwenxl,es,de,irony,unsteered,crosslingual,500,1,17.4,16.4,85,3,7.34465298113e-22,primary_crosslingual_all_408_routes,7.88583793764e-21,significant gain
+cmp_110ecb118428b05e5850,primary_crosslingual,qwenxl,it,de,irony,unsteered,crosslingual,500,1,15.8,14.8,76,2,2.03949651831e-20,primary_crosslingual_all_408_routes,2.08028644868e-19,significant gain
+cmp_5668f15987ce669cdd8c,primary_crosslingual,qwenxl,zh,de,irony,unsteered,crosslingual,500,1,12.8,11.8,61,2,4.37367156381e-16,primary_crosslingual_all_408_routes,3.71762082924e-15,significant gain
+cmp_067ddfe6c9731a253fc8,primary_crosslingual,qwenxl,bn,de,metaphor,unsteered,crosslingual,500,20.2,40.8,20.6,151,48,1.3321018261e-13,primary_crosslingual_all_408_routes,9.05829241748e-13,significant gain
+cmp_64f9cb0d3fbbec8639f1,primary_crosslingual,qwenxl,en,de,metaphor,unsteered,crosslingual,500,20.2,38.6,18.4,140,48,1.23803634406e-11,primary_crosslingual_all_408_routes,6.73491771169e-11,significant gain
+cmp_45360211cb0fce424f05,primary_crosslingual,qwenxl,es,de,metaphor,unsteered,crosslingual,500,20.2,33,12.8,118,54,1.1872180544e-06,primary_crosslingual_all_408_routes,3.90633037253e-06,significant gain
+cmp_c937ed1e2bb0bb7ca984,primary_crosslingual,qwenxl,it,de,metaphor,unsteered,crosslingual,500,20.2,62.6,42.4,244,32,1.42604644075e-41,primary_crosslingual_all_408_routes,3.23237193237e-40,significant gain
+cmp_37cfdf17b18b4f6bf92c,primary_crosslingual,qwenxl,zh,de,metaphor,unsteered,crosslingual,500,20.2,55,34.8,199,25,7.75132152595e-35,primary_crosslingual_all_408_routes,1.26501567304e-33,significant gain
+cmp_28a8edc8c8400843c3a1,primary_crosslingual,qwenxl,bn,en,idiom,unsteered,crosslingual,500,5,8.2,3.2,40,24,0.059941189567,primary_crosslingual_all_408_routes,0.0959059033072,not significant
+cmp_452141d247fa6698f8ba,primary_crosslingual,qwenxl,de,en,idiom,unsteered,crosslingual,500,5,23,18,102,12,6.01049823729e-19,primary_crosslingual_all_408_routes,5.83876971622e-18,significant gain
+cmp_dee07736c6c4f9321ff5,primary_crosslingual,qwenxl,es,en,idiom,unsteered,crosslingual,500,5,15.6,10.6,74,21,4.24989199238e-08,primary_crosslingual_all_408_routes,1.7338216238e-07,significant gain
+cmp_50a97fc54ed8ec7dff13,primary_crosslingual,qwenxl,it,en,idiom,unsteered,crosslingual,500,5,15.2,10.2,67,16,1.38885564454e-08,primary_crosslingual_all_408_routes,6.09304411799e-08,significant gain
+cmp_b6a5272456d85edf9ff3,primary_crosslingual,qwenxl,zh,en,idiom,unsteered,crosslingual,500,5,11.8,6.8,52,18,5.8495473187e-05,primary_crosslingual_all_408_routes,0.000153975181034,significant gain
+cmp_17e57073ebb168fc47f0,primary_crosslingual,qwenxl,bn,en,irony,unsteered,crosslingual,500,0.6,20,19.4,100,3,3.59341919546e-26,primary_crosslingual_all_408_routes,4.58160947422e-25,significant gain
+cmp_96a82aa7adf1f2b9c2da,primary_crosslingual,qwenxl,de,en,irony,unsteered,crosslingual,500,0.6,38,37.4,190,3,1.9090625746e-52,primary_crosslingual_all_408_routes,5.99151946491e-51,significant gain
+cmp_494d250aa6af8c74cdde,primary_crosslingual,qwenxl,es,en,irony,unsteered,crosslingual,500,0.6,13.4,12.8,67,3,9.69446148791e-17,primary_crosslingual_all_408_routes,8.78964508238e-16,significant gain
+cmp_ce4d022ab7e2f1c9774f,primary_crosslingual,qwenxl,it,en,irony,unsteered,crosslingual,500,0.6,11.8,11.2,59,3,1.72492228834e-14,primary_crosslingual_all_408_routes,1.23468121692e-13,significant gain
+cmp_134a5161e6d76c974fe0,primary_crosslingual,qwenxl,zh,en,irony,unsteered,crosslingual,500,0.6,12.6,12,62,2,2.25622472094e-16,primary_crosslingual_all_408_routes,1.9585950769e-15,significant gain
+cmp_43fb720868937e29ed0e,primary_crosslingual,qwenxl,bn,en,metaphor,unsteered,crosslingual,500,40.8,61.8,21,165,60,1.60972777305e-12,primary_crosslingual_all_408_routes,9.38241330579e-12,significant gain
+cmp_1c3680c08c217091b6df,primary_crosslingual,qwenxl,de,en,metaphor,unsteered,crosslingual,500,40.8,47.6,6.8,110,76,0.0153085317891,primary_crosslingual_all_408_routes,0.0278833971873,significant gain
+cmp_39576363b88a3cb9ad62,primary_crosslingual,qwenxl,es,en,metaphor,unsteered,crosslingual,500,40.8,55.2,14.4,135,63,3.39154818409e-07,primary_crosslingual_all_408_routes,1.1928893613e-06,significant gain
+cmp_81986cea2019734e583a,primary_crosslingual,qwenxl,it,en,metaphor,unsteered,crosslingual,500,40.8,84,43.2,237,21,1.76857004907e-47,primary_crosslingual_all_408_routes,5.15411842871e-46,significant gain
+cmp_87d4299c2988f6871fc3,primary_crosslingual,qwenxl,zh,en,metaphor,unsteered,crosslingual,500,40.8,86.8,46,239,9,3.87830460295e-59,primary_crosslingual_all_408_routes,1.582348278e-57,significant gain
+cmp_fbd77ec37d92e978d258,primary_crosslingual,qwenxl,bn,en,sarcasm,unsteered,crosslingual,500,0.2,1.6,1.4,8,1,0.0390625,primary_crosslingual_all_408_routes,0.0650510204082,not significant
+cmp_f14a4f8482862d07edba,primary_crosslingual,qwenxl,it,en,sarcasm,unsteered,crosslingual,500,0.2,8.6,8.4,42,0,4.54747350886e-13,primary_crosslingual_all_408_routes,2.85441414095e-12,significant gain
+cmp_85fd94da6fa569d46f98,primary_crosslingual,qwenxl,zh,en,sarcasm,unsteered,crosslingual,500,0.2,1.6,1.4,8,1,0.0390625,primary_crosslingual_all_408_routes,0.0650510204082,not significant
+cmp_0937028bfd4c3a0f9ee7,primary_crosslingual,qwenxl,bn,es,idiom,unsteered,crosslingual,500,1.8,3,1.2,13,7,0.263175964355,primary_crosslingual_all_408_routes,0.341961125659,not significant
+cmp_f24621955f719f3bfede,primary_crosslingual,qwenxl,de,es,idiom,unsteered,crosslingual,500,1.8,8.4,6.6,41,8,1.96465377655e-06,primary_crosslingual_all_408_routes,6.36173603836e-06,significant gain
+cmp_1df4325221bda02e8bd7,primary_crosslingual,qwenxl,en,es,idiom,unsteered,crosslingual,500,1.8,3.6,1.8,17,8,0.107752144337,primary_crosslingual_all_408_routes,0.162871000367,not significant
+cmp_572d15546ae6a3cdf9cf,primary_crosslingual,qwenxl,it,es,idiom,unsteered,crosslingual,500,1.8,8,6.2,38,7,3.1213096463e-06,primary_crosslingual_all_408_routes,9.87204911389e-06,significant gain
+cmp_967d88900b1755b00295,primary_crosslingual,qwenxl,zh,es,idiom,unsteered,crosslingual,500,1.8,5.6,3.8,27,8,0.00187822547741,primary_crosslingual_all_408_routes,0.00401212562714,significant gain
+cmp_b81d345c4388f9207ce7,primary_crosslingual,qwenxl,bn,es,irony,unsteered,crosslingual,500,0.4,20.6,20.2,103,2,2.74424987404e-28,primary_crosslingual_all_408_routes,3.86087568485e-27,significant gain
+cmp_1ae814e9b2164ae9d89f,primary_crosslingual,qwenxl,de,es,irony,unsteered,crosslingual,500,0.4,16.6,16.2,82,1,1.73707928636e-23,primary_crosslingual_all_408_routes,1.91548202388e-22,significant gain
+cmp_43cc57a5a9b5748107ad,primary_crosslingual,qwenxl,en,es,irony,unsteered,crosslingual,500,0.4,7.2,6.8,35,1,1.0768417269e-09,primary_crosslingual_all_408_routes,5.42409166142e-09,significant gain
+cmp_4fe4f6b932779483d80c,primary_crosslingual,qwenxl,it,es,irony,unsteered,crosslingual,500,0.4,10.6,10.2,53,2,8.55426840474e-14,primary_crosslingual_all_408_routes,5.91549408328e-13,significant gain
+cmp_b8760f1ac36a2af57bdf,primary_crosslingual,qwenxl,zh,es,irony,unsteered,crosslingual,500,0.4,9.2,8.8,46,2,8.3630879999e-12,primary_crosslingual_all_408_routes,4.73908319994e-11,significant gain
+cmp_8b942276b29dad8bb290,primary_crosslingual,qwenxl,bn,es,metaphor,unsteered,crosslingual,500,15.6,53.4,37.8,214,25,1.29638504834e-38,primary_crosslingual_all_408_routes,2.40420499874e-37,significant gain
+cmp_2b2a5c98ad0424603333,primary_crosslingual,qwenxl,de,es,metaphor,unsteered,crosslingual,500,15.6,21,5.4,73,46,0.0167863291185,primary_crosslingual_all_408_routes,0.030243070502,significant gain
+cmp_c7238c2a3cef46a8dfab,primary_crosslingual,qwenxl,en,es,metaphor,unsteered,crosslingual,500,15.6,25.6,10,94,44,2.50363089783e-05,primary_crosslingual_all_408_routes,6.94885310419e-05,significant gain
+cmp_ee91ec237b4a99b67d7f,primary_crosslingual,qwenxl,it,es,metaphor,unsteered,crosslingual,500,15.6,54,38.4,217,25,2.24678007572e-39,primary_crosslingual_all_408_routes,4.36517271855e-38,significant gain
+cmp_3e0c9c5aae9092b9de90,primary_crosslingual,qwenxl,zh,es,metaphor,unsteered,crosslingual,500,15.6,47,31.4,182,25,1.27033665338e-30,primary_crosslingual_all_408_routes,1.99345136376e-29,significant gain
+cmp_5720536d65ab8e2d04a0,primary_crosslingual,qwenxl,bn,it,idiom,unsteered,crosslingual,500,2,3.6,1.6,17,9,0.168637543917,primary_crosslingual_all_408_routes,0.239385248241,not significant
+cmp_f823b79e40e81f7ad200,primary_crosslingual,qwenxl,de,it,idiom,unsteered,crosslingual,500,2,10.6,8.6,53,10,3.3821685024e-08,primary_crosslingual_all_408_routes,1.40808647855e-07,significant gain
+cmp_cf454bb6d64ca54f0464,primary_crosslingual,qwenxl,en,it,idiom,unsteered,crosslingual,500,2,9.6,7.6,47,9,2.57157204808e-07,primary_crosslingual_all_408_routes,9.20352101419e-07,significant gain
+cmp_bad8089fdb484505e681,primary_crosslingual,qwenxl,es,it,idiom,unsteered,crosslingual,500,2,5.4,3.4,26,9,0.00598812056705,primary_crosslingual_all_408_routes,0.0120352373959,significant gain
+cmp_1ae398266573d0ff4597,primary_crosslingual,qwenxl,zh,it,idiom,unsteered,crosslingual,500,2,3.8,1.8,18,9,0.122078120708,primary_crosslingual_all_408_routes,0.181780559303,not significant
+cmp_fe2725fdeddfd75c046f,primary_crosslingual,qwenxl,bn,it,irony,unsteered,crosslingual,500,0.8,18.6,17.8,91,2,8.82918368672e-25,primary_crosslingual_all_408_routes,1.00064081783e-23,significant gain
+cmp_bc3999e64c1c6d5e1730,primary_crosslingual,qwenxl,de,it,irony,unsteered,crosslingual,500,0.8,37.8,37,186,1,1.91680818747e-54,primary_crosslingual_all_408_routes,6.51714783741e-53,significant gain
+cmp_3a98a93e9f9400b2abfc,primary_crosslingual,qwenxl,en,it,irony,unsteered,crosslingual,500,0.8,11.4,10.6,54,1,3.10862446895e-15,primary_crosslingual_all_408_routes,2.34873848765e-14,significant gain
+cmp_e4536de1698b2b42763e,primary_crosslingual,qwenxl,es,it,irony,unsteered,crosslingual,500,0.8,18.2,17.4,88,1,2.90805684101e-25,primary_crosslingual_all_408_routes,3.48966820921e-24,significant gain
+cmp_81c1d2077c5bd8cc269c,primary_crosslingual,qwenxl,zh,it,irony,unsteered,crosslingual,500,0.8,11.6,10.8,56,2,1.18793863635e-14,primary_crosslingual_all_408_routes,8.6549814934e-14,significant gain
+cmp_6135e9be303201b309cc,primary_crosslingual,qwenxl,bn,it,metaphor,unsteered,crosslingual,500,30.2,70,39.8,234,35,2.60694607939e-37,primary_crosslingual_all_408_routes,4.62449565388e-36,significant gain
+cmp_0db87580f17d2e64a95a,primary_crosslingual,qwenxl,de,it,metaphor,unsteered,crosslingual,500,30.2,29.8,-0.4,78,80,0.936624069649,primary_crosslingual_all_408_routes,1,not significant
+cmp_ef52a4afb5e4a96e62f8,primary_crosslingual,qwenxl,en,it,metaphor,unsteered,crosslingual,500,30.2,45.4,15.2,138,62,8.02690599118e-08,primary_crosslingual_all_408_routes,3.05593735526e-07,significant gain
+cmp_19610a8ed1ed86b681c4,primary_crosslingual,qwenxl,es,it,metaphor,unsteered,crosslingual,500,30.2,40.4,10.2,115,64,0.000169645210383,primary_crosslingual_all_408_routes,0.000422044181929,significant gain
+cmp_b4d4f6a9bfa791843f82,primary_crosslingual,qwenxl,zh,it,metaphor,unsteered,crosslingual,500,30.2,78,47.8,253,14,6.77182083638e-58,primary_crosslingual_all_408_routes,2.51172991022e-56,significant gain
+cmp_f9ce60e67a88ee5480cb,primary_crosslingual,qwenxl,bn,it,sarcasm,unsteered,crosslingual,500,0.4,1,0.6,5,2,0.453125,primary_crosslingual_all_408_routes,0.54375,not significant
+cmp_bf39028aeb8598fc2af4,primary_crosslingual,qwenxl,en,it,sarcasm,unsteered,crosslingual,500,0.4,1.8,1.4,9,2,0.0654296875,primary_crosslingual_all_408_routes,0.103470203488,not significant
+cmp_a069c27a75c56573e43b,primary_crosslingual,qwenxl,zh,it,sarcasm,unsteered,crosslingual,500,0.4,0.6,0.2,3,2,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_7967480b8abba7dabc41,primary_crosslingual,qwenxl,bn,zh,idiom,unsteered,crosslingual,500,6.8,17,10.2,70,19,4.95748956776e-08,primary_crosslingual_all_408_routes,1.96374344043e-07,significant gain
+cmp_a2cd6ce0bb1a6d799c5b,primary_crosslingual,qwenxl,de,zh,idiom,unsteered,crosslingual,500,6.8,14.4,7.6,60,22,3.23171261989e-05,primary_crosslingual_all_408_routes,8.84925334842e-05,significant gain
+cmp_937c013218a3916e0d16,primary_crosslingual,qwenxl,en,zh,idiom,unsteered,crosslingual,500,6.8,14.8,8,57,17,3.39716681699e-06,primary_crosslingual_all_408_routes,1.06618773949e-05,significant gain
+cmp_64a2c288fc3e89ce30ca,primary_crosslingual,qwenxl,es,zh,idiom,unsteered,crosslingual,500,6.8,12.4,5.6,50,22,0.00129358496268,primary_crosslingual_all_408_routes,0.00283754120845,significant gain
+cmp_5b3c441adc58b158ab64,primary_crosslingual,qwenxl,it,zh,idiom,unsteered,crosslingual,500,6.8,17,10.2,71,20,7.24537368079e-08,primary_crosslingual_all_408_routes,2.81534520168e-07,significant gain
+cmp_c67518b959d1138bb444,primary_crosslingual,qwenxl,bn,zh,irony,unsteered,crosslingual,500,1.2,8.6,7.4,42,5,2.45797764364e-08,primary_crosslingual_all_408_routes,1.04464049855e-07,significant gain
+cmp_ba51b096d5e0b7bae461,primary_crosslingual,qwenxl,de,zh,irony,unsteered,crosslingual,500,1.2,8.4,7.2,39,3,5.63159119338e-09,primary_crosslingual_all_408_routes,2.61101046238e-08,significant gain
+cmp_ea4850dbe744d615f73a,primary_crosslingual,qwenxl,en,zh,irony,unsteered,crosslingual,500,1.2,2.4,1.2,11,5,0.210113525391,primary_crosslingual_all_408_routes,0.290597689354,not significant
+cmp_a98a12c4e7cf104c3287,primary_crosslingual,qwenxl,es,zh,irony,unsteered,crosslingual,500,1.2,4.8,3.6,23,5,0.000912234187126,primary_crosslingual_all_408_routes,0.0020450085074,significant gain
+cmp_ad121f5b6879ad6a0b12,primary_crosslingual,qwenxl,it,zh,irony,unsteered,crosslingual,500,1.2,3.6,2.4,17,5,0.0169005393982,primary_crosslingual_all_408_routes,0.030243070502,significant gain
+cmp_e1f9d23898dffac28ab1,primary_crosslingual,qwenxl,bn,zh,metaphor,unsteered,crosslingual,500,49.8,73.6,23.8,167,48,1.31616152872e-16,primary_crosslingual_all_408_routes,1.16737805156e-15,significant gain
+cmp_bb17b7768e1c0b0a0d3b,primary_crosslingual,qwenxl,de,zh,metaphor,unsteered,crosslingual,500,49.8,55,5.2,101,75,0.0591961514006,primary_crosslingual_all_408_routes,0.0950867313837,not significant
+cmp_ef3219bbaa32eadd54b2,primary_crosslingual,qwenxl,en,zh,metaphor,unsteered,crosslingual,500,49.8,71.4,21.6,150,42,1.94355416255e-15,primary_crosslingual_all_408_routes,1.49616999683e-14,significant gain
+cmp_4f2411f0d929c665b562,primary_crosslingual,qwenxl,es,zh,metaphor,unsteered,crosslingual,500,49.8,69.6,19.8,147,48,7.08235675358e-13,primary_crosslingual_all_408_routes,4.37818417494e-12,significant gain
+cmp_fecef5f3eaf35a259d4a,primary_crosslingual,qwenxl,it,zh,metaphor,unsteered,crosslingual,500,49.8,88.4,38.6,217,24,4.61836075553e-40,primary_crosslingual_all_408_routes,9.91732204346e-39,significant gain
+cmp_d6d89c38a82021af1b04,primary_crosslingual,qwenxl,bn,zh,sarcasm,unsteered,crosslingual,500,0.6,0.8,0.2,4,3,1,primary_crosslingual_all_408_routes,1,not significant
+cmp_7edc6ac2e243d640f9ac,primary_crosslingual,qwenxl,en,zh,sarcasm,unsteered,crosslingual,500,0.6,1.6,1,8,3,0.2265625,primary_crosslingual_all_408_routes,0.308502230406,not significant
+cmp_11d5fcd6c2f8314c6057,primary_crosslingual,qwenxl,it,zh,sarcasm,unsteered,crosslingual,500,0.6,3,2.4,15,3,0.00753784179688,primary_crosslingual_all_408_routes,0.0146449497768,significant gain

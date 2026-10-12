@@ -1,0 +1,5911 @@
+pair_id,lang,category,batch_index,item_index,topic,figurative,literal,generation_raw,quality_raw,quality_reason,figurative_ok,literal_ok,meaning_ok,natural_ok,formulaic,keep
+en_metaphor_0000,en,metaphor,5,9,protest,The storm of protest grew louder.,The protests became more intense and widespread.,"[
+    {
+        ""figurative"": ""Her words cut through the silence."",
+        ""literal"": ""Her words broke the silence abruptly."",
+        ""topic"": ""communication""
+    },
+    {
+        ""figurative"": ""He drowned in a sea of paperwork."",
+        ""literal"": ""He was overwhelmed by the large amount of paperwork."",
+        ""topic"": ""work""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""He was devastated by the news."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""She was a lion in the courtroom."",
+        ""literal"": ""She was fierce and dominant in the courtroom."",
+        ""topic"": ""legal""
+    },
+    {
+        ""figurative"": ""Time is running out."",
+        ""literal"": ""There is limited time remaining."",
+        ""topic"": ""time""
+    },
+    {
+        ""figurative"": ""He has a heart of stone."",
+        ""literal"": ""He is emotionally unresponsive."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing badly."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""Her smile lit up the room."",
+        ""literal"": ""Her smile made everyone feel happy and brightened the atmosphere."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""He is climbing the corporate ladder."",
+        ""literal"": ""He is advancing through the ranks in the company."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""The storm of protest grew louder."",
+        ""literal"": ""The protests became more intense and widespread."",
+        ""topic"": ""protest""
+    }
+]","Reason: The pair meets all criteria for a usable metaphor diagnostic pair.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair meets all criteria for a usable metaphor diagnostic pair.,1,1,1,1,0,1
+en_metaphor_0001,en,metaphor,1,4,speech,He has a sharp tongue.,He often speaks in a harsh or critical way.,"[
+  {
+    ""figurative"": ""Her smile lit up the room."",
+    ""literal"": ""Her smile made everyone feel happy and cheerful."",
+    ""topic"": ""happiness""
+  },
+  {
+    ""figurative"": ""He was frozen with fear."",
+    ""literal"": ""He was unable to move because of extreme fear."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She broke the ice at the meeting."",
+    ""literal"": ""She helped relieve tension and start conversation at the meeting."",
+    ""topic"": ""social interaction""
+  },
+  {
+    ""figurative"": ""The company is a sinking ship."",
+    ""literal"": ""The company is failing and likely to go bankrupt."",
+    ""topic"": ""business failure""
+  },
+  {
+    ""figurative"": ""He has a sharp tongue."",
+    ""literal"": ""He often speaks in a harsh or critical way."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""They are sailing through the project."",
+    ""literal"": ""They are completing the project very easily and quickly."",
+    ""topic"": ""project progress""
+  },
+  {
+    ""figurative"": ""His heart sank when he heard the news."",
+    ""literal"": ""He felt deep disappointment and sadness upon hearing the news."",
+    ""topic"": ""disappointment""
+  },
+  {
+    ""figurative"": ""She is a shining star in the team."",
+    ""literal"": ""She is an outstanding and valuable member of the team."",
+    ""topic"": ""performance""
+  },
+  {
+    ""figurative"": ""The argument left a bitter taste in his mouth."",
+    ""literal"": ""The argument caused him to feel resentment and displeasure."",
+    ""topic"": ""conflict aftermath""
+  },
+  {
+    ""figurative"": ""He was a rock for his family during the crisis."",
+    ""literal"": ""He was a reliable and strong support for his family during the crisis."",
+    ""topic"": ""support""
+  }
+]","Reason: The metaphor is clearly present, the paraphrase is accurate, and both sentences are natural.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The metaphor is clearly present, the paraphrase is accurate, and both sentences are natural.",1,1,1,1,0,1
+en_metaphor_0002,en,metaphor,2,2,hurtful speech,His words were daggers to her heart.,His words deeply hurt her emotionally.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: The figurative sentence clearly contains a metaphor, the literal sentence is literal and matches the meaning, both are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly contains a metaphor, the literal sentence is literal and matches the meaning, both are natural and non-formulaic.",1,1,1,1,0,1
+en_metaphor_0003,en,metaphor,8,6,urban environment,The city was a concrete jungle.,The city had many tall buildings and little greenery.,"```json
+[
+  {
+    ""figurative"": ""The morning sun painted the sky with shades of orange and pink."",
+    ""literal"": ""The morning sun caused the sky to have shades of orange and pink."",
+    ""topic"": ""sunrise colors""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news was a dagger to his heart."",
+    ""literal"": ""The news caused him intense emotional pain."",
+    ""topic"": ""shocking news""
+  },
+  {
+    ""figurative"": ""Time is a thief that steals our moments."",
+    ""literal"": ""Time passes and we lose moments without realizing."",
+    ""topic"": ""passage of time""
+  },
+  {
+    ""figurative"": ""She navigated the storm of criticism with grace."",
+    ""literal"": ""She handled the harsh criticism with composure."",
+    ""topic"": ""handling criticism""
+  },
+  {
+    ""figurative"": ""His ideas were seeds that grew into a successful business."",
+    ""literal"": ""His ideas developed into a successful business over time."",
+    ""topic"": ""business development""
+  },
+  {
+    ""figurative"": ""The city was a concrete jungle."",
+    ""literal"": ""The city had many tall buildings and little greenery."",
+    ""topic"": ""urban environment""
+  },
+  {
+    ""figurative"": ""He drowned in a sea of paperwork."",
+    ""literal"": ""He had so much paperwork that he felt overwhelmed."",
+    ""topic"": ""overwhelming workload""
+  },
+  {
+    ""figurative"": ""Her smile was a ray of sunshine."",
+    ""literal"": ""Her smile made everyone feel happy."",
+    ""topic"": ""cheerful smile""
+  },
+  {
+    ""figurative"": ""The company is a well-oiled machine."",
+    ""literal"": ""The company operates very efficiently."",
+    ""topic"": ""efficient organization""
+  }
+]
+```","Reason: The figurative sentence uses the metaphor ""concrete jungle"" and the literal sentence paraphrases it without metaphor, both are natural and meaning-equivalent.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor ""concrete jungle"" and the literal sentence paraphrases it without metaphor, both are natural and meaning-equivalent.",1,1,1,1,0,1
+en_metaphor_0004,en,metaphor,6,2,fear,A cold fear gripped the crowd as the sirens approached.,The crowd became very afraid when they heard the sirens approaching.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The figurative sentence uses ""cold fear gripped"" as a clear metaphor, the literal sentence avoids metaphor while matching the meaning, both are natural and the pair is not generic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses ""cold fear gripped"" as a clear metaphor, the literal sentence avoids metaphor while matching the meaning, both are natural and the pair is not generic.",1,1,1,1,0,1
+en_metaphor_0005,en,metaphor,2,9,life's variability,Life is a roller coaster with ups and downs.,Life has many good times and bad times.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: The figurative sentence is a clear metaphor, the literal sentence avoids metaphor, they share the same meaning, both are natural, and the pair is not overly formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor, the literal sentence avoids metaphor, they share the same meaning, both are natural, and the pair is not overly formulaic.",1,1,1,1,0,1
+en_metaphor_0006,en,metaphor,4,4,nature,The wind whispered through the trees.,"The wind made a soft, rustling sound as it passed through the trees.","[
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""She has a heart of gold."",
+        ""literal"": ""She is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""He is drowning in sorrow."",
+        ""literal"": ""He is overwhelmed by sadness."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""The deadline is looming over us."",
+        ""literal"": ""The deadline is approaching and causing us stress."",
+        ""topic"": ""pressure""
+    },
+    {
+        ""figurative"": ""The wind whispered through the trees."",
+        ""literal"": ""The wind made a soft, rustling sound as it passed through the trees."",
+        ""topic"": ""nature""
+    },
+    {
+        ""figurative"": ""He is climbing the ladder of success."",
+        ""literal"": ""He is advancing in his career step by step."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""She tore his argument to shreds."",
+        ""literal"": ""She completely refuted his argument."",
+        ""topic"": ""argument""
+    },
+    {
+        ""figurative"": ""He is a walking encyclopedia."",
+        ""literal"": ""He knows an immense amount of information."",
+        ""topic"": ""knowledge""
+    },
+    {
+        ""figurative"": ""This problem is a mountain to climb."",
+        ""literal"": ""This problem is extremely difficult to solve."",
+        ""topic"": ""difficulty""
+    },
+    {
+        ""figurative"": ""A glimmer of hope appeared."",
+        ""literal"": ""A small amount of hope appeared."",
+        ""topic"": ""hope""
+    }
+]","Reason: The figurative sentence uses ""whispered"" as a metaphor for a natural sound, while the literal sentence describes the same event without metaphor, both are natural and convey the same meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses ""whispered"" as a metaphor for a natural sound, while the literal sentence describes the same event without metaphor, both are natural and convey the same meaning.",1,1,1,1,0,1
+en_metaphor_0007,en,metaphor,8,0,sunrise colors,The morning sun painted the sky with shades of orange and pink.,The morning sun caused the sky to have shades of orange and pink.,"```json
+[
+  {
+    ""figurative"": ""The morning sun painted the sky with shades of orange and pink."",
+    ""literal"": ""The morning sun caused the sky to have shades of orange and pink."",
+    ""topic"": ""sunrise colors""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news was a dagger to his heart."",
+    ""literal"": ""The news caused him intense emotional pain."",
+    ""topic"": ""shocking news""
+  },
+  {
+    ""figurative"": ""Time is a thief that steals our moments."",
+    ""literal"": ""Time passes and we lose moments without realizing."",
+    ""topic"": ""passage of time""
+  },
+  {
+    ""figurative"": ""She navigated the storm of criticism with grace."",
+    ""literal"": ""She handled the harsh criticism with composure."",
+    ""topic"": ""handling criticism""
+  },
+  {
+    ""figurative"": ""His ideas were seeds that grew into a successful business."",
+    ""literal"": ""His ideas developed into a successful business over time."",
+    ""topic"": ""business development""
+  },
+  {
+    ""figurative"": ""The city was a concrete jungle."",
+    ""literal"": ""The city had many tall buildings and little greenery."",
+    ""topic"": ""urban environment""
+  },
+  {
+    ""figurative"": ""He drowned in a sea of paperwork."",
+    ""literal"": ""He had so much paperwork that he felt overwhelmed."",
+    ""topic"": ""overwhelming workload""
+  },
+  {
+    ""figurative"": ""Her smile was a ray of sunshine."",
+    ""literal"": ""Her smile made everyone feel happy."",
+    ""topic"": ""cheerful smile""
+  },
+  {
+    ""figurative"": ""The company is a well-oiled machine."",
+    ""literal"": ""The company operates very efficiently."",
+    ""topic"": ""efficient organization""
+  }
+]
+```","Reason: All five criteria are satisfied.  
+FigurativeOK: 1  
+LiteralOK: 1  
+MeaningOK: 1  
+NaturalOK: 1  
+Formulaic: 0  
+Keep: 1",All five criteria are satisfied.,1,1,1,1,0,1
+en_metaphor_0008,en,metaphor,8,5,business development,His ideas were seeds that grew into a successful business.,His ideas developed into a successful business over time.,"```json
+[
+  {
+    ""figurative"": ""The morning sun painted the sky with shades of orange and pink."",
+    ""literal"": ""The morning sun caused the sky to have shades of orange and pink."",
+    ""topic"": ""sunrise colors""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news was a dagger to his heart."",
+    ""literal"": ""The news caused him intense emotional pain."",
+    ""topic"": ""shocking news""
+  },
+  {
+    ""figurative"": ""Time is a thief that steals our moments."",
+    ""literal"": ""Time passes and we lose moments without realizing."",
+    ""topic"": ""passage of time""
+  },
+  {
+    ""figurative"": ""She navigated the storm of criticism with grace."",
+    ""literal"": ""She handled the harsh criticism with composure."",
+    ""topic"": ""handling criticism""
+  },
+  {
+    ""figurative"": ""His ideas were seeds that grew into a successful business."",
+    ""literal"": ""His ideas developed into a successful business over time."",
+    ""topic"": ""business development""
+  },
+  {
+    ""figurative"": ""The city was a concrete jungle."",
+    ""literal"": ""The city had many tall buildings and little greenery."",
+    ""topic"": ""urban environment""
+  },
+  {
+    ""figurative"": ""He drowned in a sea of paperwork."",
+    ""literal"": ""He had so much paperwork that he felt overwhelmed."",
+    ""topic"": ""overwhelming workload""
+  },
+  {
+    ""figurative"": ""Her smile was a ray of sunshine."",
+    ""literal"": ""Her smile made everyone feel happy."",
+    ""topic"": ""cheerful smile""
+  },
+  {
+    ""figurative"": ""The company is a well-oiled machine."",
+    ""literal"": ""The company operates very efficiently."",
+    ""topic"": ""efficient organization""
+  }
+]
+```","Reason: The pair effectively contrasts a metaphorical seed-growth expression with a literal development statement, meeting all criteria.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair effectively contrasts a metaphorical seed-growth expression with a literal development statement, meeting all criteria.",1,1,1,1,0,1
+en_metaphor_0009,en,metaphor,3,7,success,His ideas bear fruit.,His ideas produce successful results.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: All checks pass.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All checks pass.,1,1,1,1,0,1
+en_metaphor_0010,en,metaphor,5,6,business,The company is a sinking ship.,The company is failing badly.,"[
+    {
+        ""figurative"": ""Her words cut through the silence."",
+        ""literal"": ""Her words broke the silence abruptly."",
+        ""topic"": ""communication""
+    },
+    {
+        ""figurative"": ""He drowned in a sea of paperwork."",
+        ""literal"": ""He was overwhelmed by the large amount of paperwork."",
+        ""topic"": ""work""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""He was devastated by the news."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""She was a lion in the courtroom."",
+        ""literal"": ""She was fierce and dominant in the courtroom."",
+        ""topic"": ""legal""
+    },
+    {
+        ""figurative"": ""Time is running out."",
+        ""literal"": ""There is limited time remaining."",
+        ""topic"": ""time""
+    },
+    {
+        ""figurative"": ""He has a heart of stone."",
+        ""literal"": ""He is emotionally unresponsive."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing badly."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""Her smile lit up the room."",
+        ""literal"": ""Her smile made everyone feel happy and brightened the atmosphere."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""He is climbing the corporate ladder."",
+        ""literal"": ""He is advancing through the ranks in the company."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""The storm of protest grew louder."",
+        ""literal"": ""The protests became more intense and widespread."",
+        ""topic"": ""protest""
+    }
+]","Reason: The figurative sentence clearly uses the metaphor of a sinking ship for failure, and the literal sentence captures the same meaning without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly uses the metaphor of a sinking ship for failure, and the literal sentence captures the same meaning without metaphor.",1,1,1,1,0,1
+en_metaphor_0011,en,metaphor,6,5,grief,The news of the accident cast a long shadow over the family.,The news of the accident made the family sad and worried for a long time.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: Both sentences are valid, meaning-equivalent, and natural, with the figurative containing the metaphor and the literal lacking it.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are valid, meaning-equivalent, and natural, with the figurative containing the metaphor and the literal lacking it.",1,1,1,1,0,1
+en_metaphor_0012,en,metaphor,2,3,urban environment,The city was a jungle of concrete.,The city was a dense and chaotic urban area with many concrete buildings.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: The figurative sentence clearly uses a metaphor, the literal sentence is a non-metaphorical paraphrase, both are natural and match in meaning, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly uses a metaphor, the literal sentence is a non-metaphorical paraphrase, both are natural and match in meaning, and the pair is not formulaic.",1,1,1,1,0,1
+en_metaphor_0013,en,metaphor,3,8,decision,We are at a crossroads.,We have to make an important decision.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: The figurative sentence is a standard metaphor for decision-making and matches the literal meaning.  
+FigurativeOK: 1  
+LiteralOK: 1  
+MeaningOK: 1  
+NaturalOK: 1  
+Formulaic: 0  
+Keep: 1",The figurative sentence is a standard metaphor for decision-making and matches the literal meaning.,1,1,1,1,0,1
+en_metaphor_0014,en,metaphor,4,8,difficulty,This problem is a mountain to climb.,This problem is extremely difficult to solve.,"[
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""She has a heart of gold."",
+        ""literal"": ""She is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""He is drowning in sorrow."",
+        ""literal"": ""He is overwhelmed by sadness."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""The deadline is looming over us."",
+        ""literal"": ""The deadline is approaching and causing us stress."",
+        ""topic"": ""pressure""
+    },
+    {
+        ""figurative"": ""The wind whispered through the trees."",
+        ""literal"": ""The wind made a soft, rustling sound as it passed through the trees."",
+        ""topic"": ""nature""
+    },
+    {
+        ""figurative"": ""He is climbing the ladder of success."",
+        ""literal"": ""He is advancing in his career step by step."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""She tore his argument to shreds."",
+        ""literal"": ""She completely refuted his argument."",
+        ""topic"": ""argument""
+    },
+    {
+        ""figurative"": ""He is a walking encyclopedia."",
+        ""literal"": ""He knows an immense amount of information."",
+        ""topic"": ""knowledge""
+    },
+    {
+        ""figurative"": ""This problem is a mountain to climb."",
+        ""literal"": ""This problem is extremely difficult to solve."",
+        ""topic"": ""difficulty""
+    },
+    {
+        ""figurative"": ""A glimmer of hope appeared."",
+        ""literal"": ""A small amount of hope appeared."",
+        ""topic"": ""hope""
+    }
+]","Reason: Both sentences convey extreme difficulty, with the figurative using a clear mountain-climbing metaphor and the literal stating it directly.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences convey extreme difficulty, with the figurative using a clear mountain-climbing metaphor and the literal stating it directly.",1,1,1,1,0,1
+en_metaphor_0015,en,metaphor,3,1,kindness,He has a heart of gold.,He is very kind and generous.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: Both sentences are clear, natural, and express the same proposition without being formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are clear, natural, and express the same proposition without being formulaic.",1,1,1,1,0,1
+en_metaphor_0016,en,metaphor,6,8,emotional concealment,He wore a mask of indifference during the entire meeting.,He pretended not to care during the entire meeting.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The figurative sentence uses a clear metaphor ('mask of indifference') while the literal paraphrase matches its meaning naturally.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The figurative sentence uses a clear metaphor ('mask of indifference') while the literal paraphrase matches its meaning naturally.,1,1,1,1,0,1
+en_metaphor_0017,en,metaphor,2,1,aging,Time is a thief that steals our youth.,"As time passes, we lose our youth.","[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: All criteria are satisfied: the figurative sentence is metaphorical, the literal is not, they share the same proposition, both are natural, and the pair is specific.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","All criteria are satisfied: the figurative sentence is metaphorical, the literal is not, they share the same proposition, both are natural, and the pair is specific.",1,1,1,1,0,1
+en_metaphor_0018,en,metaphor,3,9,economy,The engine of the economy is sputtering.,The economy is performing poorly.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: All checks pass for a valid metaphor pair.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All checks pass for a valid metaphor pair.,1,1,1,1,0,1
+en_metaphor_0019,en,metaphor,0,9,shocking news,The news was a bombshell that shattered their plans.,The news was shocking and completely disrupted their plans.,"[
+    {
+        ""figurative"": ""Her heart was a fortress, impenetrable to his apologies."",
+        ""literal"": ""She remained emotionally closed off and refused to accept his apologies."",
+        ""topic"": ""emotional defense""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our moments."",
+        ""literal"": ""Time passes quickly and we lose precious moments."",
+        ""topic"": ""passage of time""
+    },
+    {
+        ""figurative"": ""The classroom was a zoo during the substitute teacher's first hour."",
+        ""literal"": ""The classroom was very chaotic and noisy during the substitute teacher's first hour."",
+        ""topic"": ""classroom chaos""
+    },
+    {
+        ""figurative"": ""His words were a double-edged sword, both comforting and hurtful."",
+        ""literal"": ""His words had both a comforting and a hurtful effect."",
+        ""topic"": ""mixed impact of words""
+    },
+    {
+        ""figurative"": ""She swam through the sea of paperwork until lunch."",
+        ""literal"": ""She worked through a large amount of paperwork continuously until lunch."",
+        ""topic"": ""heavy workload""
+    },
+    {
+        ""figurative"": ""The old man's memory is a fading photograph."",
+        ""literal"": ""The old man's memory is becoming unclear and less detailed."",
+        ""topic"": ""memory loss""
+    },
+    {
+        ""figurative"": ""Her voice was velvet, smooth and warm."",
+        ""literal"": ""Her voice was smooth and warm."",
+        ""topic"": ""voice quality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship, and employees are jumping overboard."",
+        ""literal"": ""The company is failing, and employees are leaving."",
+        ""topic"": ""company failure""
+    },
+    {
+        ""figurative"": ""He planted seeds of doubt in her mind."",
+        ""literal"": ""He caused her to begin to doubt."",
+        ""topic"": ""instilling doubt""
+    },
+    {
+        ""figurative"": ""The news was a bombshell that shattered their plans."",
+        ""literal"": ""The news was shocking and completely disrupted their plans."",
+        ""topic"": ""shocking news""
+    }
+]","Reason: The pair meets all criteria for a meaning-preserving metaphor diagnostic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair meets all criteria for a meaning-preserving metaphor diagnostic.,1,1,1,1,0,1
+en_metaphor_0020,en,metaphor,4,5,career,He is climbing the ladder of success.,He is advancing in his career step by step.,"[
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""She has a heart of gold."",
+        ""literal"": ""She is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""He is drowning in sorrow."",
+        ""literal"": ""He is overwhelmed by sadness."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""The deadline is looming over us."",
+        ""literal"": ""The deadline is approaching and causing us stress."",
+        ""topic"": ""pressure""
+    },
+    {
+        ""figurative"": ""The wind whispered through the trees."",
+        ""literal"": ""The wind made a soft, rustling sound as it passed through the trees."",
+        ""topic"": ""nature""
+    },
+    {
+        ""figurative"": ""He is climbing the ladder of success."",
+        ""literal"": ""He is advancing in his career step by step."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""She tore his argument to shreds."",
+        ""literal"": ""She completely refuted his argument."",
+        ""topic"": ""argument""
+    },
+    {
+        ""figurative"": ""He is a walking encyclopedia."",
+        ""literal"": ""He knows an immense amount of information."",
+        ""topic"": ""knowledge""
+    },
+    {
+        ""figurative"": ""This problem is a mountain to climb."",
+        ""literal"": ""This problem is extremely difficult to solve."",
+        ""topic"": ""difficulty""
+    },
+    {
+        ""figurative"": ""A glimmer of hope appeared."",
+        ""literal"": ""A small amount of hope appeared."",
+        ""topic"": ""hope""
+    }
+]","Reason: The metaphorical expression ""climbing the ladder of success"" is a clear metaphor, the literal paraphrase is natural and metaphor-free, both convey the same proposition, and the pair is not excessively formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The metaphorical expression ""climbing the ladder of success"" is a clear metaphor, the literal paraphrase is natural and metaphor-free, both convey the same proposition, and the pair is not excessively formulaic.",1,1,1,1,0,1
+en_metaphor_0021,en,metaphor,2,6,anger,He has a storm brewing in his mind.,He is becoming very angry and agitated.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: Both sentences are natural and match in meaning, with the figurative sentence clearly using metaphor and the literal sentence avoiding it.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are natural and match in meaning, with the figurative sentence clearly using metaphor and the literal sentence avoiding it.",1,1,1,1,0,1
+en_metaphor_0022,en,metaphor,5,0,communication,Her words cut through the silence.,Her words broke the silence abruptly.,"[
+    {
+        ""figurative"": ""Her words cut through the silence."",
+        ""literal"": ""Her words broke the silence abruptly."",
+        ""topic"": ""communication""
+    },
+    {
+        ""figurative"": ""He drowned in a sea of paperwork."",
+        ""literal"": ""He was overwhelmed by the large amount of paperwork."",
+        ""topic"": ""work""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""He was devastated by the news."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""She was a lion in the courtroom."",
+        ""literal"": ""She was fierce and dominant in the courtroom."",
+        ""topic"": ""legal""
+    },
+    {
+        ""figurative"": ""Time is running out."",
+        ""literal"": ""There is limited time remaining."",
+        ""topic"": ""time""
+    },
+    {
+        ""figurative"": ""He has a heart of stone."",
+        ""literal"": ""He is emotionally unresponsive."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing badly."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""Her smile lit up the room."",
+        ""literal"": ""Her smile made everyone feel happy and brightened the atmosphere."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""He is climbing the corporate ladder."",
+        ""literal"": ""He is advancing through the ranks in the company."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""The storm of protest grew louder."",
+        ""literal"": ""The protests became more intense and widespread."",
+        ""topic"": ""protest""
+    }
+]","Reason: All checks pass: figurative is metaphorical, literal is literal, meaning matches, both natural and not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","All checks pass: figurative is metaphorical, literal is literal, meaning matches, both natural and not formulaic.",1,1,1,1,0,1
+en_metaphor_0023,en,metaphor,3,5,workload,He's drowning in paperwork.,He is overwhelmed by the amount of paperwork.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: The pair clearly exemplifies a metaphor with a natural literal paraphrase.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair clearly exemplifies a metaphor with a natural literal paraphrase.,1,1,1,1,0,1
+en_metaphor_0024,en,metaphor,3,3,knowledge,She is an encyclopedia of knowledge.,She knows a vast amount of information.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: The metaphor is clear and the literal matches meaning without being formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The metaphor is clear and the literal matches meaning without being formulaic.,1,1,1,1,0,1
+en_metaphor_0025,en,metaphor,1,6,disappointment,His heart sank when he heard the news.,He felt deep disappointment and sadness upon hearing the news.,"[
+  {
+    ""figurative"": ""Her smile lit up the room."",
+    ""literal"": ""Her smile made everyone feel happy and cheerful."",
+    ""topic"": ""happiness""
+  },
+  {
+    ""figurative"": ""He was frozen with fear."",
+    ""literal"": ""He was unable to move because of extreme fear."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She broke the ice at the meeting."",
+    ""literal"": ""She helped relieve tension and start conversation at the meeting."",
+    ""topic"": ""social interaction""
+  },
+  {
+    ""figurative"": ""The company is a sinking ship."",
+    ""literal"": ""The company is failing and likely to go bankrupt."",
+    ""topic"": ""business failure""
+  },
+  {
+    ""figurative"": ""He has a sharp tongue."",
+    ""literal"": ""He often speaks in a harsh or critical way."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""They are sailing through the project."",
+    ""literal"": ""They are completing the project very easily and quickly."",
+    ""topic"": ""project progress""
+  },
+  {
+    ""figurative"": ""His heart sank when he heard the news."",
+    ""literal"": ""He felt deep disappointment and sadness upon hearing the news."",
+    ""topic"": ""disappointment""
+  },
+  {
+    ""figurative"": ""She is a shining star in the team."",
+    ""literal"": ""She is an outstanding and valuable member of the team."",
+    ""topic"": ""performance""
+  },
+  {
+    ""figurative"": ""The argument left a bitter taste in his mouth."",
+    ""literal"": ""The argument caused him to feel resentment and displeasure."",
+    ""topic"": ""conflict aftermath""
+  },
+  {
+    ""figurative"": ""He was a rock for his family during the crisis."",
+    ""literal"": ""He was a reliable and strong support for his family during the crisis."",
+    ""topic"": ""support""
+  }
+]","Reason: The figurative uses the metaphor ""heart sank"" for sadness, and the literal expresses the same sadness without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative uses the metaphor ""heart sank"" for sadness, and the literal expresses the same sadness without metaphor.",1,1,1,1,0,1
+en_metaphor_0026,en,metaphor,6,4,anger,His patience finally snapped under the constant pressure.,He could no longer tolerate the constant pressure and lost his temper.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The metaphorical ""snapped"" is clearly present, the literal version matches the proposition, both are natural, and the pair is non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The metaphorical ""snapped"" is clearly present, the literal version matches the proposition, both are natural, and the pair is non-formulaic.",1,1,1,1,0,1
+en_metaphor_0027,en,metaphor,0,1,passage of time,Time is a thief that steals our moments.,Time passes quickly and we lose precious moments.,"[
+    {
+        ""figurative"": ""Her heart was a fortress, impenetrable to his apologies."",
+        ""literal"": ""She remained emotionally closed off and refused to accept his apologies."",
+        ""topic"": ""emotional defense""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our moments."",
+        ""literal"": ""Time passes quickly and we lose precious moments."",
+        ""topic"": ""passage of time""
+    },
+    {
+        ""figurative"": ""The classroom was a zoo during the substitute teacher's first hour."",
+        ""literal"": ""The classroom was very chaotic and noisy during the substitute teacher's first hour."",
+        ""topic"": ""classroom chaos""
+    },
+    {
+        ""figurative"": ""His words were a double-edged sword, both comforting and hurtful."",
+        ""literal"": ""His words had both a comforting and a hurtful effect."",
+        ""topic"": ""mixed impact of words""
+    },
+    {
+        ""figurative"": ""She swam through the sea of paperwork until lunch."",
+        ""literal"": ""She worked through a large amount of paperwork continuously until lunch."",
+        ""topic"": ""heavy workload""
+    },
+    {
+        ""figurative"": ""The old man's memory is a fading photograph."",
+        ""literal"": ""The old man's memory is becoming unclear and less detailed."",
+        ""topic"": ""memory loss""
+    },
+    {
+        ""figurative"": ""Her voice was velvet, smooth and warm."",
+        ""literal"": ""Her voice was smooth and warm."",
+        ""topic"": ""voice quality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship, and employees are jumping overboard."",
+        ""literal"": ""The company is failing, and employees are leaving."",
+        ""topic"": ""company failure""
+    },
+    {
+        ""figurative"": ""He planted seeds of doubt in her mind."",
+        ""literal"": ""He caused her to begin to doubt."",
+        ""topic"": ""instilling doubt""
+    },
+    {
+        ""figurative"": ""The news was a bombshell that shattered their plans."",
+        ""literal"": ""The news was shocking and completely disrupted their plans."",
+        ""topic"": ""shocking news""
+    }
+]","Reason: The figurative sentence is a clear metaphor, the literal sentence lacks metaphor, they convey nearly the same meaning naturally, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor, the literal sentence lacks metaphor, they convey nearly the same meaning naturally, and the pair is not formulaic.",1,1,1,1,0,1
+en_metaphor_0028,en,metaphor,1,1,fear,He was frozen with fear.,He was unable to move because of extreme fear.,"[
+  {
+    ""figurative"": ""Her smile lit up the room."",
+    ""literal"": ""Her smile made everyone feel happy and cheerful."",
+    ""topic"": ""happiness""
+  },
+  {
+    ""figurative"": ""He was frozen with fear."",
+    ""literal"": ""He was unable to move because of extreme fear."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She broke the ice at the meeting."",
+    ""literal"": ""She helped relieve tension and start conversation at the meeting."",
+    ""topic"": ""social interaction""
+  },
+  {
+    ""figurative"": ""The company is a sinking ship."",
+    ""literal"": ""The company is failing and likely to go bankrupt."",
+    ""topic"": ""business failure""
+  },
+  {
+    ""figurative"": ""He has a sharp tongue."",
+    ""literal"": ""He often speaks in a harsh or critical way."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""They are sailing through the project."",
+    ""literal"": ""They are completing the project very easily and quickly."",
+    ""topic"": ""project progress""
+  },
+  {
+    ""figurative"": ""His heart sank when he heard the news."",
+    ""literal"": ""He felt deep disappointment and sadness upon hearing the news."",
+    ""topic"": ""disappointment""
+  },
+  {
+    ""figurative"": ""She is a shining star in the team."",
+    ""literal"": ""She is an outstanding and valuable member of the team."",
+    ""topic"": ""performance""
+  },
+  {
+    ""figurative"": ""The argument left a bitter taste in his mouth."",
+    ""literal"": ""The argument caused him to feel resentment and displeasure."",
+    ""topic"": ""conflict aftermath""
+  },
+  {
+    ""figurative"": ""He was a rock for his family during the crisis."",
+    ""literal"": ""He was a reliable and strong support for his family during the crisis."",
+    ""topic"": ""support""
+  }
+]","Reason: The figurative sentence uses the metaphor ""frozen with fear,"" and the literal sentence restates the meaning directly without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor ""frozen with fear,"" and the literal sentence restates the meaning directly without metaphor.",1,1,1,1,0,1
+en_metaphor_0029,en,metaphor,6,7,aging infrastructure,The old bridge groaned under the weight of the truck.,The old bridge made a creaking noise as the heavy truck crossed it.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The figurative sentence uses the verb ""groaned"" metaphorically, the literal sentence avoids metaphor, and both convey the same event naturally without being formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the verb ""groaned"" metaphorically, the literal sentence avoids metaphor, and both convey the same event naturally without being formulaic.",1,1,1,1,0,1
+en_metaphor_0030,en,metaphor,8,9,efficient organization,The company is a well-oiled machine.,The company operates very efficiently.,"```json
+[
+  {
+    ""figurative"": ""The morning sun painted the sky with shades of orange and pink."",
+    ""literal"": ""The morning sun caused the sky to have shades of orange and pink."",
+    ""topic"": ""sunrise colors""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news was a dagger to his heart."",
+    ""literal"": ""The news caused him intense emotional pain."",
+    ""topic"": ""shocking news""
+  },
+  {
+    ""figurative"": ""Time is a thief that steals our moments."",
+    ""literal"": ""Time passes and we lose moments without realizing."",
+    ""topic"": ""passage of time""
+  },
+  {
+    ""figurative"": ""She navigated the storm of criticism with grace."",
+    ""literal"": ""She handled the harsh criticism with composure."",
+    ""topic"": ""handling criticism""
+  },
+  {
+    ""figurative"": ""His ideas were seeds that grew into a successful business."",
+    ""literal"": ""His ideas developed into a successful business over time."",
+    ""topic"": ""business development""
+  },
+  {
+    ""figurative"": ""The city was a concrete jungle."",
+    ""literal"": ""The city had many tall buildings and little greenery."",
+    ""topic"": ""urban environment""
+  },
+  {
+    ""figurative"": ""He drowned in a sea of paperwork."",
+    ""literal"": ""He had so much paperwork that he felt overwhelmed."",
+    ""topic"": ""overwhelming workload""
+  },
+  {
+    ""figurative"": ""Her smile was a ray of sunshine."",
+    ""literal"": ""Her smile made everyone feel happy."",
+    ""topic"": ""cheerful smile""
+  },
+  {
+    ""figurative"": ""The company is a well-oiled machine."",
+    ""literal"": ""The company operates very efficiently."",
+    ""topic"": ""efficient organization""
+  }
+]
+```","Reason: Both sentences are natural and convey the same meaning without being overly formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",Both sentences are natural and convey the same meaning without being overly formulaic.,1,1,1,1,0,1
+en_metaphor_0031,en,metaphor,7,0,work overload,He drowned in paperwork.,He was overwhelmed by the amount of paperwork.,"```json
+[
+    {
+        ""figurative"": ""He drowned in paperwork."",
+        ""literal"": ""He was overwhelmed by the amount of paperwork."",
+        ""topic"": ""work overload""
+    },
+    {
+        ""figurative"": ""She broke the ice at the meeting."",
+        ""literal"": ""She made the meeting more comfortable by starting a conversation."",
+        ""topic"": ""social interaction""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""The news devastated him."",
+        ""topic"": ""reaction to bad news""
+    },
+    {
+        ""figurative"": ""They were skating on thin ice with their risky investments."",
+        ""literal"": ""They were in a dangerous situation with their risky investments."",
+        ""topic"": ""financial risk""
+    },
+    {
+        ""figurative"": ""He has a heart of gold."",
+        ""literal"": ""He is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The project is a minefield of potential problems."",
+        ""literal"": ""The project has many potential problems that are difficult to avoid."",
+        ""topic"": ""project risks""
+    },
+    {
+        ""figurative"": ""She swam through the sea of applicants."",
+        ""literal"": ""She succeeded among the many applicants."",
+        ""topic"": ""job competition""
+    },
+    {
+        ""figurative"": ""His words were a dagger to her heart."",
+        ""literal"": ""His words caused her deep emotional pain."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""They were walking on air after the victory."",
+        ""literal"": ""They were extremely happy after the victory."",
+        ""topic"": ""elation""
+    }
+]
+```","Reason: The figurative sentence uses a clear metaphor and both sentences match in meaning.  
+FigurativeOK: 1  
+LiteralOK: 1  
+MeaningOK: 1  
+NaturalOK: 1  
+Formulaic: 0  
+Keep: 1",The figurative sentence uses a clear metaphor and both sentences match in meaning.,1,1,1,1,0,1
+en_metaphor_0032,en,metaphor,0,7,company failure,"The company is a sinking ship, and employees are jumping overboard.","The company is failing, and employees are leaving.","[
+    {
+        ""figurative"": ""Her heart was a fortress, impenetrable to his apologies."",
+        ""literal"": ""She remained emotionally closed off and refused to accept his apologies."",
+        ""topic"": ""emotional defense""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our moments."",
+        ""literal"": ""Time passes quickly and we lose precious moments."",
+        ""topic"": ""passage of time""
+    },
+    {
+        ""figurative"": ""The classroom was a zoo during the substitute teacher's first hour."",
+        ""literal"": ""The classroom was very chaotic and noisy during the substitute teacher's first hour."",
+        ""topic"": ""classroom chaos""
+    },
+    {
+        ""figurative"": ""His words were a double-edged sword, both comforting and hurtful."",
+        ""literal"": ""His words had both a comforting and a hurtful effect."",
+        ""topic"": ""mixed impact of words""
+    },
+    {
+        ""figurative"": ""She swam through the sea of paperwork until lunch."",
+        ""literal"": ""She worked through a large amount of paperwork continuously until lunch."",
+        ""topic"": ""heavy workload""
+    },
+    {
+        ""figurative"": ""The old man's memory is a fading photograph."",
+        ""literal"": ""The old man's memory is becoming unclear and less detailed."",
+        ""topic"": ""memory loss""
+    },
+    {
+        ""figurative"": ""Her voice was velvet, smooth and warm."",
+        ""literal"": ""Her voice was smooth and warm."",
+        ""topic"": ""voice quality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship, and employees are jumping overboard."",
+        ""literal"": ""The company is failing, and employees are leaving."",
+        ""topic"": ""company failure""
+    },
+    {
+        ""figurative"": ""He planted seeds of doubt in her mind."",
+        ""literal"": ""He caused her to begin to doubt."",
+        ""topic"": ""instilling doubt""
+    },
+    {
+        ""figurative"": ""The news was a bombshell that shattered their plans."",
+        ""literal"": ""The news was shocking and completely disrupted their plans."",
+        ""topic"": ""shocking news""
+    }
+]","Reason: The figurative sentence clearly uses a metaphor, the literal sentence does not, they share the same meaning, both are natural, and the pair is specific and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly uses a metaphor, the literal sentence does not, they share the same meaning, both are natural, and the pair is specific and non-formulaic.",1,1,1,1,0,1
+en_metaphor_0033,en,metaphor,2,0,teamwork,She is the backbone of our team.,She provides essential support and stability to our team.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: All criteria met.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All criteria met.,1,1,1,1,0,1
+en_metaphor_0034,en,metaphor,7,8,business failure,The company is a sinking ship.,The company is failing and about to go bankrupt.,"```json
+[
+    {
+        ""figurative"": ""He drowned in paperwork."",
+        ""literal"": ""He was overwhelmed by the amount of paperwork."",
+        ""topic"": ""work overload""
+    },
+    {
+        ""figurative"": ""She broke the ice at the meeting."",
+        ""literal"": ""She made the meeting more comfortable by starting a conversation."",
+        ""topic"": ""social interaction""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""The news devastated him."",
+        ""topic"": ""reaction to bad news""
+    },
+    {
+        ""figurative"": ""They were skating on thin ice with their risky investments."",
+        ""literal"": ""They were in a dangerous situation with their risky investments."",
+        ""topic"": ""financial risk""
+    },
+    {
+        ""figurative"": ""He has a heart of gold."",
+        ""literal"": ""He is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The project is a minefield of potential problems."",
+        ""literal"": ""The project has many potential problems that are difficult to avoid."",
+        ""topic"": ""project risks""
+    },
+    {
+        ""figurative"": ""She swam through the sea of applicants."",
+        ""literal"": ""She succeeded among the many applicants."",
+        ""topic"": ""job competition""
+    },
+    {
+        ""figurative"": ""His words were a dagger to her heart."",
+        ""literal"": ""His words caused her deep emotional pain."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""They were walking on air after the victory."",
+        ""literal"": ""They were extremely happy after the victory."",
+        ""topic"": ""elation""
+    }
+]
+```","Reason: The figurative sentence is a clear metaphor, the literal is direct, they share meaning, both are natural and not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor, the literal is direct, they share meaning, both are natural and not formulaic.",1,1,1,1,0,1
+en_metaphor_0035,en,metaphor,0,3,mixed impact of words,"His words were a double-edged sword, both comforting and hurtful.",His words had both a comforting and a hurtful effect.,"[
+    {
+        ""figurative"": ""Her heart was a fortress, impenetrable to his apologies."",
+        ""literal"": ""She remained emotionally closed off and refused to accept his apologies."",
+        ""topic"": ""emotional defense""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our moments."",
+        ""literal"": ""Time passes quickly and we lose precious moments."",
+        ""topic"": ""passage of time""
+    },
+    {
+        ""figurative"": ""The classroom was a zoo during the substitute teacher's first hour."",
+        ""literal"": ""The classroom was very chaotic and noisy during the substitute teacher's first hour."",
+        ""topic"": ""classroom chaos""
+    },
+    {
+        ""figurative"": ""His words were a double-edged sword, both comforting and hurtful."",
+        ""literal"": ""His words had both a comforting and a hurtful effect."",
+        ""topic"": ""mixed impact of words""
+    },
+    {
+        ""figurative"": ""She swam through the sea of paperwork until lunch."",
+        ""literal"": ""She worked through a large amount of paperwork continuously until lunch."",
+        ""topic"": ""heavy workload""
+    },
+    {
+        ""figurative"": ""The old man's memory is a fading photograph."",
+        ""literal"": ""The old man's memory is becoming unclear and less detailed."",
+        ""topic"": ""memory loss""
+    },
+    {
+        ""figurative"": ""Her voice was velvet, smooth and warm."",
+        ""literal"": ""Her voice was smooth and warm."",
+        ""topic"": ""voice quality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship, and employees are jumping overboard."",
+        ""literal"": ""The company is failing, and employees are leaving."",
+        ""topic"": ""company failure""
+    },
+    {
+        ""figurative"": ""He planted seeds of doubt in her mind."",
+        ""literal"": ""He caused her to begin to doubt."",
+        ""topic"": ""instilling doubt""
+    },
+    {
+        ""figurative"": ""The news was a bombshell that shattered their plans."",
+        ""literal"": ""The news was shocking and completely disrupted their plans."",
+        ""topic"": ""shocking news""
+    }
+]","Reason: Both sentences are natural, the figurative clearly contains a metaphor, the literal is metaphor-free, they share the same proposition, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are natural, the figurative clearly contains a metaphor, the literal is metaphor-free, they share the same proposition, and the pair is not formulaic.",1,1,1,1,0,1
+en_metaphor_0036,en,metaphor,2,5,idea evaluation,That idea is a dead end.,That idea will lead to no productive result.,"[
+    {
+        ""figurative"": ""She is the backbone of our team."",
+        ""literal"": ""She provides essential support and stability to our team."",
+        ""topic"": ""teamwork""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our youth."",
+        ""literal"": ""As time passes, we lose our youth."",
+        ""topic"": ""aging""
+    },
+    {
+        ""figurative"": ""His words were daggers to her heart."",
+        ""literal"": ""His words deeply hurt her emotionally."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The city was a jungle of concrete."",
+        ""literal"": ""The city was a dense and chaotic urban area with many concrete buildings."",
+        ""topic"": ""urban environment""
+    },
+    {
+        ""figurative"": ""She is drowning in paperwork."",
+        ""literal"": ""She is overwhelmed by the large amount of paperwork."",
+        ""topic"": ""workload""
+    },
+    {
+        ""figurative"": ""That idea is a dead end."",
+        ""literal"": ""That idea will lead to no productive result."",
+        ""topic"": ""idea evaluation""
+    },
+    {
+        ""figurative"": ""He has a storm brewing in his mind."",
+        ""literal"": ""He is becoming very angry and agitated."",
+        ""topic"": ""anger""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""Her smile was sunshine on a rainy day."",
+        ""literal"": ""Her smile made a bad situation feel much better."",
+        ""topic"": ""cheerfulness""
+    },
+    {
+        ""figurative"": ""Life is a roller coaster with ups and downs."",
+        ""literal"": ""Life has many good times and bad times."",
+        ""topic"": ""life's variability""
+    }
+]","Reason: The figurative sentence uses the common metaphor of a physical dead end to describe an unproductive idea, the literal sentence rephrases without metaphor, and both are natural English sentences expressing the same proposition.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the common metaphor of a physical dead end to describe an unproductive idea, the literal sentence rephrases without metaphor, and both are natural English sentences expressing the same proposition.",1,1,1,1,0,1
+en_metaphor_0037,en,metaphor,8,4,handling criticism,She navigated the storm of criticism with grace.,She handled the harsh criticism with composure.,"```json
+[
+  {
+    ""figurative"": ""The morning sun painted the sky with shades of orange and pink."",
+    ""literal"": ""The morning sun caused the sky to have shades of orange and pink."",
+    ""topic"": ""sunrise colors""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news was a dagger to his heart."",
+    ""literal"": ""The news caused him intense emotional pain."",
+    ""topic"": ""shocking news""
+  },
+  {
+    ""figurative"": ""Time is a thief that steals our moments."",
+    ""literal"": ""Time passes and we lose moments without realizing."",
+    ""topic"": ""passage of time""
+  },
+  {
+    ""figurative"": ""She navigated the storm of criticism with grace."",
+    ""literal"": ""She handled the harsh criticism with composure."",
+    ""topic"": ""handling criticism""
+  },
+  {
+    ""figurative"": ""His ideas were seeds that grew into a successful business."",
+    ""literal"": ""His ideas developed into a successful business over time."",
+    ""topic"": ""business development""
+  },
+  {
+    ""figurative"": ""The city was a concrete jungle."",
+    ""literal"": ""The city had many tall buildings and little greenery."",
+    ""topic"": ""urban environment""
+  },
+  {
+    ""figurative"": ""He drowned in a sea of paperwork."",
+    ""literal"": ""He had so much paperwork that he felt overwhelmed."",
+    ""topic"": ""overwhelming workload""
+  },
+  {
+    ""figurative"": ""Her smile was a ray of sunshine."",
+    ""literal"": ""Her smile made everyone feel happy."",
+    ""topic"": ""cheerful smile""
+  },
+  {
+    ""figurative"": ""The company is a well-oiled machine."",
+    ""literal"": ""The company operates very efficiently."",
+    ""topic"": ""efficient organization""
+  }
+]
+```","Reason: The figurative sentence clearly contains a metaphor (""storm of criticism""), the literal sentence does not, they convey the same meaning, both are natural, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly contains a metaphor (""storm of criticism""), the literal sentence does not, they convey the same meaning, both are natural, and the pair is not formulaic.",1,1,1,1,0,1
+en_metaphor_0038,en,metaphor,7,1,social interaction,She broke the ice at the meeting.,She made the meeting more comfortable by starting a conversation.,"```json
+[
+    {
+        ""figurative"": ""He drowned in paperwork."",
+        ""literal"": ""He was overwhelmed by the amount of paperwork."",
+        ""topic"": ""work overload""
+    },
+    {
+        ""figurative"": ""She broke the ice at the meeting."",
+        ""literal"": ""She made the meeting more comfortable by starting a conversation."",
+        ""topic"": ""social interaction""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""The news devastated him."",
+        ""topic"": ""reaction to bad news""
+    },
+    {
+        ""figurative"": ""They were skating on thin ice with their risky investments."",
+        ""literal"": ""They were in a dangerous situation with their risky investments."",
+        ""topic"": ""financial risk""
+    },
+    {
+        ""figurative"": ""He has a heart of gold."",
+        ""literal"": ""He is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The project is a minefield of potential problems."",
+        ""literal"": ""The project has many potential problems that are difficult to avoid."",
+        ""topic"": ""project risks""
+    },
+    {
+        ""figurative"": ""She swam through the sea of applicants."",
+        ""literal"": ""She succeeded among the many applicants."",
+        ""topic"": ""job competition""
+    },
+    {
+        ""figurative"": ""His words were a dagger to her heart."",
+        ""literal"": ""His words caused her deep emotional pain."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""They were walking on air after the victory."",
+        ""literal"": ""They were extremely happy after the victory."",
+        ""topic"": ""elation""
+    }
+]
+```","Reason: The pair clearly presents a metaphor with a matching literal paraphrase.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair clearly presents a metaphor with a matching literal paraphrase.,1,1,1,1,0,1
+en_metaphor_0039,en,metaphor,0,2,classroom chaos,The classroom was a zoo during the substitute teacher's first hour.,The classroom was very chaotic and noisy during the substitute teacher's first hour.,"[
+    {
+        ""figurative"": ""Her heart was a fortress, impenetrable to his apologies."",
+        ""literal"": ""She remained emotionally closed off and refused to accept his apologies."",
+        ""topic"": ""emotional defense""
+    },
+    {
+        ""figurative"": ""Time is a thief that steals our moments."",
+        ""literal"": ""Time passes quickly and we lose precious moments."",
+        ""topic"": ""passage of time""
+    },
+    {
+        ""figurative"": ""The classroom was a zoo during the substitute teacher's first hour."",
+        ""literal"": ""The classroom was very chaotic and noisy during the substitute teacher's first hour."",
+        ""topic"": ""classroom chaos""
+    },
+    {
+        ""figurative"": ""His words were a double-edged sword, both comforting and hurtful."",
+        ""literal"": ""His words had both a comforting and a hurtful effect."",
+        ""topic"": ""mixed impact of words""
+    },
+    {
+        ""figurative"": ""She swam through the sea of paperwork until lunch."",
+        ""literal"": ""She worked through a large amount of paperwork continuously until lunch."",
+        ""topic"": ""heavy workload""
+    },
+    {
+        ""figurative"": ""The old man's memory is a fading photograph."",
+        ""literal"": ""The old man's memory is becoming unclear and less detailed."",
+        ""topic"": ""memory loss""
+    },
+    {
+        ""figurative"": ""Her voice was velvet, smooth and warm."",
+        ""literal"": ""Her voice was smooth and warm."",
+        ""topic"": ""voice quality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship, and employees are jumping overboard."",
+        ""literal"": ""The company is failing, and employees are leaving."",
+        ""topic"": ""company failure""
+    },
+    {
+        ""figurative"": ""He planted seeds of doubt in her mind."",
+        ""literal"": ""He caused her to begin to doubt."",
+        ""topic"": ""instilling doubt""
+    },
+    {
+        ""figurative"": ""The news was a bombshell that shattered their plans."",
+        ""literal"": ""The news was shocking and completely disrupted their plans."",
+        ""topic"": ""shocking news""
+    }
+]","Reason: The figurative sentence uses a clear metaphor (""was a zoo""), the literal sentence accurately rephrases it without metaphor, both share the same proposition, are natural, and are not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphor (""was a zoo""), the literal sentence accurately rephrases it without metaphor, both share the same proposition, are natural, and are not formulaic.",1,1,1,1,0,1
+en_metaphor_0040,en,metaphor,3,4,difficulty,The project is a nightmare.,The project is extremely difficult and stressful.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: All conditions are satisfied for a metaphor diagnostic pair.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All conditions are satisfied for a metaphor diagnostic pair.,1,1,1,1,0,1
+en_metaphor_0041,en,metaphor,1,5,project progress,They are sailing through the project.,They are completing the project very easily and quickly.,"[
+  {
+    ""figurative"": ""Her smile lit up the room."",
+    ""literal"": ""Her smile made everyone feel happy and cheerful."",
+    ""topic"": ""happiness""
+  },
+  {
+    ""figurative"": ""He was frozen with fear."",
+    ""literal"": ""He was unable to move because of extreme fear."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She broke the ice at the meeting."",
+    ""literal"": ""She helped relieve tension and start conversation at the meeting."",
+    ""topic"": ""social interaction""
+  },
+  {
+    ""figurative"": ""The company is a sinking ship."",
+    ""literal"": ""The company is failing and likely to go bankrupt."",
+    ""topic"": ""business failure""
+  },
+  {
+    ""figurative"": ""He has a sharp tongue."",
+    ""literal"": ""He often speaks in a harsh or critical way."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""They are sailing through the project."",
+    ""literal"": ""They are completing the project very easily and quickly."",
+    ""topic"": ""project progress""
+  },
+  {
+    ""figurative"": ""His heart sank when he heard the news."",
+    ""literal"": ""He felt deep disappointment and sadness upon hearing the news."",
+    ""topic"": ""disappointment""
+  },
+  {
+    ""figurative"": ""She is a shining star in the team."",
+    ""literal"": ""She is an outstanding and valuable member of the team."",
+    ""topic"": ""performance""
+  },
+  {
+    ""figurative"": ""The argument left a bitter taste in his mouth."",
+    ""literal"": ""The argument caused him to feel resentment and displeasure."",
+    ""topic"": ""conflict aftermath""
+  },
+  {
+    ""figurative"": ""He was a rock for his family during the crisis."",
+    ""literal"": ""He was a reliable and strong support for his family during the crisis."",
+    ""topic"": ""support""
+  }
+]","Reason: The figurative sentence clearly uses the sailing metaphor for easy progress, the literal sentence lacks metaphor, both express the same proposition, are natural, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly uses the sailing metaphor for easy progress, the literal sentence lacks metaphor, both express the same proposition, are natural, and the pair is not formulaic.",1,1,1,1,0,1
+en_metaphor_0042,en,metaphor,7,6,job competition,She swam through the sea of applicants.,She succeeded among the many applicants.,"```json
+[
+    {
+        ""figurative"": ""He drowned in paperwork."",
+        ""literal"": ""He was overwhelmed by the amount of paperwork."",
+        ""topic"": ""work overload""
+    },
+    {
+        ""figurative"": ""She broke the ice at the meeting."",
+        ""literal"": ""She made the meeting more comfortable by starting a conversation."",
+        ""topic"": ""social interaction""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""The news devastated him."",
+        ""topic"": ""reaction to bad news""
+    },
+    {
+        ""figurative"": ""They were skating on thin ice with their risky investments."",
+        ""literal"": ""They were in a dangerous situation with their risky investments."",
+        ""topic"": ""financial risk""
+    },
+    {
+        ""figurative"": ""He has a heart of gold."",
+        ""literal"": ""He is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The project is a minefield of potential problems."",
+        ""literal"": ""The project has many potential problems that are difficult to avoid."",
+        ""topic"": ""project risks""
+    },
+    {
+        ""figurative"": ""She swam through the sea of applicants."",
+        ""literal"": ""She succeeded among the many applicants."",
+        ""topic"": ""job competition""
+    },
+    {
+        ""figurative"": ""His words were a dagger to her heart."",
+        ""literal"": ""His words caused her deep emotional pain."",
+        ""topic"": ""hurtful speech""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing and about to go bankrupt."",
+        ""topic"": ""business failure""
+    },
+    {
+        ""figurative"": ""They were walking on air after the victory."",
+        ""literal"": ""They were extremely happy after the victory."",
+        ""topic"": ""elation""
+    }
+]
+```","Reason: The pair uses a clear metaphor in figurative and matches in meaning with natural language, meeting all checks.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair uses a clear metaphor in figurative and matches in meaning with natural language, meeting all checks.",1,1,1,1,0,1
+en_metaphor_0043,en,metaphor,6,6,manipulation,She planted the seeds of doubt in his mind with a few careful remarks.,"By making a few careful remarks, she made him begin to doubt.","```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: Both sentences convey the same proposition of inducing doubt through careful remarks, with the figurative sentence using a clear metaphor and the literal sentence avoiding it, and both are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences convey the same proposition of inducing doubt through careful remarks, with the figurative sentence using a clear metaphor and the literal sentence avoiding it, and both are natural and non-formulaic.",1,1,1,1,0,1
+en_metaphor_0044,en,metaphor,6,1,dishonesty,The politician’s promises melted under scrutiny.,The politician’s promises were shown to be false when examined closely.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The figurative sentence uses ""melted"" as a metaphor for falsehood, the literal sentence states the same directly, both are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses ""melted"" as a metaphor for falsehood, the literal sentence states the same directly, both are natural and non-formulaic.",1,1,1,1,0,1
+en_metaphor_0045,en,metaphor,4,7,knowledge,He is a walking encyclopedia.,He knows an immense amount of information.,"[
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""She has a heart of gold."",
+        ""literal"": ""She is very kind and generous."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""He is drowning in sorrow."",
+        ""literal"": ""He is overwhelmed by sadness."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""The deadline is looming over us."",
+        ""literal"": ""The deadline is approaching and causing us stress."",
+        ""topic"": ""pressure""
+    },
+    {
+        ""figurative"": ""The wind whispered through the trees."",
+        ""literal"": ""The wind made a soft, rustling sound as it passed through the trees."",
+        ""topic"": ""nature""
+    },
+    {
+        ""figurative"": ""He is climbing the ladder of success."",
+        ""literal"": ""He is advancing in his career step by step."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""She tore his argument to shreds."",
+        ""literal"": ""She completely refuted his argument."",
+        ""topic"": ""argument""
+    },
+    {
+        ""figurative"": ""He is a walking encyclopedia."",
+        ""literal"": ""He knows an immense amount of information."",
+        ""topic"": ""knowledge""
+    },
+    {
+        ""figurative"": ""This problem is a mountain to climb."",
+        ""literal"": ""This problem is extremely difficult to solve."",
+        ""topic"": ""difficulty""
+    },
+    {
+        ""figurative"": ""A glimmer of hope appeared."",
+        ""literal"": ""A small amount of hope appeared."",
+        ""topic"": ""hope""
+    }
+]","Reason: The pair is a clear metaphor with a literal paraphrase, both natural and matching in meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair is a clear metaphor with a literal paraphrase, both natural and matching in meaning.",1,1,1,1,0,1
+en_metaphor_0046,en,metaphor,5,4,time,Time is running out.,There is limited time remaining.,"[
+    {
+        ""figurative"": ""Her words cut through the silence."",
+        ""literal"": ""Her words broke the silence abruptly."",
+        ""topic"": ""communication""
+    },
+    {
+        ""figurative"": ""He drowned in a sea of paperwork."",
+        ""literal"": ""He was overwhelmed by the large amount of paperwork."",
+        ""topic"": ""work""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""He was devastated by the news."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""She was a lion in the courtroom."",
+        ""literal"": ""She was fierce and dominant in the courtroom."",
+        ""topic"": ""legal""
+    },
+    {
+        ""figurative"": ""Time is running out."",
+        ""literal"": ""There is limited time remaining."",
+        ""topic"": ""time""
+    },
+    {
+        ""figurative"": ""He has a heart of stone."",
+        ""literal"": ""He is emotionally unresponsive."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing badly."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""Her smile lit up the room."",
+        ""literal"": ""Her smile made everyone feel happy and brightened the atmosphere."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""He is climbing the corporate ladder."",
+        ""literal"": ""He is advancing through the ranks in the company."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""The storm of protest grew louder."",
+        ""literal"": ""The protests became more intense and widespread."",
+        ""topic"": ""protest""
+    }
+]","Reason: The figurative sentence is a common metaphor, but the pair is not inherently too generic or duplicated for diagnostic use.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a common metaphor, but the pair is not inherently too generic or duplicated for diagnostic use.",1,1,1,1,0,1
+en_metaphor_0047,en,metaphor,6,9,anxiety,Her heart raced as she waited for the interview to begin.,She felt very nervous and her heart beat fast as she waited for the interview to begin.,"```json
+[
+  {
+    ""figurative"": ""Her words were a balm for his wounded pride."",
+    ""literal"": ""Her words soothed his hurt feelings."",
+    ""topic"": ""comfort""
+  },
+  {
+    ""figurative"": ""The politician’s promises melted under scrutiny."",
+    ""literal"": ""The politician’s promises were shown to be false when examined closely."",
+    ""topic"": ""dishonesty""
+  },
+  {
+    ""figurative"": ""A cold fear gripped the crowd as the sirens approached."",
+    ""literal"": ""The crowd became very afraid when they heard the sirens approaching."",
+    ""topic"": ""fear""
+  },
+  {
+    ""figurative"": ""She navigated the treacherous waters of office politics with skill."",
+    ""literal"": ""She handled the difficult social dynamics at work very skillfully."",
+    ""topic"": ""workplace politics""
+  },
+  {
+    ""figurative"": ""His patience finally snapped under the constant pressure."",
+    ""literal"": ""He could no longer tolerate the constant pressure and lost his temper."",
+    ""topic"": ""anger""
+  },
+  {
+    ""figurative"": ""The news of the accident cast a long shadow over the family."",
+    ""literal"": ""The news of the accident made the family sad and worried for a long time."",
+    ""topic"": ""grief""
+  },
+  {
+    ""figurative"": ""She planted the seeds of doubt in his mind with a few careful remarks."",
+    ""literal"": ""By making a few careful remarks, she made him begin to doubt."",
+    ""topic"": ""manipulation""
+  },
+  {
+    ""figurative"": ""The old bridge groaned under the weight of the truck."",
+    ""literal"": ""The old bridge made a creaking noise as the heavy truck crossed it."",
+    ""topic"": ""aging infrastructure""
+  },
+  {
+    ""figurative"": ""He wore a mask of indifference during the entire meeting."",
+    ""literal"": ""He pretended not to care during the entire meeting."",
+    ""topic"": ""emotional concealment""
+  },
+  {
+    ""figurative"": ""Her heart raced as she waited for the interview to begin."",
+    ""literal"": ""She felt very nervous and her heart beat fast as she waited for the interview to begin."",
+    ""topic"": ""anxiety""
+  }
+]
+```","Reason: The figurative sentence uses the metaphor ""heart raced"" to convey nervousness, and the literal sentence states the same underlying concept directly without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor ""heart raced"" to convey nervousness, and the literal sentence states the same underlying concept directly without metaphor.",1,1,1,1,0,1
+en_metaphor_0048,en,metaphor,5,3,legal,She was a lion in the courtroom.,She was fierce and dominant in the courtroom.,"[
+    {
+        ""figurative"": ""Her words cut through the silence."",
+        ""literal"": ""Her words broke the silence abruptly."",
+        ""topic"": ""communication""
+    },
+    {
+        ""figurative"": ""He drowned in a sea of paperwork."",
+        ""literal"": ""He was overwhelmed by the large amount of paperwork."",
+        ""topic"": ""work""
+    },
+    {
+        ""figurative"": ""The news crushed him."",
+        ""literal"": ""He was devastated by the news."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""She was a lion in the courtroom."",
+        ""literal"": ""She was fierce and dominant in the courtroom."",
+        ""topic"": ""legal""
+    },
+    {
+        ""figurative"": ""Time is running out."",
+        ""literal"": ""There is limited time remaining."",
+        ""topic"": ""time""
+    },
+    {
+        ""figurative"": ""He has a heart of stone."",
+        ""literal"": ""He is emotionally unresponsive."",
+        ""topic"": ""personality""
+    },
+    {
+        ""figurative"": ""The company is a sinking ship."",
+        ""literal"": ""The company is failing badly."",
+        ""topic"": ""business""
+    },
+    {
+        ""figurative"": ""Her smile lit up the room."",
+        ""literal"": ""Her smile made everyone feel happy and brightened the atmosphere."",
+        ""topic"": ""emotion""
+    },
+    {
+        ""figurative"": ""He is climbing the corporate ladder."",
+        ""literal"": ""He is advancing through the ranks in the company."",
+        ""topic"": ""career""
+    },
+    {
+        ""figurative"": ""The storm of protest grew louder."",
+        ""literal"": ""The protests became more intense and widespread."",
+        ""topic"": ""protest""
+    }
+]","Reason: All checks pass, the pair is usable.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","All checks pass, the pair is usable.",1,1,1,1,0,1
+en_metaphor_0049,en,metaphor,3,6,speech,She has a sharp tongue.,She speaks in a harsh or critical manner.,"[
+  {
+    ""figurative"": ""Her words cut deep."",
+    ""literal"": ""Her words hurt her deeply."",
+    ""topic"": ""emotional pain""
+  },
+  {
+    ""figurative"": ""He has a heart of gold."",
+    ""literal"": ""He is very kind and generous."",
+    ""topic"": ""kindness""
+  },
+  {
+    ""figurative"": ""The news crushed me."",
+    ""literal"": ""The news devastated me."",
+    ""topic"": ""shock""
+  },
+  {
+    ""figurative"": ""She is an encyclopedia of knowledge."",
+    ""literal"": ""She knows a vast amount of information."",
+    ""topic"": ""knowledge""
+  },
+  {
+    ""figurative"": ""The project is a nightmare."",
+    ""literal"": ""The project is extremely difficult and stressful."",
+    ""topic"": ""difficulty""
+  },
+  {
+    ""figurative"": ""He's drowning in paperwork."",
+    ""literal"": ""He is overwhelmed by the amount of paperwork."",
+    ""topic"": ""workload""
+  },
+  {
+    ""figurative"": ""She has a sharp tongue."",
+    ""literal"": ""She speaks in a harsh or critical manner."",
+    ""topic"": ""speech""
+  },
+  {
+    ""figurative"": ""His ideas bear fruit."",
+    ""literal"": ""His ideas produce successful results."",
+    ""topic"": ""success""
+  },
+  {
+    ""figurative"": ""We are at a crossroads."",
+    ""literal"": ""We have to make an important decision."",
+    ""topic"": ""decision""
+  },
+  {
+    ""figurative"": ""The engine of the economy is sputtering."",
+    ""literal"": ""The economy is performing poorly."",
+    ""topic"": ""economy""
+  }
+]","Reason: The figurative sentence contains the target metaphor ""sharp tongue,"" the literal sentence avoids metaphor, both convey the same meaning, and they are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence contains the target metaphor ""sharp tongue,"" the literal sentence avoids metaphor, both convey the same meaning, and they are natural and non-formulaic.",1,1,1,1,0,1
+zh_metaphor_0000,zh,metaphor,6,2,言语伤害,他的话是刀子。,他的话很伤人。,"```json
+[
+  {
+    ""figurative"": ""她是家里的太阳。"",
+    ""literal"": ""她是家里最重要的人。"",
+    ""topic"": ""家庭角色""
+  },
+  {
+    ""figurative"": ""他的心里有一堵墙。"",
+    ""literal"": ""他不愿意敞开心扉。"",
+    ""topic"": ""情感隔阂""
+  },
+  {
+    ""figurative"": ""他的话是刀子。"",
+    ""literal"": ""他的话很伤人。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场旅行。"",
+    ""literal"": ""生活中有许多经历和变化。"",
+    ""topic"": ""生活体验""
+  },
+  {
+    ""figurative"": ""他的大脑是一台计算机。"",
+    ""literal"": ""他的思考非常快且准确。"",
+    ""topic"": ""思维能力""
+  },
+  {
+    ""figurative"": ""这座城市是一只沉睡的巨兽。"",
+    ""literal"": ""这座城市有很大的潜力但尚未充分发挥。"",
+    ""topic"": ""城市潜力""
+  },
+  {
+    ""figurative"": ""她是一朵带刺的玫瑰。"",
+    ""literal"": ""她外表美丽但性格尖锐。"",
+    ""topic"": ""个性特征""
+  },
+  {
+    ""figurative"": ""他的梦想是天上的一颗星。"",
+    ""literal"": ""他的梦想很遥远但很美好。"",
+    ""topic"": ""梦想""
+  },
+  {
+    ""figurative"": ""时间是一把杀猪刀。"",
+    ""literal"": ""时间会让人变老。"",
+    ""topic"": ""衰老""
+  },
+  {
+    ""figurative"": ""他的爱情是一团火。"",
+    ""literal"": ""他的爱情很热烈。"",
+    ""topic"": ""激情""
+  }
+]
+```","Reason: The figurative sentence is a clear metaphor, the literal sentence is literal and natural, both express the same proposition, and the pair is not generic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor, the literal sentence is literal and natural, both express the same proposition, and the pair is not generic.",1,1,1,1,0,1
+zh_metaphor_0001,zh,metaphor,4,8,帮助,这次捐款真是雪中送炭,这次捐款在最需要的时候提供了及时的帮助,"[
+  {
+    ""figurative"": ""他把时间都挥霍在游戏上了"",
+    ""literal"": ""他把大量时间都浪费在游戏上了"",
+    ""topic"": ""时间管理""
+  },
+  {
+    ""figurative"": ""他的生活是一部喜剧"",
+    ""literal"": ""他的生活充满欢乐和笑声"",
+    ""topic"": ""生活""
+  },
+  {
+    ""figurative"": ""她用知识武装自己"",
+    ""literal"": ""她通过学习知识来充实自己"",
+    ""topic"": ""学习""
+  },
+  {
+    ""figurative"": ""他心里燃烧着一团火"",
+    ""literal"": ""他内心充满了强烈的愤怒"",
+    ""topic"": ""情绪""
+  },
+  {
+    ""figurative"": ""这只是冰山一角"",
+    ""literal"": ""这只是很小的一部分，更多问题尚未暴露"",
+    ""topic"": ""问题""
+  },
+  {
+    ""figurative"": ""他铁石心肠"",
+    ""literal"": ""他非常冷酷无情"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""他乘风破浪，终于成功"",
+    ""literal"": ""他克服了重重困难，最终取得了成功"",
+    ""topic"": ""成功""
+  },
+  {
+    ""figurative"": ""这真是一个锦上添花的项目"",
+    ""literal"": ""这个项目让原本就好的情况变得更好"",
+    ""topic"": ""改进""
+  },
+  {
+    ""figurative"": ""这次捐款真是雪中送炭"",
+    ""literal"": ""这次捐款在最需要的时候提供了及时的帮助"",
+    ""topic"": ""帮助""
+  },
+  {
+    ""figurative"": ""他对这种违规行为睁一只眼闭一只眼"",
+    ""literal"": ""他故意忽视这种违规行为"",
+    ""topic"": ""宽容""
+  }
+]","Reason: The figurative sentence uses the metaphor '雪中送炭' for timely help, and the literal sentence paraphrases the same meaning without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor '雪中送炭' for timely help, and the literal sentence paraphrases the same meaning without metaphor.",1,1,1,1,0,1
+zh_metaphor_0002,zh,metaphor,7,2,时间流逝,时间是一个小偷，偷走了青春。,时间流逝，青春不再。,"```json
+[
+  {
+    ""figurative"": ""他是团队的定海神针。"",
+    ""literal"": ""他是团队中稳定可靠的核心人物。"",
+    ""topic"": ""团队领导力""
+  },
+  {
+    ""figurative"": ""她的笑容融化了冰雪。"",
+    ""literal"": ""她的笑容缓解了紧张的气氛。"",
+    ""topic"": ""人际温暖""
+  },
+  {
+    ""figurative"": ""时间是一个小偷，偷走了青春。"",
+    ""literal"": ""时间流逝，青春不再。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他心中的怒火燃烧着理智。"",
+    ""literal"": ""他非常愤怒，几乎失去理智。"",
+    ""topic"": ""愤怒情绪""
+  },
+  {
+    ""figurative"": ""生活是一杯苦茶，越品越有味。"",
+    ""literal"": ""生活虽然艰辛，但经历越多越有收获。"",
+    ""topic"": ""人生体验""
+  },
+  {
+    ""figurative"": ""她的眼神是一把刀子，刺痛了我。"",
+    ""literal"": ""她的眼神非常犀利，让我感到受伤。"",
+    ""topic"": ""眼神伤害""
+  },
+  {
+    ""figurative"": ""他的话语是寒冬里的北风。"",
+    ""literal"": ""他的话冷漠无情，让人心寒。"",
+    ""topic"": ""言语冷酷""
+  },
+  {
+    ""figurative"": ""知识是照亮前路的灯塔。"",
+    ""literal"": ""知识指引人们前进的方向。"",
+    ""topic"": ""知识指引""
+  },
+  {
+    ""figurative"": ""这个项目是一座大山，压得人喘不过气。"",
+    ""literal"": ""这个项目非常艰难，让人压力巨大。"",
+    ""topic"": ""项目压力""
+  },
+  {
+    ""figurative"": ""她的歌声是山涧的清泉。"",
+    ""literal"": ""她的歌声清新悦耳，令人心旷神怡。"",
+    ""topic"": ""歌声清澈""
+  }
+]
+```","Reason: The pair effectively contrasts a clear metaphor with a literal statement of the same idea.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair effectively contrasts a clear metaphor with a literal statement of the same idea.,1,1,1,1,0,1
+zh_metaphor_0003,zh,metaphor,7,5,眼神伤害,她的眼神是一把刀子，刺痛了我。,她的眼神非常犀利，让我感到受伤。,"```json
+[
+  {
+    ""figurative"": ""他是团队的定海神针。"",
+    ""literal"": ""他是团队中稳定可靠的核心人物。"",
+    ""topic"": ""团队领导力""
+  },
+  {
+    ""figurative"": ""她的笑容融化了冰雪。"",
+    ""literal"": ""她的笑容缓解了紧张的气氛。"",
+    ""topic"": ""人际温暖""
+  },
+  {
+    ""figurative"": ""时间是一个小偷，偷走了青春。"",
+    ""literal"": ""时间流逝，青春不再。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他心中的怒火燃烧着理智。"",
+    ""literal"": ""他非常愤怒，几乎失去理智。"",
+    ""topic"": ""愤怒情绪""
+  },
+  {
+    ""figurative"": ""生活是一杯苦茶，越品越有味。"",
+    ""literal"": ""生活虽然艰辛，但经历越多越有收获。"",
+    ""topic"": ""人生体验""
+  },
+  {
+    ""figurative"": ""她的眼神是一把刀子，刺痛了我。"",
+    ""literal"": ""她的眼神非常犀利，让我感到受伤。"",
+    ""topic"": ""眼神伤害""
+  },
+  {
+    ""figurative"": ""他的话语是寒冬里的北风。"",
+    ""literal"": ""他的话冷漠无情，让人心寒。"",
+    ""topic"": ""言语冷酷""
+  },
+  {
+    ""figurative"": ""知识是照亮前路的灯塔。"",
+    ""literal"": ""知识指引人们前进的方向。"",
+    ""topic"": ""知识指引""
+  },
+  {
+    ""figurative"": ""这个项目是一座大山，压得人喘不过气。"",
+    ""literal"": ""这个项目非常艰难，让人压力巨大。"",
+    ""topic"": ""项目压力""
+  },
+  {
+    ""figurative"": ""她的歌声是山涧的清泉。"",
+    ""literal"": ""她的歌声清新悦耳，令人心旷神怡。"",
+    ""topic"": ""歌声清澈""
+  }
+]
+```","Reason: The figurative sentence uses a clear metaphor '眼神是刀子' and the literal sentence paraphrases it without metaphor; both are natural and match in meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The figurative sentence uses a clear metaphor '眼神是刀子' and the literal sentence paraphrases it without metaphor; both are natural and match in meaning.,1,1,1,1,0,1
+zh_metaphor_0004,zh,metaphor,0,2,时间流逝,时间像流水一样，我们的青春一去不复返。,时间流逝很快，我们的青春已经过去无法回来。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: The figurative sentence uses a clear metaphor, the literal is direct and matches the meaning, both are natural and not overly formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphor, the literal is direct and matches the meaning, both are natural and not overly formulaic.",1,1,1,1,0,1
+zh_metaphor_0005,zh,metaphor,8,8,知识,他是一部活字典。,他知识渊博。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The pair is a clean metaphor-literal match with equivalent meaning and natural phrasing.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair is a clean metaphor-literal match with equivalent meaning and natural phrasing.,1,1,1,1,0,1
+zh_metaphor_0006,zh,metaphor,4,5,性格,他铁石心肠,他非常冷酷无情,"[
+  {
+    ""figurative"": ""他把时间都挥霍在游戏上了"",
+    ""literal"": ""他把大量时间都浪费在游戏上了"",
+    ""topic"": ""时间管理""
+  },
+  {
+    ""figurative"": ""他的生活是一部喜剧"",
+    ""literal"": ""他的生活充满欢乐和笑声"",
+    ""topic"": ""生活""
+  },
+  {
+    ""figurative"": ""她用知识武装自己"",
+    ""literal"": ""她通过学习知识来充实自己"",
+    ""topic"": ""学习""
+  },
+  {
+    ""figurative"": ""他心里燃烧着一团火"",
+    ""literal"": ""他内心充满了强烈的愤怒"",
+    ""topic"": ""情绪""
+  },
+  {
+    ""figurative"": ""这只是冰山一角"",
+    ""literal"": ""这只是很小的一部分，更多问题尚未暴露"",
+    ""topic"": ""问题""
+  },
+  {
+    ""figurative"": ""他铁石心肠"",
+    ""literal"": ""他非常冷酷无情"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""他乘风破浪，终于成功"",
+    ""literal"": ""他克服了重重困难，最终取得了成功"",
+    ""topic"": ""成功""
+  },
+  {
+    ""figurative"": ""这真是一个锦上添花的项目"",
+    ""literal"": ""这个项目让原本就好的情况变得更好"",
+    ""topic"": ""改进""
+  },
+  {
+    ""figurative"": ""这次捐款真是雪中送炭"",
+    ""literal"": ""这次捐款在最需要的时候提供了及时的帮助"",
+    ""topic"": ""帮助""
+  },
+  {
+    ""figurative"": ""他对这种违规行为睁一只眼闭一只眼"",
+    ""literal"": ""他故意忽视这种违规行为"",
+    ""topic"": ""宽容""
+  }
+]","Reason: 比喻句含明确隐喻，字面句无隐喻，意思一致且自然。
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",比喻句含明确隐喻，字面句无隐喻，意思一致且自然。,1,1,1,1,0,1
+zh_metaphor_0007,zh,metaphor,1,1,方案隐患,这个方案是一颗定时炸弹。,这个方案隐藏着巨大危险。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: The figurative sentence clearly uses a metaphor (""定时炸弹""), the literal sentence is direct and non-figurative, both express the same dangerous proposition naturally, and the pair is specific.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence clearly uses a metaphor (""定时炸弹""), the literal sentence is direct and non-figurative, both express the same dangerous proposition naturally, and the pair is specific.",1,1,1,1,0,1
+zh_metaphor_0008,zh,metaphor,1,6,见风使舵,他是一条变色龙，见人说人话。,他善于根据对象改变自己的言辞。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: The figurative sentence uses ""变色龙"" as a clear metaphor, the literal sentence provides a direct paraphrase, and both are natural and equivalent in meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses ""变色龙"" as a clear metaphor, the literal sentence provides a direct paraphrase, and both are natural and equivalent in meaning.",1,1,1,1,0,1
+zh_metaphor_0009,zh,metaphor,2,1,失恋痛苦,她的心被撕成了碎片。,她因为失恋而感到极度痛苦。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: Both sentences meet all criteria; the metaphor is clear and the literal paraphrase accurately conveys the same meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",Both sentences meet all criteria; the metaphor is clear and the literal paraphrase accurately conveys the same meaning.,1,1,1,1,0,1
+zh_metaphor_0010,zh,metaphor,5,7,信息泄露,秘密从裂缝中溢出，再也堵不住。,秘密不小心被泄露出去，再也瞒不住了。,"```json
+[
+  {
+    ""figurative"": ""时间在指尖滑落，抓不住一丝痕迹。"",
+    ""literal"": ""时间过得很快，什么也没留下。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他们的争论燃起了战火，办公室里硝烟弥漫。"",
+    ""literal"": ""他们激烈地争吵起来，办公室里气氛紧张。"",
+    ""topic"": ""争论""
+  },
+  {
+    ""figurative"": ""他的话语点燃了我心中的灯，黑暗里有了光亮。"",
+    ""literal"": ""他的话给了我很大的希望，让我不再迷茫。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""那些记忆的碎片拼凑出她的笑容，清晰又遥远。"",
+    ""literal"": ""那些零碎的记忆让我回想起她的笑容，清晰又遥远。"",
+    ""topic"": ""记忆""
+  },
+  {
+    ""figurative"": ""人生是一条蜿蜒的河流，前方总有转弯。"",
+    ""literal"": ""人生充满了曲折变化，未来难以预料。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""她的目光织成一张网，把我牢牢困住。"",
+    ""literal"": ""她的目光让我深深着迷，无法自拔。"",
+    ""topic"": ""爱情""
+  },
+  {
+    ""figurative"": ""他背负着沉重的十字架，每一步都艰难。"",
+    ""literal"": ""他承受着巨大的困难，每一步都走得辛苦。"",
+    ""topic"": ""困难""
+  },
+  {
+    ""figurative"": ""秘密从裂缝中溢出，再也堵不住。"",
+    ""literal"": ""秘密不小心被泄露出去，再也瞒不住了。"",
+    ""topic"": ""信息泄露""
+  },
+  {
+    ""figurative"": ""他的胸膛里翻滚着岩浆，随时可能喷发。"",
+    ""literal"": ""他内心充满了愤怒，随时可能爆发。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""他的事业正在上升的电梯里，一往无前。"",
+    ""literal"": ""他的事业正在快速发展，势不可挡。"",
+    ""topic"": ""事业""
+  }
+]
+```","Reason: The pair meets all criteria: metaphor present in figurative, absent in literal, same meaning, natural, non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair meets all criteria: metaphor present in figurative, absent in literal, same meaning, natural, non-formulaic.",1,1,1,1,0,1
+zh_metaphor_0011,zh,metaphor,0,6,恶意刺激,他总喜欢在别人伤口上撒盐。,他总喜欢在别人难过的时候还故意刺激别人。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: The figurative sentence uses the metaphor of adding salt to wounds, and the literal paraphrase captures the same meaning without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor of adding salt to wounds, and the literal paraphrase captures the same meaning without metaphor.",1,1,1,1,0,1
+zh_metaphor_0012,zh,metaphor,2,0,职场竞争,这场职场战争，每个人都必须拼尽全力。,在职场竞争中，每个人都要付出最大努力。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: The figurative sentence uses the metaphor ""职场战争"" (workplace war), while the literal sentence uses ""职场竞争"" (workplace competition), and both express the same proposition naturally.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor ""职场战争"" (workplace war), while the literal sentence uses ""职场竞争"" (workplace competition), and both express the same proposition naturally.",1,1,1,1,0,1
+zh_metaphor_0013,zh,metaphor,2,2,岁月流逝,岁月在他脸上刻下了深深的痕迹。,随着年龄增长，他脸上出现了很多皱纹。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: The figurative sentence uses a clear metaphor (""time carving marks"") for aging, the literal sentence directly states wrinkles, both convey the same proposition naturally, and the pair is not formulaic or duplicated.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphor (""time carving marks"") for aging, the literal sentence directly states wrinkles, both convey the same proposition naturally, and the pair is not formulaic or duplicated.",1,1,1,1,0,1
+zh_metaphor_0014,zh,metaphor,4,9,宽容,他对这种违规行为睁一只眼闭一只眼,他故意忽视这种违规行为,"[
+  {
+    ""figurative"": ""他把时间都挥霍在游戏上了"",
+    ""literal"": ""他把大量时间都浪费在游戏上了"",
+    ""topic"": ""时间管理""
+  },
+  {
+    ""figurative"": ""他的生活是一部喜剧"",
+    ""literal"": ""他的生活充满欢乐和笑声"",
+    ""topic"": ""生活""
+  },
+  {
+    ""figurative"": ""她用知识武装自己"",
+    ""literal"": ""她通过学习知识来充实自己"",
+    ""topic"": ""学习""
+  },
+  {
+    ""figurative"": ""他心里燃烧着一团火"",
+    ""literal"": ""他内心充满了强烈的愤怒"",
+    ""topic"": ""情绪""
+  },
+  {
+    ""figurative"": ""这只是冰山一角"",
+    ""literal"": ""这只是很小的一部分，更多问题尚未暴露"",
+    ""topic"": ""问题""
+  },
+  {
+    ""figurative"": ""他铁石心肠"",
+    ""literal"": ""他非常冷酷无情"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""他乘风破浪，终于成功"",
+    ""literal"": ""他克服了重重困难，最终取得了成功"",
+    ""topic"": ""成功""
+  },
+  {
+    ""figurative"": ""这真是一个锦上添花的项目"",
+    ""literal"": ""这个项目让原本就好的情况变得更好"",
+    ""topic"": ""改进""
+  },
+  {
+    ""figurative"": ""这次捐款真是雪中送炭"",
+    ""literal"": ""这次捐款在最需要的时候提供了及时的帮助"",
+    ""topic"": ""帮助""
+  },
+  {
+    ""figurative"": ""他对这种违规行为睁一只眼闭一只眼"",
+    ""literal"": ""他故意忽视这种违规行为"",
+    ""topic"": ""宽容""
+  }
+]","Reason: All checks pass: figurative is a clear metaphor, literal is literal, meanings align, both are natural and not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","All checks pass: figurative is a clear metaphor, literal is literal, meanings align, both are natural and not formulaic.",1,1,1,1,0,1
+zh_metaphor_0015,zh,metaphor,6,5,城市潜力,这座城市是一只沉睡的巨兽。,这座城市有很大的潜力但尚未充分发挥。,"```json
+[
+  {
+    ""figurative"": ""她是家里的太阳。"",
+    ""literal"": ""她是家里最重要的人。"",
+    ""topic"": ""家庭角色""
+  },
+  {
+    ""figurative"": ""他的心里有一堵墙。"",
+    ""literal"": ""他不愿意敞开心扉。"",
+    ""topic"": ""情感隔阂""
+  },
+  {
+    ""figurative"": ""他的话是刀子。"",
+    ""literal"": ""他的话很伤人。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场旅行。"",
+    ""literal"": ""生活中有许多经历和变化。"",
+    ""topic"": ""生活体验""
+  },
+  {
+    ""figurative"": ""他的大脑是一台计算机。"",
+    ""literal"": ""他的思考非常快且准确。"",
+    ""topic"": ""思维能力""
+  },
+  {
+    ""figurative"": ""这座城市是一只沉睡的巨兽。"",
+    ""literal"": ""这座城市有很大的潜力但尚未充分发挥。"",
+    ""topic"": ""城市潜力""
+  },
+  {
+    ""figurative"": ""她是一朵带刺的玫瑰。"",
+    ""literal"": ""她外表美丽但性格尖锐。"",
+    ""topic"": ""个性特征""
+  },
+  {
+    ""figurative"": ""他的梦想是天上的一颗星。"",
+    ""literal"": ""他的梦想很遥远但很美好。"",
+    ""topic"": ""梦想""
+  },
+  {
+    ""figurative"": ""时间是一把杀猪刀。"",
+    ""literal"": ""时间会让人变老。"",
+    ""topic"": ""衰老""
+  },
+  {
+    ""figurative"": ""他的爱情是一团火。"",
+    ""literal"": ""他的爱情很热烈。"",
+    ""topic"": ""激情""
+  }
+]
+```","Reason: Figurative uses metaphor of sleeping giant, literal states potential unused, both align in meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Figurative uses metaphor of sleeping giant, literal states potential unused, both align in meaning.",1,1,1,1,0,1
+zh_metaphor_0016,zh,metaphor,0,9,仔细察看,他的目光像探照灯一样扫过整个房间。,他仔细地环视了整个房间。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: All checks pass; the pair is suitable for metaphor diagnostic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All checks pass; the pair is suitable for metaphor diagnostic.,1,1,1,1,0,1
+zh_metaphor_0017,zh,metaphor,8,5,时间,时间长了翅膀。,时间过得很快。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The pair is valid as the figurative sentence uses metaphor for time passing quickly, the literal sentence states it directly, both are natural and share the same meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair is valid as the figurative sentence uses metaphor for time passing quickly, the literal sentence states it directly, both are natural and share the same meaning.",1,1,1,1,0,1
+zh_metaphor_0018,zh,metaphor,8,7,笑容,她的笑容是阳光。,她的笑容让人感到温暖。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The pair is a clear metaphor with a natural literal paraphrase.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair is a clear metaphor with a natural literal paraphrase.,1,1,1,1,0,1
+zh_metaphor_0019,zh,metaphor,8,1,愤怒,她心中燃起了怒火。,她变得非常愤怒。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The figurative sentence uses a clear metaphorical expression, while the literal sentence avoids it, and both convey similar meaning naturally.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphorical expression, while the literal sentence avoids it, and both convey similar meaning naturally.",1,1,1,1,0,1
+zh_metaphor_0020,zh,metaphor,4,6,成功,他乘风破浪，终于成功,他克服了重重困难，最终取得了成功,"[
+  {
+    ""figurative"": ""他把时间都挥霍在游戏上了"",
+    ""literal"": ""他把大量时间都浪费在游戏上了"",
+    ""topic"": ""时间管理""
+  },
+  {
+    ""figurative"": ""他的生活是一部喜剧"",
+    ""literal"": ""他的生活充满欢乐和笑声"",
+    ""topic"": ""生活""
+  },
+  {
+    ""figurative"": ""她用知识武装自己"",
+    ""literal"": ""她通过学习知识来充实自己"",
+    ""topic"": ""学习""
+  },
+  {
+    ""figurative"": ""他心里燃烧着一团火"",
+    ""literal"": ""他内心充满了强烈的愤怒"",
+    ""topic"": ""情绪""
+  },
+  {
+    ""figurative"": ""这只是冰山一角"",
+    ""literal"": ""这只是很小的一部分，更多问题尚未暴露"",
+    ""topic"": ""问题""
+  },
+  {
+    ""figurative"": ""他铁石心肠"",
+    ""literal"": ""他非常冷酷无情"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""他乘风破浪，终于成功"",
+    ""literal"": ""他克服了重重困难，最终取得了成功"",
+    ""topic"": ""成功""
+  },
+  {
+    ""figurative"": ""这真是一个锦上添花的项目"",
+    ""literal"": ""这个项目让原本就好的情况变得更好"",
+    ""topic"": ""改进""
+  },
+  {
+    ""figurative"": ""这次捐款真是雪中送炭"",
+    ""literal"": ""这次捐款在最需要的时候提供了及时的帮助"",
+    ""topic"": ""帮助""
+  },
+  {
+    ""figurative"": ""他对这种违规行为睁一只眼闭一只眼"",
+    ""literal"": ""他故意忽视这种违规行为"",
+    ""topic"": ""宽容""
+  }
+]","Reason: 所有检查点均满足，句子对可用。
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",所有检查点均满足，句子对可用。,1,1,1,1,0,1
+zh_metaphor_0021,zh,metaphor,7,0,团队领导力,他是团队的定海神针。,他是团队中稳定可靠的核心人物。,"```json
+[
+  {
+    ""figurative"": ""他是团队的定海神针。"",
+    ""literal"": ""他是团队中稳定可靠的核心人物。"",
+    ""topic"": ""团队领导力""
+  },
+  {
+    ""figurative"": ""她的笑容融化了冰雪。"",
+    ""literal"": ""她的笑容缓解了紧张的气氛。"",
+    ""topic"": ""人际温暖""
+  },
+  {
+    ""figurative"": ""时间是一个小偷，偷走了青春。"",
+    ""literal"": ""时间流逝，青春不再。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他心中的怒火燃烧着理智。"",
+    ""literal"": ""他非常愤怒，几乎失去理智。"",
+    ""topic"": ""愤怒情绪""
+  },
+  {
+    ""figurative"": ""生活是一杯苦茶，越品越有味。"",
+    ""literal"": ""生活虽然艰辛，但经历越多越有收获。"",
+    ""topic"": ""人生体验""
+  },
+  {
+    ""figurative"": ""她的眼神是一把刀子，刺痛了我。"",
+    ""literal"": ""她的眼神非常犀利，让我感到受伤。"",
+    ""topic"": ""眼神伤害""
+  },
+  {
+    ""figurative"": ""他的话语是寒冬里的北风。"",
+    ""literal"": ""他的话冷漠无情，让人心寒。"",
+    ""topic"": ""言语冷酷""
+  },
+  {
+    ""figurative"": ""知识是照亮前路的灯塔。"",
+    ""literal"": ""知识指引人们前进的方向。"",
+    ""topic"": ""知识指引""
+  },
+  {
+    ""figurative"": ""这个项目是一座大山，压得人喘不过气。"",
+    ""literal"": ""这个项目非常艰难，让人压力巨大。"",
+    ""topic"": ""项目压力""
+  },
+  {
+    ""figurative"": ""她的歌声是山涧的清泉。"",
+    ""literal"": ""她的歌声清新悦耳，令人心旷神怡。"",
+    ""topic"": ""歌声清澈""
+  }
+]
+```","Reason: The pair satisfies all conditions for a metaphor diagnostic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair satisfies all conditions for a metaphor diagnostic.,1,1,1,1,0,1
+zh_metaphor_0022,zh,metaphor,8,2,话语,他的话语是一把匕首。,他的话语非常刻薄伤人。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: 隐喻句明确包含隐喻，字面句无隐喻且意思对应，自然且非公式化。
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",隐喻句明确包含隐喻，字面句无隐喻且意思对应，自然且非公式化。,1,1,1,1,0,1
+zh_metaphor_0023,zh,metaphor,5,1,争论,他们的争论燃起了战火，办公室里硝烟弥漫。,他们激烈地争吵起来，办公室里气氛紧张。,"```json
+[
+  {
+    ""figurative"": ""时间在指尖滑落，抓不住一丝痕迹。"",
+    ""literal"": ""时间过得很快，什么也没留下。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他们的争论燃起了战火，办公室里硝烟弥漫。"",
+    ""literal"": ""他们激烈地争吵起来，办公室里气氛紧张。"",
+    ""topic"": ""争论""
+  },
+  {
+    ""figurative"": ""他的话语点燃了我心中的灯，黑暗里有了光亮。"",
+    ""literal"": ""他的话给了我很大的希望，让我不再迷茫。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""那些记忆的碎片拼凑出她的笑容，清晰又遥远。"",
+    ""literal"": ""那些零碎的记忆让我回想起她的笑容，清晰又遥远。"",
+    ""topic"": ""记忆""
+  },
+  {
+    ""figurative"": ""人生是一条蜿蜒的河流，前方总有转弯。"",
+    ""literal"": ""人生充满了曲折变化，未来难以预料。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""她的目光织成一张网，把我牢牢困住。"",
+    ""literal"": ""她的目光让我深深着迷，无法自拔。"",
+    ""topic"": ""爱情""
+  },
+  {
+    ""figurative"": ""他背负着沉重的十字架，每一步都艰难。"",
+    ""literal"": ""他承受着巨大的困难，每一步都走得辛苦。"",
+    ""topic"": ""困难""
+  },
+  {
+    ""figurative"": ""秘密从裂缝中溢出，再也堵不住。"",
+    ""literal"": ""秘密不小心被泄露出去，再也瞒不住了。"",
+    ""topic"": ""信息泄露""
+  },
+  {
+    ""figurative"": ""他的胸膛里翻滚着岩浆，随时可能喷发。"",
+    ""literal"": ""他内心充满了愤怒，随时可能爆发。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""他的事业正在上升的电梯里，一往无前。"",
+    ""literal"": ""他的事业正在快速发展，势不可挡。"",
+    ""topic"": ""事业""
+  }
+]
+```","Reason: The figurative sentence uses metaphors like ""燃起了战火"" and ""硝烟弥漫"", the literal sentence avoids figures of speech, and both convey the same situation naturally and specifically.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses metaphors like ""燃起了战火"" and ""硝烟弥漫"", the literal sentence avoids figures of speech, and both convey the same situation naturally and specifically.",1,1,1,1,0,1
+zh_metaphor_0024,zh,metaphor,6,8,衰老,时间是一把杀猪刀。,时间会让人变老。,"```json
+[
+  {
+    ""figurative"": ""她是家里的太阳。"",
+    ""literal"": ""她是家里最重要的人。"",
+    ""topic"": ""家庭角色""
+  },
+  {
+    ""figurative"": ""他的心里有一堵墙。"",
+    ""literal"": ""他不愿意敞开心扉。"",
+    ""topic"": ""情感隔阂""
+  },
+  {
+    ""figurative"": ""他的话是刀子。"",
+    ""literal"": ""他的话很伤人。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场旅行。"",
+    ""literal"": ""生活中有许多经历和变化。"",
+    ""topic"": ""生活体验""
+  },
+  {
+    ""figurative"": ""他的大脑是一台计算机。"",
+    ""literal"": ""他的思考非常快且准确。"",
+    ""topic"": ""思维能力""
+  },
+  {
+    ""figurative"": ""这座城市是一只沉睡的巨兽。"",
+    ""literal"": ""这座城市有很大的潜力但尚未充分发挥。"",
+    ""topic"": ""城市潜力""
+  },
+  {
+    ""figurative"": ""她是一朵带刺的玫瑰。"",
+    ""literal"": ""她外表美丽但性格尖锐。"",
+    ""topic"": ""个性特征""
+  },
+  {
+    ""figurative"": ""他的梦想是天上的一颗星。"",
+    ""literal"": ""他的梦想很遥远但很美好。"",
+    ""topic"": ""梦想""
+  },
+  {
+    ""figurative"": ""时间是一把杀猪刀。"",
+    ""literal"": ""时间会让人变老。"",
+    ""topic"": ""衰老""
+  },
+  {
+    ""figurative"": ""他的爱情是一团火。"",
+    ""literal"": ""他的爱情很热烈。"",
+    ""topic"": ""激情""
+  }
+]
+```","Reason: The figurative sentence is a standard metaphor for time's aging effect, and the literal sentence paraphrases it naturally.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a standard metaphor for time's aging effect, and the literal sentence paraphrases it naturally.",1,1,1,1,0,1
+zh_metaphor_0025,zh,metaphor,6,6,个性特征,她是一朵带刺的玫瑰。,她外表美丽但性格尖锐。,"```json
+[
+  {
+    ""figurative"": ""她是家里的太阳。"",
+    ""literal"": ""她是家里最重要的人。"",
+    ""topic"": ""家庭角色""
+  },
+  {
+    ""figurative"": ""他的心里有一堵墙。"",
+    ""literal"": ""他不愿意敞开心扉。"",
+    ""topic"": ""情感隔阂""
+  },
+  {
+    ""figurative"": ""他的话是刀子。"",
+    ""literal"": ""他的话很伤人。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场旅行。"",
+    ""literal"": ""生活中有许多经历和变化。"",
+    ""topic"": ""生活体验""
+  },
+  {
+    ""figurative"": ""他的大脑是一台计算机。"",
+    ""literal"": ""他的思考非常快且准确。"",
+    ""topic"": ""思维能力""
+  },
+  {
+    ""figurative"": ""这座城市是一只沉睡的巨兽。"",
+    ""literal"": ""这座城市有很大的潜力但尚未充分发挥。"",
+    ""topic"": ""城市潜力""
+  },
+  {
+    ""figurative"": ""她是一朵带刺的玫瑰。"",
+    ""literal"": ""她外表美丽但性格尖锐。"",
+    ""topic"": ""个性特征""
+  },
+  {
+    ""figurative"": ""他的梦想是天上的一颗星。"",
+    ""literal"": ""他的梦想很遥远但很美好。"",
+    ""topic"": ""梦想""
+  },
+  {
+    ""figurative"": ""时间是一把杀猪刀。"",
+    ""literal"": ""时间会让人变老。"",
+    ""topic"": ""衰老""
+  },
+  {
+    ""figurative"": ""他的爱情是一团火。"",
+    ""literal"": ""他的爱情很热烈。"",
+    ""topic"": ""激情""
+  }
+]
+```","Reason: The figurative sentence is a clear metaphor, and the literal sentence accurately paraphrases its meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor, and the literal sentence accurately paraphrases its meaning.",1,1,1,1,0,1
+zh_metaphor_0026,zh,metaphor,3,8,歌声,她的歌声是山间的清泉，洗涤了我的疲惫。,她的歌声清澈悦耳，让我感到放松。,"```json
+[
+  {
+    ""figurative"": ""时间是个无情的小偷，悄悄偷走了我们的青春。"",
+    ""literal"": ""时间流逝，我们的青春逐渐消逝。"",
+    ""topic"": ""时间""
+  },
+  {
+    ""figurative"": ""人生是一场漫长的旅行，途中既有美景也有风雨。"",
+    ""literal"": ""人生过程中会遇到各种各样的事情，有好的也有坏的。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""他铁石心肠，别人的痛苦从未打动过他。"",
+    ""literal"": ""他非常冷漠，从不同情别人的痛苦。"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""那消息是一把锋利的匕首，深深扎进他的心脏。"",
+    ""literal"": ""那消息让他感到极度痛苦。"",
+    ""topic"": ""消息""
+  },
+  {
+    ""figurative"": ""她的话语是甘甜的蜜糖，让人听了心里舒畅。"",
+    ""literal"": ""她说话很甜美，让人听了心情愉快。"",
+    ""topic"": ""言语""
+  },
+  {
+    ""figurative"": ""他的愤怒是一座休眠的火山，随时可能喷发。"",
+    ""literal"": ""他非常愤怒，情绪随时可能失控。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""那家初创公司是一艘在暴风雨中漏水的小船。"",
+    ""literal"": ""那家初创公司岌岌可危，随时可能倒闭。"",
+    ""topic"": ""公司""
+  },
+  {
+    ""figurative"": ""他在谈判桌上是一头猛虎，从不退让。"",
+    ""literal"": ""他在谈判时非常强硬，从不妥协。"",
+    ""topic"": ""谈判""
+  },
+  {
+    ""figurative"": ""她的歌声是山间的清泉，洗涤了我的疲惫。"",
+    ""literal"": ""她的歌声清澈悦耳，让我感到放松。"",
+    ""topic"": ""歌声""
+  },
+  {
+    ""figurative"": ""这座城市是一座冰冷的混凝土森林。"",
+    ""literal"": ""这座城市高楼林立，人与人之间缺乏温情。"",
+    ""topic"": ""城市""
+  }
+]
+```","Reason: Both sentences are natural and semantically equivalent, with the figurative containing a clear metaphor and the literal lacking one.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are natural and semantically equivalent, with the figurative containing a clear metaphor and the literal lacking one.",1,1,1,1,0,1
+zh_metaphor_0027,zh,metaphor,0,5,梦想受阻,她的梦想已经搁浅在现实的沙滩上。,她的梦想因现实困难而无法实现。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: Both sentences match in meaning, with a clear metaphor in the figurative one and a literal restatement.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences match in meaning, with a clear metaphor in the figurative one and a literal restatement.",1,1,1,1,0,1
+zh_metaphor_0028,zh,metaphor,3,4,言语,她的话语是甘甜的蜜糖，让人听了心里舒畅。,她说话很甜美，让人听了心情愉快。,"```json
+[
+  {
+    ""figurative"": ""时间是个无情的小偷，悄悄偷走了我们的青春。"",
+    ""literal"": ""时间流逝，我们的青春逐渐消逝。"",
+    ""topic"": ""时间""
+  },
+  {
+    ""figurative"": ""人生是一场漫长的旅行，途中既有美景也有风雨。"",
+    ""literal"": ""人生过程中会遇到各种各样的事情，有好的也有坏的。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""他铁石心肠，别人的痛苦从未打动过他。"",
+    ""literal"": ""他非常冷漠，从不同情别人的痛苦。"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""那消息是一把锋利的匕首，深深扎进他的心脏。"",
+    ""literal"": ""那消息让他感到极度痛苦。"",
+    ""topic"": ""消息""
+  },
+  {
+    ""figurative"": ""她的话语是甘甜的蜜糖，让人听了心里舒畅。"",
+    ""literal"": ""她说话很甜美，让人听了心情愉快。"",
+    ""topic"": ""言语""
+  },
+  {
+    ""figurative"": ""他的愤怒是一座休眠的火山，随时可能喷发。"",
+    ""literal"": ""他非常愤怒，情绪随时可能失控。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""那家初创公司是一艘在暴风雨中漏水的小船。"",
+    ""literal"": ""那家初创公司岌岌可危，随时可能倒闭。"",
+    ""topic"": ""公司""
+  },
+  {
+    ""figurative"": ""他在谈判桌上是一头猛虎，从不退让。"",
+    ""literal"": ""他在谈判时非常强硬，从不妥协。"",
+    ""topic"": ""谈判""
+  },
+  {
+    ""figurative"": ""她的歌声是山间的清泉，洗涤了我的疲惫。"",
+    ""literal"": ""她的歌声清澈悦耳，让我感到放松。"",
+    ""topic"": ""歌声""
+  },
+  {
+    ""figurative"": ""这座城市是一座冰冷的混凝土森林。"",
+    ""literal"": ""这座城市高楼林立，人与人之间缺乏温情。"",
+    ""topic"": ""城市""
+  }
+]
+```","Reason: All five checks are satisfied.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",All five checks are satisfied.,1,1,1,1,0,1
+zh_metaphor_0029,zh,metaphor,4,1,生活,他的生活是一部喜剧,他的生活充满欢乐和笑声,"[
+  {
+    ""figurative"": ""他把时间都挥霍在游戏上了"",
+    ""literal"": ""他把大量时间都浪费在游戏上了"",
+    ""topic"": ""时间管理""
+  },
+  {
+    ""figurative"": ""他的生活是一部喜剧"",
+    ""literal"": ""他的生活充满欢乐和笑声"",
+    ""topic"": ""生活""
+  },
+  {
+    ""figurative"": ""她用知识武装自己"",
+    ""literal"": ""她通过学习知识来充实自己"",
+    ""topic"": ""学习""
+  },
+  {
+    ""figurative"": ""他心里燃烧着一团火"",
+    ""literal"": ""他内心充满了强烈的愤怒"",
+    ""topic"": ""情绪""
+  },
+  {
+    ""figurative"": ""这只是冰山一角"",
+    ""literal"": ""这只是很小的一部分，更多问题尚未暴露"",
+    ""topic"": ""问题""
+  },
+  {
+    ""figurative"": ""他铁石心肠"",
+    ""literal"": ""他非常冷酷无情"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""他乘风破浪，终于成功"",
+    ""literal"": ""他克服了重重困难，最终取得了成功"",
+    ""topic"": ""成功""
+  },
+  {
+    ""figurative"": ""这真是一个锦上添花的项目"",
+    ""literal"": ""这个项目让原本就好的情况变得更好"",
+    ""topic"": ""改进""
+  },
+  {
+    ""figurative"": ""这次捐款真是雪中送炭"",
+    ""literal"": ""这次捐款在最需要的时候提供了及时的帮助"",
+    ""topic"": ""帮助""
+  },
+  {
+    ""figurative"": ""他对这种违规行为睁一只眼闭一只眼"",
+    ""literal"": ""他故意忽视这种违规行为"",
+    ""topic"": ""宽容""
+  }
+]","Reason: The figurative sentence uses metaphor ""喜剧"" and literal sentence directly states joy, both natural and meaning matches well.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses metaphor ""喜剧"" and literal sentence directly states joy, both natural and meaning matches well.",1,1,1,1,0,1
+zh_metaphor_0030,zh,metaphor,0,8,快乐心情,她的心里住着一只快乐的小鸟。,她总是感到很愉快。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: The pair clearly contrasts a metaphor with a literal statement of similar meaning, meeting all criteria.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The pair clearly contrasts a metaphor with a literal statement of similar meaning, meeting all criteria.",1,1,1,1,0,1
+zh_metaphor_0031,zh,metaphor,1,9,求知渴望,他贪婪地吞噬着知识。,他非常渴望地学习知识。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: Both sentences are natural and match the meaning, with the figurative containing a clear metaphor and the literal being non-metaphorical.  
+FigurativeOK: 1  
+LiteralOK: 1  
+MeaningOK: 1  
+NaturalOK: 1  
+Formulaic: 0  
+Keep: 1","Both sentences are natural and match the meaning, with the figurative containing a clear metaphor and the literal being non-metaphorical.",1,1,1,1,0,1
+zh_metaphor_0032,zh,metaphor,2,3,机遇,命运为他打开了一扇窗。,他得到了一个难得的机会。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: The figurative sentence is a clear metaphor for opportunity, and the literal sentence matches in meaning without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence is a clear metaphor for opportunity, and the literal sentence matches in meaning without metaphor.",1,1,1,1,0,1
+zh_metaphor_0033,zh,metaphor,8,0,提议,他的提议石沉大海。,他的提议没有得到任何回应。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The figurative sentence uses the common metaphor ""石沉大海"" to indicate no response, and the literal sentence directly states the same meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the common metaphor ""石沉大海"" to indicate no response, and the literal sentence directly states the same meaning.",1,1,1,1,0,1
+zh_metaphor_0034,zh,metaphor,8,3,项目,这个项目是个烫手山芋。,这个项目很难处理。,"[
+    {
+        ""figurative"": ""他的提议石沉大海。"",
+        ""literal"": ""他的提议没有得到任何回应。"",
+        ""topic"": ""提议""
+    },
+    {
+        ""figurative"": ""她心中燃起了怒火。"",
+        ""literal"": ""她变得非常愤怒。"",
+        ""topic"": ""愤怒""
+    },
+    {
+        ""figurative"": ""他的话语是一把匕首。"",
+        ""literal"": ""他的话语非常刻薄伤人。"",
+        ""topic"": ""话语""
+    },
+    {
+        ""figurative"": ""这个项目是个烫手山芋。"",
+        ""literal"": ""这个项目很难处理。"",
+        ""topic"": ""项目""
+    },
+    {
+        ""figurative"": ""他工作非常努力，是头老黄牛。"",
+        ""literal"": ""他工作非常勤劳。"",
+        ""topic"": ""勤劳""
+    },
+    {
+        ""figurative"": ""时间长了翅膀。"",
+        ""literal"": ""时间过得很快。"",
+        ""topic"": ""时间""
+    },
+    {
+        ""figurative"": ""他的心情布满乌云。"",
+        ""literal"": ""他的心情很阴郁。"",
+        ""topic"": ""心情""
+    },
+    {
+        ""figurative"": ""她的笑容是阳光。"",
+        ""literal"": ""她的笑容让人感到温暖。"",
+        ""topic"": ""笑容""
+    },
+    {
+        ""figurative"": ""他是一部活字典。"",
+        ""literal"": ""他知识渊博。"",
+        ""topic"": ""知识""
+    },
+    {
+        ""figurative"": ""生活是一杯苦酒。"",
+        ""literal"": ""生活很艰难很痛苦。"",
+        ""topic"": ""生活""
+    }
+]","Reason: The figurative sentence uses a clear metaphor (""烫手山芋"") for a difficult problem, the literal sentence states it directly without metaphor, they convey the same meaning, both are natural in Chinese, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphor (""烫手山芋"") for a difficult problem, the literal sentence states it directly without metaphor, they convey the same meaning, both are natural in Chinese, and the pair is not formulaic.",1,1,1,1,0,1
+zh_metaphor_0035,zh,metaphor,2,9,人生低谷,他坠入了人生的深谷。,他处在人生中最艰难的阶段。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: The figurative sentence contains a clear metaphor, the literal lacks metaphor, both express the same meaning naturally, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence contains a clear metaphor, the literal lacks metaphor, both express the same meaning naturally, and the pair is not formulaic.",1,1,1,1,0,1
+zh_metaphor_0036,zh,metaphor,1,5,职场竞争,职场是战场，必须时刻保持警惕。,职场竞争非常激烈，必须时刻保持警惕。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: The figurative sentence uses the metaphor ""职场是战场"" and the literal sentence states the same idea without metaphor, both are natural and have similar meaning.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses the metaphor ""职场是战场"" and the literal sentence states the same idea without metaphor, both are natural and have similar meaning.",1,1,1,1,0,1
+zh_metaphor_0037,zh,metaphor,1,7,生活态度,生活是一杯茶，需要慢慢品味。,生活需要慢慢享受其中的过程。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: The figurative sentence contains a clear metaphor, and the literal sentence paraphrases the same idea naturally without metaphor.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence contains a clear metaphor, and the literal sentence paraphrases the same idea naturally without metaphor.",1,1,1,1,0,1
+zh_metaphor_0038,zh,metaphor,3,2,性格,他铁石心肠，别人的痛苦从未打动过他。,他非常冷漠，从不同情别人的痛苦。,"```json
+[
+  {
+    ""figurative"": ""时间是个无情的小偷，悄悄偷走了我们的青春。"",
+    ""literal"": ""时间流逝，我们的青春逐渐消逝。"",
+    ""topic"": ""时间""
+  },
+  {
+    ""figurative"": ""人生是一场漫长的旅行，途中既有美景也有风雨。"",
+    ""literal"": ""人生过程中会遇到各种各样的事情，有好的也有坏的。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""他铁石心肠，别人的痛苦从未打动过他。"",
+    ""literal"": ""他非常冷漠，从不同情别人的痛苦。"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""那消息是一把锋利的匕首，深深扎进他的心脏。"",
+    ""literal"": ""那消息让他感到极度痛苦。"",
+    ""topic"": ""消息""
+  },
+  {
+    ""figurative"": ""她的话语是甘甜的蜜糖，让人听了心里舒畅。"",
+    ""literal"": ""她说话很甜美，让人听了心情愉快。"",
+    ""topic"": ""言语""
+  },
+  {
+    ""figurative"": ""他的愤怒是一座休眠的火山，随时可能喷发。"",
+    ""literal"": ""他非常愤怒，情绪随时可能失控。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""那家初创公司是一艘在暴风雨中漏水的小船。"",
+    ""literal"": ""那家初创公司岌岌可危，随时可能倒闭。"",
+    ""topic"": ""公司""
+  },
+  {
+    ""figurative"": ""他在谈判桌上是一头猛虎，从不退让。"",
+    ""literal"": ""他在谈判时非常强硬，从不妥协。"",
+    ""topic"": ""谈判""
+  },
+  {
+    ""figurative"": ""她的歌声是山间的清泉，洗涤了我的疲惫。"",
+    ""literal"": ""她的歌声清澈悦耳，让我感到放松。"",
+    ""topic"": ""歌声""
+  },
+  {
+    ""figurative"": ""这座城市是一座冰冷的混凝土森林。"",
+    ""literal"": ""这座城市高楼林立，人与人之间缺乏温情。"",
+    ""topic"": ""城市""
+  }
+]
+```","Reason: The pair meets all criteria for a meaning-preserving paired-vector diagnostic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The pair meets all criteria for a meaning-preserving paired-vector diagnostic.,1,1,1,1,0,1
+zh_metaphor_0039,zh,metaphor,1,3,浪费时间,他挥霍了整整一个下午的时间。,他白白浪费了整整一个下午的时间。,"```json
+[
+  {
+    ""figurative"": ""他的努力正在开花结果。"",
+    ""literal"": ""他的努力逐渐取得了成果。"",
+    ""topic"": ""努力成果""
+  },
+  {
+    ""figurative"": ""这个方案是一颗定时炸弹。"",
+    ""literal"": ""这个方案隐藏着巨大危险。"",
+    ""topic"": ""方案隐患""
+  },
+  {
+    ""figurative"": ""她是一座冰山。"",
+    ""literal"": ""她非常冷漠无情。"",
+    ""topic"": ""冷漠性格""
+  },
+  {
+    ""figurative"": ""他挥霍了整整一个下午的时间。"",
+    ""literal"": ""他白白浪费了整整一个下午的时间。"",
+    ""topic"": ""浪费时间""
+  },
+  {
+    ""figurative"": ""他的话是一把利剑，刺穿了我的心。"",
+    ""literal"": ""他的话严重伤害了我的感情。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""职场是战场，必须时刻保持警惕。"",
+    ""literal"": ""职场竞争非常激烈，必须时刻保持警惕。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""他是一条变色龙，见人说人话。"",
+    ""literal"": ""他善于根据对象改变自己的言辞。"",
+    ""topic"": ""见风使舵""
+  },
+  {
+    ""figurative"": ""生活是一杯茶，需要慢慢品味。"",
+    ""literal"": ""生活需要慢慢享受其中的过程。"",
+    ""topic"": ""生活态度""
+  },
+  {
+    ""figurative"": ""她是这个团队的发动机。"",
+    ""literal"": ""她是这个团队的核心动力。"",
+    ""topic"": ""团队核心""
+  },
+  {
+    ""figurative"": ""他贪婪地吞噬着知识。"",
+    ""literal"": ""他非常渴望地学习知识。"",
+    ""topic"": ""求知渴望""
+  }
+]
+```","Reason: The figurative sentence uses '挥霍' as a metaphor for wasting time; the literal sentence is a direct paraphrase.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",The figurative sentence uses '挥霍' as a metaphor for wasting time; the literal sentence is a direct paraphrase.,1,1,1,1,0,1
+zh_metaphor_0040,zh,metaphor,2,4,谣言传播,这则谣言长了翅膀，飞遍全城。,这则谣言迅速传遍了整个城市。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: The figurative sentence uses ""长了翅膀"" as a metaphor for rapid spread, and the literal sentence expresses the same meaning without metaphor, both are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses ""长了翅膀"" as a metaphor for rapid spread, and the literal sentence expresses the same meaning without metaphor, both are natural and non-formulaic.",1,1,1,1,0,1
+zh_metaphor_0041,zh,metaphor,3,3,消息,那消息是一把锋利的匕首，深深扎进他的心脏。,那消息让他感到极度痛苦。,"```json
+[
+  {
+    ""figurative"": ""时间是个无情的小偷，悄悄偷走了我们的青春。"",
+    ""literal"": ""时间流逝，我们的青春逐渐消逝。"",
+    ""topic"": ""时间""
+  },
+  {
+    ""figurative"": ""人生是一场漫长的旅行，途中既有美景也有风雨。"",
+    ""literal"": ""人生过程中会遇到各种各样的事情，有好的也有坏的。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""他铁石心肠，别人的痛苦从未打动过他。"",
+    ""literal"": ""他非常冷漠，从不同情别人的痛苦。"",
+    ""topic"": ""性格""
+  },
+  {
+    ""figurative"": ""那消息是一把锋利的匕首，深深扎进他的心脏。"",
+    ""literal"": ""那消息让他感到极度痛苦。"",
+    ""topic"": ""消息""
+  },
+  {
+    ""figurative"": ""她的话语是甘甜的蜜糖，让人听了心里舒畅。"",
+    ""literal"": ""她说话很甜美，让人听了心情愉快。"",
+    ""topic"": ""言语""
+  },
+  {
+    ""figurative"": ""他的愤怒是一座休眠的火山，随时可能喷发。"",
+    ""literal"": ""他非常愤怒，情绪随时可能失控。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""那家初创公司是一艘在暴风雨中漏水的小船。"",
+    ""literal"": ""那家初创公司岌岌可危，随时可能倒闭。"",
+    ""topic"": ""公司""
+  },
+  {
+    ""figurative"": ""他在谈判桌上是一头猛虎，从不退让。"",
+    ""literal"": ""他在谈判时非常强硬，从不妥协。"",
+    ""topic"": ""谈判""
+  },
+  {
+    ""figurative"": ""她的歌声是山间的清泉，洗涤了我的疲惫。"",
+    ""literal"": ""她的歌声清澈悦耳，让我感到放松。"",
+    ""topic"": ""歌声""
+  },
+  {
+    ""figurative"": ""这座城市是一座冰冷的混凝土森林。"",
+    ""literal"": ""这座城市高楼林立，人与人之间缺乏温情。"",
+    ""topic"": ""城市""
+  }
+]
+```","Reason: The figurative sentence uses a clear metaphor (comparing news to a dagger), the literal sentence directly states the resulting pain, they convey the same meaning naturally, and the pair is not formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative sentence uses a clear metaphor (comparing news to a dagger), the literal sentence directly states the resulting pain, they convey the same meaning naturally, and the pair is not formulaic.",1,1,1,1,0,1
+zh_metaphor_0042,zh,metaphor,6,7,梦想,他的梦想是天上的一颗星。,他的梦想很遥远但很美好。,"```json
+[
+  {
+    ""figurative"": ""她是家里的太阳。"",
+    ""literal"": ""她是家里最重要的人。"",
+    ""topic"": ""家庭角色""
+  },
+  {
+    ""figurative"": ""他的心里有一堵墙。"",
+    ""literal"": ""他不愿意敞开心扉。"",
+    ""topic"": ""情感隔阂""
+  },
+  {
+    ""figurative"": ""他的话是刀子。"",
+    ""literal"": ""他的话很伤人。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场旅行。"",
+    ""literal"": ""生活中有许多经历和变化。"",
+    ""topic"": ""生活体验""
+  },
+  {
+    ""figurative"": ""他的大脑是一台计算机。"",
+    ""literal"": ""他的思考非常快且准确。"",
+    ""topic"": ""思维能力""
+  },
+  {
+    ""figurative"": ""这座城市是一只沉睡的巨兽。"",
+    ""literal"": ""这座城市有很大的潜力但尚未充分发挥。"",
+    ""topic"": ""城市潜力""
+  },
+  {
+    ""figurative"": ""她是一朵带刺的玫瑰。"",
+    ""literal"": ""她外表美丽但性格尖锐。"",
+    ""topic"": ""个性特征""
+  },
+  {
+    ""figurative"": ""他的梦想是天上的一颗星。"",
+    ""literal"": ""他的梦想很遥远但很美好。"",
+    ""topic"": ""梦想""
+  },
+  {
+    ""figurative"": ""时间是一把杀猪刀。"",
+    ""literal"": ""时间会让人变老。"",
+    ""topic"": ""衰老""
+  },
+  {
+    ""figurative"": ""他的爱情是一团火。"",
+    ""literal"": ""他的爱情很热烈。"",
+    ""topic"": ""激情""
+  }
+]
+```","Reason: Both sentences convey the same proposition clearly and meet all criteria for diagnostic use.  
+FigurativeOK: 1  
+LiteralOK: 1  
+MeaningOK: 1  
+NaturalOK: 1  
+Formulaic: 0  
+Keep: 1",Both sentences convey the same proposition clearly and meet all criteria for diagnostic use.,1,1,1,1,0,1
+zh_metaphor_0043,zh,metaphor,7,7,知识指引,知识是照亮前路的灯塔。,知识指引人们前进的方向。,"```json
+[
+  {
+    ""figurative"": ""他是团队的定海神针。"",
+    ""literal"": ""他是团队中稳定可靠的核心人物。"",
+    ""topic"": ""团队领导力""
+  },
+  {
+    ""figurative"": ""她的笑容融化了冰雪。"",
+    ""literal"": ""她的笑容缓解了紧张的气氛。"",
+    ""topic"": ""人际温暖""
+  },
+  {
+    ""figurative"": ""时间是一个小偷，偷走了青春。"",
+    ""literal"": ""时间流逝，青春不再。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他心中的怒火燃烧着理智。"",
+    ""literal"": ""他非常愤怒，几乎失去理智。"",
+    ""topic"": ""愤怒情绪""
+  },
+  {
+    ""figurative"": ""生活是一杯苦茶，越品越有味。"",
+    ""literal"": ""生活虽然艰辛，但经历越多越有收获。"",
+    ""topic"": ""人生体验""
+  },
+  {
+    ""figurative"": ""她的眼神是一把刀子，刺痛了我。"",
+    ""literal"": ""她的眼神非常犀利，让我感到受伤。"",
+    ""topic"": ""眼神伤害""
+  },
+  {
+    ""figurative"": ""他的话语是寒冬里的北风。"",
+    ""literal"": ""他的话冷漠无情，让人心寒。"",
+    ""topic"": ""言语冷酷""
+  },
+  {
+    ""figurative"": ""知识是照亮前路的灯塔。"",
+    ""literal"": ""知识指引人们前进的方向。"",
+    ""topic"": ""知识指引""
+  },
+  {
+    ""figurative"": ""这个项目是一座大山，压得人喘不过气。"",
+    ""literal"": ""这个项目非常艰难，让人压力巨大。"",
+    ""topic"": ""项目压力""
+  },
+  {
+    ""figurative"": ""她的歌声是山涧的清泉。"",
+    ""literal"": ""她的歌声清新悦耳，令人心旷神怡。"",
+    ""topic"": ""歌声清澈""
+  }
+]
+```","Reason: Both sentences convey that knowledge provides direction, with the figurative using a clear metaphor and the literal being a straightforward statement.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences convey that knowledge provides direction, with the figurative using a clear metaphor and the literal being a straightforward statement.",1,1,1,1,0,1
+zh_metaphor_0044,zh,metaphor,2,7,竞争激烈,这次选拔赛是淘汰强者的战场。,这次选拔赛竞争非常激烈，很多人被淘汰。,"```json
+[
+  {
+    ""figurative"": ""这场职场战争，每个人都必须拼尽全力。"",
+    ""literal"": ""在职场竞争中，每个人都要付出最大努力。"",
+    ""topic"": ""职场竞争""
+  },
+  {
+    ""figurative"": ""她的心被撕成了碎片。"",
+    ""literal"": ""她因为失恋而感到极度痛苦。"",
+    ""topic"": ""失恋痛苦""
+  },
+  {
+    ""figurative"": ""岁月在他脸上刻下了深深的痕迹。"",
+    ""literal"": ""随着年龄增长，他脸上出现了很多皱纹。"",
+    ""topic"": ""岁月流逝""
+  },
+  {
+    ""figurative"": ""命运为他打开了一扇窗。"",
+    ""literal"": ""他得到了一个难得的机会。"",
+    ""topic"": ""机遇""
+  },
+  {
+    ""figurative"": ""这则谣言长了翅膀，飞遍全城。"",
+    ""literal"": ""这则谣言迅速传遍了整个城市。"",
+    ""topic"": ""谣言传播""
+  },
+  {
+    ""figurative"": ""知识的大门需要努力才能推开。"",
+    ""literal"": ""要掌握这些知识，必须付出艰苦的努力。"",
+    ""topic"": ""学习困难""
+  },
+  {
+    ""figurative"": ""黑暗中的一丝光亮点燃了他的希望。"",
+    ""literal"": ""在困境中，一个微小的积极信号让他重新有了希望。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""这次选拔赛是淘汰强者的战场。"",
+    ""literal"": ""这次选拔赛竞争非常激烈，很多人被淘汰。"",
+    ""topic"": ""竞争激烈""
+  },
+  {
+    ""figurative"": ""他们之间的友谊之桥崩塌了。"",
+    ""literal"": ""他们的友谊彻底破裂了。"",
+    ""topic"": ""友谊破裂""
+  },
+  {
+    ""figurative"": ""他坠入了人生的深谷。"",
+    ""literal"": ""他处在人生中最艰难的阶段。"",
+    ""topic"": ""人生低谷""
+  }
+]
+```","Reason: Both sentences match the metaphor criteria, share the same proposition, and are natural without being formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences match the metaphor criteria, share the same proposition, and are natural without being formulaic.",1,1,1,1,0,1
+zh_metaphor_0045,zh,metaphor,0,7,经济停滞,这场疫情给全球经济踩了急刹车。,这场疫情让全球经济增长突然停滞。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: Both sentences match all criteria for the metaphor diagnostic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1",Both sentences match all criteria for the metaphor diagnostic.,1,1,1,1,0,1
+zh_metaphor_0046,zh,metaphor,0,1,情感解冻,她心里那座冰山终于开始融化了。,她慢慢变得不再冷漠，开始接纳别人。,"```json
+[
+  {
+    ""figurative"": ""他的事业正处在低谷，需要重新寻找方向。"",
+    ""literal"": ""他的事业发展不顺利，需要重新规划。"",
+    ""topic"": ""事业挫折""
+  },
+  {
+    ""figurative"": ""她心里那座冰山终于开始融化了。"",
+    ""literal"": ""她慢慢变得不再冷漠，开始接纳别人。"",
+    ""topic"": ""情感解冻""
+  },
+  {
+    ""figurative"": ""时间像流水一样，我们的青春一去不复返。"",
+    ""literal"": ""时间流逝很快，我们的青春已经过去无法回来。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他的话像刀子一样扎进我的心里。"",
+    ""literal"": ""他的话让我非常伤心。"",
+    ""topic"": ""言语伤害""
+  },
+  {
+    ""figurative"": ""生活是一场没有剧本的演出。"",
+    ""literal"": ""生活无法提前计划，充满未知。"",
+    ""topic"": ""生活不确定性""
+  },
+  {
+    ""figurative"": ""她的梦想已经搁浅在现实的沙滩上。"",
+    ""literal"": ""她的梦想因现实困难而无法实现。"",
+    ""topic"": ""梦想受阻""
+  },
+  {
+    ""figurative"": ""他总喜欢在别人伤口上撒盐。"",
+    ""literal"": ""他总喜欢在别人难过的时候还故意刺激别人。"",
+    ""topic"": ""恶意刺激""
+  },
+  {
+    ""figurative"": ""这场疫情给全球经济踩了急刹车。"",
+    ""literal"": ""这场疫情让全球经济增长突然停滞。"",
+    ""topic"": ""经济停滞""
+  },
+  {
+    ""figurative"": ""她的心里住着一只快乐的小鸟。"",
+    ""literal"": ""她总是感到很愉快。"",
+    ""topic"": ""快乐心情""
+  },
+  {
+    ""figurative"": ""他的目光像探照灯一样扫过整个房间。"",
+    ""literal"": ""他仔细地环视了整个房间。"",
+    ""topic"": ""仔细察看""
+  }
+]
+```","Reason: The figurative uses a clear metaphor, the literal is non-metaphorical, and both convey the same meaning naturally.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","The figurative uses a clear metaphor, the literal is non-metaphorical, and both convey the same meaning naturally.",1,1,1,1,0,1
+zh_metaphor_0047,zh,metaphor,7,3,愤怒情绪,他心中的怒火燃烧着理智。,他非常愤怒，几乎失去理智。,"```json
+[
+  {
+    ""figurative"": ""他是团队的定海神针。"",
+    ""literal"": ""他是团队中稳定可靠的核心人物。"",
+    ""topic"": ""团队领导力""
+  },
+  {
+    ""figurative"": ""她的笑容融化了冰雪。"",
+    ""literal"": ""她的笑容缓解了紧张的气氛。"",
+    ""topic"": ""人际温暖""
+  },
+  {
+    ""figurative"": ""时间是一个小偷，偷走了青春。"",
+    ""literal"": ""时间流逝，青春不再。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他心中的怒火燃烧着理智。"",
+    ""literal"": ""他非常愤怒，几乎失去理智。"",
+    ""topic"": ""愤怒情绪""
+  },
+  {
+    ""figurative"": ""生活是一杯苦茶，越品越有味。"",
+    ""literal"": ""生活虽然艰辛，但经历越多越有收获。"",
+    ""topic"": ""人生体验""
+  },
+  {
+    ""figurative"": ""她的眼神是一把刀子，刺痛了我。"",
+    ""literal"": ""她的眼神非常犀利，让我感到受伤。"",
+    ""topic"": ""眼神伤害""
+  },
+  {
+    ""figurative"": ""他的话语是寒冬里的北风。"",
+    ""literal"": ""他的话冷漠无情，让人心寒。"",
+    ""topic"": ""言语冷酷""
+  },
+  {
+    ""figurative"": ""知识是照亮前路的灯塔。"",
+    ""literal"": ""知识指引人们前进的方向。"",
+    ""topic"": ""知识指引""
+  },
+  {
+    ""figurative"": ""这个项目是一座大山，压得人喘不过气。"",
+    ""literal"": ""这个项目非常艰难，让人压力巨大。"",
+    ""topic"": ""项目压力""
+  },
+  {
+    ""figurative"": ""她的歌声是山涧的清泉。"",
+    ""literal"": ""她的歌声清新悦耳，令人心旷神怡。"",
+    ""topic"": ""歌声清澈""
+  }
+]
+```","Reason: Both sentences convey the same meaning of extreme anger causing loss of reason, with the figurative sentence using a clear metaphor and the literal one avoiding it, and both are natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences convey the same meaning of extreme anger causing loss of reason, with the figurative sentence using a clear metaphor and the literal one avoiding it, and both are natural and non-formulaic.",1,1,1,1,0,1
+zh_metaphor_0048,zh,metaphor,5,5,爱情,她的目光织成一张网，把我牢牢困住。,她的目光让我深深着迷，无法自拔。,"```json
+[
+  {
+    ""figurative"": ""时间在指尖滑落，抓不住一丝痕迹。"",
+    ""literal"": ""时间过得很快，什么也没留下。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他们的争论燃起了战火，办公室里硝烟弥漫。"",
+    ""literal"": ""他们激烈地争吵起来，办公室里气氛紧张。"",
+    ""topic"": ""争论""
+  },
+  {
+    ""figurative"": ""他的话语点燃了我心中的灯，黑暗里有了光亮。"",
+    ""literal"": ""他的话给了我很大的希望，让我不再迷茫。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""那些记忆的碎片拼凑出她的笑容，清晰又遥远。"",
+    ""literal"": ""那些零碎的记忆让我回想起她的笑容，清晰又遥远。"",
+    ""topic"": ""记忆""
+  },
+  {
+    ""figurative"": ""人生是一条蜿蜒的河流，前方总有转弯。"",
+    ""literal"": ""人生充满了曲折变化，未来难以预料。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""她的目光织成一张网，把我牢牢困住。"",
+    ""literal"": ""她的目光让我深深着迷，无法自拔。"",
+    ""topic"": ""爱情""
+  },
+  {
+    ""figurative"": ""他背负着沉重的十字架，每一步都艰难。"",
+    ""literal"": ""他承受着巨大的困难，每一步都走得辛苦。"",
+    ""topic"": ""困难""
+  },
+  {
+    ""figurative"": ""秘密从裂缝中溢出，再也堵不住。"",
+    ""literal"": ""秘密不小心被泄露出去，再也瞒不住了。"",
+    ""topic"": ""信息泄露""
+  },
+  {
+    ""figurative"": ""他的胸膛里翻滚着岩浆，随时可能喷发。"",
+    ""literal"": ""他内心充满了愤怒，随时可能爆发。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""他的事业正在上升的电梯里，一往无前。"",
+    ""literal"": ""他的事业正在快速发展，势不可挡。"",
+    ""topic"": ""事业""
+  }
+]
+```","Reason: Both sentences express captivating gaze, figurative uses metaphor, literal is literal, natural and non-formulaic.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences express captivating gaze, figurative uses metaphor, literal is literal, natural and non-formulaic.",1,1,1,1,0,1
+zh_metaphor_0049,zh,metaphor,5,0,时间流逝,时间在指尖滑落，抓不住一丝痕迹。,时间过得很快，什么也没留下。,"```json
+[
+  {
+    ""figurative"": ""时间在指尖滑落，抓不住一丝痕迹。"",
+    ""literal"": ""时间过得很快，什么也没留下。"",
+    ""topic"": ""时间流逝""
+  },
+  {
+    ""figurative"": ""他们的争论燃起了战火，办公室里硝烟弥漫。"",
+    ""literal"": ""他们激烈地争吵起来，办公室里气氛紧张。"",
+    ""topic"": ""争论""
+  },
+  {
+    ""figurative"": ""他的话语点燃了我心中的灯，黑暗里有了光亮。"",
+    ""literal"": ""他的话给了我很大的希望，让我不再迷茫。"",
+    ""topic"": ""希望""
+  },
+  {
+    ""figurative"": ""那些记忆的碎片拼凑出她的笑容，清晰又遥远。"",
+    ""literal"": ""那些零碎的记忆让我回想起她的笑容，清晰又遥远。"",
+    ""topic"": ""记忆""
+  },
+  {
+    ""figurative"": ""人生是一条蜿蜒的河流，前方总有转弯。"",
+    ""literal"": ""人生充满了曲折变化，未来难以预料。"",
+    ""topic"": ""人生""
+  },
+  {
+    ""figurative"": ""她的目光织成一张网，把我牢牢困住。"",
+    ""literal"": ""她的目光让我深深着迷，无法自拔。"",
+    ""topic"": ""爱情""
+  },
+  {
+    ""figurative"": ""他背负着沉重的十字架，每一步都艰难。"",
+    ""literal"": ""他承受着巨大的困难，每一步都走得辛苦。"",
+    ""topic"": ""困难""
+  },
+  {
+    ""figurative"": ""秘密从裂缝中溢出，再也堵不住。"",
+    ""literal"": ""秘密不小心被泄露出去，再也瞒不住了。"",
+    ""topic"": ""信息泄露""
+  },
+  {
+    ""figurative"": ""他的胸膛里翻滚着岩浆，随时可能喷发。"",
+    ""literal"": ""他内心充满了愤怒，随时可能爆发。"",
+    ""topic"": ""愤怒""
+  },
+  {
+    ""figurative"": ""他的事业正在上升的电梯里，一往无前。"",
+    ""literal"": ""他的事业正在快速发展，势不可挡。"",
+    ""topic"": ""事业""
+  }
+]
+```","Reason: Both sentences are natural and express the same idea, with the figurative containing a clear metaphor and the literal being non-metaphorical.
+FigurativeOK: 1
+LiteralOK: 1
+MeaningOK: 1
+NaturalOK: 1
+Formulaic: 0
+Keep: 1","Both sentences are natural and express the same idea, with the figurative containing a clear metaphor and the literal being non-metaphorical.",1,1,1,1,0,1

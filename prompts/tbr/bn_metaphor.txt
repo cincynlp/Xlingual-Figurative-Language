@@ -1,0 +1,111 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Bengali.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] টার্গেট ক্যাটাগরি
+রূপক(METAPHOR) 
+
+[7] কাজের লক্ষ্য
+ইনপুট টেক্সটে রূপক আছে কি না শনাক্ত করো।
+
+[8] রূপকের মূল সংজ্ঞা
+রূপক হলো এমন ভাষা যেখানে কোনো লক্ষ্যবস্তু বিষয়, মানুষ, অবস্থা, অনুভূতি বা ধারণাকে ভিন্ন কোনো উৎস ধারণা, বস্তু, স্থান, শক্তি বা প্রক্রিয়ার বৈশিষ্ট্য দিয়ে বোঝানো হয়।
+
+রূপক থাকলে তিনটি বিষয় বোঝা যায়:
+1. লক্ষ্যবস্তু: আসলে কী বোঝানো হচ্ছে?
+2. উৎস: কোন ভিন্ন ধারণা, বস্তু বা ক্ষেত্র দিয়ে বোঝানো হচ্ছে?
+3. বৈশিষ্ট্য-স্থানান্তর: উৎসের কোন বৈশিষ্ট্য লক্ষ্যবস্তুর ওপর বসেছে?
+
+[9] সিদ্ধান্তের নিয়ম
+Label YES দাও যদি বাক্যে স্পষ্ট source-to-target mapping থাকে।
+
+বিশেষভাবে YES:
+- বিমূর্ত বিষয়/অনুভূতি/অবস্থাকে বস্তু, স্থান, পথ, আলো, অন্ধকার, আগুন, বিষ, পাথর, স্রোত, সমুদ্র, দেয়াল, শিকল, বোঝা, ঝড়, ক্ষত ইত্যাদি দিয়ে বোঝানো হলে;
+- মন, জীবন, সময়, সম্পর্ক, আশা, দুঃখ, ভয়, রাগ, স্বপ্ন, স্মৃতি, কথা ইত্যাদি অন্য concrete/source-domain দিয়ে বোঝানো হলে;
+- প্রচলিত Idiom বা Fixed expression (যেমন: "মাথায় হাত দেওয়া", "আকাশ ভেঙে পড়া", "আগুন হওয়া") যেখানে আক্ষরিক অর্থ কাজ করে না, কিন্তু Target-Source-Mapping পরিষ্কারভাবে বোঝা যায়।
+
+Precision rule (Overthinking ও Hallucination বন্ধ করার জন্য):
+- বাক্যে যদি Target সরাসরি উল্লেখ না থাকে বা বাক্যটি কেবলই একটি আক্ষরিক দৃশ্যের বর্ণনা বা Poetic Imagery হয় (যেমন: "দরজা দিয়ে আলো আসছে", "পাখিরা গান গাইছে"), তবে নিজে থেকে কোনো বিমূর্ত Target (যেমন: "জীবনের পথ", "নতুন আশা") কল্পনা করে YES দেবে না। Mapping বাক্যের শব্দ দ্বারাই প্রমাণিত হতে হবে।
+- শুধু figurative verb, সুন্দর ভাষা, আবেগপূর্ণ tone, বা personification দেখে YES দেবে না।
+- YES হবে শুধু তখনই, যখন Reason-এ Target, Source, Mapping স্পষ্টভাবে লেখা যায়।
+
+Label NO দাও যদি বাক্যটি শুধু:
+- আক্ষরিক বর্ণনা;
+- সরাসরি আবেগ/মতামত/প্রশংসা/নিন্দা;
+- অতিরঞ্জন;
+- সরাসরি উপমা (Strict Rule): বাক্যে "মতো", "যেন", "ন্যায়", "সদৃশ", "তুল্য", "সম", "প্রায়" ইত্যাদি শব্দ থাকলে তা নিশ্চিত উপমা (Simile), রূপক নয়। এমন বাক্যে Target ও Source থাকলেও চোখ বন্ধ করে Label NO দাও।
+- poetic imagery;
+- personification-only;
+- সাধারণ adjective/intensifier;
+- সাংস্কৃতিক/ধর্মীয়/সম্মানসূচক reference;
+- অস্পষ্ট figurative expression।
+
+[10] সংক্ষিপ্ত উদাহরণ
+
+Text: "তার মনটা পাথর।"
+Reason: Target=মন, Source=পাথর, Mapping=কঠোরতা।
+Label: YES
+
+Text: "তার কথায় বিষ ছিল।"
+Reason: Target=কথা, Source=বিষ, Mapping=ক্ষতি/কষ্ট দেওয়া।
+Label: YES
+
+Text: "স্বপ্ন ভেঙে গেছে।"
+Reason: Target=স্বপ্ন/আশা, Source=ভাঙা বস্তু, Mapping=নষ্ট হওয়া।
+Label: YES
+
+Text: "সে বাঘের মতো সাহসী।"
+Reason: "মতো" থাকায় এটি সরাসরি উপমা, রূপক নয়।
+Label: NO
+
+Text: "এক দরজায় ঢুকে বহিষ্কৃত হয়ে গেছে অন্য এক দুয়ারের দিকে অমেয় আলোয় হেঁটে।"
+Reason: এটি একটি আক্ষরিক বর্ণনা বা Poetic Imagery। এখানে সরাসরি কোনো বিমূর্ত Target (যেমন- জীবন বা মৃত্যু) উল্লেখ নেই।
+Label: NO
+
+Text: "আমি হাজার বার বলেছি।"
+Reason: শুধু অতিরঞ্জন।
+Label: NO
+
+Text: "আমার মন খারাপ।"
+Reason: সাধারণ আবেগপ্রকাশ; সক্রিয় Source-domain নেই।
+Label: NO
+
+[11] আউটপুট ফরম্যাট
+শুধু নিচের ফরম্যাটে উত্তর দাও:
+
+Label: YES/NO
+Reason: সংক্ষিপ্ত কারণ
+
+YES হলে Reason-এ Target, Source, Mapping উল্লেখ করো।
+NO হলে সংক্ষেপে বলো কেন রূপক নয়।
+
+[12] ইনপুট টেক্সট
+"{input}"

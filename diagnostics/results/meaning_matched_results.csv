@@ -1,0 +1,13 @@
+source_language,target_language,category,condition,n,tbr,valid_coherence_n,mean_coherence,low_coherence_rate,gain_pp
+en,en,metaphor,unsteered,100,0.3,100,3.98,0.0,0.0
+en,en,metaphor,original_caption_negative,100,0.66,100,3.72,0.02,36.00000000000001
+en,en,metaphor,synthetic_content_matched_paired,100,0.76,97,4.0,0.0,46.0
+en,zh,metaphor,unsteered,100,0.49,100,3.98,0.0,0.0
+en,zh,metaphor,original_caption_negative,100,0.77,98,3.9489795918367347,0.0,28.000000000000004
+en,zh,metaphor,synthetic_content_matched_paired,100,0.83,100,4.0,0.0,34.0
+zh,en,metaphor,unsteered,100,0.3,100,3.98,0.0,0.0
+zh,en,metaphor,original_caption_negative,100,0.84,95,3.9473684210526314,0.010526315789473684,54.0
+zh,en,metaphor,synthetic_content_matched_paired,100,0.83,99,3.9797979797979797,0.0,53.0
+zh,zh,metaphor,unsteered,100,0.49,100,3.98,0.0,0.0
+zh,zh,metaphor,original_caption_negative,100,0.9,100,3.74,0.01,41.0
+zh,zh,metaphor,synthetic_content_matched_paired,100,0.86,99,4.0,0.0,37.0

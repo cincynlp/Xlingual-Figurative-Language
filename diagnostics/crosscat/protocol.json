@@ -1,0 +1,4536 @@
+{
+  "schema_version": 1,
+  "diagnostic": "CrossCat",
+  "conditions": {
+    "unsteered": "Unsteered continuation",
+    "omean": "Same category, other source languages",
+    "crosscat": "Other categories within each other source language; equal language weights"
+  },
+  "scope": "TBR on English and Chinese, four categories and four models; 100 identical prompts in each three-condition cell.",
+  "reproduction_scope": "Recompute statistics and audit exact evaluator requests/responses from saved outputs. Source vector tensors and generation backend are not included.",
+  "models": [
+    {
+      "model_id": "qwen3_8b",
+      "model": "Qwen/Qwen3-8B",
+      "generation": {
+        "layer": 14,
+        "ratio": 1,
+        "dtype": "bfloat16",
+        "max_new_tokens": 1024,
+        "gen_batch_size": 64,
+        "rep_batch_size": 16,
+        "enable_thinking": false,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "prompt_style": "normal",
+        "steering_mode": "all_prompt_tokens",
+        "norm_calibration": "Reuse full 500-prompt mean/std from corresponding cached OMean CSV.",
+        "seed_note": "New cell seeds recorded below; cached generation seeds were not recorded and are not matched."
+      },
+      "sampling": "First 100 cached test prompts, before new judgments; same prompts in all conditions.",
+      "control_formula": "normalize(sum_s mean_{k in available retained categories excluding target} v[s,k])",
+      "normalization": "Stored normalized vectors (including their bfloat16 rounding), converted to float32; final sum L2-normalized, as in cached OMean. Each source language has equal total weight.",
+      "excluded": [
+        "simile",
+        "target category",
+        "target language"
+      ],
+      "original_judge_manifest_sha256": "b044b731a84ffc241ca099fe169d37e195dd912a36bf2d44e2c5ecb27ceed813",
+      "judge": {
+        "schema_version": 1,
+        "endpoint": "https://api.deepseek.com",
+        "request_settings": {
+          "model": "deepseek-v4-flash",
+          "temperature": 0,
+          "max_tokens": 256,
+          "stream": false,
+          "extra_body": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "system_message": "You are a careful linguistic annotation model.",
+        "sdk_max_retries": 0,
+        "request_timeout_seconds": 90,
+        "workers": 8,
+        "max_attempts_per_pending_job_per_invocation": 4,
+        "retry_policy": "Initial request plus at most three retries per pending job per invocation; reruns retry only unresolved jobs and retain every previous attempt.",
+        "input_count": 2400,
+        "prompt_registry_sha256": "e067077c6e5051cd24d2ff59911552541add05882fb042163284113e5aeb0ace",
+        "prompt_metadata": {
+          "en_idiom": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "idiom",
+            "public_path": "prompts/tbr/en_idiom.txt",
+            "prompt_sha256": "705ec9c96d03a126f8465b5e8f5ed12323480ca504367153a36ff6c6fb4444f2",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/en_metaphor.txt",
+            "prompt_sha256": "c3b2db0730e4a3225890ac4f4a8da81736f0c7d9c7be0553351c31797b14620d",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_irony": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "irony",
+            "public_path": "prompts/tbr/en_irony.txt",
+            "prompt_sha256": "40a83893dd93f8e5ad8c2f107adfa1d2de68d9a14ad2253312bfd725820b14a5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/en_sarcasm.txt",
+            "prompt_sha256": "da141db56a1d48cc080fe8ddef8c76c5898038613e3fb4fca5ea67c58ca6adb0",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_idiom": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "idiom",
+            "public_path": "prompts/tbr/zh_idiom.txt",
+            "prompt_sha256": "9a835d9ebbadf492c3d2ee10031738ba838e300a2f0d3289f63dbf5f71b7e7c5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/zh_metaphor.txt",
+            "prompt_sha256": "dcb999085081165a449224a508d3f2ac57b84f5ece61f01821e516402ba4752f",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_irony": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "irony",
+            "public_path": "prompts/tbr/zh_irony.txt",
+            "prompt_sha256": "fd9918795bf2f6947fb7316cee222613bfe2418fcb3329b054a3592d2cfa0a06",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/zh_sarcasm.txt",
+            "prompt_sha256": "fe01ca1de90410014184b02ea394e2acee15affd089f9ff1a42bc01ff1c064e6",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          }
+        },
+        "expected_per_cell_condition": 100,
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "categories": [
+          "idiom",
+          "metaphor",
+          "irony",
+          "sarcasm"
+        ],
+        "parse_rule": "Exactly one explicit Label: YES or Label: NO line and no other Label line; one choice; finish_reason=stop; nonempty content; absent/null/empty reasoning_content.",
+        "summary_rule": "Within each language/category, intersect valid simple_prompt keys across all three conditions; final success requires 100 common-valid keys in every cell. Missing or invalid responses are never negative labels. Equal weight per cell."
+      },
+      "source_files": {
+        "G0001": {
+          "condition": "unsteered",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0002": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0003": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0004": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0005": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0006": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0007": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0008": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0009": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        },
+        "G0010": {
+          "condition": "unsteered",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0011": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0012": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0013": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0014": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0015": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0016": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0017": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0018": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        }
+      },
+      "cells": [
+        {
+          "target_language": "en",
+          "target_category": "idiom",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260910,
+          "norm_calibration": {
+            "mean_h_norm": 62.690948486328125,
+            "std_h_norm": 0.5572867393493652,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998211860657,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0002",
+            "crosscat": "G0003"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "metaphor",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260911,
+          "norm_calibration": {
+            "mean_h_norm": 62.690948486328125,
+            "std_h_norm": 0.5572867393493652,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0004",
+            "crosscat": "G0005"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "irony",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20260912,
+          "norm_calibration": {
+            "mean_h_norm": 62.690948486328125,
+            "std_h_norm": 0.5572867393493652,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0006",
+            "crosscat": "G0007"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "zh",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20260913,
+          "norm_calibration": {
+            "mean_h_norm": 62.690948486328125,
+            "std_h_norm": 0.5572867393493652,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0008",
+            "crosscat": "G0009"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "idiom",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261010,
+          "norm_calibration": {
+            "mean_h_norm": 61.29413604736328,
+            "std_h_norm": 0.6902446746826172,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998211860657,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0011",
+            "crosscat": "G0012"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "metaphor",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261011,
+          "norm_calibration": {
+            "mean_h_norm": 61.29413604736328,
+            "std_h_norm": 0.6902446746826172,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.000000238418579,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0013",
+            "crosscat": "G0014"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "irony",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20261012,
+          "norm_calibration": {
+            "mean_h_norm": 61.29413604736328,
+            "std_h_norm": 0.6902446746826172,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0015",
+            "crosscat": "G0016"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "en",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20261013,
+          "norm_calibration": {
+            "mean_h_norm": 61.29413604736328,
+            "std_h_norm": 0.6902446746826172,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 14,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0017",
+            "crosscat": "G0018"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "qwen3_32b",
+      "model": "Qwen/Qwen3-32B",
+      "generation": {
+        "layer": 35,
+        "ratio": 1,
+        "dtype": "bfloat16",
+        "max_new_tokens": 1024,
+        "gen_batch_size": 16,
+        "rep_batch_size": 16,
+        "enable_thinking": false,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "prompt_style": "normal",
+        "steering_mode": "all_prompt_tokens",
+        "norm_calibration": "Reuse full 500-prompt mean/std from corresponding cached OMean CSV.",
+        "seed_note": "New cell seeds recorded below; cached generation seeds were not recorded and are not matched.",
+        "setting_selection": "Fixed manuscript layer/ratio; no tuning. Each cell preserves its cached OMean generation batch size."
+      },
+      "sampling": "First 100 cached test prompts, before new judgments; same prompts in all conditions.",
+      "control_formula": "normalize(sum_s mean_{k in available retained categories excluding target} v[s,k])",
+      "normalization": "Stored normalized vectors (including their bfloat16 rounding), converted to float32; final sum L2-normalized, as in cached OMean. Each source language has equal total weight.",
+      "excluded": [
+        "simile",
+        "target category",
+        "target language"
+      ],
+      "original_judge_manifest_sha256": "379068d0fd7d8217b5632531a6324c0839deda59a8795bf6331f6006990aed57",
+      "judge": {
+        "schema_version": 1,
+        "endpoint": "https://api.deepseek.com",
+        "request_settings": {
+          "model": "deepseek-v4-flash",
+          "temperature": 0,
+          "max_tokens": 256,
+          "stream": false,
+          "extra_body": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "system_message": "You are a careful linguistic annotation model.",
+        "sdk_max_retries": 0,
+        "request_timeout_seconds": 90,
+        "workers": 8,
+        "max_attempts_per_pending_job_per_invocation": 4,
+        "retry_policy": "Initial request plus at most three retries per pending job per invocation; reruns retry only unresolved jobs and retain every previous attempt.",
+        "input_count": 2400,
+        "prompt_registry_sha256": "e067077c6e5051cd24d2ff59911552541add05882fb042163284113e5aeb0ace",
+        "prompt_metadata": {
+          "en_idiom": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "idiom",
+            "public_path": "prompts/tbr/en_idiom.txt",
+            "prompt_sha256": "705ec9c96d03a126f8465b5e8f5ed12323480ca504367153a36ff6c6fb4444f2",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/en_metaphor.txt",
+            "prompt_sha256": "c3b2db0730e4a3225890ac4f4a8da81736f0c7d9c7be0553351c31797b14620d",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_irony": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "irony",
+            "public_path": "prompts/tbr/en_irony.txt",
+            "prompt_sha256": "40a83893dd93f8e5ad8c2f107adfa1d2de68d9a14ad2253312bfd725820b14a5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/en_sarcasm.txt",
+            "prompt_sha256": "da141db56a1d48cc080fe8ddef8c76c5898038613e3fb4fca5ea67c58ca6adb0",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_idiom": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "idiom",
+            "public_path": "prompts/tbr/zh_idiom.txt",
+            "prompt_sha256": "9a835d9ebbadf492c3d2ee10031738ba838e300a2f0d3289f63dbf5f71b7e7c5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/zh_metaphor.txt",
+            "prompt_sha256": "dcb999085081165a449224a508d3f2ac57b84f5ece61f01821e516402ba4752f",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_irony": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "irony",
+            "public_path": "prompts/tbr/zh_irony.txt",
+            "prompt_sha256": "fd9918795bf2f6947fb7316cee222613bfe2418fcb3329b054a3592d2cfa0a06",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/zh_sarcasm.txt",
+            "prompt_sha256": "fe01ca1de90410014184b02ea394e2acee15affd089f9ff1a42bc01ff1c064e6",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          }
+        },
+        "expected_per_cell_condition": 100,
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "categories": [
+          "idiom",
+          "metaphor",
+          "irony",
+          "sarcasm"
+        ],
+        "parse_rule": "Exactly one explicit Label: YES or Label: NO line and no other Label line; one choice; finish_reason=stop; nonempty content; absent/null/empty reasoning_content.",
+        "summary_rule": "Within each language/category, intersect valid simple_prompt keys across all three conditions; final success requires 100 common-valid keys in every cell. Missing or invalid responses are never negative labels. Equal weight per cell."
+      },
+      "source_files": {
+        "G0001": {
+          "condition": "unsteered",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0002": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0003": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0004": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0005": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0006": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0007": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0008": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0009": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        },
+        "G0010": {
+          "condition": "unsteered",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0011": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0012": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0013": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0014": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0015": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0016": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0017": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0018": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        }
+      },
+      "cells": [
+        {
+          "target_language": "en",
+          "target_category": "idiom",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260910,
+          "norm_calibration": {
+            "mean_h_norm": 208.7244110107422,
+            "std_h_norm": 2.692976474761963,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0002",
+            "crosscat": "G0003"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "metaphor",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260911,
+          "norm_calibration": {
+            "mean_h_norm": 208.7244110107422,
+            "std_h_norm": 2.692976474761963,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0004",
+            "crosscat": "G0005"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "irony",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20260912,
+          "norm_calibration": {
+            "mean_h_norm": 208.7244110107422,
+            "std_h_norm": 2.692976474761963,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0006",
+            "crosscat": "G0007"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "zh",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20260913,
+          "norm_calibration": {
+            "mean_h_norm": 208.7244110107422,
+            "std_h_norm": 2.692976474761963,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999997615814209,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0008",
+            "crosscat": "G0009"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "idiom",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261010,
+          "norm_calibration": {
+            "mean_h_norm": 200.3196258544922,
+            "std_h_norm": 3.306157350540161,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999997615814209,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0011",
+            "crosscat": "G0012"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "metaphor",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261011,
+          "norm_calibration": {
+            "mean_h_norm": 200.3196258544922,
+            "std_h_norm": 3.306157350540161,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999997615814209,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0013",
+            "crosscat": "G0014"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "irony",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20261012,
+          "norm_calibration": {
+            "mean_h_norm": 200.3196258544922,
+            "std_h_norm": 3.306157350540161,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0015",
+            "crosscat": "G0016"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "en",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20261013,
+          "norm_calibration": {
+            "mean_h_norm": 200.3196258544922,
+            "std_h_norm": 3.306157350540161,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 35,
+            "ratio": 1,
+            "gen_batch_size": 16,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0017",
+            "crosscat": "G0018"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "llama3_1_8b",
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "generation": {
+        "layer": 15,
+        "ratio": 1,
+        "dtype": "bfloat16",
+        "max_new_tokens": 1024,
+        "gen_batch_size": 64,
+        "rep_batch_size": 16,
+        "enable_thinking": false,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 50,
+        "prompt_style": "normal",
+        "steering_mode": "all_prompt_tokens",
+        "norm_calibration": "Reuse full 500-prompt mean/std from corresponding cached OMean CSV.",
+        "seed_note": "New cell seeds recorded below; cached generation seeds were not recorded and are not matched.",
+        "setting_selection": "Fixed manuscript layer/ratio; no tuning. Each cell preserves its cached OMean generation batch size."
+      },
+      "sampling": "First 100 cached test prompts, before new judgments; same prompts in all conditions.",
+      "control_formula": "normalize(sum_s mean_{k in available retained categories excluding target} v[s,k])",
+      "normalization": "Stored normalized vectors (including their bfloat16 rounding), converted to float32; final sum L2-normalized, as in cached OMean. Each source language has equal total weight.",
+      "excluded": [
+        "simile",
+        "target category",
+        "target language"
+      ],
+      "original_judge_manifest_sha256": "33c82e3d957ad8623197ffe0a9ae9b34b594fd3990d147d3cb1561077ef6bef8",
+      "judge": {
+        "schema_version": 1,
+        "endpoint": "https://api.deepseek.com",
+        "request_settings": {
+          "model": "deepseek-v4-flash",
+          "temperature": 0,
+          "max_tokens": 256,
+          "stream": false,
+          "extra_body": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "system_message": "You are a careful linguistic annotation model.",
+        "sdk_max_retries": 0,
+        "request_timeout_seconds": 90,
+        "workers": 8,
+        "max_attempts_per_pending_job_per_invocation": 4,
+        "retry_policy": "Initial request plus at most three retries per pending job per invocation; reruns retry only unresolved jobs and retain every previous attempt.",
+        "input_count": 2400,
+        "prompt_registry_sha256": "e067077c6e5051cd24d2ff59911552541add05882fb042163284113e5aeb0ace",
+        "prompt_metadata": {
+          "en_idiom": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "idiom",
+            "public_path": "prompts/tbr/en_idiom.txt",
+            "prompt_sha256": "705ec9c96d03a126f8465b5e8f5ed12323480ca504367153a36ff6c6fb4444f2",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/en_metaphor.txt",
+            "prompt_sha256": "c3b2db0730e4a3225890ac4f4a8da81736f0c7d9c7be0553351c31797b14620d",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_irony": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "irony",
+            "public_path": "prompts/tbr/en_irony.txt",
+            "prompt_sha256": "40a83893dd93f8e5ad8c2f107adfa1d2de68d9a14ad2253312bfd725820b14a5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/en_sarcasm.txt",
+            "prompt_sha256": "da141db56a1d48cc080fe8ddef8c76c5898038613e3fb4fca5ea67c58ca6adb0",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_idiom": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "idiom",
+            "public_path": "prompts/tbr/zh_idiom.txt",
+            "prompt_sha256": "9a835d9ebbadf492c3d2ee10031738ba838e300a2f0d3289f63dbf5f71b7e7c5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/zh_metaphor.txt",
+            "prompt_sha256": "dcb999085081165a449224a508d3f2ac57b84f5ece61f01821e516402ba4752f",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_irony": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "irony",
+            "public_path": "prompts/tbr/zh_irony.txt",
+            "prompt_sha256": "fd9918795bf2f6947fb7316cee222613bfe2418fcb3329b054a3592d2cfa0a06",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/zh_sarcasm.txt",
+            "prompt_sha256": "fe01ca1de90410014184b02ea394e2acee15affd089f9ff1a42bc01ff1c064e6",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          }
+        },
+        "expected_per_cell_condition": 100,
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "categories": [
+          "idiom",
+          "metaphor",
+          "irony",
+          "sarcasm"
+        ],
+        "parse_rule": "Exactly one explicit Label: YES or Label: NO line and no other Label line; one choice; finish_reason=stop; nonempty content; absent/null/empty reasoning_content.",
+        "summary_rule": "Within each language/category, intersect valid simple_prompt keys across all three conditions; final success requires 100 common-valid keys in every cell. Missing or invalid responses are never negative labels. Equal weight per cell."
+      },
+      "source_files": {
+        "G0001": {
+          "condition": "unsteered",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0002": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0003": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0004": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0005": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0006": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0007": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0008": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0009": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        },
+        "G0010": {
+          "condition": "unsteered",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0011": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0012": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0013": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0014": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0015": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0016": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0017": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0018": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        }
+      },
+      "cells": [
+        {
+          "target_language": "en",
+          "target_category": "idiom",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260910,
+          "norm_calibration": {
+            "mean_h_norm": 9.633073806762695,
+            "std_h_norm": 0.2039254158735275,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0002",
+            "crosscat": "G0003"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "metaphor",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260911,
+          "norm_calibration": {
+            "mean_h_norm": 9.633073806762695,
+            "std_h_norm": 0.2039254158735275,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0004",
+            "crosscat": "G0005"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "irony",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20260912,
+          "norm_calibration": {
+            "mean_h_norm": 9.633073806762695,
+            "std_h_norm": 0.2039254158735275,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0006",
+            "crosscat": "G0007"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "zh",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20260913,
+          "norm_calibration": {
+            "mean_h_norm": 9.633073806762695,
+            "std_h_norm": 0.2039254158735275,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0008",
+            "crosscat": "G0009"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "idiom",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261010,
+          "norm_calibration": {
+            "mean_h_norm": 9.452733039855955,
+            "std_h_norm": 0.1411076933145523,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0011",
+            "crosscat": "G0012"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "metaphor",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261011,
+          "norm_calibration": {
+            "mean_h_norm": 9.452733039855955,
+            "std_h_norm": 0.1411076933145523,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0013",
+            "crosscat": "G0014"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "irony",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20261012,
+          "norm_calibration": {
+            "mean_h_norm": 9.452733039855955,
+            "std_h_norm": 0.1411076933145523,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998211860657,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0015",
+            "crosscat": "G0016"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "en",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20261013,
+          "norm_calibration": {
+            "mean_h_norm": 9.452733039855955,
+            "std_h_norm": 0.1411076933145523,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 15,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0017",
+            "crosscat": "G0018"
+          }
+        }
+      ]
+    },
+    {
+      "model_id": "ministral3_8b",
+      "model": "mistralai/Ministral-3-8B-Instruct-2512",
+      "generation": {
+        "layer": 19,
+        "ratio": 1,
+        "dtype": "bfloat16",
+        "max_new_tokens": 1024,
+        "gen_batch_size": "per-cell cached value",
+        "rep_batch_size": 16,
+        "enable_thinking": false,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 50,
+        "prompt_style": "normal",
+        "steering_mode": "all_prompt_tokens",
+        "norm_calibration": "Reuse full 500-prompt mean/std from corresponding cached OMean CSV.",
+        "seed_note": "New cell seeds recorded below; cached generation seeds were not recorded and are not matched.",
+        "setting_selection": "Fixed manuscript layer/ratio; no tuning. Each cell preserves its cached OMean generation batch size."
+      },
+      "sampling": "First 100 cached test prompts, before new judgments; same prompts in all conditions.",
+      "control_formula": "normalize(sum_s mean_{k in available retained categories excluding target} v[s,k])",
+      "normalization": "Stored normalized vectors (including their bfloat16 rounding), converted to float32; final sum L2-normalized, as in cached OMean. Each source language has equal total weight.",
+      "excluded": [
+        "simile",
+        "target category",
+        "target language"
+      ],
+      "original_judge_manifest_sha256": "e8143d6c8bf195f38ef35d3125696dde5846e22b2884235390fc629fc1daed7f",
+      "judge": {
+        "schema_version": 1,
+        "endpoint": "https://api.deepseek.com",
+        "request_settings": {
+          "model": "deepseek-v4-flash",
+          "temperature": 0,
+          "max_tokens": 256,
+          "stream": false,
+          "extra_body": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        },
+        "system_message": "You are a careful linguistic annotation model.",
+        "sdk_max_retries": 0,
+        "request_timeout_seconds": 90,
+        "workers": 8,
+        "max_attempts_per_pending_job_per_invocation": 4,
+        "retry_policy": "Initial request plus at most three retries per pending job per invocation; reruns retry only unresolved jobs and retain every previous attempt.",
+        "input_count": 2400,
+        "prompt_registry_sha256": "e067077c6e5051cd24d2ff59911552541add05882fb042163284113e5aeb0ace",
+        "prompt_metadata": {
+          "en_idiom": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "idiom",
+            "public_path": "prompts/tbr/en_idiom.txt",
+            "prompt_sha256": "705ec9c96d03a126f8465b5e8f5ed12323480ca504367153a36ff6c6fb4444f2",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/en_metaphor.txt",
+            "prompt_sha256": "c3b2db0730e4a3225890ac4f4a8da81736f0c7d9c7be0553351c31797b14620d",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_irony": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "irony",
+            "public_path": "prompts/tbr/en_irony.txt",
+            "prompt_sha256": "40a83893dd93f8e5ad8c2f107adfa1d2de68d9a14ad2253312bfd725820b14a5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "en_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "en",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/en_sarcasm.txt",
+            "prompt_sha256": "da141db56a1d48cc080fe8ddef8c76c5898038613e3fb4fca5ea67c58ca6adb0",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_idiom": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "idiom",
+            "public_path": "prompts/tbr/zh_idiom.txt",
+            "prompt_sha256": "9a835d9ebbadf492c3d2ee10031738ba838e300a2f0d3289f63dbf5f71b7e7c5",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_metaphor": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "metaphor",
+            "public_path": "prompts/tbr/zh_metaphor.txt",
+            "prompt_sha256": "dcb999085081165a449224a508d3f2ac57b84f5ece61f01821e516402ba4752f",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_irony": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "irony",
+            "public_path": "prompts/tbr/zh_irony.txt",
+            "prompt_sha256": "fd9918795bf2f6947fb7316cee222613bfe2418fcb3329b054a3592d2cfa0a06",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          },
+          "zh_sarcasm": {
+            "task": "target_behavior_binary",
+            "language": "zh",
+            "category": "sarcasm",
+            "public_path": "prompts/tbr/zh_sarcasm.txt",
+            "prompt_sha256": "fe01ca1de90410014184b02ea394e2acee15affd089f9ff1a42bc01ff1c064e6",
+            "system_message": "You are a careful linguistic annotation model.",
+            "input_placeholder": "{input}",
+            "output_format": "Reason: <one short sentence>; Label: <YES or NO>",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "evaluator_model": "deepseek-v4-flash"
+          }
+        },
+        "expected_per_cell_condition": 100,
+        "languages": [
+          "en",
+          "zh"
+        ],
+        "categories": [
+          "idiom",
+          "metaphor",
+          "irony",
+          "sarcasm"
+        ],
+        "parse_rule": "Exactly one explicit Label: YES or Label: NO line and no other Label line; one choice; finish_reason=stop; nonempty content; absent/null/empty reasoning_content.",
+        "summary_rule": "Within each language/category, intersect valid simple_prompt keys across all three conditions; final success requires 100 common-valid keys in every cell. Missing or invalid responses are never negative labels. Equal weight per cell."
+      },
+      "source_files": {
+        "G0001": {
+          "condition": "unsteered",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0002": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0003": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0004": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0005": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0006": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0007": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0008": {
+          "condition": "omean",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0009": {
+          "condition": "crosscat",
+          "target_language": "en",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        },
+        "G0010": {
+          "condition": "unsteered",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom",
+            "metaphor",
+            "irony",
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0011": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": true
+        },
+        "G0012": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "idiom"
+          ],
+          "generation_reused": false
+        },
+        "G0013": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": true
+        },
+        "G0014": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "metaphor"
+          ],
+          "generation_reused": false
+        },
+        "G0015": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": true
+        },
+        "G0016": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "irony"
+          ],
+          "generation_reused": false
+        },
+        "G0017": {
+          "condition": "omean",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": true
+        },
+        "G0018": {
+          "condition": "crosscat",
+          "target_language": "zh",
+          "selected_original_rows_inclusive": [
+            0,
+            99
+          ],
+          "target_categories": [
+            "sarcasm"
+          ],
+          "generation_reused": false
+        }
+      },
+      "cells": [
+        {
+          "target_language": "en",
+          "target_category": "idiom",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260910,
+          "norm_calibration": {
+            "mean_h_norm": 11.172255516052246,
+            "std_h_norm": 0.1548566669225692,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0002",
+            "crosscat": "G0003"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "metaphor",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20260911,
+          "norm_calibration": {
+            "mean_h_norm": 11.172255516052246,
+            "std_h_norm": 0.1548566669225692,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0004",
+            "crosscat": "G0005"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "irony",
+          "source_languages": [
+            "zh",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20260912,
+          "norm_calibration": {
+            "mean_h_norm": 11.172255516052246,
+            "std_h_norm": 0.1548566669225692,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0006",
+            "crosscat": "G0007"
+          }
+        },
+        {
+          "target_language": "en",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "zh",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "zh",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "zh",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20260913,
+          "norm_calibration": {
+            "mean_h_norm": 11.172255516052246,
+            "std_h_norm": 0.1548566669225692,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999998807907104,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0001",
+            "omean": "G0008",
+            "crosscat": "G0009"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "idiom",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261010,
+          "norm_calibration": {
+            "mean_h_norm": 11.290661811828612,
+            "std_h_norm": 0.1747786253690719,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999999403953552,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 64,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0011",
+            "crosscat": "G0012"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "metaphor",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "irony",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "irony",
+              "weight": 3
+            }
+          ],
+          "seed": 20261011,
+          "norm_calibration": {
+            "mean_h_norm": 11.290661811828612,
+            "std_h_norm": 0.1747786253690719,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 128,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0013",
+            "crosscat": "G0014"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "irony",
+          "source_languages": [
+            "en",
+            "bn",
+            "es",
+            "it",
+            "de"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "es",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "es",
+              "category": "metaphor",
+              "weight": 3
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "sarcasm",
+              "weight": 2
+            },
+            {
+              "lang": "de",
+              "category": "idiom",
+              "weight": 3
+            },
+            {
+              "lang": "de",
+              "category": "metaphor",
+              "weight": 3
+            }
+          ],
+          "seed": 20261012,
+          "norm_calibration": {
+            "mean_h_norm": 11.290661811828612,
+            "std_h_norm": 0.1747786253690719,
+            "num_texts": 500
+          },
+          "control_vector_norm": 1.0,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 128,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0015",
+            "crosscat": "G0016"
+          }
+        },
+        {
+          "target_language": "zh",
+          "target_category": "sarcasm",
+          "source_languages": [
+            "en",
+            "bn",
+            "it"
+          ],
+          "terms": [
+            {
+              "lang": "en",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "en",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "bn",
+              "category": "irony",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "idiom",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "metaphor",
+              "weight": 2
+            },
+            {
+              "lang": "it",
+              "category": "irony",
+              "weight": 2
+            }
+          ],
+          "seed": 20261013,
+          "norm_calibration": {
+            "mean_h_norm": 11.290661811828612,
+            "std_h_norm": 0.1747786253690719,
+            "num_texts": 500
+          },
+          "control_vector_norm": 0.9999997615814209,
+          "generation_settings": {
+            "layer": 19,
+            "ratio": 1,
+            "gen_batch_size": 128,
+            "rep_batch_size": 16,
+            "max_new_tokens": 1024
+          },
+          "source_file_ids": {
+            "unsteered": "G0010",
+            "omean": "G0017",
+            "crosscat": "G0018"
+          }
+        }
+      ]
+    }
+  ]
+}

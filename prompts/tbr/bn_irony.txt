@@ -1,0 +1,149 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Bengali.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] টার্গেট ক্যাটাগরি
+IRONY(বিদ্রূপ/ব্যঙ্গ/ironic expression)
+
+[7] সংজ্ঞা
+বিদ্রূপ হলো এমন ভাষা যেখানে কথার সরাসরি অর্থ, লেখকের আসল ইঙ্গিত, এবং বাস্তব বা প্রত্যাশিত পরিস্থিতির মধ্যে একটি স্পষ্ট অমিল থাকে।
+
+এই অমিল সবসময় সরাসরি “বিপরীত অর্থ” হতে হবে না। বিদ্রূপ হতে পারে:
+- যা বলা হয়েছে এবং যা বোঝানো হয়েছে তার মধ্যে পার্থক্য;
+- প্রত্যাশা ও বাস্তবতার মধ্যে অমিল;
+- প্রশংসার ভাষায় সমালোচনা;
+- অস্বাভাবিক/অযৌক্তিক framing দিয়ে কোনো ঘটনা বা আচরণকে ব্যঙ্গ করা;
+- অলঙ্কারমূলক প্রশ্ন বা রসাত্মক/ব্যঙ্গাত্মক সুর দিয়ে সমালোচনা বোঝানো।
+
+কোনো লেখায় বিদ্রূপ আছে যদি লেখক সরাসরি তথ্য না দিয়ে ইঙ্গিতপূর্ণ, ব্যঙ্গাত্মক, অসংগতিপূর্ণ, বা উপহাসমূলক সুর ব্যবহার করেন।
+
+বিদ্রূপ নয় যদি লেখাটি শুধু সরাসরি তথ্য, সরাসরি অভিযোগ, সাধারণ মতামত, সাধারণ আবেগ, সাধারণ রসিকতা, বা আক্ষরিক বর্ণনা হয় এবং সেখানে কোনো ব্যবহারিক অর্থগত অমিল না থাকে।
+
+[8] সিদ্ধান্ত নেওয়ার পদ্ধতি
+ধাপ 1: টেক্সটটি কি আক্ষরিকভাবে সরাসরি বোঝা যায়, নাকি এর ভেতরে অন্য কোনো ইঙ্গিত আছে?
+ধাপ 2: কথার ভঙ্গি, sentiment, ঘটনা, প্রত্যাশা, বা প্রসঙ্গের মধ্যে mismatch আছে কি?
+ধাপ 3: লেখক কি mock praise, sarcastic criticism, absurd framing, rhetorical question, বা satirical tone ব্যবহার করেছেন?
+ধাপ 4: social media marker যেমন hashtag, emoji, repeated punctuation, code-mixing ইত্যাদি থাকলে দেখো সেগুলো irony-র evidence হিসেবে কাজ করছে কি না।
+ধাপ 5: যদি স্পষ্ট pragmatic mismatch বা ব্যঙ্গাত্মক ইঙ্গিত থাকে, Label YES। নইলে Label NO।
+
+[9] YES নিয়ম
+YES দাও যদি টেক্সটে নিচের যেকোনো ধরনের স্পষ্ট irony evidence থাকে:
+
+- positive শব্দ দিয়ে negative situation বা failure বোঝানো;
+- negative/defect/error হিসেবে এমন কিছু বলা যা আসলে স্বাভাবিক, expected, বা trivial;
+- প্রত্যাশা এবং বাস্তব ফলাফলের মধ্যে অমিল দেখিয়ে ব্যঙ্গ করা;
+- rhetorical question দিয়ে সরাসরি উত্তর না চেয়ে criticism বোঝানো;
+- mock praise, fake politeness, বা exaggerated appreciation;
+- absurd, impossible, বা over-dramatic framing ব্যবহার করে social criticism বা humor তৈরি করা;
+- রাজনৈতিক, সামাজিক, শিক্ষা, ট্রাফিক, বিদ্যুৎ, দুর্নীতি, দাম, খেলাধুলা, relationship, বা service প্রসঙ্গে satirical tone;
+- Bengali-English code-mixed text-এ sarcastic বা mocking intent;
+- hashtag/emoji যেমন #irony, #sarcasm, #LOL, #ROFL, 😂, :D, :p, 🙂, 🙃 ইত্যাদি থাকলে এবং টেক্সটের ভঙ্গির সাথে মিললে সেগুলো supporting evidence হিসেবে ধরা।
+
+গুরুত্বপূর্ণ: hashtag বা emoji একা যথেষ্ট নয়। এগুলো তখনই evidence হবে যখন বাক্যের tone, context, বা framing-এ irony/sarcasm/humorous criticism বোঝা যায়।
+
+[10] NO নিয়ম
+NO দাও যদি টেক্সটটি শুধু:
+
+- আক্ষরিক বর্ণনা;
+- সরাসরি তথ্য;
+- সরাসরি অভিযোগ, যেমন “সার্ভিস খারাপ”;
+- সাধারণ মতামত;
+- সাধারণ আবেগ, দুঃখ, ভালোবাসা, রাগ, হতাশা;
+- সাধারণ joke বা funny ঘটনা, কিন্তু criticism/mismatch/mock tone নেই;
+- শুধু অতিরঞ্জন, কিন্তু ironic intent নেই;
+- শুধু metaphor বা poetic language, কিন্তু irony নেই;
+- শুধু emoji/hashtag, কিন্তু বাক্যে irony বোঝার মতো evidence নেই;
+- প্রসঙ্গ ছাড়া অস্পষ্ট।
+
+[11] পার্থক্য
+Direct criticism: লেখক সরাসরি যা বলছেন, সেটিই বোঝাচ্ছেন। Label: NO  
+Irony: লেখক এমনভাবে বলছেন যাতে সরাসরি অর্থের বাইরে ব্যঙ্গাত্মক/বিপরীত/অমিলপূর্ণ অর্থ তৈরি হয়। Label: YES
+
+Humor only: মজার কথা, কিন্তু ব্যঙ্গাত্মক mismatch নেই। Label: NO  
+Ironic humor: মজার ভঙ্গিতে কোনো অমিল, ব্যর্থতা, hypocrisy, বা absurdity দেখানো হয়েছে। Label: YES
+
+Emoji/hashtag only: marker আছে, কিন্তু বাক্যে irony নেই। Label: NO  
+Emoji/hashtag + ironic framing: marker বাক্যের ব্যঙ্গাত্মক meaning-কে support করছে। Label: YES
+
+[12] উদাহরণ
+
+উদাহরণ 1
+Text: "বাহ, আজ আবার বাসটা দুই ঘণ্টা লেট। অসাধারণ সার্ভিস!"
+Reason: positive শব্দ দিয়ে negative situation বোঝানো হয়েছে।
+Label: YES
+
+উদাহরণ 2
+Text: "বাসটা দুই ঘণ্টা লেট হয়েছে।"
+Reason: সরাসরি complaint; ব্যঙ্গাত্মক mismatch নেই।
+Label: NO
+
+উদাহরণ 3
+Text: "কি সুন্দর রাস্তা, একটু বৃষ্টি হলেই নদী হয়ে যায়।"
+Reason: রাস্তার খারাপ অবস্থাকে mock praise দিয়ে বলা হয়েছে।
+Label: YES
+
+উদাহরণ 4
+Text: "আজ রাস্তা পানিতে ভরে গেছে।"
+Reason: আক্ষরিক বর্ণনা; irony নেই।
+Label: NO
+
+উদাহরণ 5
+Text: "এটাই কি তাহলে উন্নয়ন?"
+Reason: rhetorical question দিয়ে ব্যঙ্গাত্মক criticism বোঝানো হয়েছে।
+Label: YES
+
+উদাহরণ 6
+Text: "আমি এই সিদ্ধান্তের সঙ্গে একমত নই।"
+Reason: সরাসরি মতামত; irony নেই।
+Label: NO
+
+উদাহরণ 7
+Text: "ফোনে এত ভালো নেটওয়ার্ক যে কল করলেই কেটে যায়।"
+Reason: ভালো বলা হলেও বাস্তবে খারাপ অভিজ্ঞতা বোঝানো হয়েছে।
+Label: YES
+
+উদাহরণ 8
+Text: "আজ নেটওয়ার্ক খুব খারাপ।"
+Reason: সরাসরি অভিযোগ; irony নেই।
+Label: NO
+
+উদাহরণ 9
+Text: "যে জিনিসটাকে তারা সবচেয়ে বড় সমস্যা বলছে, সেটাই আসলে স্বাভাবিক ব্যাপার।"
+Reason: সমস্যা হিসেবে trivial/expected বিষয়কে দেখানো হয়েছে; ironic framing আছে।
+Label: YES
+
+উদাহরণ 10
+Text: "আজ আমি খুব ক্লান্ত।"
+Reason: সাধারণ আবেগ/অবস্থা; irony নেই।
+Label: NO
+
+[13] ইনপুট টেক্সট
+"{input}"

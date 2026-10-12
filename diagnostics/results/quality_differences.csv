@@ -1,0 +1,3 @@
+comparison,shared_cells,difference,ci_lower,ci_upper
+monolingual_steering_minus_unsteered,19,0.29260390448600443,-0.2656644299190803,0.8313221266197711
+main_crosslingual_minus_unsteered,19,0.1651141122736968,-0.38494962293867774,0.7065164115401422

@@ -1,0 +1,106 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in German.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Zielkategorie
+IDIOM(Idiom)
+
+[7] Definition
+Ein Idiom oder eine phraseologische Wendung ist eine feste oder teilfeste Mehrwortverbindung, die im Deutschen als sprachliche Einheit konventionalisiert ist.
+
+Die Gesamtbedeutung oder kommunikative Funktion der Wendung ergibt sich nicht vollständig aus einer freien Kombination der einzelnen Wörter. Die Wendung kann stark bildhaft und metaphorisch sein, sie kann aber auch nur teilweise idiomatisiert, formelhaft oder lexikalisiert sein.
+
+Wichtig:
+- Es muss sich um eine Mehrwortverbindung handeln.
+- Die Wendung muss im gegebenen Kontext tatsächlich als feste sprachliche Einheit verwendet werden.
+- Vollständige Undurchsichtigkeit der Bedeutung ist nicht erforderlich.
+
+[8] Entscheidungsverfahren
+Schritt 1: Prüfe, ob der Text eine feste oder teilfeste Wortverbindung enthält.
+Schritt 2: Prüfe, ob diese Wortverbindung im Deutschen eine konventionalisierte Bedeutung, Funktion oder typische Form hat.
+Schritt 3: Prüfe den Kontext: Wird die Wendung idiomatisch, formelhaft oder phraseologisch verwendet?
+Schritt 4: Gib YES aus, wenn eine solche Wendung vorhanden ist.
+Schritt 5: Gib NO aus, wenn keine solche Wendung vorhanden ist.
+
+[9] YES-Regeln
+Gib YES aus, wenn der Text eine etablierte deutsche Mehrwortwendung enthält, zum Beispiel:
+
+- eine bildhafte oder metaphorische Redewendung,
+- eine feste formelhafte Wendung,
+- eine feste adverbiale oder präpositionale Wortgruppe,
+- ein Funktionsverbgefüge,
+- eine feste institutionelle, journalistische, juristische oder fachsprachliche Wendung,
+- eine teilidiomatische Wendung, deren Form oder Bedeutung im Deutschen konventionalisiert ist.
+
+Die Wendung muss nicht völlig unlogisch oder völlig nicht-kompositional sein. Auch transparente oder halbtransparente feste Wendungen können YES sein.
+
+[10] NO-Regeln
+Gib NO aus, wenn:
+
+- die Wörter nur eine freie, wörtliche Kombination bilden,
+- die Wortgruppe im Kontext eindeutig nur wörtlich und nicht als feste Wendung verwendet wird,
+- nur ein einzelnes Wort oder ein Kompositum vorkommt,
+- die Wörter nur zufällig nebeneinanderstehen,
+- es sich ausschließlich um einen Eigennamen, Titel oder Terminus ohne phraseologische Wendung handelt,
+- der Text nur ein vollständiges Sprichwort als allgemeine Lebensweisheit enthält.
+
+[11] Abgrenzung
+Nicht jede häufige Wortkombination ist automatisch ein Idiom. Entscheidend ist, ob die Verbindung als feste sprachliche Einheit erkennbar ist.
+
+Nicht jede wörtliche Verwendung einer sonst idiomatischen Wendung zählt. Wenn der Kontext klar eine konkrete physische Handlung oder räumliche Bedeutung beschreibt, gib NO aus.
+
+Bei Unsicherheit gilt:
+Gib YES nur, wenn die feste phraseologische Einheit im Text klar erkennbar ist. Sonst gib NO aus.
+
+[12] Beispiele
+
+Beispiel 1
+Text: "Nach der Nachricht fiel sie aus allen Wolken."
+Reason: Die Wendung ist fest und wird übertragen für starke Überraschung verwendet.
+Label: YES
+
+Beispiel 2
+Text: "Das Thema kam erst spät zur Sprache."
+Reason: Die Wortverbindung ist eine feste phraseologische Wendung mit konventionalisierter Bedeutung.
+Label: YES
+
+Beispiel 3
+Text: "Er legte das Buch auf den Tisch."
+Reason: Die Wörter beschreiben eine freie, wörtliche Handlung.
+Label: NO
+
+Beispiel 4
+Text: "Morgenstund hat Gold im Mund."
+Reason: Dies ist ein vollständiges Sprichwort mit allgemeiner Lebensweisheit.
+Label: NO
+
+[13] Eingabetext
+"{input}"

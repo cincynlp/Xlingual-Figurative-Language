@@ -1,0 +1,69 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Chinese.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] 目标类别
+成语
+
+[7] 定义
+成语是公认的固定习惯用语，通常具有整体意义，往往不能仅凭组成成分的字面义完全推出其实际意义。它通常具有较强的凝练性和约定俗成性。
+
+[8] 判定步骤
+步骤 1：检查文本中是否出现公认的固定表达。
+步骤 2：检查该表达是否具有整体性的、约定俗成的意义，而不是完全按字面组合理解。
+步骤 3：如果是，输出 YES。
+步骤 4：否则输出 NO。
+
+[9] YES 规则
+满足以下情况输出 YES：
+- 文本中出现公认的成语或固定习惯用语。
+- 该表达具有整体意义或非完全字面义。
+- 该表达不是临时自由组合出来的普通短语。
+
+[10] NO 规则
+满足以下任一情况输出 NO：
+- 文本只是普通字面表达。
+- 词语组合可以按字面义自然理解，不构成公认成语。
+- 文本中没有成语。
+
+[11] 示例
+示例 1
+文本：“他说话总是拐弯抹角，让人听得很累。”
+Reason: “拐弯抹角”是公认成语，具有整体性的非完全字面意义。
+Label: YES
+
+示例 2
+文本：“今天下午天气很好。”
+Reason: 这是普通表达，不包含成语。
+Label: NO
+
+[12] 输入文本
+"{input}"

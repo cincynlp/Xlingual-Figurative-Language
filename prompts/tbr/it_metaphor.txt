@@ -1,0 +1,116 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Italian.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoria target
+Metafora(Metaphor)
+
+[7] Definizione
+La metafora è un uso non letterale in cui una parola o espressione descrive qualcosa attraverso un altro dominio di significato.
+
+Il criterio centrale è: una parola ha un significato di base più concreto, fisico o letterale, ma nel testo viene usata con un significato diverso, più astratto o figurato.
+
+Esempi di domini trasferiti:
+- movimento fisico → quantità o cambiamento: “il prezzo è salito”;
+- temperatura → emozioni o relazioni: “un’accoglienza fredda”;
+- forza fisica → effetto emotivo/sociale: “la notizia ha scosso il paese”;
+- oggetto concreto → qualità astratta: “Marco è una roccia”.
+
+[8] Passaggi di decisione
+Passo 1: Leggi il testo nel suo contesto.
+Passo 2: Cerca parole o espressioni che non sono usate nel loro senso letterale.
+Passo 3: Verifica se c’è un trasferimento di significato da un dominio a un altro.
+Passo 4: Se almeno una parola o espressione significativa è metaforica, output YES.
+Passo 5: Se il testo è pienamente letterale o l’evidenza è debole, output NO.
+
+[9] Regole YES
+Output YES quando il testo contiene una metafora riconoscibile, inclusi:
+
+- verbi fisici usati per concetti astratti, sociali o emotivi;
+- aggettivi fisici o sensoriali usati in senso figurato;
+- nomi concreti usati per descrivere persone, idee, eventi o situazioni astratte;
+- personificazione;
+- espressioni idiomatiche figurate;
+- metafore convenzionali, se il significato non è letterale.
+
+[10] Regole NO
+Output NO quando:
+
+- le parole sono usate in senso letterale nel contesto;
+- il testo è solo descrittivo, informativo o emotivo senza metafora;
+- c’è solo ironia, sarcasmo, insulto o iperbole senza trasferimento metaforico;
+- c’è solo metonimia, per esempio “Roma” per “il governo”;
+- la lettura metaforica richiede informazioni esterne non presenti;
+- in caso di dubbio reale, scegliere NO.
+
+[11] Esempi
+Esempio 1
+Testo: “Il tempo vola quando ci divertiamo.”
+Reason: Il tempo è descritto tramite il movimento fisico del volo.
+Label: YES
+
+Esempio 2
+Testo: “L’uccello vola sopra il tetto.”
+Reason: “Vola” è usato in senso letterale.
+Label: NO
+
+Esempio 3
+Testo: “Il prezzo è salito rapidamente.”
+Reason: Una quantità economica è descritta come movimento verso l’alto.
+Label: YES
+
+Esempio 4
+Testo: “Luca è salito sul treno.”
+Reason: “È salito” indica un movimento fisico reale.
+Label: NO
+
+Esempio 5
+Testo: “Abbiamo ricevuto un’accoglienza fredda.”
+Reason: “Fredda” descrive distanza emotiva, non temperatura.
+Label: YES
+
+Esempio 6
+Testo: “La stanza era fredda.”
+Reason: “Fredda” indica temperatura reale.
+Label: NO
+
+Esempio 7
+Testo: “Marco è una roccia nei momenti difficili.”
+Reason: Una persona è descritta tramite un oggetto concreto per indicare stabilità.
+Label: YES
+
+Esempio 8
+Testo: “La roccia è caduta dalla montagna.”
+Reason: “Roccia” è usato in senso concreto.
+Label: NO
+
+[12] Testo di input
+"{input}"

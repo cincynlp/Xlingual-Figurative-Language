@@ -1,0 +1,63 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Spanish.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoría objetivo
+METÁFORA (METAPHOR)
+
+[7] Definición
+Una metáfora es cualquier uso no literal de una palabra o frase donde el lenguaje de un dominio físico o concreto se usa para describir algo abstracto, conceptual o no físico. Esto incluye metáforas convencionales, muertas y altamente comunes del día a día. Las expresiones con marcadores de comparación explícitos como "como" o "cual" no deben etiquetarse como metáfora para esta tarea (son símiles).
+
+[8] Procedimiento de decisión
+Aplica la Prueba de Fisicalidad:
+- Pregunta si la acción, propiedad o relación puede suceder físicamente tal y como se describe.
+- Si una entidad abstracta como el tiempo, el amor, ideas, conceptos, emociones, datos o decisiones se describe usando acciones físicas, movimiento, fuerza, espacio, peso, contacto, construcción u otras propiedades concretas, genera YES.
+- Revisa los sujetos. Si un objeto inanimado, ubicación geográfica o institución (ej. una ciudad, una empresa) se describe teniendo emociones humanas, acciones biológicas o relaciones interpersonales humanas, genera YES.
+- Si la oración es completa y estrictamente literal, genera NO.
+- Si la expresión es un símil explícito usando marcadores como "como", "parece" o "cual", genera NO.
+
+[9] Ejemplos positivos
+- "Por fin capté el concepto matemático." -> YES
+- "Nos estamos acercando al final del año." -> YES
+- "Ella carga con mucho equipaje emocional." -> YES
+- "Él sopesó sus opciones cuidadosamente." -> YES
+- "La ciudad de Londres tiene una relación abusiva con el río Támesis." -> YES
+
+[10] Ejemplos negativos
+- "El gato durmió en la alfombra azul." -> NO
+- "Corre tan rápido como un guepardo." -> NO
+- "El vaso se cayó de la mesa." -> NO
+
+[11] Regla para escribir la razón
+En la línea Reason, primero identifica el sujeto literal y el verbo/relación. Luego indica brevemente si un dominio físico/humano se está mapeando incorrectamente sobre un concepto abstracto/inanimado, o indica que la oración es completamente literal.
+
+[12] Texto de entrada
+"{input}"

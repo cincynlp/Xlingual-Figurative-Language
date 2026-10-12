@@ -1,0 +1,17 @@
+category,model,layer,alpha,language,split,negative_dataset,evaluated_file,baseline_file
+metaphor,Qwen3-8B,14,0.5,en,test,caption,raw/evaluations/E0055.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,14,1.0,en,test,caption,raw/evaluations/E0019.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,14,1.5,en,test,caption,raw/evaluations/E0057.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,14,2.0,en,test,caption,raw/evaluations/E0058.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,17,1.0,en,test,caption,raw/evaluations/E0059.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,17,1.5,en,test,caption,raw/evaluations/E0060.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,20,1.0,en,test,caption,raw/evaluations/E0061.csv.gz,raw/evaluations/E0056.csv.gz
+metaphor,Qwen3-8B,20,1.5,en,test,caption,raw/evaluations/E0062.csv.gz,raw/evaluations/E0056.csv.gz
+sarcasm,Qwen3-8B,14,0.5,en,test,caption,raw/evaluations/E0063.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,14,1.0,en,test,caption,raw/evaluations/E0021.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,14,1.5,en,test,caption,raw/evaluations/E0065.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,14,2.0,en,test,caption,raw/evaluations/E0066.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,17,1.0,en,test,caption,raw/evaluations/E0067.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,17,1.5,en,test,caption,raw/evaluations/E0068.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,20,1.0,en,test,caption,raw/evaluations/E0069.csv.gz,raw/evaluations/E0064.csv.gz
+sarcasm,Qwen3-8B,20,1.5,en,test,caption,raw/evaluations/E0070.csv.gz,raw/evaluations/E0064.csv.gz

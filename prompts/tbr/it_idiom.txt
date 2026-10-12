@@ -1,0 +1,165 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Italian.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoria target
+IDIOMA(Idiom)
+
+[7] Definizione
+Un idioma è un'espressione italiana convenzionalizzata, fissa o semi-fissa, il cui significato nel contesto non è pienamente ricavabile dalla somma letterale dei significati delle singole parole.
+
+Rientrano in questa categoria modi di dire, locuzioni idiomatiche ed espressioni cristallizzate usate con un significato convenzionale non letterale, come "essere al verde", "prendere in giro", "gettare la spugna", "rompere il ghiaccio" in senso figurato.
+
+L'idioma deve essere riconoscibile come unità espressiva convenzionale. Non basta che una frase sia astratta, colloquiale, figurata o metaforica: deve trattarsi di una formulazione relativamente stabile nella lingua italiana.
+
+Importante:
+- Può trattarsi di una locuzione verbale, nominale, aggettivale, avverbiale o di una frase fatta.
+- L'espressione può presentare flessione normale di tempo, persona, genere o numero.
+- Sono ammessi piccoli modificatori se l'espressione idiomatica resta riconoscibile.
+- L'uso deve essere idiomatico nel contesto dato, non solo potenzialmente idiomatico in astratto.
+- Non tutte le metafore, collocazioni comuni, frasi colloquiali o espressioni tecniche sono idiomi.
+- In questa classificazione, i proverbi contano come IDIOMA solo se sono usati come espressioni convenzionali con valore idiomatico nel contesto.
+
+[8] Procedura decisionale
+Passo 1: Identifica eventuali espressioni multi-parola, frasi fatte o locuzioni convenzionali nel testo.
+Passo 2: Determina il significato dell'espressione nel contesto.
+Passo 3: Verifica se il significato contestuale è non letterale o non pienamente componibile dai significati ordinari delle singole parole.
+Passo 4: Verifica se l'espressione è una forma convenzionalizzata o riconoscibile nella lingua italiana, anche con normali variazioni morfologiche o sintattiche.
+Passo 5: Dai YES se almeno una espressione nel testo è usata come idioma.
+Passo 6: Dai NO se tutte le espressioni sono letterali, composizionali, solo metaforiche ma non idiomatiche, semplici collocazioni, tecnicismi, slang generico o formulazioni libere.
+
+[9] Regole YES
+Dai YES se nel testo compare almeno un idioma usato idiomaticamente nel contesto, in particolare quando:
+
+- una locuzione fissa o semi-fissa ha un significato convenzionale non letterale,
+- il significato dell'espressione non è prevedibile in modo trasparente dalle singole parole,
+- un modo di dire italiano è usato nel suo senso figurato o idiomatico,
+- l'espressione può essere parafrasata con un significato convenzionale diverso dalla scena letterale,
+- la forma presenta normali variazioni di tempo, persona, genere, numero o accordo ma resta riconoscibile,
+- l'espressione contiene piccoli modificatori senza perdere la struttura idiomatica,
+- un proverbio o una frase proverbiale è usato come espressione convenzionale con valore idiomatico,
+- una locuzione idiomatica molto comune, routinizzata o lessicalizzata mantiene comunque un significato non pienamente composizionale.
+
+Esempi tipici di idiomi italiani includono:
+- "essere al verde"
+- "prendere in giro"
+- "gettare la spugna"
+- "rompere il ghiaccio"
+- "tirare le cuoia"
+- "avere le mani bucate"
+- "essere in gamba"
+- "fare orecchie da mercante"
+- "mettere il carro davanti ai buoi"
+- "prendere due piccioni con una fava"
+
+La familiarità o frequenza dell'espressione non la rende NO. Se è convenzionalizzata e non pienamente composizionale, dai YES.
+
+[10] Regole NO
+Dai NO se:
+
+- il testo ha solo significato letterale e composizionale,
+- l'espressione potrebbe essere idiomatica in altri contesti ma qui è usata letteralmente,
+- la frase contiene una metafora libera o creativa ma non una locuzione convenzionale,
+- la formulazione è astratta, valutativa o figurata ma non è un modo di dire riconoscibile,
+- l'espressione è una collocazione comune e trasparente, come "fare una domanda", "prendere una decisione", "dare una risposta",
+- l'espressione è una costruzione tecnica, amministrativa o specialistica senza valore idiomatico,
+- il testo contiene slang, gergo o linguaggio colloquiale generico ma non un idioma stabile,
+- una combinazione di parole è frequente ma il significato resta prevedibile dai suoi componenti,
+- una singola parola è usata in senso figurato ma non fa parte di una locuzione idiomatica,
+- il contesto non permette di stabilire chiaramente un uso idiomatico.
+
+[11] Delimitazione
+Non ogni metafora è un idioma. Una metafora può essere creata liberamente nel contesto; un idioma invece è una formulazione convenzionale della lingua.
+
+Non ogni espressione fissa è un idioma. Alcune espressioni fisse sono collocazioni trasparenti, formule tecniche o combinazioni abituali il cui significato rimane composizionale.
+
+Non ogni espressione colloquiale è un idioma. Parole o frasi informali, interiezioni, insulti generici o slang contano come YES solo se formano una locuzione idiomatica riconoscibile.
+
+Non ogni proverbio deve essere automaticamente YES. Dai YES ai proverbi se la classificazione li considera modi di dire convenzionali e se sono usati con valore idiomatico nel contesto. Dai NO se vengono citati solo come stringhe linguistiche, titoli, esempi grammaticali o se non hanno uso idiomatico nel contesto.
+
+Per espressioni potenzialmente ambigue:
+Se l'espressione descrive una scena concreta compatibile con il significato letterale, dai NO.
+Se il contesto richiede il significato convenzionale non letterale, dai YES.
+
+Per variazioni morfologiche:
+"essere al verde", "sono al verde", "era al verde", "siamo completamente al verde" sono lo stesso idioma se usati nel senso di non avere soldi.
+
+Per modificatori:
+Un modificatore non elimina l'idioma se la struttura resta riconoscibile, ad esempio "ha davvero gettato la spugna" è YES.
+
+Per casi incerti:
+Dai YES solo quando l'espressione è probabilmente una locuzione idiomatica convenzionale usata con significato non letterale.
+Dai NO quando una lettura letterale, composizionale, terminologica o genericamente figurata è sufficiente.
+
+[12] Esempi
+
+Esempio 1
+Text: "Dopo mesi di difficoltà, Marco ha gettato la spugna."
+Reason: "Gettare la spugna" è un modo di dire convenzionale che significa arrendersi.
+Label: YES
+
+Esempio 2
+Text: "Marco ha gettato la spugna bagnata nel cestino."
+Reason: L'espressione descrive un'azione fisica letterale.
+Label: NO
+
+Esempio 3
+Text: "Alla riunione, Sara ha rotto il ghiaccio con una battuta."
+Reason: "Rompere il ghiaccio" è usato idiomaticamente con il senso di superare l'imbarazzo iniziale.
+Label: YES
+
+Esempio 4
+Text: "Sara ha rotto il ghiaccio nel bicchiere."
+Reason: Il ghiaccio è un oggetto fisico e l'azione è letterale.
+Label: NO
+
+Esempio 5
+Text: "Luigi mi prende sempre in giro."
+Reason: "Prendere in giro" è una locuzione idiomatica che significa deridere o scherzare su qualcuno.
+Label: YES
+
+Esempio 6
+Text: "Luigi ha preso una decisione importante."
+Reason: "Prendere una decisione" è una collocazione comune e trasparente, non un idioma.
+Label: NO
+
+Esempio 7
+Text: "Dopo aver pagato l'affitto, sono al verde."
+Reason: "Essere al verde" è un idioma che significa non avere soldi.
+Label: YES
+
+Esempio 8
+Text: "Il semaforo è al verde."
+Reason: "Al verde" indica letteralmente il colore del semaforo, non la mancanza di denaro.
+Label: NO
+
+[13] Testo di input
+"{input}"

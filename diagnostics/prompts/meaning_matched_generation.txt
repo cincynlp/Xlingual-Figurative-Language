@@ -1,0 +1,19 @@
+Create {batch_size} meaning-preserving figurative/literal sentence pairs for a steering-vector diagnostic.
+
+Language: {language_name} ({lang})
+Target category: {category_description}
+Batch index: {batch_index}
+
+Each pair must contain:
+- figurative: one clear, natural sentence containing the target category.
+- literal: a natural literal reformulation that expresses approximately the same proposition.
+
+Preserve entities, topic, event, sentiment, tense, and speaker perspective where possible.
+Avoid explicit simile markers for metaphor pairs.
+Avoid formulaic templates and duplicates.
+Do not use translationese.
+Do not include explanations outside JSON.
+{language_instruction}
+
+Return exactly a JSON array. Each object must have keys:
+"figurative", "literal", "topic".

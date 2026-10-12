@@ -1,0 +1,108 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in German.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Zielkategorie
+IRONIE(Irony)
+
+[7] Definition
+Eine ironische Äußerung liegt vor, wenn die Sprecherin oder der Sprecher etwas sagt, dessen gemeinte Bedeutung im gegebenen Kontext erkennbar von der wörtlichen Bedeutung abweicht.
+
+Typisch ist ein Gegensatz zwischen dem, was wörtlich gesagt wird, und dem, was tatsächlich gemeint ist. Wichtig für die Textanalyse: Ironie und Sarkasmus zeigen sich oft nicht nur durch das genaue Gegenteil (z. B. "Schönes Wetter" bei Regen), sondern auch durch gespielte Naivität (Scheinfragen), absurde Übertreibungen zur Selbstironie oder das Präsentieren von verrückten Situationen als völlige Normalität (Deadpan).
+
+Wichtig:
+- Ironie erfordert einen erkennbaren Bedeutungs-, Erwartungs- oder Tonfallkontrast (einen "doppelten Boden").
+- Sarkasmus (beißende, spöttische Ironie) fällt ebenfalls in diese Kategorie.
+- Die ironische Absicht muss aus dem Text selbst oder dem gegebenen Kontext plausibel ableitbar sein.
+
+[8] Entscheidungsverfahren
+Schritt 1: Prüfe die wörtliche Bedeutung des Textes.
+Schritt 2: Prüfe den Kontext, die beschriebene Situation oder die Logik der Aussage.
+Schritt 3: Prüfe, ob ein erkennbarer Gegensatz zwischen wörtlicher Aussage und gemeinter Bewertung besteht.
+Schritt 4: Achte auf typische Ironiesignale: übertriebenes Lob für Schlechtes, gespielte Naivität (absurde Fragen), trockener Spott (Deadpan) oder dramatische Übertreibungen.
+Schritt 5: Gib YES aus, wenn die Äußerung im Kontext plausibel ironisch oder sarkastisch gemeint ist.
+Schritt 6: Gib NO aus, wenn es sich um eine reine Sachinformation, einen reinen wörtlichen Witz oder eine direkte, wörtliche Beschwerde handelt.
+
+[9] YES-Regeln
+Gib YES aus, wenn der Text eine ironische Äußerung enthält, zum Beispiel:
+
+- **Gegenteilige Bedeutung:** Positive Wörter oder Lob in einer eindeutig negativen Situation (oder vice versa).
+- **Gespielte Naivität (Mock Naivety):** Das Stellen einer scheinbar unschuldigen oder sachlichen Frage, die eigentlich dazu dient, eine Person oder Situation als absurd, übertrieben oder dumm darzustellen.
+- **Sarkastische Übertreibung (Hyperbel):** Die völlig übertriebene, dramatische Darstellung einer Situation zur Selbstironie oder Verspottung (z. B. aus einer Mücke einen Elefanten machen, um die Situation ins Lächerliche zu ziehen).
+- **Absurde Gleichsetzungen (Deadpan):** Wenn ein absurder Vergleich oder eine Beleidigung staubtrocken wie eine normale Tatsache präsentiert wird.
+- **Ironische Marker:** Wörter wie „Na toll“, „super“, „klasse“, „wunderbar“, „läuft bei dir“, wenn sie im Kontext spöttisch verwendet werden.
+
+[10] NO-Regeln
+Gib NO aus, wenn:
+
+- die Äußerung eine reine Sachinformation ist. 
+- der Text lediglich ein direkter, wörtlich gemeinter Witz, ein einfaches Schimpfwort oder reine Wut ist, ohne dass eine spöttisch-distanzierte Bedeutung (doppelter Boden) mitschwingt.
+- nur eine Beschwerde oder Kritik direkt ausgedrückt wird (z. B. "Das Essen schmeckt furchtbar").
+- die Bewertung der Situation exakt mit der wörtlichen Aussage übereinstimmt.
+- *Achtung zur Hyperbel:* Wenn eine Übertreibung lediglich bildhaft gemeint ist (z. B. "Ich habe tausendmal angerufen"), ist dies NO. Dient die Übertreibung jedoch offensichtlich dem Spott oder der Selbstironie, ist dies YES.
+
+[11] Abgrenzung
+Nicht jede negative Äußerung ist Ironie. Direkte Kritik wie „Das ist schlecht“ ist NO. "Ein wahres Meisterwerk der Inkompetenz" ist YES.
+
+Nicht jede lustige Formulierung ist Ironie. Ein Witz ist nur dann YES, wenn er mit dem Kontrast zwischen Gesagtem und Gemeintem spielt.
+
+Bei Unsicherheit gilt:
+Gib YES nur, wenn eine ironisch/sarkastische Lesart klar plausibel ist. Sonst gib NO aus.
+
+[12] Beispiele
+
+Beispiel 1 (Klassische Ironie)
+Text: "Na toll, der Zug fällt schon wieder aus. Das ist ja ein grandioser Start in den Tag."
+Reason: Die positiven Wendungen stehen im Gegensatz zur negativen Situation und drücken Ärger aus.
+Label: YES
+
+Beispiel 2 (Gespielte Naivität / Scheinfrage)
+Text: "Darf ich eigentlich schon Rente beantragen, wenn mir nach dem Treppensteigen die Knie wehtun?"
+Reason: Die Frage ist nicht wörtlich als administrative Anfrage gemeint, sondern eine sarkastische, selbstironische Überspitzung des eigenen Alters/Zustands.
+Label: YES
+
+Beispiel 3 (Direkte Beschwerde)
+Text: "Ich hasse es, wenn die Bahn zu spät kommt. Da werde ich echt wütend."
+Reason: Die negative Emotion wird direkt, wörtlich und ohne ironische Brechung oder doppelten Boden ausgedrückt.
+Label: NO
+
+Beispiel 4 (Sarkastische Übertreibung / Deadpan)
+Text: "Mein neues Diät-Konzept: Ich atme nur noch und nehme trotzdem zu. Läuft."
+Reason: Die absurde Behauptung (vom Atmen zunehmen) wird trocken als "Konzept" präsentiert und mit "Läuft" sarkastisch kommentiert.
+Label: YES
+
+Beispiel 5 (Sachinformation / Hyperbel ohne Ironie)
+Text: "Ich bin heute so müde, ich könnte im Stehen einschlafen."
+Reason: Dies ist eine klassische Übertreibung (Hyperbel), um Müdigkeit auszudrücken, enthält aber keinen spöttischen oder ironischen Kontrast zur Realität.
+Label: NO
+
+[13] Eingabetext
+"{input}"

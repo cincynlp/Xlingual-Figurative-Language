@@ -1,0 +1,121 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Bengali.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] টার্গেট ক্যাটাগরি
+SARCASM(ব্যঙ্গ/বিদ্রূপ)
+
+[7] সংজ্ঞা
+ব্যঙ্গোক্তি হলো এমন বক্তব্য যেখানে বক্তা সরাসরি অর্থের বাইরে তির্যক, বিদ্রূপাত্মক বা উপহাসমূলক অর্থ প্রকাশ করেন।
+
+কোনো লেখায় ব্যঙ্গোক্তি আছে যদি:
+- বক্তব্যটি কাউকে বা কিছুকে ব্যঙ্গ, তাচ্ছিল্য, উপহাস বা সমালোচনা করে; এবং
+- সেটি সরাসরি অভিযোগ বা মতামত নয়, বরং বিদ্রূপ, উল্টো অর্থ, প্রশংসার ছলে উপহাস, অলঙ্কারমূলক প্রশ্ন, অযৌক্তিকতা বা অতিরঞ্জনের মাধ্যমে বলা হয়।
+
+ব্যঙ্গোক্তি নয় যদি বক্তব্যটি শুধু সরাসরি তথ্য, সরাসরি মতামত, সরাসরি অভিযোগ, সরাসরি গালি, সাধারণ আবেগ, আন্তরিক প্রশংসা, বা প্রসঙ্গ ছাড়া অস্পষ্ট হয়।
+
+[8] সিদ্ধান্ত নেওয়ার পদ্ধতি
+ধাপ 1: টেক্সটে কোনো ব্যক্তি, কাজ, ঘটনা, পরিস্থিতি বা ধারণাকে target করা হয়েছে কি?
+ধাপ 2: বক্তব্যে কি সরাসরি অর্থের বাইরে mocking/ironic/বিদ্রূপাত্মক tone আছে?
+ধাপ 3: tone স্পষ্ট হলে Label YES, নইলে Label NO।
+
+[9] YES নিয়ম
+YES দাও যদি:
+
+- positive শব্দ দিয়ে negative meaning বোঝানো হয়;
+- praise-এর মাধ্যমে criticism করা হয়;
+- rhetorical question দিয়ে ব্যঙ্গ করা হয়;
+- absurd বা অতিরঞ্জিতভাবে কাউকে/কিছুকে mock করা হয়;
+- বক্তব্যের আসল উদ্দেশ্য সরাসরি বলা নয়, বরং বিদ্রূপ বা তাচ্ছিল্য প্রকাশ করা।
+
+[10] NO নিয়ম
+NO দাও যদি:
+
+- বক্তব্যটি আক্ষরিক বা তথ্যভিত্তিক হয়;
+- শুধু সরাসরি প্রশংসা বা সরাসরি সমালোচনা হয়;
+- শুধু রাগ, দুঃখ, হতাশা, আনন্দ বা অবাক হওয়া প্রকাশ করে;
+- শুধু গালি/অপমান থাকে, কিন্তু sarcastic framing না থাকে;
+- শুধু joke হয়, কিন্তু ব্যঙ্গ বা criticism না থাকে;
+- sarcasm বোঝার জন্য প্রয়োজনীয় context অনুপস্থিত থাকে।
+
+[11] পার্থক্য
+সরাসরি সমালোচনা: “ওরা খুব খারাপ খেলেছে।”  
+Reason: সরাসরি criticism, sarcasm নয়।  
+Label: NO
+
+ব্যঙ্গাত্মক সমালোচনা: “ওদের খেলা দেখে মনে হচ্ছে বিশ্বকাপটা আগেই জিতে বসে আছে।”  
+Reason: অতিরঞ্জিত/ironic framing দিয়ে খারাপ performance mock করা হয়েছে।  
+Label: YES
+
+[12] উদাহরণ
+
+উদাহরণ 1
+Text: "বাহ, আবারও দেরি করলে! অসাধারণ!"
+Reason: positive শব্দ দিয়ে দেরি করার সমালোচনা করা হয়েছে।
+Label: YES
+
+উদাহরণ 2
+Text: "এই গরমে লোডশেডিং, জীবনটা একদম স্বর্গ।"
+Reason: negative পরিস্থিতিকে positiveভাবে বলা হয়েছে।
+Label: YES
+
+উদাহরণ 3
+Text: "তোমার এই বুদ্ধির জন্য নোবেল দেওয়া উচিত।"
+Reason: mock praise দিয়ে বোকামি ব্যঙ্গ করা হয়েছে।
+Label: YES
+
+উদাহরণ 4
+Text: "এত ভালো সার্ভিস আর কোথায় পাবো?"
+Reason: rhetorical question দিয়ে খারাপ service ব্যঙ্গ করা হয়েছে।
+Label: YES
+
+উদাহরণ 5
+Text: "আজ আবহাওয়া খুব ভালো।"
+Reason: সরাসরি positive statement; sarcasm cue নেই।
+Label: NO
+
+উদাহরণ 6
+Text: "ওরা আজ খুব খারাপ খেলেছে।"
+Reason: সরাসরি সমালোচনা; irony/mock tone নেই।
+Label: NO
+
+উদাহরণ 7
+Text: "সে একদম বোকা।"
+Reason: সরাসরি অপমান; sarcastic framing নেই।
+Label: NO
+
+উদাহরণ 8
+Text: "সরকার নতুন রাস্তা বানিয়েছে।"
+Reason: তথ্যভিত্তিক বক্তব্য; sarcasm নেই।
+Label: NO
+
+[13] ইনপুট টেক্সট
+"{input}"

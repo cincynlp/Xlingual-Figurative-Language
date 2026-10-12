@@ -1,0 +1,84 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Chinese.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] 目标类别
+隐喻(Metaphor)
+
+[7] 定义
+判断输入文本中是否存在“非字面、跨语义领域”的表达：即用一个来源领域的词语、动作、性质或结构，描述另一个目标领域的对象、状态、事件或抽象概念。
+
+本任务关注的是当前语境中的跨域用法，而不是词源考据。只有当该词在当前句子中仍能体现来源领域与目标领域之间的语义张力、形象化、拟人化或概念映射时，才判为 YES。
+
+[8] 判定步骤
+1. 找出句子中可能具有非字面用法的名词、动词、形容词或成语。
+2. 判断这些词在当前语境中是否描述了不同语义领域的对象。
+3. 判断该表达是否产生了形象化、拟人化、抽象实体化、物理动作抽象化等跨域映射。
+4. 如果只是普通搭配、行业术语、完全词汇化的常规义，且当前语境中没有明显形象化或跨域张力，判为 NO。
+5. 如果存在明确跨域映射，判为 YES。
+
+[9] YES 规则
+满足以下任一情况，通常输出 YES：
+- 用具体物理领域描述抽象概念，例如“推动关系发展”“动摇信心”。
+- 用人体、生命、情感或行为描述非人对象，例如“台风怒吼”“文化生活活跃”。
+- 用战争、建筑、道路、容器、机械、自然现象等领域描述社会、心理、政治、艺术等抽象领域。
+- 成语或固定表达在当前语境中仍体现明显跨域映射，例如“血肉丰满的艺术形象”“杞人忧天”。
+
+[10] NO 规则
+满足以下任一情况，输出 NO：
+- 纯字面事实描述。
+- 同一物理领域内的普通描述或普通比较，没有概念转移。
+- 词语已经完全成为当前领域的常规术语，当前语境中不再激活来源领域形象。
+- 仅仅是普通抽象搭配，没有明显来源域和目标域。
+
+[11] 示例
+示例 1
+文本：“我们需要集中精力打破目前项目推进的瓶颈。”
+Reason: 将物理容器的“瓶颈”和物理动作的“打破”映射到抽象的项目进度上，虽是常规惯用语，但存在明确跨域映射。
+Label: YES
+
+示例 2
+文本：“最近太累了，周末我需要在家好好充电。”
+Reason: 将电子设备的“充电”映射为人类体力和精力的恢复，存在跨领域的动词概念转移。
+Label: YES
+
+示例 3
+文本：“这本小说的情节就像一杯白开水，平淡无奇。”
+Reason: 句子中包含明显的显性比喻词“像”，属于明喻，不符合本任务对隐喻的严格界定。
+Label: NO
+
+示例 4
+文本：“他今天穿了一件崭新的黑色皮夹克，骑着摩托车出门了。”
+Reason: 纯事实描述，所有词汇（穿、皮夹克、骑、摩托车）均在其字面本义的物理领域内使用，无跨域映射。
+Label: NO
+
+[12] 输入文本
+"{input}"

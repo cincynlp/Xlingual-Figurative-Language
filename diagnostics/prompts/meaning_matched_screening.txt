@@ -1,0 +1,26 @@
+Judge whether this sentence pair is usable for a meaning-preserving paired-vector diagnostic.
+
+Language: {language_name} ({lang})
+Target category: {category}
+
+Checks:
+1. The figurative sentence clearly contains the target category.
+2. The literal sentence does not contain the target category.
+3. The two sentences express approximately the same proposition.
+4. Both sentences are grammatical and natural in the target language.
+5. The pair is not generic, duplicated, or formulaic.
+
+Figurative:
+{row['figurative']}
+
+Literal:
+{row['literal']}
+
+Return exactly:
+Reason: <one short sentence>
+FigurativeOK: <0 or 1>
+LiteralOK: <0 or 1>
+MeaningOK: <0 or 1>
+NaturalOK: <0 or 1>
+Formulaic: <0 or 1>
+Keep: <0 or 1>

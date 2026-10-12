@@ -1,0 +1,13 @@
+source_language,target_language,category,condition,layer,alpha,split,evaluated_file
+en,en,metaphor,unsteered,14,0.0,val,raw/evaluations/E0307.csv.gz
+en,en,metaphor,original_caption_negative,14,1.0,val,raw/evaluations/E0308.csv.gz
+en,en,metaphor,synthetic_content_matched_paired,14,1.0,val,raw/evaluations/E0309.csv.gz
+en,zh,metaphor,unsteered,14,0.0,val,raw/evaluations/E0310.csv.gz
+en,zh,metaphor,original_caption_negative,14,1.0,val,raw/evaluations/E0311.csv.gz
+en,zh,metaphor,synthetic_content_matched_paired,14,1.0,val,raw/evaluations/E0312.csv.gz
+zh,en,metaphor,unsteered,14,0.0,val,raw/evaluations/E0307.csv.gz
+zh,en,metaphor,original_caption_negative,14,1.0,val,raw/evaluations/E0313.csv.gz
+zh,en,metaphor,synthetic_content_matched_paired,14,1.0,val,raw/evaluations/E0314.csv.gz
+zh,zh,metaphor,unsteered,14,0.0,val,raw/evaluations/E0310.csv.gz
+zh,zh,metaphor,original_caption_negative,14,1.0,val,raw/evaluations/E0315.csv.gz
+zh,zh,metaphor,synthetic_content_matched_paired,14,1.0,val,raw/evaluations/E0316.csv.gz

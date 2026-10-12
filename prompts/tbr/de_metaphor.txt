@@ -1,0 +1,99 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in German.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Zielkategorie
+METAPHER(Metaphor)
+
+[7] Definition
+Eine Metapher liegt vor, wenn ein Ausdruck im gegebenen Kontext eine Bedeutung hat, die von einer konkreteren, körperlichen, räumlichen oder domänentypischen Bedeutung abweicht und auf einen anderen Zielbereich (oft abstrakt) übertragen wird.
+
+Die Zielbedeutung entsteht durch semantische Übertragung. Die Metapher muss NICHT völlig neu oder poetisch sein. Auch alltägliche, konventionalisierte Übertragungen zählen als YES (z. B. "Anschuldigungen erheben", "mehr Klarheit", "in Angriff nehmen"), solange noch eine erkennbare Bereichsübertragung (z. B. Raum/Physisches auf Abstraktes) stattfindet.
+
+Wichtig – Die "Behörden-Ausnahme":
+In formellen Texten (z. B. Politik, Verwaltung) gibt es bestimmte stark lexikalisierte Begriffe, die keine aktive Bildhaftigkeit mehr besitzen und als reine Standardterminologie wörtlich (NO) verstanden werden. Dazu gehören administrative Standardhandlungen (z. B. "Unterstützung", "Schritte unternehmen", "einem Problem begegnen", "Abhilfe schaffen", "Ausdehnung von Regelungen"). Diese zählen als NO.
+
+[8] Entscheidungsverfahren
+Schritt 1: Prüfe, ob es für einen Ausdruck eine konkretere (räumliche, physische, visuelle) Grundbedeutung gibt.
+Schritt 2: Prüfe, ob diese konkrete Bedeutung im Satz auf einen abstrakten Sachverhalt übertragen wird.
+Schritt 3: Wende den "Behörden-Filter" an: Ist der Ausdruck eine etablierte administrative Sachbezeichnung oder ein prozedurales Standardverb (NO) oder erzeugt er durch die Kombination (z.B. physisches Verb + abstraktes Nomen) ein klares metaphorisches Bild (YES)?
+Schritt 4: Gib YES aus, wenn eine gültige Bereichsübertragung vorliegt.
+Schritt 5: Gib NO aus, wenn es sich um wörtliche Rede, rein administrative Standardbegriffe oder formelhafte Routine ohne echtes Bild handelt.
+
+[9] YES-Regeln
+Gib YES aus, insbesondere wenn:
+- ein konkretes, räumliches Verb auf ein abstraktes Nomen angewendet wird (z. B. "Anschuldigungen *erheben*", "Fragen *auf die Tagesordnung setzen*", "eine Aufgabe *in Angriff nehmen*").
+- visuelle, räumliche oder physische Eigenschaften abstrakte Zustände beschreiben (z. B. "mehr *Klarheit*", "*harter* Kampf", "jemanden *hineinziehen*").
+- der Transferbereich (Natur, Raum, Physis, Kampf) deutlich erkennbar ist, auch wenn die Phrase konventionalisiert ist (z. B. "*zur Sprache kommen*", "*mein Glück versuchen*").
+
+[10] NO-Regeln
+Gib NO aus, wenn:
+- die Wörter im Kontext in ihrer normalen, sachlichen Bedeutung verwendet werden.
+- es sich um abstrakte bürokratische oder politische Standardbegriffe handelt, deren metaphorischer Ursprung irrelevant geworden ist (z. B. "*Unterstützung*" für Hilfe, "*Schritte*" für Maßnahmen, "*Ansatz*", "*Ausdehnung*").
+- alltägliche Verben der Problemlösung rein funktional verwendet werden (z. B. "einem Problem *begegnen*", "Probleme *schaffen*", "Abhilfe *schaffen*", sich etwas "*widmen*").
+- feste Idiome im rein formelhaften Sinn als Synonym für eine abstrakte Eigenschaft vorkommen, ohne dass das Bild anwendbar ist (z. B. "etwas *auf die leichte Schulter nehmen*").
+
+[11] Abgrenzung
+Der Grat zwischen "konventioneller Metapher" (YES) und "lexikalisierter Behördensprache" (NO):
+- "Auf die Tagesordnung setzen" -> YES (Konkretes Setzen auf ein Dokument für den abstrakten Prozess der Diskussion).
+- "Schritte unternehmen" -> NO (Völlig verblasster Standardterminus für "Maßnahmen ergreifen").
+- "Mehr Klarheit" -> YES (Visuelle Eigenschaft wird für kognitives Verständnis genutzt).
+- "Unterstützung" -> NO (Reiner Standardbegriff für Hilfeleistung, das physische "Stützen" spielt keine Rolle mehr).
+
+[12] Beispiele
+
+Beispiel 1
+Text: "Wie es scheint, erhob er seine Anschuldigungen jedoch nicht spontan."
+Reason: Das Verb "erheben" beschreibt ursprünglich eine physische Aufwärtsbewegung, die hier auf das abstrakte Vorbringen von Anschuldigungen übertragen wird.
+Label: YES
+
+Beispiel 2
+Text: "Das ist ein erster Schritt zur Lösung dieses Problems."
+Reason: "Schritt" wird hier im politisch-administrativen Kontext als reiner Standardterminus für "Maßnahme" verwendet. Es liegt keine bildhafte Metapher mehr vor.
+Label: NO
+
+Beispiel 3
+Text: "Wir müssen diese Aufgabe endlich in Angriff nehmen."
+Reason: Eine physisch-militärische Handlung (Angriff) wird auf die zivile Bewältigung einer Aufgabe übertragen. Das erzeugt eine klare Metapher.
+Label: YES
+
+Beispiel 4
+Text: "Daher müssen wir diesem Problem mit einem ganzheitlichen Ansatz begegnen."
+Reason: "Begegnen" ist in diesem Kontext ein rein abstrakt-administratives Standardverb für "bewältigen" oder "umgehen mit".
+Label: NO
+
+Beispiel 5
+Text: "Das Argument stützt die These."
+Reason: Physisches Stützen wird anschaulich auf argumentative Begründung übertragen. (Im Gegensatz zu der verblassten Nominalform "Unterstützung" ist hier das Verb aktiv transferiert).
+Label: YES
+
+[13] Eingabetext
+"{input}"

@@ -1,0 +1,186 @@
+{
+  "study_scope": {
+    "languages": [
+      "en",
+      "zh",
+      "bn",
+      "es",
+      "it",
+      "de"
+    ],
+    "categories": [
+      "idiom",
+      "metaphor",
+      "irony",
+      "sarcasm"
+    ],
+    "available_language_category_cells": [
+      [
+        "en",
+        "idiom"
+      ],
+      [
+        "en",
+        "metaphor"
+      ],
+      [
+        "en",
+        "irony"
+      ],
+      [
+        "en",
+        "sarcasm"
+      ],
+      [
+        "zh",
+        "idiom"
+      ],
+      [
+        "zh",
+        "metaphor"
+      ],
+      [
+        "zh",
+        "irony"
+      ],
+      [
+        "zh",
+        "sarcasm"
+      ],
+      [
+        "bn",
+        "idiom"
+      ],
+      [
+        "bn",
+        "metaphor"
+      ],
+      [
+        "bn",
+        "irony"
+      ],
+      [
+        "bn",
+        "sarcasm"
+      ],
+      [
+        "es",
+        "idiom"
+      ],
+      [
+        "es",
+        "metaphor"
+      ],
+      [
+        "es",
+        "irony"
+      ],
+      [
+        "it",
+        "idiom"
+      ],
+      [
+        "it",
+        "metaphor"
+      ],
+      [
+        "it",
+        "irony"
+      ],
+      [
+        "it",
+        "sarcasm"
+      ],
+      [
+        "de",
+        "idiom"
+      ],
+      [
+        "de",
+        "metaphor"
+      ],
+      [
+        "de",
+        "irony"
+      ]
+    ]
+  },
+  "models": {
+    "qwen": {
+      "display_name": "Qwen3-8B",
+      "checkpoint": "Qwen/Qwen3-8B",
+      "selected_layer": 14,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20
+      }
+    },
+    "qwenxl": {
+      "display_name": "Qwen3-32B",
+      "checkpoint": "Qwen/Qwen3-32B",
+      "selected_layer": 35,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20
+      }
+    },
+    "llama": {
+      "display_name": "Llama-3.1-8B-Instruct",
+      "checkpoint": "meta-llama/Llama-3.1-8B-Instruct",
+      "selected_layer": 15,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 50
+      }
+    },
+    "mistral": {
+      "display_name": "Ministral-3-8B-Instruct",
+      "checkpoint": "mistralai/Ministral-3-8B-Instruct-2512",
+      "selected_layer": 19,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": 50
+      }
+    }
+  },
+  "generation": {
+    "max_new_tokens": 1024,
+    "steering_strength_alpha": 1.0,
+    "intervention_positions": "all prompt-token positions",
+    "random_vector_seeds": [
+      0,
+      1,
+      2
+    ],
+    "intervention_scale": {
+      "formula": "s = mean_i(||h_i^(layer)[last_nonpadding_token]||_2)",
+      "calibration_input": "Selected target-language caption prompts for the generation invocation, with the same instruction and model chat template as generation",
+      "model_state": "unsteered",
+      "activation_site": "Output residual of the selected zero-based decoder block; hidden_states[layer_index + 1]",
+      "precision": "Convert activations to float32, compute per-example L2 norms, then their float32 arithmetic mean",
+      "scope": "One scalar per model, layer, and generation invocation; held fixed during that invocation",
+      "standard_deviation_used": false,
+      "coefficient": "The paper alpha corresponds to recorded ratio; multiplier for a stored vector is ratio*s/(vector_norm + 1e-8)"
+    }
+  },
+  "geometry": {
+    "OMean": "category_mean_lto: same-category mean over non-target languages",
+    "Residual": "residual_category_mean_lto: native direction after removing its OMean-aligned component"
+  },
+  "evaluator": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "max_output_tokens": 256,
+    "api_endpoint": "configured through DEEPSEEK_BASE_URL"
+  },
+  "statistics": {
+    "paired_test": "exact two-sided McNemar",
+    "primary_crosslingual_bh_family": "all 408 routes",
+    "monolingual_bh_family": "22 cells within each model",
+    "fdr_threshold": 0.05
+  }
+}

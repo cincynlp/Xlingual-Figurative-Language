@@ -1,0 +1,71 @@
+{
+  "neutral_and_explicit_generation_templates": {
+    "en": {
+      "normal": "Continue the sentence: {sent}",
+      "literal": "Continue the sentence without using any figurative language: {sent}",
+      "figurative": "Continue the sentence using figurative language only: {sent}",
+      "idiom": "Continue the sentence using idiom only: {sent}",
+      "metaphor": "Continue the sentence using metaphor only: {sent}",
+      "sarcasm": "Continue the sentence with sarcasm: {sent}",
+      "irony": "Continue the sentence with irony: {sent}"
+    },
+    "zh": {
+      "normal": "续写这句话：{sent}",
+      "literal": "不使用任何修辞手法续写这句话：{sent}",
+      "figurative": "只用修辞手法续写这句话：{sent}",
+      "idiom": "只用成语续写这句话：{sent}",
+      "metaphor": "只用暗喻续写这句话：{sent}",
+      "sarcasm": "用讽刺语气续写这句话：{sent}",
+      "irony": "用反语续写这句话：{sent}"
+    },
+    "bn": {
+      "normal": "বাক্যটি চালিয়ে যান: {sent}",
+      "literal": "কোনো রূপক ভাষা ব্যবহার না করে বাক্যটি চালিয়ে যান: {sent}",
+      "figurative": "শুধু রূপক ভাষা ব্যবহার করে বাক্যটি চালিয়ে যান: {sent}",
+      "idiom": "শুধু বাগধারা ব্যবহার করে বাক্যটি চালিয়ে যান: {sent}",
+      "metaphor": "শুধু রূপক ব্যবহার করে বাক্যটি চালিয়ে যান: {sent}",
+      "sarcasm": "ব্যঙ্গাত্মক সুরে বাক্যটি চালিয়ে যান: {sent}",
+      "irony": "পরিহাসমূলক সুরে বাক্যটি চালিয়ে যান: {sent}"
+    },
+    "es": {
+      "normal": "Continúa la oración: {sent}",
+      "literal": "Continúa la oración sin usar lenguaje figurado: {sent}",
+      "figurative": "Continúa la oración usando solo lenguaje figurado: {sent}",
+      "idiom": "Continúa la oración usando solo modismos: {sent}",
+      "metaphor": "Continúa la oración usando solo metáforas: {sent}",
+      "sarcasm": "Continúa la oración con sarcasmo: {sent}",
+      "irony": "Continúa la oración con ironía: {sent}"
+    },
+    "it": {
+      "normal": "Continua la frase: {sent}",
+      "literal": "Continua la frase senza usare linguaggio figurato: {sent}",
+      "figurative": "Continua la frase usando solo linguaggio figurato: {sent}",
+      "idiom": "Continua la frase usando solo espressioni idiomatiche: {sent}",
+      "metaphor": "Continua la frase usando solo metafore: {sent}",
+      "sarcasm": "Continua la frase con sarcasmo: {sent}",
+      "irony": "Continua la frase con ironia: {sent}"
+    },
+    "de": {
+      "normal": "Setze den Satz fort: {sent}",
+      "literal": "Setze den Satz ohne bildhafte Sprache fort: {sent}",
+      "figurative": "Setze den Satz nur mit bildhafter Sprache fort: {sent}",
+      "idiom": "Setze den Satz nur mit Redewendungen fort: {sent}",
+      "metaphor": "Setze den Satz nur mit Metaphern fort: {sent}",
+      "sarcasm": "Setze den Satz mit Sarkasmus fort: {sent}",
+      "irony": "Setze den Satz mit Ironie fort: {sent}"
+    }
+  },
+  "same_language_suffix": {
+    "en": "Answer in the same language as the input text.",
+    "zh": "请使用与输入文本相同的语言作答。",
+    "bn": "ইনপুট লেখার একই ভাষায় উত্তর দিন।",
+    "es": "Responde en el mismo idioma que el texto de entrada.",
+    "it": "Rispondi nella stessa lingua del testo di input.",
+    "de": "Antworte in derselben Sprache wie der Eingabetext."
+  },
+  "notes": {
+    "neutral_condition": "normal",
+    "explicit_prompt_condition": "the corresponding category key",
+    "placeholder": "{sent}"
+  }
+}

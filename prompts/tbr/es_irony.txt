@@ -1,0 +1,87 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Spanish.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoría objetivo
+IRONÍA (IRONY)
+
+[7] Definición ampliada
+La ironía es una forma de expresión en la que el significado real no coincide completamente con el significado literal, o donde el hablante transmite burla, crítica o incredulidad de forma indirecta.
+
+NO es necesario que el significado sea exactamente el opuesto.  
+La ironía puede manifestarse como sarcasmo, burla, exageración, preguntas retóricas, absurdos deliberados o distancia irónica.
+
+[8] Señales de ironía (muy importantes)
+Genera YES si el texto contiene cualquiera de las siguientes:
+
+- Uso de palabras positivas para describir algo negativo (ironía clásica)
+- Preguntas que no buscan respuesta sino criticar o ridiculizar
+- Exageraciones extremas o improbables (“ni en 200 años”)
+- Comparaciones absurdas o afirmaciones claramente falsas usadas para burlarse
+- Uso de “jajaja”, “jeje”, emojis o tono de burla
+- Uso de comillas para marcar distancia o escepticismo (“el gran plan”, “un ‘éxito’”)
+- Fingir creer algo absurdo para desacreditarlo
+- Tono de parodia, sarcasmo o mofa
+
+[9] Reglas clave
+- La ironía NO requiere siempre decir lo contrario literal.
+- Una crítica o insulto puede ser irónico si está expresado con burla o sarcasmo.
+- El contexto implícito dentro del propio texto (tono, exageración, absurdo) es suficiente.
+
+[10] Genera NO si:
+- El texto es completamente literal y directo
+- Expresa una emoción genuina sin burla ni doble intención
+- Es una crítica directa sin señales de ironía (sin exageración, sarcasmo o absurdo)
+
+[11] Ejemplos
+
+Ejemplo 1
+Texto: "Qué maravilla, mi coche se averió en medio de la tormenta."
+Reason: Se usan palabras positivas para describir una situación negativa.
+Label: YES
+
+Ejemplo 2
+Texto: "Estoy furioso porque mi coche se averió."
+Reason: Expresión directa y literal de emoción negativa.
+Label: NO
+
+Ejemplo 3
+Texto: "Sí claro, y la tierra es plana también."
+Reason: Afirmación absurda usada para ridiculizar otra idea.
+Label: YES
+
+Ejemplo 4
+Texto: "¿Y este qué ha estado haciendo todo el día?"
+Reason: Pregunta retórica que funciona como crítica implícita.
+Label: YES
+
+[12] Texto de entrada
+"{input}"

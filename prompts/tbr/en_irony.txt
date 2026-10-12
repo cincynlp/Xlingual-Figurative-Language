@@ -1,0 +1,77 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in English.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Target category
+IRONY
+
+[7] Definition
+Irony includes not only direct opposite-meaning statements, but also sarcastic praise, mock agreement, deadpan understatement, rhetorical disbelief, and humorous incongruity where the surface wording conflicts with the likely attitude or situation. In social media text, irony may be signaled by hashtags, emojis, scare quotes, exaggerated enthusiasm, or obviously implausible praise.
+
+[8] Decision procedure
+Step 1: Identify whether the text contains a mismatch between surface wording and the situation, attitude, or common expectation.
+Step 2: Treat rhetorical questions, mock praise, exaggerated politeness, deadpan understatement, and absurd endorsements as possible irony.
+Step 3: Pay special attention to irony-signaling hashtags such as #sarcasm, #irony, #shocker, #yeahright, #dreamon, #productivity, #SoDemocratic, or hashtags that contradict the main text.
+Step 4: Output YES if the text reasonably suggests sarcastic, mocking, deadpan, or incongruous meaning, even if the opposite meaning is not explicitly stated.
+Step 5: Output NO only if the text is best read as straightforward literal sentiment with no irony signal.
+
+[9] YES rules
+Output YES if:
+- Positive words like “love,” “great,” “amazing,” “fun,” “perfect,” or “thanks” describe an unpleasant, frustrating, unfair, or unwanted situation.
+- A rhetorical question expresses disbelief, mock surprise, or criticism.
+- A hashtag or emoji changes the interpretation of an otherwise literal statement into mockery or contradiction.
+- The statement uses deadpan praise, mock agreement, or obviously implausible approval.
+- The text humorously contrasts expectation and reality, even without a direct opposite-word reversal.
+
+[10] NO rules
+Output NO if:
+- The text is only a plain complaint, insult, factual report, or genuine emotion.
+- Humor is present but there is no contradiction, mockery, sarcasm, or incongruity.
+- The interpretation depends on unstated private context and there are no textual irony signals.
+
+[11] Examples
+Example 1
+Text: "Oh, brilliant. My car broke down in the pouring rain. Perfect start to the weekend."
+Reason: The highly positive words "brilliant" and "perfect" are used to describe a miserable event, showing a clear clash between literal sentiment and reality.
+Label: YES
+
+Example 2
+Text: "I am absolutely furious that my car broke down in the pouring rain."
+Reason: The text is a straightforward, literal expression of negative emotion matching a negative event.
+Label: NO
+
+Example 3
+Text: "I just love standing in line at the DMV for four hours."
+Reason: The positive sentiment "love" is applied to a universally disliked, tedious experience, indicating the opposite meaning is intended.
+Label: YES
+
+[12] Input text
+"{input}"

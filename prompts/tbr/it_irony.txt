@@ -1,0 +1,113 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Italian.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoria target
+Ironia
+
+[7] Definizione
+L’ironia è una strategia comunicativa in cui il testo non va interpretato solo in modo letterale: il parlante costruisce un contrasto, una distanza o una incongruenza tra ciò che viene detto e ciò che si intende comunicare.
+
+L’ironia può manifestarsi non solo dicendo esplicitamente il contrario di ciò che si pensa, ma anche tramite finto elogio, finto accordo, esagerazione, tono satirico, formulazione assurda, parodia, mock seriousness, battute a doppio livello o critica indiretta.
+
+Il criterio centrale è: il testo deve contenere un segnale riconoscibile che l’interpretazione letterale non è sufficiente e che il parlante sta esprimendo distanza, critica, presa in giro, sarcasmo o ridicolizzazione.
+
+[8] Passaggi di decisione
+Passo 1: Identificare il significato letterale del testo.
+Passo 2: Valutare se il testo suggerisce un significato implicito diverso, critico, derisorio o distanziato.
+Passo 3: Cercare eventuali incongruenze pragmatiche, cioè contrasti tra parole, tono, situazione descritta, aspettative normali e intenzione comunicativa.
+Passo 4: Considerare diversi tipi di ironia:
+- dire il contrario di ciò che si intende;
+- finto elogio o finto accordo;
+- tono apparentemente serio usato per ridicolizzare qualcosa;
+- associazioni assurde o sproporzionate;
+- satira, parodia o battuta critica;
+- esagerazione usata per implicare giudizio o derisione.
+Passo 5: Non basarsi su una singola parola isolata. Espressioni come “bravo”, “complimenti”, “geniale”, “che fortuna”, “certo”, “come no” sono indizi, ma non prove automatiche.
+Passo 6: Se il testo richiede chiaramente una lettura non letterale e contiene critica, derisione, distacco o incongruenza intenzionale, output YES.
+Passo 7: Se il testo è interpretabile in modo pienamente letterale, oppure l’evidenza è insufficiente, output NO.
+
+[9] Regole YES
+Output YES quando il testo mostra almeno uno dei seguenti fenomeni in modo riconoscibile:
+
+- Contrasto tra significato letterale e intenzione probabile del parlante.
+- Uso di parole positive, elogiative o neutrali per comunicare critica, fastidio o disapprovazione.
+- Finto elogio, finto ringraziamento, finta approvazione o finto entusiasmo.
+- Tono serio o cronachistico usato per produrre ridicolo, satira o presa in giro.
+- Accostamento assurdo, sproporzionato o inatteso che segnala una lettura non letterale.
+- Commento apparentemente descrittivo che in realtà implica giudizio, scherno o critica indiretta.
+- Uso di iperbole, parodia, giochi di parole o battute quando servono a criticare o ridicolizzare.
+- Presenza di segnali pragmatici come virgolette, puntini di sospensione, emoji, risate, hashtag, maiuscole o punteggiatura marcata, se rafforzano una lettura ironica.
+
+[10] Regole NO
+Output NO quando vale una qualsiasi delle seguenti condizioni:
+
+- Il testo esprime un’opinione, una lamentela, un insulto, una critica o un’emozione in modo diretto, senza lettura implicita o distanziata.
+- Il testo è solo informativo, descrittivo o narrativo.
+- Il testo è divertente, ma non contiene incongruenza, critica indiretta o significato non letterale.
+- Il testo contiene esagerazione puramente emotiva, senza intento ironico riconoscibile.
+- Il testo contiene parole potenzialmente ironiche, ma usate in modo letterale.
+- Il testo richiede informazioni esterne non presenti per essere interpretato come ironico.
+- In caso di dubbio reale tra YES e NO, scegliere NO.
+
+[11] Esempi
+Esempio 1
+Testo: “Fantastico, ho perso il treno e adesso piove pure.”
+Reason: “Fantastico” è positivo in superficie, ma il contesto è negativo; il parlante comunica frustrazione, non entusiasmo reale.
+Label: YES
+
+Esempio 2
+Testo: “Sono molto contento del risultato dell’esame.”
+Reason: Il testo esprime soddisfazione in modo diretto e non contiene incongruenza o distanza ironica.
+Label: NO
+
+Esempio 3
+Testo: “Arrivi con solo un’ora di ritardo, puntualissimo.”
+Reason: “Puntualissimo” contrasta con il ritardo; è un finto elogio.
+Label: YES
+
+Esempio 4
+Testo: “Oggi sono stanco e non ho voglia di uscire.”
+Reason: Il testo comunica uno stato d’animo in modo letterale e diretto.
+Label: NO
+
+Esempio 5
+Testo: “Complimenti, hai cancellato tutto il file.”
+Reason: “Complimenti” è usato come finto elogio per criticare un errore.
+Label: YES
+
+Esempio 6
+Testo: “Il ministro promette una riforma semplicissima: infatti nessuno ha ancora capito nulla.”
+Reason: Il testo crea un contrasto tra “semplicissima” e “nessuno ha capito nulla”, producendo una critica ironica.
+Label: YES
+
+[12] Testo di input
+"{input}"

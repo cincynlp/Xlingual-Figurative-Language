@@ -1,0 +1,63 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in English.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Target category
+METAPHOR
+
+[7] Definition
+A metaphor is any non-literal use of a word or phrase where language from a physical or concrete domain is used to describe something abstract, conceptual, or non-physical. Expressions with explicit comparison markers such as "like" or "as" should not be labeled as metaphor for this task.
+
+[8] Decision procedure
+Apply the Physicality Test:
+- Ask whether the action, property, or relation can physically happen exactly as described.
+- If an abstract entity such as time, love, ideas, concepts, emotions, data, or decisions is described using physical actions, movement, force, space, weight, contact, construction, or other concrete properties, output YES.
+- Check the subjects. If an inanimate object, geographical location, or institution (e.g., a city, a company) is described as having human emotions, biological actions, or interpersonal human relationships, output YES.
+- If the sentence is fully and strictly literal, output NO.
+- If the expression is an explicit simile using markers such as "like" or "as", output NO.
+
+[9] Positive examples
+- "I finally grasped the math concept." -> YES
+- "We are approaching the end of the year." -> YES
+- "She is carrying a lot of emotional baggage." -> YES
+- "He weighed his options carefully." -> YES
+- "The company swallowed its smaller rival." -> YES
+
+[10] Negative examples
+- "The cat slept on the blue rug." -> NO
+- "He runs as fast as a cheetah." -> NO
+- "The glass fell off the table." -> NO
+
+[11] Reason writing rule
+In the Reason line, briefly identify the metaphorical mapping. Do not repeat sensitive, graphic, hateful, sexual, or violent wording from the input.
+
+[12] Input text
+"{input}"

@@ -1,0 +1,121 @@
+You are a careful linguistic annotation model.
+
+Read and follow these instructions in order.
+
+[1] Goal
+Your job is to decide whether the input text contains the TARGET CATEGORY.
+The input text is written in Italian.
+
+[2] Core labeling principle
+- Categories are NOT mutually exclusive.
+- The same text may contain multiple figurative categories at once.
+- For this task, check ONLY whether the TARGET CATEGORY is present.
+- Output YES if the TARGET CATEGORY is present anywhere in the text.
+- Output NO if the TARGET CATEGORY is absent.
+
+[3] Evidence scope
+- Judge only from the given text unless extra context is explicitly provided.
+- Do not assume missing context.
+- Do not infer hidden intent unless it is reasonably supported by the text.
+
+[4] Ambiguity policy
+- Do not ask follow-up questions.
+- Do not list multiple possible answers.
+- Make the best single decision from the text alone.
+- If the case is uncertain, output YES only when there is clear textual evidence for the TARGET CATEGORY; otherwise output NO.
+
+[5] Output rule
+Output exactly 2 lines and nothing else:
+Reason: <one short sentence>
+Label: <YES or NO>
+
+
+[6] Categoria target
+SARCASM(Sarcasmo)
+
+[7] Definizione
+Il sarcasmo è una forma di critica o presa in giro espressa in modo indiretto, ironico, satirico o retorico.
+
+Conta come sarcasmo quando il testo usa una costruzione non letterale o beffarda per ridicolizzare una persona, un gruppo, un'idea, una situazione o un evento.
+
+Non conta come sarcasmo una critica diretta, un insulto diretto, odio esplicito o una semplice opinione negativa.
+
+[8] Procedura decisionale
+Passo 1: Chiediti se il testo esprime una critica o presa in giro.
+Passo 2: Chiediti se questa critica è espressa in modo indiretto, ironico, satirico, retorico o beffardo.
+Passo 3: Dai YES solo se entrambi sono veri.
+Passo 4: Dai NO se il testo è solo letterale, diretto, negativo, offensivo o ambiguo.
+
+[9] Regole YES
+Dai YES se il testo contiene almeno uno di questi meccanismi:
+
+- elogio apparente usato per criticare;
+- finta approvazione o finto accordo;
+- domanda retorica usata per ridicolizzare;
+- esagerazione, paradosso o confronto assurdo con funzione critica;
+- frase satirica o beffarda;
+- ribaltamento ironico del significato;
+- virgolette, emoji, hashtag o punteggiatura che marcano chiaramente distanza ironica.
+
+[10] Regole NO
+Dai NO se il testo è solo:
+
+- critica diretta;
+- insulto diretto;
+- odio o disprezzo esplicito;
+- lamentela letterale;
+- opinione negativa;
+- descrizione fattuale;
+- battuta senza critica o presa in giro;
+- ambiguo o dipendente da contesto esterno.
+
+[11] Distinzione
+La differenza principale è:
+
+Critica diretta: dice apertamente ciò che intende. Label: NO  
+Sarcasmo: critica attraverso ironia, satira, domanda retorica, finta approvazione, esagerazione o scherno implicito. Label: YES
+
+[12] Esempi
+
+Esempio 1
+Text: "Fantastico, ho perso il treno anche oggi."
+Reason: Elogio apparente applicato a una situazione negativa.
+Label: YES
+
+Esempio 2
+Text: "Ah certo, perché i problemi si risolvono sempre ignorandoli."
+Reason: Finta approvazione e formulazione retorica.
+Label: YES
+
+Esempio 3
+Text: "Che idea brillante: chiudere le scuole proprio durante gli esami."
+Reason: Elogio apparente usato per criticare.
+Label: YES
+
+Esempio 4
+Text: "Un'altra promessa mantenuta: infatti non è cambiato nulla."
+Reason: Ribaltamento ironico del significato.
+Label: YES
+
+Esempio 5
+Text: "Questo servizio è pessimo e costa troppo."
+Reason: Critica diretta e letterale.
+Label: NO
+
+Esempio 6
+Text: "Sei un incapace."
+Reason: Insulto diretto senza costruzione sarcastica.
+Label: NO
+
+Esempio 7
+Text: "Odio questi politici."
+Reason: Disprezzo esplicito e letterale.
+Label: NO
+
+Esempio 8
+Text: "Non sono d'accordo con questa decisione."
+Reason: Dissenso diretto.
+Label: NO
+
+[13] Testo di input
+"{input}"

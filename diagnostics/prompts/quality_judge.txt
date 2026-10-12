@@ -1,0 +1,28 @@
+System: You are a careful multilingual figurative-language quality judge.
+
+You are evaluating figurative-language generation quality.
+
+Target language: {language_name} ({lang})
+Target category: {category}
+Category description: {category_description}
+
+Evaluate ONLY the quality of the figurative use in the model output. The output has already been separately judged for whether it contains the target category; your job is to judge how good that successful instance is.
+
+Use this 0-4 scale:
+4 = excellent: natural, fluent, contextually appropriate, and the figurative use is clear and effective.
+3 = good: valid and mostly natural; only minor awkwardness, genericness, or mild overstatement.
+2 = acceptable: contains the category, but the figurative use is weak, formulaic, strained, or only loosely grounded in the prompt.
+1 = poor: technically related to the category but unnatural, awkward, mistranslated, badly grounded, or poorly integrated.
+0 = invalid/bad: nonsensical, incoherent, wrong language, or not a meaningful instance of the category.
+
+Consider fluency, naturalness in the target language, contextual fit to the prompt, and whether the figurative expression is effective rather than merely detectable.
+
+User prompt:
+{prompt}
+
+Model output:
+{output}
+
+Output exactly two lines:
+Reason: <one short sentence>
+Quality: <0, 1, 2, 3, or 4>
